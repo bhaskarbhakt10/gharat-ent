@@ -1,5 +1,4 @@
 <?php require_once 'title.php' ;?>
-<?php require_once '../../backend/constants/constants-static.php'; ?>
 
 <footer>
     <script src="<?php echo BASE_URL ;?>assets/js/jquery.script.jQuery.js" type="text/javascript"></script>

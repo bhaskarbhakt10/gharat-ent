@@ -1,4 +1,5 @@
 <?php
+if(!defined('BASE_URL')) define('BASE_URL','http://localhost/hospital-management/');
 // function returns the title 
 // that is the directory which makes the request
 function get_title()
@@ -18,3 +19,4 @@ function enqueue_script_css(){
     $filename = end($array_uri__);
     return $filename;
 }
+

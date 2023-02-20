@@ -279,3 +279,15 @@ p {
 .dashboard-icon > i{
   font-size: 25px;
 }
+.success>.success-message,.failure >.failure-message{
+  width: 40%;
+  margin: auto;
+  font-size: 16px;
+  font-family: 'lato';
+}
+.success>.success-message{
+
+}
+.failure >.failure-message{
+
+}

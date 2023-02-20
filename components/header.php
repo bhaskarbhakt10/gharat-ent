@@ -1,5 +1,5 @@
 <?php require_once 'title.php'?>
-<?php require_once '../../backend/constants/constants-static.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

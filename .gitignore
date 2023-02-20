@@ -3,3 +3,5 @@
 
 *.zip
 /assets/images/countries
+uploads/*
+!uploads/.htaccess

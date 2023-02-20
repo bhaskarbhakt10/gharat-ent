@@ -36,12 +36,7 @@
                             </div>
                         </div>
                         <div class="d-grid mb-5">
-                            <button class="btn btn-md btn-blue d-block">Log In</button>
-                        </div>
-                        <div class="mb-2">
-                            <p class="text-center mb-0">
-                                Don’t have an account? <span><a href="#" class="brand-color">Signup</a></span>
-                            </p>
+                            <button class="btn btn-md btn-blue d-block log-in">Log In</button>
                         </div>
                     </div>
                 </div>
