@@ -1,0 +1,5 @@
+#Gitignore 
+#add file to be ignored by git
+
+*.zip
+/assets/images/countries
