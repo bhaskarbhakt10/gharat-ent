@@ -1,13 +1,10 @@
 <?php
 
-
-$brand_logo = '../../assets/images/brand/nuit.svg';
-$brand_logo_dark = '../../assets/images/brand/nuit-dark.svg';
-$brand_logo_blue = '../../assets/images/brand/nuit-blue.svg';
+if(!defined('BASE_URL')) define('BASE_URL','http://localhost/hospital-management/');
 
 
+//  DATABASE TABLES   
+if(!defined('USERS')) define('USERS','hospital_users');
 
-//json
-$mails_json__ = '../../assets/json/mail-json.json';
-$country_json__ = '../../assets/json/country-json.json';
-
+//timezone
+if(!defined('TIMEZONE_IN')) define('TIMEZONE_IN','Asia/Calcutta');

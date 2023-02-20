@@ -1,5 +1,5 @@
-<?php require_once '../components/header.php'; ?>
-<?php require_once '../backend/constants/constants-static.php'; ?>
+<?php require_once '../../components/header.php'; ?>
+
 <main class="viewport center-viewport">
     <div class="container">
         <form action="" method="post" autocomplete="off">
@@ -24,15 +24,15 @@
                         </div>
                         <div class="mb-4">
                             <div class="forgot-remember">
-                            <div class="">
-                                <input type="checkbox" name="remember" id="remember" class="form-check-input">
-                                <label for="remember" class="form-label">Remember Me</label>
-                            </div>
-                            <div class="">
-                                <p class="">
-                                    <a href="#" class="brand-color"> Forgot Password ?</a>
-                                </p>
-                            </div>
+                                <div class="">
+                                    <input type="checkbox" name="remember" id="remember" class="form-check-input">
+                                    <label for="remember" class="form-label">Remember Me</label>
+                                </div>
+                                <div class="">
+                                    <p class="">
+                                        <a href="#" class="brand-color"> Forgot Password ?</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="d-grid mb-5">
@@ -50,11 +50,4 @@
     </div>
 </main>
 
-
-
-
-
-
-
-
-<?php require_once '../components/footer.php'; ?>
+<?php require_once '../../components/footer.php'; ?>

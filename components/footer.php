@@ -1,11 +1,12 @@
-<?php require_once 'title.php' ?>
+<?php require_once 'title.php' ;?>
+<?php require_once '../../backend/constants/constants-static.php'; ?>
 
 <footer>
-    <script src="../assets/js/jquery.script.jQuery.js" type="text/javascript"></script>
-    <script src="../assets/js/script.bootstrap.js" type="text/javascript"></script>
-    <script src="../assets/js/script.select2.min.js" type="text/javascript"></script>
+    <script src="<?php echo BASE_URL ;?>assets/js/jquery.script.jQuery.js" type="text/javascript"></script>
+    <script src="<?php echo BASE_URL ;?>assets/js/script.bootstrap.js" type="text/javascript"></script>
+    <script src="<?php echo BASE_URL ;?>assets/js/script.select2.min.js" type="text/javascript"></script>
     
-    <script src="../assets/js/jquery.script.main.js" type="text/javascript"></script>
+    <script src="<?php echo BASE_URL ;?>assets/js/jquery.script.main.js" type="text/javascript"></script>
     
     
     <?php
@@ -21,8 +22,8 @@
         <script src="./js/jquery.script.<?php echo enqueue_script_css(); ?>.js" type="text/javascript"></script>
     <?php } ?>
 
-    <script src="../components/js/jquery.script.component.js" type="text/javascript"></script>
-    <script src="../components/js/script.component.js" type="text/javascript"></script>
+    <script src="<?php echo BASE_URL ;?>components/js/jquery.script.component.js" type="text/javascript"></script>
+    <script src="<?php echo BASE_URL ;?>components/js/script.component.js" type="text/javascript"></script>
 </footer>
 </body>
 
