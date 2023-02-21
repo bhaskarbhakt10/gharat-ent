@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo get_title(); ?> | Avannah Hospital </title>
-    <!-- <link rel="stylesheet" href="../../assets/css/style.bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="<?php //echo BASE_URL ;?>assets/css/style.bootstrap.css"> -->
     <link rel="stylesheet" href="<?php echo BASE_URL ;?>assets/css/style.material-bootstrap.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ;?>assets/css/style.font-awsome-pro.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ;?>assets/css/style.webfonts.css">
