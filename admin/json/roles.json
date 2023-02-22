@@ -1,0 +1,7 @@
+[
+  { "role": "Admin", "rank": 1 },
+  { "role": "Docter", "rank": 2 },
+  { "role": "Nurse", "rank": 3 },
+  { "role": "Receptionist", "rank": 4 },
+  { "role": "Other", "rank": 5 }
+]

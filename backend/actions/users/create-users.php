@@ -36,7 +36,9 @@ if (!empty($_FILES['profile_picture']['name'])) {
 
         $new_file_path = $sub_folder . "/" . $image_new_name;
         move_uploaded_file($temporary_name, $new_file_path);
-        return $new_file_path;
+        
+        $path_to_db = ltrim($new_file_path,'../../../');
+        return $path_to_db;
     } else {
         return "Image type not allowed";
     }

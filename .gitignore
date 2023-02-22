@@ -5,3 +5,4 @@
 /assets/images/countries
 uploads/*
 !uploads/.htaccess
+admin/users

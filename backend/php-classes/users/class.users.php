@@ -44,8 +44,8 @@ class Users{
         }
     }
 
-    function gen_hospitalUserID($phone, $email){
-        $sql = "SELECT * FROM  ".USERS ." WHERE hospital_UserPhone = '$phone' AND hospital_UserEmail='$email'";
+    function gen_hospitalUserID(){
+        $sql = "SELECT * FROM  ".USERS ;
         // echo $sql;
         $res = $this->db->connect()->query($sql);
         $val = $res->num_rows + 1;
@@ -64,7 +64,7 @@ class Users{
     function send_to_db(){
         $email = $this->email;
         $phone = $this->phone;
-        $userId = $this->gen_hospitalUserID($phone, $email);
+        $userId = $this->gen_hospitalUserID();
         $current_date_time = $this->current_time();
         if($this->check_user_exists($phone, $email) === true){
             $create_user = "INSERT INTO " .USERS." (hospital_UserId , hospital_UserFirstName, hospital_UserLastName, hospital_UserImage, hospital_UserPhone, hospital_UserEmail, hospital_UserName, hospital_UserPassword, hospital_rank, hospital_UserCreated, hospital_UserLoggedInAt) VALUES ('".$userId."','".$this->firstname."','".$this->lastname."','".$this->image."','".$this->phone."','".$this->email."','".$this->username."','".$this->password."','".$this->rank."','".$current_date_time."',NULL)";
