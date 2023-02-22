@@ -91,4 +91,25 @@ class Admin
         }
     }
 
+    function get_user_count_by_role($rank){
+        $sql = "SELECT * FROM ". USERS . " WHERE hospital_rank = $rank";
+        $res = $this->db->connect()->query($sql);
+        if($res-> num_rows > 0){
+            return $res->num_rows;
+        }
+        else{
+            return 0;
+        } 
+    }
+
+    function details_by_role($rank){
+        $sql = "SELECT * FROM ". USERS . " WHERE hospital_rank = $rank";
+        $res = $this->db->connect()->query($sql);
+        if($res-> num_rows > 0){
+            return $res;
+        }
+        else{
+            return false;
+        } 
+    }
 }

@@ -2,7 +2,7 @@
 
 <main class="main-class viewport">
     <div class="">
-        <div class="d-flex">
+        <div class="d-flex flex-wrap">
             <div class="flex-20 viewport">
                 <?php require_once '../admin/inc/admin-nav-side.php'; ?>
             </div>

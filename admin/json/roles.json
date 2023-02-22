@@ -1,7 +1,7 @@
 [
-  { "role": "Admin", "rank": 1 },
-  { "role": "Docter", "rank": 2 },
-  { "role": "Nurse", "rank": 3 },
-  { "role": "Receptionist", "rank": 4 },
-  { "role": "Other", "rank": 5 }
+  { "role": "Admin", "rank": 1 ,"icon":"fa-duotone fa-laptop"},
+  { "role": "Docter", "rank": 2 , "icon":"fa-duotone fa-user-doctor" },
+  { "role": "Nurse", "rank": 3 , "icon": "fa-duotone fa-user-nurse"},
+  { "role": "Receptionist", "rank": 4 , "icon": "fa-duotone fa-bell-concierge"},
+  { "role": "Other", "rank": 5 , "icon": "fa-duotone fa-person-sign"}
 ]
