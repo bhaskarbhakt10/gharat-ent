@@ -65,6 +65,15 @@ require_once 'admin-functions.php';
                     <li><a href="index.php?q=admin-list-room"> List rooms</a></li>
                 </ul>
             </li>
+            <li>
+                <a>
+                    <span><i class="fa-duotone fa-door-open"></i></span>
+                    Super Settings
+                </a>
+                <ul>
+                    <li><a href="index.php?q=admin-super-admin-controls"> Access Control</a></li>
+                </ul>
+            </li>
 
             <?php
             /*
