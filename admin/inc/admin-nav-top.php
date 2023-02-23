@@ -19,7 +19,7 @@ require_once 'admin-functions.php';
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="index.php?q=admin-user-profile">
                                 <i class="fa-duotone fa-user"></i>
                                     My account
                                 </a>

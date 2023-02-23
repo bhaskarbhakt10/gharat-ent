@@ -6,7 +6,11 @@ require_once 'admin-functions.php';
     <div class="">
         <div class="">
             <div class="user-image text-center mb-3">
-                <img src="<?php echo  BASE_URL . $admin->get_user_image();?>" class="rounded-circle online-status user-image-img" alt="User Image">
+                <img src="<?php
+                    echo !empty($admin->get_user_image()) ? BASE_URL . $admin->get_user_image() : BASE_URL . "assets/images/defaults/".$admin->get_default_user_image();
+                ?>" 
+                class="rounded-circle online-status user-image-img" alt="User Image">
+                
             </div>
             <div class="user-desc text-center mb-3">
                 <p class="user-name "><?php echo $admin->get_user_name() ;?>

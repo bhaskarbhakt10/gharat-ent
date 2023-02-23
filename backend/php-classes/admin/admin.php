@@ -1,7 +1,6 @@
 <?php
 require_once '../backend/database/config.database.php';
 require_once '../backend/constants/constants-static.php';
-// require_once '';
 
 
 class Admin
@@ -70,10 +69,32 @@ class Admin
         }
     }
 
+    function get_user_rank_number(){
+        $res = $this->get_user_details();
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $rank = $row['hospital_rank'];
+                return $rank;
+            }
+        }
+    }
+
+
     function get_roles_json(){
         $json_file = file_get_contents('http://localhost/Hospital-management/admin/json/roles.json');
         $json_obj = json_decode($json_file);
         return $json_obj;
+    }
+
+    function get_default_user_image(){
+        $json__ = $this->get_roles_json();
+        $user_rank = $this->get_user_rank_number();
+        foreach($json__ as $arr){
+            if((int)$user_rank === $arr->rank){
+                $default_image = $arr->default_image;
+            }
+        }
+        return $default_image;
     }
 
     function get_user_rank(){
@@ -86,6 +107,9 @@ class Admin
             foreach($json as $j){
                 if((int)$rank === $j->rank){
                   return $j->role;
+                }
+                else if($rank === '0'){
+                    return "Super Admin";
                 }
             }
         }
@@ -105,7 +129,7 @@ class Admin
     function details_by_role($rank){
         $sql = "SELECT * FROM ". USERS . " WHERE hospital_rank = $rank";
         $res = $this->db->connect()->query($sql);
-        if($res-> num_rows > 0){
+        if($res){
             return $res;
         }
         else{

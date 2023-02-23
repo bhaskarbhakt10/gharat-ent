@@ -1,7 +1,7 @@
 [
-  { "role": "Admin", "rank": 1 ,"icon":"fa-duotone fa-laptop"},
-  { "role": "Docter", "rank": 2 , "icon":"fa-duotone fa-user-doctor" },
-  { "role": "Nurse", "rank": 3 , "icon": "fa-duotone fa-user-nurse"},
-  { "role": "Receptionist", "rank": 4 , "icon": "fa-duotone fa-bell-concierge"},
-  { "role": "Other", "rank": 5 , "icon": "fa-duotone fa-person-sign"}
+  { "role": "Admin", "rank": 1 ,"icon":"fa-duotone fa-laptop", "default_image":"default-admin.png"},
+  { "role": "Docter", "rank": 2 , "icon":"fa-duotone fa-user-doctor", "default_image":"default-docter.png" },
+  { "role": "Nurse", "rank": 3 , "icon": "fa-duotone fa-user-nurse", "default_image":"default-nurse.png"},
+  { "role": "Receptionist", "rank": 4 , "icon": "fa-duotone fa-bell-concierge", "default_image":"default-receptionist.png"},
+  { "role": "Other", "rank": 5 , "icon": "fa-duotone fa-person-sign", "default_image":"default-admin.png"}
 ]
