@@ -35,7 +35,7 @@
             <label for="">Select Gender</label>
             <div class="mb-3 d-flex gap-10 flex-wrap">
                 <div class="d-flex flex-30  align-items-center justify-content-center">
-                    <input type="radio" name="patient_gender" id="Gender-Male" class="form-check-input form-field" value="male" required checked="checked" >
+                    <input type="radio" name="patient_gender" id="Gender-Male" class="form-check-input form-field" value="male" required  checked>
                     <label for="Gender-Male">Male</label>
                 </div>
                 <div class="d-flex flex-30 align-items-center justify-content-center">
