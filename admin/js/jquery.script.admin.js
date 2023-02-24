@@ -16,6 +16,7 @@ jQuery.noConflict();
     $('#patient-form input,#patient-form select ').addClass("patient_field");
     $('body').on('click', '#add-patient', function (event) {
         event.preventDefault();
+        let this_btn = $(this);
         let form = $(this).closest('form');
         let form_data = $(form).serializeArray();
         let required_field = $('.patient_field:required').toArray();
@@ -98,7 +99,7 @@ jQuery.noConflict();
             const value0 = $ajax_Arr.reduce((a, b) => a + b, 0);
             console.log(value0);
             if (value0 === 0) {
-                ajax_call($post);
+                ajax_call($post, this_btn);
                 alert('calling ajax');
             }
         }
@@ -118,10 +119,11 @@ jQuery.noConflict();
         return isRequired_flag;
     }
 
-    function ajax_call($post){
-        console.log($post);
+    function ajax_call($post, this_btn) {
+
+        console.log(this_btn);
         let data = {
-            'post' : $post
+            'post': $post
         }
         $.ajax({
             url: '../backend/actions/patients/add-patient.php',
@@ -129,11 +131,26 @@ jQuery.noConflict();
             data: data,
             success: function (data) {
                 console.log(data);
+                let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
+                success_html += '<strong>Patient added Sucessfully!</strong><a href="#">View patients</a>  ';
+                success_html += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> '
+                success_html += '</div>'
+                if (data === "success") {
+                    $(this_btn).parent().append(success_html);
+                    setTimeout(() => {
+                        $(this_btn).closest('form')[0].reset();
+                        $(other_gender_val).detach();
+                        console.log($(this_btn).parent().find('.alert').remove());
+                    }, 2000);
+                }
+                else {
+                    
+                }
             },
             error: function (error) {
                 window.alert(error);
             }
-        }); 
+        });
     }
 
 
@@ -142,11 +159,11 @@ jQuery.noConflict();
     var month = dtToday.getMonth() + 1;
     var day = dtToday.getDate();
     var year = dtToday.getFullYear();
-    if(month < 10)
+    if (month < 10)
         month = '0' + month.toString();
-    if(day < 10)
+    if (day < 10)
         day = '0' + day.toString();
     var maxDate = year + '-' + month + '-' + day;
     $('#DOB').attr('max', maxDate);
-    
+
 })(jQuery);

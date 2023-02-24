@@ -7,7 +7,7 @@
             <div class="mb-3">
                 <label for="Patient-suffix">Select a Suffix</label>
                 <select name="patient_suffix" id="patient_suffix" class="form-select form-field" required>
-                    <option value="" >select</option>
+                    <option value="">select</option>
                     <option value="Mr">Mr</option>
                     <option value="Mr">Mr</option>
                 </select>
@@ -35,7 +35,7 @@
             <label for="">Select Gender</label>
             <div class="mb-3 d-flex gap-10 flex-wrap">
                 <div class="d-flex flex-30  align-items-center justify-content-center">
-                    <input type="radio" name="patient_gender" id="Gender-Male" class="form-check-input form-field" value="male" required  checked>
+                    <input type="radio" name="patient_gender" id="Gender-Male" class="form-check-input form-field" value="male" required checked>
                     <label for="Gender-Male">Male</label>
                 </div>
                 <div class="d-flex flex-30 align-items-center justify-content-center">
@@ -71,6 +71,39 @@
             <div class="mb-5">
                 <label for="Address">Address</label>
                 <textarea name="patient_address" id="Address" cols="30" rows="1" class="form-control form-field"></textarea>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="patient-history-wrap">
+                <h2 class="mb-3">
+                    Patient History
+                </h2>
+                <div class="d-flex flex-wrap gap-20 justify-content-center ">
+                    <div class="d-flex flex-48">
+                        <div class="mb-3 w-100">
+                            <label for="Patient-Height">Patient Height</label>
+                            <input type="text" name="patient_height" id="Patient-Height" class="form-control form-field" required>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-48">
+                        <div class="mb-3 w-100">
+                            <label for="Patient-Weight">Patient Weight</label>
+                            <input type="text" name="patient_weight" id="Patient-Weight" class="form-control form-field" required>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-48">
+                        <div class="mb-3 w-100">
+                            <label for="Patient-bp">Patient Bp</label>
+                            <input type="text" name="patient_bp" id="Patient-bp" class="form-control form-field" required>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-48">
+                        <div class="mb-3 w-100">
+                            <label for="Patient-Diabetes">Patient Diabetes</label>
+                            <input type="text" name="patient_diabetes" id="Patient-Diabetes" class="form-control form-field" required>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-md-12">

@@ -2,7 +2,7 @@
 
 <footer>
     <script src="<?php echo BASE_URL ;?>assets/js/jquery.script.jQuery.js" type="text/javascript"></script>
-    <!-- <script src="<?php // echo BASE_URL ;?>assets/js/script.bootstrap.js" type="text/javascript"></script> -->
+    <script src="<?php  echo BASE_URL ;?>assets/js/script.bootstrap.js" type="text/javascript"></script>
     <script src="<?php echo BASE_URL ;?>assets/js/script.material-bootstrap.js" type="text/javascript"></script>
     <script src="<?php echo BASE_URL ;?>assets/js/script.select2.min.js" type="text/javascript"></script>
     

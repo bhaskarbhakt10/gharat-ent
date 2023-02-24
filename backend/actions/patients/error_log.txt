@@ -1,1 +1,106 @@
 [23-Feb-2023 20:17:27 Europe/Berlin] PHP Warning:  Array to string conversion in D:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 4
+[24-Feb-2023 09:46:07 Europe/Berlin] PHP Warning:  require_once(../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[24-Feb-2023 09:46:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[24-Feb-2023 10:00:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:23
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(21): Patients->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 23
+[24-Feb-2023 10:01:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "PATIENTS" in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:41
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(23): Patients->gen_patientID()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 41
+[24-Feb-2023 10:01:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "PATIENTS" in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:41
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(23): Patients->gen_patientID()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 41
+[24-Feb-2023 10:02:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "PATIENTS" in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:41
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(23): Patients->gen_patientID()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 41
+[24-Feb-2023 10:04:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "PATIENTS" in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:41
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(23): Patients->gen_patientID()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 41
+[24-Feb-2023 10:18:37 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'hospital-management.hospital_access' doesn't exist in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:42
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(42): mysqli->query('SELECT * FROM h...')
+#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(23): Patients->gen_patientID()
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 42
+[24-Feb-2023 14:57:28 Asia/Calcutta] PHP Warning:  Undefined variable $patientId in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
+[24-Feb-2023 11:59:17 Europe/Berlin] PHP Warning:  Undefined array key "patient_other_gender" in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 12
+[24-Feb-2023 11:59:28 Europe/Berlin] PHP Warning:  Undefined array key "patient_other_gender" in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 12
+[24-Feb-2023 12:00:58 Europe/Berlin] PHP Warning:  Undefined array key "patient_other_gender" in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 12
+[24-Feb-2023 12:05:39 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 18
+[24-Feb-2023 12:06:38 Europe/Berlin] PHP Warning:  Undefined array key "patient_other_gender" in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 12
+[24-Feb-2023 13:57:59 Europe/Berlin] PHP Warning:  require_once(./patientsHistory.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 5
+[24-Feb-2023 13:57:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required './patientsHistory.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:5
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 5
+[24-Feb-2023 13:59:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientHistory" not found in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php:31
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 31
+[24-Feb-2023 14:00:41 Europe/Berlin] PHP Warning:  require_once(./patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
+[24-Feb-2023 14:00:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required './patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:5
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
+[24-Feb-2023 14:02:20 Europe/Berlin] PHP Warning:  require_once(../patients/patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
+[24-Feb-2023 14:02:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../patients/patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:5
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
+[24-Feb-2023 14:03:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Patients" not found in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:7
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 7
+[24-Feb-2023 14:04:11 Europe/Berlin] PHP Warning:  require_once(/patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
+[24-Feb-2023 14:04:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:5
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
+[24-Feb-2023 14:06:02 Europe/Berlin] PHP Warning:  require_once(./patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
+[24-Feb-2023 14:06:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required './patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:5
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
+[24-Feb-2023 14:13:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(60): PatientHistory->check_if_patientId_exist_in_history()
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(39): PatientHistory->send_to_DB()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(32): Patients->get_details('Mr', 'Bhaskar', 'Test', 'male', '2023-02-09', '09096471732', '', 'bhaskar@nuitsol...', 'a-301 test')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 34
+[24-Feb-2023 14:15:56 Europe/Berlin] PHP Fatal error:  Access level to PatientHistory::$db must be public (as in class Patients) in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 7
+[24-Feb-2023 14:24:39 Europe/Berlin] PHP Fatal error:  Access level to PatientHistory::$db must be public (as in class Patients) in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 7
+[24-Feb-2023 14:40:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:45
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(67): Patients->gen_patientID()
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(39): Patients->send_to_db()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(32): Patients->get_details('Mr', 'Bhaskar', 'Test', 'male', '2023-02-22', '09096471732', '', 'bhaskar@nuitsol...', 'a-301 test')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 45
+[24-Feb-2023 14:56:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(61): PatientHistory->check_if_patientId_exist_in_history()
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(39): PatientHistory->send_to_DB()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(32): Patients->get_details('Mr', 'Bhaskar', 'Test', 'male', '2023-02-08', '09096471732', '', 'bhaskar@nuitsol...', 'a-301 test')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 34
