@@ -175,13 +175,23 @@ jQuery.noConflict();
     for (let index = 0; index < $allfieldset.length; index++) {
         $($allfieldset[index]).addClass("fieldset filedset-"+[index]);
     }
-    let parent_ele = $('.duplicate-row').parent().parent();
-    
+    let parent_ele = $('.duplicate-row').closest('.flex-container');
+    for (let index = 0; index < parent_ele.length; index++) {
+        $(parent_ele[index]).attr('data-row','row-'+[index]);
+    }
 
     $('body').on('click', '.duplicate-row', function(e){
         e.preventDefault();
-        let html = $(this).parent().parent();
-        $(parent_ele).append(html);
+        let html = $(this).closest('[data-row]').children().toArray();
+        console.log(html[0]);
+        console.warn(html);
+        let parent_to_insert_after = $(this).closest('[data-row]').attr('data-row');
+        $('[data-row='+parent_to_insert_after+']').append("<div class='d-flex flex-100 gap-20 align-items-center apended-row'>" + html[0].innerHTML+"</div>");
+        $('.apended-row button.btn-primary').replaceWith("<button class='btn btn-danger w-100 remove-duplicate-row'>Remove</button>");
+    });
+    $("body").on('click','.remove-duplicate-row', function(e){
+        e.preventDefault();
+        $(this).closest('.apended-row').remove();
     });
 
 
