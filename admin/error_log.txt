@@ -384,3 +384,299 @@ Stack trace:
 [27-Feb-2023 05:46:04 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 34
 [27-Feb-2023 05:46:04 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 54
 [27-Feb-2023 05:46:04 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 103
+[27-Feb-2023 10:30:25 Europe/Berlin] PHP Warning:  require_once(../../../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 10:30:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php(2): require_once()
+#1 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 10:30:38 Europe/Berlin] PHP Warning:  require_once(../../backend/php-classes/patients/patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:30:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../backend/php-classes/patients/patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:30:42 Europe/Berlin] PHP Warning:  require_once(../../../backend/php-classes/patients/patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:30:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../backend/php-classes/patients/patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:31:28 Europe/Berlin] PHP Warning:  require_once(../../../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 10:31:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\inc\admin-functions.php(13): require_once()
+#1 C:\xampp\htdocs\Hospital-Management\admin\inc\admin-nav-side.php(2): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hospital-Management\admin\index.php(7): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 10:31:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Patients" not found in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php:3
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 3
+[27-Feb-2023 10:32:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Patients" not found in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php:3
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 3
+[27-Feb-2023 10:32:32 Europe/Berlin] PHP Warning:  require_once(../../../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 10:32:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\inc\admin-functions.php(13): require_once()
+#1 C:\xampp\htdocs\Hospital-Management\admin\inc\admin-nav-side.php(2): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hospital-Management\admin\index.php(7): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 10:32:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Patients" not found in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php:3
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 3
+[27-Feb-2023 10:33:13 Europe/Berlin] PHP Warning:  require_once(../../../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 10:33:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\inc\admin-functions.php(13): require_once()
+#1 C:\xampp\htdocs\Hospital-Management\admin\inc\admin-nav-side.php(2): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hospital-Management\admin\index.php(7): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 10:33:53 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 28
+[27-Feb-2023 10:33:53 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 28
+[27-Feb-2023 10:36:19 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 28
+[27-Feb-2023 10:36:19 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 28
+[27-Feb-2023 10:41:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Patients" not found in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php:3
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 3
+[27-Feb-2023 10:41:57 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:41:57 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:43:25 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:43:25 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:43:55 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:43:55 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:44:26 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:44:26 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:44:38 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:44:38 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:46:57 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:46:57 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:47:24 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:47:24 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:50:18 Europe/Berlin] PHP Warning:  include(C:\xampp\htdocs\Hospital-Management\admin/path/to/file.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:50:18 Europe/Berlin] PHP Warning:  include(): Failed opening 'C:\xampp\htdocs\Hospital-Management\admin/path/to/file.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:50:18 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:50:18 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:50:39 Europe/Berlin] PHP Warning:  include(C:\xampp\htdocs\Hospital-Management\admin../path/to/file.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:50:39 Europe/Berlin] PHP Warning:  include(): Failed opening 'C:\xampp\htdocs\Hospital-Management\admin../path/to/file.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:50:39 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:50:39 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:51:03 Europe/Berlin] PHP Warning:  include(C:\xampp\htdocs\Hospital-Management\admin): Failed to open stream: Permission denied in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:51:03 Europe/Berlin] PHP Warning:  include(): Failed opening 'C:\xampp\htdocs\Hospital-Management\admin' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:51:03 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:51:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:51:10 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:51:10 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:52:25 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:52:25 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:52:40 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\Hospital-Management\admin../backend/php-classes/patients/patient.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:52:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\Hospital-Management\admin../backend/php-classes/patients/patient.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:55:38 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "(" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 10:56:23 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:56:23 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:56:29 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:56:29 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:57:57 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:57:57 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:59:46 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 10:59:46 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 29
+[27-Feb-2023 11:00:27 Europe/Berlin] PHP Warning:  require_once(../../../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 11:00:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php(2): require_once()
+#1 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 11:01:27 Europe/Berlin] PHP Warning:  require_once(../../../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 11:01:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php(2): require_once()
+#1 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 11:01:33 Europe/Berlin] PHP Warning:  require_once(../../../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 3
+[27-Feb-2023 11:01:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:3
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php(2): require_once()
+#1 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 3
+[27-Feb-2023 11:02:27 Europe/Berlin] PHP Warning:  require_once(../../database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 3
+[27-Feb-2023 11:02:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:3
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php(2): require_once()
+#1 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 3
+[27-Feb-2023 11:04:10 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 30
+[27-Feb-2023 11:04:10 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 30
+[27-Feb-2023 11:07:18 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 30
+[27-Feb-2023 11:07:18 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 30
+[27-Feb-2023 11:07:47 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 30
+[27-Feb-2023 11:07:47 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 30
+[27-Feb-2023 11:12:31 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 30
+[27-Feb-2023 11:12:31 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 30
+[27-Feb-2023 11:12:50 Europe/Berlin] PHP Warning:  require_once(C:/xampp/htdocsHospital-Management/backend/php-clases/patients/patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 11:12:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:/xampp/htdocsHospital-Management/backend/php-clases/patients/patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 11:13:05 Europe/Berlin] PHP Warning:  require_once(C:/xampp/htdocs/Hospital-Management/backend/php-clases/patients/patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 11:13:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:/xampp/htdocs/Hospital-Management/backend/php-clases/patients/patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 11:13:19 Europe/Berlin] PHP Warning:  require_once(C:/xampp/htdocs/hospital-management/backend/php-clases/patients/patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 11:13:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:/xampp/htdocs/hospital-management/backend/php-clases/patients/patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 2
+[27-Feb-2023 11:13:46 Europe/Berlin] PHP Warning:  require_once(../../../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 3
+[27-Feb-2023 11:13:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:3
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php(2): require_once()
+#1 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 3
+[27-Feb-2023 11:15:19 Europe/Berlin] PHP Warning:  Undefined variable $all_details in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 28
+[27-Feb-2023 11:15:19 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on null in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 28
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 34
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 35
+[27-Feb-2023 11:21:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 36
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 32
+[27-Feb-2023 11:23:19 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\Hospital-Management\admin\admin-list-patients.php on line 33
+[27-Feb-2023 11:27:36 Europe/Berlin] PHP Warning:  Undefined variable $_get in C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php on line 2
+[27-Feb-2023 11:27:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php on line 2
+[27-Feb-2023 11:28:43 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'admin' in 'where clause' in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php:131
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php(131): mysqli->query('SELECT * FROM h...')
+#1 C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php(4): Admin->details_by_role('admin-single-pa...')
+#2 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 131
+[27-Feb-2023 11:49:10 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: print_r() expects at least 1 argument, 0 given in C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php:14
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php(14): print_r()
+#1 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php on line 14
+[27-Feb-2023 12:10:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function diff() on string in C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php:50
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php on line 50
+[27-Feb-2023 12:14:07 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "(", expecting identifier or variable or "{" or "$" in C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php on line 48

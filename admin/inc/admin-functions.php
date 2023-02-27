@@ -10,7 +10,10 @@ if (isset($_SESSION['user']) && $_SESSION['user']['loggedin'] === true && array_
 }
 
 require_once '../backend/php-classes/admin/admin.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/php-classes/patients/patients.php";
+
+
 $admin = new Admin();
-$admin ->get_user_id($user_id);
+$admin->get_user_id($user_id);
 
 ?>

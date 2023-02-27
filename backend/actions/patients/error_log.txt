@@ -202,3 +202,30 @@ Stack trace:
 #2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(38): PatientHistory->send_to_DB()
 #3 {main}
   thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 65
+[27-Feb-2023 13:50:04 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1'","weight":"58kg","bp":"normal","diabetes":"no"}}')' at line 1 in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:65
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(65): mysqli->query('INSERT INTO hos...')
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(77): PatientHistory->Insert_His()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(38): PatientHistory->send_to_DB()
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 65
+[27-Feb-2023 13:59:24 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1","weight":"150kg","bp":"120-123","diabetes":"NO "}}')' at line 1 in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:65
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(65): mysqli->query('INSERT INTO hos...')
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(77): PatientHistory->Insert_His()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(38): PatientHistory->send_to_DB()
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 65
+[27-Feb-2023 14:41:15 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '2'","weight":"85kg","bp":"130-140","diabetes":"no"}}')' at line 1 in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:65
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(65): mysqli->query('INSERT INTO hos...')
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(77): PatientHistory->Insert_His()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(38): PatientHistory->send_to_DB()
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 65
+[27-Feb-2023 10:37:38 Europe/Berlin] PHP Warning:  require_once(../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
+[27-Feb-2023 10:37:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:2
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2

@@ -1,7 +1,6 @@
 <?php
-require_once '../../../backend/database/config.database.php';
-require_once '../../../backend/constants/constants-static.php';
-
+$_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/database/config.database.php";
+$_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/constants/constants-static.php'";
 
 
 class Patients
@@ -80,6 +79,28 @@ class Patients
             } else {
                 return false;
             }
+        }
+    }
+
+    function get_list_patients(){
+        $sql = "SELECT * FROM " . PATIENTS ;
+        $res = $this->db->connect()->query($sql);
+        if($res->num_rows>0){
+            return $res;
+        }
+        else{
+            return false;
+        }
+    }
+
+    function get_genral_detials($id)
+    {
+        $sql = "SELECT * FROM " . PATIENTS . " WHERE hospital_PatientId='$id'";
+        $res = $this->db->connect()->query($sql);
+        if ($res->num_rows > 0) {
+            return $res;
+        } else {
+            return false;
         }
     }
 

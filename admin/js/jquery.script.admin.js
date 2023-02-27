@@ -166,4 +166,23 @@ jQuery.noConflict();
     var maxDate = year + '-' + month + '-' + day;
     $('#DOB').attr('max', maxDate);
 
+    $('body').on('click', '#add-patient', function (event) {
+
+    });
+
+    //add class to fieldset
+    let $allfieldset = $('fieldset');
+    for (let index = 0; index < $allfieldset.length; index++) {
+        $($allfieldset[index]).addClass("fieldset filedset-"+[index]);
+    }
+    let parent_ele = $('.duplicate-row').parent().parent();
+    
+
+    $('body').on('click', '.duplicate-row', function(e){
+        e.preventDefault();
+        let html = $(this).parent().parent();
+        $(parent_ele).append(html);
+    });
+
+
 })(jQuery);
