@@ -1,5 +1,6 @@
 <?php
 require_once '../../php-classes/patients/patients.php';
+require_once '../../php-classes/patients/patientsHistory.php';
 if(isset($_POST)){
     //get data via akax in an array
     $arr_post = $_POST['post'];
@@ -30,9 +31,14 @@ if(isset($_POST)){
     if(!empty($patient_suffix) && !empty($patient_first_name) && !empty($patient_last_name) && !empty($patient_gender) && !empty($patient_dob) && !empty($patient_contact_number)){
         $add_patient = new Patients();
         $added_sucess = $add_patient->get_details($patient_suffix,$patient_first_name,$patient_last_name,$patient_gender,$patient_dob,$patient_contact_number, $patient_middle_name, $patient_email,$patient_address);
-        // echo $add_patient->get_patient_history($patient_weight,$patient_height,$patient_diabetes,$patient_bp);
-        if($added_sucess === true){
-            echo "success";
+        if($add_patient->send_to_db() !== false){
+            $pid = $add_patient->send_to_db();
+            $patientsHis = new PatientHistory();
+            $patientsHis->get_patient_history($patient_weight,$patient_height,$patient_diabetes,$patient_bp,$pid);
+            if($patientsHis->send_to_DB() === true){
+                echo "success";
+            }
+            
         }
         else{
             echo "failure";

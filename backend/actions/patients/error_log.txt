@@ -104,3 +104,101 @@ Stack trace:
 #2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(32): Patients->get_details('Mr', 'Bhaskar', 'Test', 'male', '2023-02-08', '09096471732', '', 'bhaskar@nuitsol...', 'a-301 test')
 #3 {main}
   thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 34
+[27-Feb-2023 10:26:49 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(45): mysqli->query('INSERT INTO hos...')
+#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(36): PatientHistory->Insert_His()
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
+[27-Feb-2023 10:32:53 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'hospital_pID' in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(45): mysqli->query('INSERT INTO hos...')
+#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(36): PatientHistory->Insert_His()
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
+[27-Feb-2023 10:40:57 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(28): Patients->gen_patientID()
+#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(35): PatientHistory->get_patient_history('w', 'h', 'd', 'b')
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
+[27-Feb-2023 10:45:09 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'hospital_pID' in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(45): mysqli->query('INSERT INTO hos...')
+#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(36): PatientHistory->Insert_His()
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
+[27-Feb-2023 10:47:49 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'hospital_pID' in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(45): mysqli->query('INSERT INTO hos...')
+#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(36): PatientHistory->Insert_His()
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
+[27-Feb-2023 10:49:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(28): Patients->test()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(35): PatientHistory->get_patient_history('w', 'h', 'D', 'b')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
+[27-Feb-2023 10:56:39 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(28): Patients->test()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(35): PatientHistory->get_patient_history('h', 'b', 'hhh', 'hhhh')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
+[27-Feb-2023 10:57:36 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(28): Patients->test()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(35): PatientHistory->get_patient_history('hhhhhhhhh', 'hhhhhh', 'hhhhh', 'hhhhhhh')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
+[27-Feb-2023 11:02:07 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(28): Patients->test()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(35): PatientHistory->get_patient_history('hww', 'h', 'd', 'b')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
+[27-Feb-2023 11:54:35 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
+#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(36): Patients->send_PID()
+#2 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
+[27-Feb-2023 12:06:29 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(38): Patients->send_PID()
+#2 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(42): PatientHistory->patientID()
+#3 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(71): PatientHistory->check_if_patientId_exist_in_history()
+#4 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(33): PatientHistory->send_to_DB()
+#5 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(37): PatientHistory->get_patient_history('w', 'h', 'D', 'b')
+#6 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
+[27-Feb-2023 12:10:11 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(72): PatientHistory->check_if_patientId_exist_in_history()
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(34): PatientHistory->send_to_DB()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(37): PatientHistory->get_patient_history('w', 'h', 'D', 'b')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
+[27-Feb-2023 12:11:16 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(72): PatientHistory->check_if_patientId_exist_in_history()
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(34): PatientHistory->send_to_DB()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(37): PatientHistory->get_patient_history('W', 'H', 'D', 'B')
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
+[27-Feb-2023 12:15:34 Asia/Calcutta] PHP Warning:  Undefined variable $pid in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 37
+[27-Feb-2023 12:16:22 Asia/Calcutta] PHP Warning:  Undefined variable $pid in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 38
+[27-Feb-2023 12:19:37 Asia/Calcutta] PHP Warning:  Undefined variable $pid in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 38
+[27-Feb-2023 13:43:42 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1'","weight":"58kg","bp":"pata nahi","diabetes":"no"}}')' at line 1 in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:65
+Stack trace:
+#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(65): mysqli->query('INSERT INTO hos...')
+#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(81): PatientHistory->Insert_His()
+#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(38): PatientHistory->send_to_DB()
+#3 {main}
+  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 65

@@ -10,3 +10,4 @@
 [23-Feb-2023 07:15:47 Europe/Berlin] PHP Warning:  Undefined variable $brand_logo_blue in C:\xampp\htdocs\Hospital-Management\log-in\log-in\index.php on line 11
 [23-Feb-2023 14:55:41 Europe/Berlin] PHP Warning:  Undefined variable $brand_logo_blue in C:\xampp\htdocs\Hospital-Management\log-in\log-in\index.php on line 11
 [24-Feb-2023 08:54:38 Europe/Berlin] PHP Warning:  Undefined variable $brand_logo_blue in C:\xampp\htdocs\Hospital-Management\log-in\log-in\index.php on line 11
+[27-Feb-2023 05:46:09 Europe/Berlin] PHP Warning:  Undefined variable $brand_logo_blue in C:\xampp\htdocs\Hospital-Management\log-in\log-in\index.php on line 11

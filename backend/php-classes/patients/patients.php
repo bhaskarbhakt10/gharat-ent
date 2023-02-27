@@ -36,14 +36,10 @@ class Patients
         $this->patient_contact_number = $patient_contact_number;
         $this->patient_email = $patient_email;
         $this->patient_address = $patient_address;
-        if ($this->send_to_db() === true) {
-            return true;
-        } else {
-            return false;
-        }
+        
     }
 
-    private function gen_patientID()
+    function gen_patientID()
     {
         $sql = "SELECT * FROM " . PATIENTS;
         $res = $this->db->connect()->query($sql);
@@ -53,6 +49,10 @@ class Patients
         $year = $date->format('Y');
         $patientID = "AVHSP_" . $year . "P_" . $no_rows;
         return $patientID;
+    }
+
+    function send_PID(){
+        return $this->patientId = $this->gen_patientID();
     }
 
     function check_PatientId_exist($id)
@@ -68,7 +68,7 @@ class Patients
 
     function send_to_db()
     {
-        $patient_ID = $this->gen_patientID();
+        $patient_ID = $this->send_PID();
         $this->patientId = $patient_ID;
         $check_pat_id = $this->check_PatientId_exist($patient_ID);
 
@@ -76,7 +76,7 @@ class Patients
         if ($check_pat_id === false) {
             $res = $this->db->connect()->query($sql);
             if ($res) {
-                return true;
+                return $patient_ID;
             } else {
                 return false;
             }
