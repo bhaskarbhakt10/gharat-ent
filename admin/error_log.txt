@@ -680,3 +680,10 @@ Stack trace:
 #1 {main}
   thrown in C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php on line 50
 [27-Feb-2023 12:14:07 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "(", expecting identifier or variable or "{" or "$" in C:\xampp\htdocs\Hospital-Management\admin\admin-single-patient.php on line 48
+[28-Feb-2023 05:52:39 Europe/Berlin] PHP Warning:  Undefined variable $user_id in C:\xampp\htdocs\Hospital-Management\admin\inc\admin-functions.php on line 17
+[28-Feb-2023 05:52:39 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 64
+[28-Feb-2023 05:52:39 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 74
+[28-Feb-2023 05:52:39 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 97
+[28-Feb-2023 05:52:39 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 34
+[28-Feb-2023 05:52:39 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 54
+[28-Feb-2023 05:52:39 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 103

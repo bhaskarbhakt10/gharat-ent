@@ -14,23 +14,35 @@ jQuery.noConflict();
     });
     $("#add-patient").closest('form').attr('id', 'patient-form');
     $('#patient-form input,#patient-form select ').addClass("patient_field");
+    let required = $('.patient_field:required').toArray();
+    for (let index = 0; index < required.length; index++) {
+        $(required[index]).addClass('required');
+
+    }
+    let required_field = $('.required').toArray();
     $('body').on('click', '#add-patient', function (event) {
         event.preventDefault();
         let this_btn = $(this);
         let form = $(this).closest('form');
         let form_data = $(form).serializeArray();
-        let required_field = $('.patient_field:required').toArray();
+
         let $post = new Object();
         for (let k = 0; k < form_data.length; k++) {
             let name = form_data[k]['name'];
             let value = form_data[k]['value'];
             let is_required;
-            if ($('[name=' + name + ']').attr('type') === 'radio') {
+            // if ($('[name=' + name + ']').attr('type') === 'radio' ) {
+            //     is_required = $('[name=' + name + ']').is(':checked');
+            // }
+            // else {
+            //     is_required = $('[name=' + name + ']').is(':required');
+            // }
+            if ($('[name=' + name + ']').hasClass('.required')) {
                 is_required = $('[name=' + name + ']').is(':checked');
             }
-            else {
-                is_required = $('[name=' + name + ']').is(':required');
-            }
+            // else {
+            //     is_required = $('[name=' + name + ']').is(':required');
+            // }
             // console.log(name, is_required);
             $post[name] = value;
         }
@@ -78,26 +90,26 @@ jQuery.noConflict();
         $ajax_Arr = new Array();
         for (const key in $post) {
             if ($post[key] === '') {
-                console.error($post[key])
+                // console.error($post[key])
                 const req = isRequired(key);
                 if (req === true) {
                     $ajax_Arr.push(1);
-                    console.log('cannot send to ajax');
+                    // console.log('cannot send to ajax');
                 }
                 else {
                     $ajax_Arr.push(0);
-                    console.log('send to ajax');
+                    // console.log('send to ajax');
                 }
             }
             else {
                 $ajax_Arr.push(0);
-                console.log('send to ajax');
+                // console.log('send to ajax');
             }
         }
-        console.log($ajax_Arr);
+        // console.log($ajax_Arr);
         if ($post_length === $ajax_Arr.length) {
             const value0 = $ajax_Arr.reduce((a, b) => a + b, 0);
-            console.log(value0);
+            // console.log(value0);
             if (value0 === 0) {
                 ajax_call($post, this_btn);
                 alert('calling ajax');
@@ -109,11 +121,11 @@ jQuery.noConflict();
     function isRequired(key) {
         let required = $('[name=' + key + ']').attr('required');
         if (typeof required !== 'undefined' && required !== false) {
-            console.warn($('[name=' + key + ']'));
+            // console.warn($('[name=' + key + ']'));
             isRequired_flag = true;
         }
         else {
-            console.error($('[name=' + key + ']'));
+            // console.error($('[name=' + key + ']'));
             isRequired_flag = false;
         }
         return isRequired_flag;
@@ -121,7 +133,7 @@ jQuery.noConflict();
 
     function ajax_call($post, this_btn) {
 
-        console.log(this_btn);
+        // console.log(this_btn);
         let data = {
             'post': $post
         }
@@ -144,7 +156,7 @@ jQuery.noConflict();
                     }, 2000);
                 }
                 else {
-                    
+
                 }
             },
             error: function (error) {
@@ -173,23 +185,30 @@ jQuery.noConflict();
     //add class to fieldset
     let $allfieldset = $('fieldset');
     for (let index = 0; index < $allfieldset.length; index++) {
-        $($allfieldset[index]).addClass("fieldset filedset-"+[index]);
+        $($allfieldset[index]).addClass("fieldset filedset-" + [index]);
     }
     let parent_ele = $('.duplicate-row').closest('.flex-container');
     for (let index = 0; index < parent_ele.length; index++) {
-        $(parent_ele[index]).attr('data-row','row-'+[index]);
+        $(parent_ele[index]).attr('data-row', 'row-' + [index]);
     }
 
-    $('body').on('click', '.duplicate-row', function(e){
+    $('body').on('click', '.duplicate-row', function (e) {
         e.preventDefault();
         let html = $(this).closest('[data-row]').children().toArray();
-        console.log(html[0]);
-        console.warn(html);
+        // console.log(html[0]);
+        // console.warn(html);
         let parent_to_insert_after = $(this).closest('[data-row]').attr('data-row');
-        $('[data-row='+parent_to_insert_after+']').append("<div class='d-flex flex-100 gap-20 align-items-center apended-row'>" + html[0].innerHTML+"</div>");
+        $('[data-row=' + parent_to_insert_after + ']').append("<div class='d-flex flex-100 gap-20 align-items-center apended-row'>" + html[0].innerHTML + "</div>");
         $('.apended-row button.btn-primary').replaceWith("<button class='btn btn-danger w-100 remove-duplicate-row'>Remove</button>");
+        let this_field = $('[data-row=' + parent_to_insert_after + '] .form-field');
+        for (let index = 0; index < this_field.length; index++) {
+            if ($(this_field[index]).attr('name') !== undefined || $(this_field[index]).attr('name') !== "") {
+                $(this_field[index]).attr('name', $(this_field[index]).attr('name') + "_" + [index]);
+            }
+
+        }
     });
-    $("body").on('click','.remove-duplicate-row', function(e){
+    $("body").on('click', '.remove-duplicate-row', function (e) {
         e.preventDefault();
         $(this).closest('.apended-row').remove();
     });
