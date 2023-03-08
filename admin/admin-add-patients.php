@@ -99,7 +99,7 @@
                                 <option value="None">None</option>
                             </select>
                         </div>
-                        <div class="d-flex flex-48 mb-3 ">
+                        <div class="flex-48 mb-3 ">
                             <div class="mb-3 w-100">
                                 <label for="health-conditions">Chronic Ailments/Health Condition </label>
                                 <select name="patient_health_condition" id="health-conditions" class="form-select form-field">
@@ -114,7 +114,17 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-100 flex-wrap flex-container">
+                        <div class="d-flex gap-10">
+                            <div class="mb-3">
+                                <input type="checkbox" name="" id="add-treatments" class="form-check-input medical-history-check" value="treatment-container">
+                                <label for="add-treatments">Add Treatment/s ?</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" name="" id="add-surgeries" class="form-check-input medical-history-check" value="surgery-container">
+                                <label for="add-surgeries">Add Surgerie/s ?</label>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-100 flex-wrap flex-container" id="treatment-container">
                             <div class="d-flex flex-100 gap-20 align-items-center">
                                 <div class="d-flex flex-30 flex-column">
                                     <div class="mb-3">
@@ -141,7 +151,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-100 flex-wrap flex-container">
+                        <div class="d-flex flex-100 flex-wrap flex-container" id="surgery-container">
                             <div class="d-flex flex-100 gap-20 align-items-center">
                                 <div class="d-flex flex-30 flex-column">
                                     <div class="mb-3">

@@ -213,5 +213,29 @@ jQuery.noConflict();
         $(this).closest('.apended-row').remove();
     });
 
+    let treatment_container = $('#treatment-container').detach();
+    let surgery_container = $('#surgery-container').detach();
+    $('body').on('change','.medical-history-check', function(){
+        let value = $(this).val();
+        console.log("#"+value);
+        if($(this).is(':checked')){
+            if(value === 'treatment-container'){
+                jQuery('.filedset-1').children().last().children().append(treatment_container);
+            }
+            else if(value === 'surgery-container'){
+                jQuery('.filedset-1').children().last().children().append(surgery_container);
+
+            }
+        }   
+        else{
+            if(value === 'treatment-container'){
+            $(treatment_container).remove();
+            }
+            else{
+                $(surgery_container).remove();
+            }
+        }
+
+    })
 
 })(jQuery);

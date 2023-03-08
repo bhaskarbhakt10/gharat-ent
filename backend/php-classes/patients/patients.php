@@ -17,6 +17,7 @@ class Patients
     private $patient_contact_number;
     private $patient_email;
     private $patient_address;
+    private $medical_history;
 
     function __construct()
     {
@@ -24,7 +25,7 @@ class Patients
     }
 
 
-    function get_details($patient_suffix, $patient_first_name, $patient_last_name, $patient_gender, $patient_dob, $patient_contact_number, $patient_middle_name, $patient_email, $patient_address)
+    function get_details($patient_suffix, $patient_first_name, $patient_last_name, $patient_gender, $patient_dob, $patient_contact_number, $patient_middle_name, $patient_email, $patient_address, $medical_history)
     {
         $this->patient_suffix = $patient_suffix;
         $this->patient_first_name = $patient_first_name;
@@ -35,7 +36,7 @@ class Patients
         $this->patient_contact_number = $patient_contact_number;
         $this->patient_email = $patient_email;
         $this->patient_address = $patient_address;
-        
+        $this->medical_history = $medical_history;
     }
 
     function gen_patientID()
@@ -50,7 +51,8 @@ class Patients
         return $patientID;
     }
 
-    function send_PID(){
+    function send_PID()
+    {
         return $this->patientId = $this->gen_patientID();
     }
 
@@ -71,7 +73,7 @@ class Patients
         $this->patientId = $patient_ID;
         $check_pat_id = $this->check_PatientId_exist($patient_ID);
 
-        $sql = "INSERT INTO " . PATIENTS . " (hospital_PatientId, hospital_PatientSuffix, hospital_PatientFirstName, hospital_PatientMiddleName, hospital_PatientLastName, hospital_PatientGender, hospital_PatientDOB, hospital_PatientContactNumber, hospital_PatientEmail, hospital_PatientAddress) VALUES ('" . $patient_ID . "','" . $this->patient_suffix . "','" . $this->patient_first_name . "','" . $this->patient_middle_name . "','" . $this->patient_last_name . "','" . $this->patient_gender . "','" . $this->patient_dob . "','" . $this->patient_contact_number . "','" . $this->patient_email . "','" . $this->patient_address . "')";
+        $sql = "INSERT INTO " . PATIENTS . " (hospital_PatientId, hospital_PatientSuffix, hospital_PatientFirstName, hospital_PatientMiddleName, hospital_PatientLastName, hospital_PatientGender, hospital_PatientDOB, hospital_PatientContactNumber, hospital_PatientEmail, hospital_PatientAddress, hospital_PatientMedicalHistory) VALUES ('" . $patient_ID . "','" . $this->patient_suffix . "','" . $this->patient_first_name . "','" . $this->patient_middle_name . "','" . $this->patient_last_name . "','" . $this->patient_gender . "','" . $this->patient_dob . "','" . $this->patient_contact_number . "','" . $this->patient_email . "','" . $this->patient_address . "','" . $this->medical_history . "')";
         if ($check_pat_id === false) {
             $res = $this->db->connect()->query($sql);
             if ($res) {
@@ -82,13 +84,13 @@ class Patients
         }
     }
 
-    function get_list_patients(){
-        $sql = "SELECT * FROM " . PATIENTS ;
+    function get_list_patients()
+    {
+        $sql = "SELECT * FROM " . PATIENTS;
         $res = $this->db->connect()->query($sql);
-        if($res->num_rows>0){
+        if ($res->num_rows > 0) {
             return $res;
-        }
-        else{
+        } else {
             return false;
         }
     }
@@ -103,5 +105,4 @@ class Patients
             return false;
         }
     }
-
 }
