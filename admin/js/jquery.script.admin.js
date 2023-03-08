@@ -152,6 +152,7 @@ jQuery.noConflict();
                     setTimeout(() => {
                         $(this_btn).closest('form')[0].reset();
                         $(other_gender_val).detach();
+                        $('[data-row^=row]').detach()
                         console.log($(this_btn).parent().find('.alert').remove());
                     }, 2000);
                 }

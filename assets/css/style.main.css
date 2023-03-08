@@ -120,6 +120,18 @@ ul {
 .brand-bg-blue {
   color: #150d3f;
 }
+.th-width-25{
+  width: 25%;
+}
+.th-width-33{
+  width: 33%;
+}
+.th-width-50{
+  width: 50%;
+}
+.th-width-75{
+  width: 75%;
+}
 
 .viewport {
   min-height: 100vh;

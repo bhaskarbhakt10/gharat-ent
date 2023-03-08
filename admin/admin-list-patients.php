@@ -23,6 +23,7 @@ $all_details = $patients->get_list_patients();
     </thead>
     <tbody>
         <?php
+        if($all_details !== false){
         if ($all_details->num_rows > 0) {
             while ($row = $all_details->fetch_assoc()) {
         ?>
@@ -38,6 +39,7 @@ $all_details = $patients->get_list_patients();
         <?php
             }
         }
+    }
         ?>
     </tbody>
 </table>

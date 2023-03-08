@@ -129,19 +129,19 @@
                                 <div class="d-flex flex-30 flex-column">
                                     <div class="mb-3">
                                         <label for="">Past treatmets</label>
-                                        <input type="text"  class="form-control form-field" name='past_treatment'>
+                                        <input type="text"  class="form-control form-field" name='past_treatment' required>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-25 flex-column">
                                     <div class="mb-3">
                                         <label for="">Past treatment start date</label>
-                                        <input type="date" class="form-control form-field" name='past_treatment_start_date'>
+                                        <input type="date" class="form-control form-field" name='past_treatment_start_date' required>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-25 flex-column">
                                     <div class="mb-3">
                                         <label for="">Past treatment End date</label>
-                                        <input type="date" class="form-control form-field" name='past_treatment_end_date'>
+                                        <input type="date" class="form-control form-field" name='past_treatment_end_date' required>
                                     </div>
                                 </div>
                                 <div class="d-flex col flex-column">
@@ -156,19 +156,19 @@
                                 <div class="d-flex flex-30 flex-column">
                                     <div class="mb-3">
                                         <label for="past_surgeries">Past Surgeries</label>
-                                        <input type="text" name="past_surgeries" id="" class="form-control form-field">
+                                        <input type="text" name="past_surgeries" id="" class="form-control form-field" required>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-25 flex-column">
                                     <div class="mb-3">
                                         <label for="past_surgeries_start_date">Past Surgeries start date</label>
-                                        <input type="date" name="past_surgeries_start_date" id="" class="form-control form-field">
+                                        <input type="date" name="past_surgeries_start_date" id="" class="form-control form-field" required>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-25 flex-column">
                                     <div class="mb-3">
                                         <label for="past_surgeries_end_date">Past Surgeries End date</label>
-                                        <input type="date" name="past_surgeries_end_date" id="past_surgeries_end_date" class="form-control form-field">
+                                        <input type="date" name="past_surgeries_end_date" id="past_surgeries_end_date" class="form-control form-field" required>
                                     </div>
                                 </div>
                                 <div class="d-flex col flex-column">

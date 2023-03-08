@@ -687,3 +687,138 @@ Stack trace:
 [28-Feb-2023 05:52:39 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 34
 [28-Feb-2023 05:52:39 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 54
 [28-Feb-2023 05:52:39 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 103
+[08-Mar-2023 16:29:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php:85
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 85
+[08-Mar-2023 16:30:17 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 85
+[08-Mar-2023 16:30:21 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 85
+[08-Mar-2023 16:30:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php:79
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 79
+[08-Mar-2023 16:33:56 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 81
+[08-Mar-2023 16:35:56 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 82
+[08-Mar-2023 16:35:56 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 82
+[08-Mar-2023 16:35:56 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 81
+[08-Mar-2023 16:36:47 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 81
+[08-Mar-2023 16:37:14 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 81
+[08-Mar-2023 16:40:35 Europe/Berlin] PHP Warning:  Undefined variable $medicalHistoryTableArr in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 80
+[08-Mar-2023 16:40:35 Europe/Berlin] PHP Warning:  Undefined variable $medicalHistoryTableArr in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 81
+[08-Mar-2023 16:40:35 Europe/Berlin] PHP Warning:  Undefined variable $medicalHistoryTableArr in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 82
+[08-Mar-2023 16:40:35 Europe/Berlin] PHP Warning:  Undefined variable $medicalHistoryTableArr in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 83
+[08-Mar-2023 16:40:35 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 84
+[08-Mar-2023 16:40:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 92
+[08-Mar-2023 16:40:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 97
+[08-Mar-2023 16:41:06 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 85
+[08-Mar-2023 16:41:28 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 85
+[08-Mar-2023 16:41:30 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 85
+[08-Mar-2023 16:41:42 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 86
+[08-Mar-2023 18:35:53 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: array_key_exists() expects exactly 2 arguments, 1 given in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php:101
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php(101): array_key_exists('')
+#1 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once('D:\\php-local\\ht...')
+#2 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 101
+[08-Mar-2023 18:40:44 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: array_key_exists() expects exactly 2 arguments, 1 given in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php:101
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php(101): array_key_exists('')
+#1 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once('D:\\php-local\\ht...')
+#2 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 101
+[08-Mar-2023 18:41:03 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 117
+[08-Mar-2023 18:41:03 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 118
+[08-Mar-2023 18:41:03 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 119
+[08-Mar-2023 18:41:03 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 117
+[08-Mar-2023 18:41:03 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 118
+[08-Mar-2023 18:41:03 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 119
+[08-Mar-2023 18:43:32 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 102
+[08-Mar-2023 18:43:32 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php:102
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php(102): array_filter(NULL, Object(Closure), 2)
+#1 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once('D:\\php-local\\ht...')
+#2 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 102
+[08-Mar-2023 18:43:45 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 121
+[08-Mar-2023 18:43:45 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 122
+[08-Mar-2023 18:43:45 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 123
+[08-Mar-2023 18:43:45 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 121
+[08-Mar-2023 18:43:45 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 122
+[08-Mar-2023 18:43:45 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 123
+[08-Mar-2023 18:44:04 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 121
+[08-Mar-2023 18:44:04 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 122
+[08-Mar-2023 18:44:04 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 123
+[08-Mar-2023 18:44:04 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 121
+[08-Mar-2023 18:44:04 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 122
+[08-Mar-2023 18:44:04 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 123
+[08-Mar-2023 18:45:30 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 125
+[08-Mar-2023 18:45:30 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 126
+[08-Mar-2023 18:45:30 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 127
+[08-Mar-2023 18:45:30 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 125
+[08-Mar-2023 18:45:30 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 126
+[08-Mar-2023 18:45:30 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 127
+[08-Mar-2023 18:45:42 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 125
+[08-Mar-2023 18:45:42 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 126
+[08-Mar-2023 18:45:42 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 127
+[08-Mar-2023 18:45:42 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 125
+[08-Mar-2023 18:45:42 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 126
+[08-Mar-2023 18:45:42 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 127
+[08-Mar-2023 18:45:53 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 119
+[08-Mar-2023 18:45:53 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 120
+[08-Mar-2023 18:45:53 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 121
+[08-Mar-2023 18:45:53 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 119
+[08-Mar-2023 18:45:53 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 120
+[08-Mar-2023 18:45:53 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 121
+[08-Mar-2023 18:50:41 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 126
+[08-Mar-2023 18:50:41 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 127
+[08-Mar-2023 18:50:41 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 128
+[08-Mar-2023 18:50:41 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 126
+[08-Mar-2023 18:50:41 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 127
+[08-Mar-2023 18:50:41 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 128
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined variable $pvv in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 96
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined variable $pvv in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 96
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined variable $pvv in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 96
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined variable $pvv in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 96
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined variable $pvv in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 96
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined variable $pvv in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 96
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 133
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 134
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 135
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 133
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 134
+[08-Mar-2023 18:52:44 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 135
+[08-Mar-2023 18:52:50 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 133
+[08-Mar-2023 18:52:50 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 134
+[08-Mar-2023 18:52:50 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 135
+[08-Mar-2023 18:52:50 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 133
+[08-Mar-2023 18:52:50 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 134
+[08-Mar-2023 18:52:50 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 135
+[08-Mar-2023 18:56:36 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 133
+[08-Mar-2023 18:56:36 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 134
+[08-Mar-2023 18:56:36 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 135
+[08-Mar-2023 18:56:36 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 133
+[08-Mar-2023 18:56:36 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 134
+[08-Mar-2023 18:56:36 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 135
+[08-Mar-2023 18:57:21 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 133
+[08-Mar-2023 18:57:21 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 134
+[08-Mar-2023 18:57:21 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 135
+[08-Mar-2023 18:57:21 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 133
+[08-Mar-2023 18:57:21 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_start_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 134
+[08-Mar-2023 18:57:21 Europe/Berlin] PHP Warning:  Undefined array key "past_treatment_end_date" in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 135
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 6
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Undefined variable $full_name in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 30
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Undefined variable $gender in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 36
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Undefined variable $date_of_birth in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 42
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Undefined variable $date_of_birth in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 51
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Deprecated:  date_create(): Passing null to parameter #1 ($datetime) of type string is deprecated in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 51
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Undefined variable $phone_number in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 62
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Undefined variable $email in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 68
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Undefined variable $medicalHistory in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 78
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 78
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 87
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 108
+[08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 115
+[08-Mar-2023 20:10:22 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in D:\php-local\htdocs\Hospital-Management\admin\admin-list-patients.php on line 26
+[08-Mar-2023 20:10:33 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in D:\php-local\htdocs\Hospital-Management\admin\admin-list-patients.php on line 26
