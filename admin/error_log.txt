@@ -822,3 +822,108 @@ Stack trace:
 [08-Mar-2023 20:10:04 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 115
 [08-Mar-2023 20:10:22 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in D:\php-local\htdocs\Hospital-Management\admin\admin-list-patients.php on line 26
 [08-Mar-2023 20:10:33 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in D:\php-local\htdocs\Hospital-Management\admin\admin-list-patients.php on line 26
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Undefined variable $user_id in D:\php-local\htdocs\Hospital-Management\admin\inc\admin-functions.php on line 17
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 64
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 74
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Undefined variable $default_image in D:\php-local\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 97
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 34
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 54
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 103
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 6
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Undefined variable $full_name in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 30
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Undefined variable $gender in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 36
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Undefined variable $date_of_birth in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 42
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Undefined variable $date_of_birth in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 51
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Deprecated:  date_create(): Passing null to parameter #1 ($datetime) of type string is deprecated in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 51
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Undefined variable $phone_number in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 62
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Undefined variable $email in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 68
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Undefined variable $medicalHistory in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 78
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 78
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 87
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 108
+[08-Mar-2023 21:32:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\Hospital-Management\admin\admin-single-patient.php on line 115
+[08-Mar-2023 21:48:32 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Admin::get_user_id(), 0 passed in D:\php-local\htdocs\Hospital-Management\admin\inc\admin-nav-side.php on line 16 and exactly 1 expected in D:\php-local\htdocs\Hospital-Management\backend\php-classes\admin\admin.php:17
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\inc\admin-nav-side.php(16): Admin->get_user_id()
+#1 D:\php-local\htdocs\Hospital-Management\admin\index.php(7): require_once('D:\\php-local\\ht...')
+#2 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\backend\php-classes\admin\admin.php on line 17
+[09-Mar-2023 00:08:31 Europe/Berlin] PHP Warning:  require_once(../../database/config.database.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 2
+[09-Mar-2023 00:08:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../database/config.database.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:2
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php(2): require_once()
+#1 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once('D:\\php-local\\ht...')
+#2 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 2
+[09-Mar-2023 00:11:38 Europe/Berlin] PHP Warning:  require_once(../../database/config.database.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 2
+[09-Mar-2023 00:11:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../database/config.database.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:2
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php(2): require_once()
+#1 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once('D:\\php-local\\ht...')
+#2 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 2
+[09-Mar-2023 00:11:42 Europe/Berlin] PHP Warning:  require_once(../../database/config.database.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 2
+[09-Mar-2023 00:11:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../database/config.database.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:2
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php(2): require_once()
+#1 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once('D:\\php-local\\ht...')
+#2 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 2
+[09-Mar-2023 00:11:46 Europe/Berlin] PHP Warning:  require_once(../../constants/constants-static.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
+[09-Mar-2023 00:11:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../constants/constants-static.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:5
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php(2): require_once()
+#1 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once('D:\\php-local\\ht...')
+#2 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
+[09-Mar-2023 00:19:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php:10
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 10
+[09-Mar-2023 00:21:08 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php:10
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 10
+[09-Mar-2023 00:21:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php:10
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 10
+[09-Mar-2023 00:21:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php:10
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 10
+[09-Mar-2023 00:23:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php:10
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 10
+[09-Mar-2023 00:24:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 11
+[09-Mar-2023 00:25:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php:11
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 11
+[09-Mar-2023 00:25:53 Europe/Berlin] PHP Warning:  Undefined variable $keyp in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 10
+[09-Mar-2023 00:25:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 10
+[09-Mar-2023 00:25:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php:11
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 11
+[09-Mar-2023 00:26:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php:10
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 10
+[09-Mar-2023 00:27:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php:11
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 11
+[09-Mar-2023 00:37:36 Europe/Berlin] PHP Parse error:  syntax error, unexpected variable "$v", expecting "," or ";" in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 102
+[09-Mar-2023 00:37:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 103
+[09-Mar-2023 00:44:22 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 117 in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 132

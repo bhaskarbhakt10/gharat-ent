@@ -1,6 +1,9 @@
 <?php
-require_once '../../database/config.database.php';
-require_once '../../constants/constants-static.php';
+// require_once '../../database/config.database.php';
+// require_once '../../constants/constants-static.php';
+require_once $_SERVER['DOCUMENT_ROOT']. '/hospital-management/backend/database/config.database.php';
+require_once $_SERVER['DOCUMENT_ROOT']. '/hospital-management/backend/constants/constants-static.php';
+
 
 
 class PatientHistory
@@ -78,6 +81,16 @@ class PatientHistory
             return true;
         } else {
             return false;
+        }
+    }
+
+    function get_checkupHis($pid){
+        $sql =  "SELECT * FROM " . PATIENTS_HIS . " WHERE hospital_pID='$pid'";
+        $res = $this->db->connect()->query($sql);
+        if($res->num_rows>0){
+            while($row = $res->fetch_assoc()){
+                return $row['hospital_phistory'];
+            }
         }
     }
 }

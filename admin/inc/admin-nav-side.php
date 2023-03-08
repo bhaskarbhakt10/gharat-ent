@@ -13,7 +13,7 @@ require_once 'admin-functions.php';
                 
             </div>
             <div class="user-desc text-center mb-3">
-                <p class="user-name "><?php echo $admin->get_user_name() ;?>
+                <p class="user-name "><span><?php echo $admin->get_userID();?></span><br><?php echo $admin->get_user_name() ;?>
                 </p>
                 <p class="user-email">
                    <?php echo $admin->get_user_email();?>

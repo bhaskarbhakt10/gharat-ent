@@ -1,5 +1,5 @@
-<form action="" method="POST">
 
+<form action="" method="POST">
     <h2 class="mb-3">
         Add Patient
     </h2>

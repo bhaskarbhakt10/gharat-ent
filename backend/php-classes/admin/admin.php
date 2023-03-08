@@ -13,6 +13,17 @@ class Admin
     {
         $this->db = new Database();
     }
+
+    function List_users(){
+        $sql = "SELECT * FROM ". USERS ." WHERE hospital_rank != 0 ";
+        $res = $this->db->connect()->query($sql);
+        if($res->num_rows > 0){
+            return $res;
+        }
+        else{
+            return "user does not exist";
+        }
+    }
     
     function get_user_id($userId){
         $this->userId = $userId;
@@ -26,6 +37,16 @@ class Admin
         }
         else{
             return "user does not exist";
+        }
+    }
+
+    function get_userID(){
+        $res = $this->get_user_details();
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $ID = $row['hospital_UserId'];
+                return $ID;
+            }
         }
     }
 
@@ -135,5 +156,29 @@ class Admin
         else{
             return false;
         } 
+    }
+
+
+    function get_users_role_to_access($userId){
+        $sql = "SELECT * FROM ". USERS ." WHERE hospital_UserId='".$userId."'";
+        $res = $this->db->connect()->query($sql);
+        if($res->num_rows > 0){
+            $json = $this->get_roles_json();
+            while($row = $res->fetch_assoc()){
+                $rank = $row['hospital_rank'];
+            }
+            foreach($json as $j){
+                if((int)$rank === $j->rank){
+                  return $j->role;
+                }
+                else if($rank === '0'){
+                    return "Super Admin";
+                }
+            }
+            
+        }
+        else{
+            return "user does not exist";
+        }
     }
 }
