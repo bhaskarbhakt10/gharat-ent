@@ -237,3 +237,259 @@ Stack trace:
   thrown in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 37
 [08-Mar-2023 15:32:03 Asia/Calcutta] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 76
 [08-Mar-2023 15:32:03 Asia/Calcutta] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 76
+[09-Mar-2023 09:27:46 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 8
+[09-Mar-2023 09:27:46 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 12
+[09-Mar-2023 09:27:46 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 14
+[09-Mar-2023 09:27:46 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 15
+[09-Mar-2023 09:27:46 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 18
+[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 9
+[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
+[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 15
+[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 18
+[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 9
+[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
+[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 15
+[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 18
+[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 09:38:10 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 15
+[09-Mar-2023 09:38:10 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 19
+[09-Mar-2023 09:38:10 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 09:38:10 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 22
+[09-Mar-2023 09:38:10 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 16
+[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 20
+[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 22
+[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
+[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
+[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
+[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
+[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
+[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 18
+[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 22
+[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 28
+[09-Mar-2023 09:46:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 09:46:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 09:46:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 09:46:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 09:46:12 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[09-Mar-2023 09:46:40 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[09-Mar-2023 14:14:07 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:44:07 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:44:07 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
+[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:45:35 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:45:35 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
+[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:45:52 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:45:52 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
+[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:46:22 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:46:22 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
+[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:46:49 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:46:49 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
+[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:50:13 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:50:13 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
+[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:54:42 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:54:42 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
+[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:54:45 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:54:45 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
+[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:56:33 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:56:33 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:27:30 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:57:30 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:57:30 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:27:56 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 18:57:56 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 18:57:56 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
+[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 19:00:13 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 19:00:13 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
+[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
+[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 19:00:20 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 19:00:20 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:33:33 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 19:03:33 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 19:03:33 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:33:43 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 19:03:43 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 19:03:43 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:34:30 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 19:04:30 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 19:04:30 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:34:37 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[09-Mar-2023 19:04:37 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
+[09-Mar-2023 19:04:37 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
+[09-Mar-2023 14:39:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:39:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:39:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:39:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:40:09 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:40:09 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:40:09 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:40:09 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24

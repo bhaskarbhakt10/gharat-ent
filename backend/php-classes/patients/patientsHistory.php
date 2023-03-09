@@ -73,6 +73,26 @@ class PatientHistory
         }
     }
 
+    function Update_His($pid){
+        $newjson = $this->regular_check_history_obj();
+        $already_db_json = $this->get_checkupHis($pid);
+        $new_arr = json_decode($newjson, true);
+        $already_db_arr = json_decode($already_db_json, true);
+        $merged_array = array_merge($new_arr,$already_db_arr);
+        $merged_json = json_encode($merged_array);
+
+        if(!empty($already_db_json)){
+            $sql = "UPDATE ". PATIENTS_HIS . " SET hospital_phistory='".$merged_json."' WHERE hospital_pID='".$pid."'";
+            $this->db->connect()->query($sql);
+            return true;
+        }
+        return false;
+
+        
+
+
+    }
+
 
     function send_to_DB()
     {

@@ -4,16 +4,6 @@ $pHis = new PatientHistory();
 $pid = $_GET['p_id'];
 $regular_checkup_obj = $pHis->get_checkupHis($pid);
 $regular_checkup_arr = json_decode($regular_checkup_obj);
-echo "<pre>";
-print_r($regular_checkup_arr);
-foreach ($regular_checkup_arr as $key => $value) {
-    echo $key;
-    foreach ($value as $k => $v) {
-        echo $k;
-        echo $v;
-    }
-}
-echo "</pre>";
 ?>
 
 <form action="" method="post">
@@ -29,7 +19,7 @@ echo "</pre>";
                             <div class="mb-3 d-flex w-100">
                                 <div class="w-100 flex-50 ">
                                     <label for="patient_height_foot"> Patient Height(in foot)</label>
-                                    <select name="patient_height_foot" id="patient_height_foot" class="form-select form-field patient_field required" required="">
+                                    <select name="patient_height_foot_up" id="patient_height_foot" class="form-select form-field patient_field required" required="">
                                         <option value="">Select foot</option>
                                         <option value="4">4</option>
                                         <option value="5">5</option>
@@ -41,7 +31,7 @@ echo "</pre>";
                                 </div>
                                 <div class="w-100 flex-50 ">
                                     <label for="patient_height_inch">Patient Height(in inches)</label>
-                                    <select name="patient_height_inch" id="patient_height_inch" class="form-field form-select patient_field">
+                                    <select name="patient_height_inch_up" id="patient_height_inch" class="form-field form-select patient_field">
                                         <option value="">Select inches</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -62,30 +52,34 @@ echo "</pre>";
                         <div class="d-flex flex-48">
                             <div class="mb-3 w-100">
                                 <label for="Patient-Weight">Patient Weight</label>
-                                <input type="text" name="patient_weight" id="Patient-Weight" class="form-control form-field patient_field required" required="">
+                                <input type="text" name="patient_weight_up" id="Patient-Weight" class="form-control form-field patient_field required" required="">
                             </div>
                         </div>
                         <div class="d-flex flex-48">
                             <div class="mb-3 w-100">
                                 <label for="Patient-bp">Patient Bp</label>
-                                <input type="text" name="patient_bp" id="Patient-bp" class="form-control form-field patient_field required" required="">
+                                <input type="text" name="patient_bp_up" id="Patient-bp" class="form-control form-field patient_field required" required="">
                             </div>
                         </div>
                         <div class="d-flex flex-48">
                             <div class="mb-3 w-100">
                                 <label for="Patient-Diabetes">Patient Diabetes</label>
-                                <input type="text" name="patient_diabetes" id="Patient-Diabetes" class="form-control form-field patient_field required" required="">
+                                <input type="text" name="patient_diabetes_up" id="Patient-Diabetes" class="form-control form-field patient_field required" required="">
                             </div>
                         </div>
+                    </div>
+                    <div class="mb-3 mt-2">
+                        <button class="btn btn-blue d-block w-20 mx-auto update-regular-checkup" role="button" type="submit">Update</button>
                     </div>
                 </div>
             </fieldset>
         </div>
     </div>
+    <input type="hidden" name="p_id" value="<?php echo $pid; ?>">
 </form>
-<div class="mt-3">
-    <table class="table table-bordered">
-        <thead>
+<div class="mt-3" id="">
+    <table class="table table-bordered table-responsive table-striped" id="RegularCheckup">
+        <thead class="bg-light">
             <tr>
                 <th colspan="5">
                     <h3 class="text-center">
@@ -109,7 +103,15 @@ echo "</pre>";
                 <tr>
                     <td>
                         <?php
-                        echo $key;
+                        $datetime = explode('_',$key);
+                        unset($datetime[5]);
+                        unset($datetime[4]);
+                        unset($datetime[3]);
+                        $date_ ='';
+                        foreach($datetime as $date){
+                            $date_ .= $date."-";
+                        }
+                        echo rtrim($date_,'-');
                         ?>
                     </td>
                     <?php

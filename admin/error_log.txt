@@ -927,3 +927,12 @@ Stack trace:
 [09-Mar-2023 00:37:36 Europe/Berlin] PHP Parse error:  syntax error, unexpected variable "$v", expecting "," or ";" in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 102
 [09-Mar-2023 00:37:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 103
 [09-Mar-2023 00:44:22 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 117 in D:\php-local\htdocs\Hospital-Management\admin\admin-update-daily-check-up.php on line 132
+[09-Mar-2023 01:24:18 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'u595440997_hospital'@'localhost' (using password: YES) in D:\php-local\htdocs\Hospital-Management\backend\database\config.database.php:23
+Stack trace:
+#0 D:\php-local\htdocs\Hospital-Management\backend\database\config.database.php(23): mysqli->__construct('localhost', 'u595440997_hosp...', Object(SensitiveParameterValue), 'u595440997_hosp...')
+#1 D:\php-local\htdocs\Hospital-Management\backend\php-classes\admin\admin.php(14): Database->__construct()
+#2 D:\php-local\htdocs\Hospital-Management\admin\inc\admin-functions.php(16): Admin->__construct()
+#3 D:\php-local\htdocs\Hospital-Management\admin\inc\admin-nav-side.php(2): require_once('D:\\php-local\\ht...')
+#4 D:\php-local\htdocs\Hospital-Management\admin\index.php(7): require_once('D:\\php-local\\ht...')
+#5 {main}
+  thrown in D:\php-local\htdocs\Hospital-Management\backend\database\config.database.php on line 23

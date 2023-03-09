@@ -24,10 +24,10 @@ if(isset($_POST)){
 
     $patient_weight = $arr_post['patient_weight'];
     if(array_key_exists('patient_height_foot', $arr_post) && array_key_exists('patient_height_inch',$arr_post) && !empty($arr_post['patient_height_inch'])){
-        $patient_height = $arr_post['patient_height_foot']."Foot " . $arr_post['patient_height_inch']."Inches";
+        $patient_height = $arr_post['patient_height_foot']." Foot " . $arr_post['patient_height_inch']." Inches";
     }
     else{
-        $patient_height = $arr_post['patient_height_foot']."Foot ";
+        $patient_height = $arr_post['patient_height_foot']." Foot ";
     }
     $patient_diabetes = $arr_post['patient_diabetes'];
     $patient_bp = $arr_post['patient_bp'];

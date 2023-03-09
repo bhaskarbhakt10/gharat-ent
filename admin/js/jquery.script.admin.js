@@ -239,4 +239,51 @@ jQuery.noConflict();
 
     })
 
+
+
+    // regular checkup
+    $('body').on('click', '.update-regular-checkup', function (event) {
+        event.preventDefault();
+        let this_btn = $(this);
+        let form = $(this).closest('form');
+        let form_data_ = $(form).serializeArray();
+        let form_data = [];
+        for (let k = 0; k < form_data_.length; k++) {
+            let name = form_data_[k]['name'];
+            let value = form_data_[k]['value'];
+            console.log($('[name='+name+']'));
+            if($('[name='+name+']').is(':required') && value === ''){
+                if($('[name='+name+']').parent().children('.validation-message').length===0){
+                    $('[name='+name+']').parent().append('<p class="validation-message">mandatory</p>');
+                    setTimeout(() => {
+                        $('[name='+name+']').next('.validation-message').remove()
+                    }, 5000);
+
+                }
+            }
+            else {
+                form_data.push({ [name]: value });
+                
+            }
+        }
+        console.log(form_data);
+        let data = {
+            'form_data': form_data
+        }
+        $.ajax({
+            url: '../backend/actions/patients/update-daily-checkup.php',
+            type: 'POST',
+            data: data,
+            success: function (data) {
+                if(data === 'success'){
+                    window.location.reload()
+                }
+            },
+            error: function (error) {
+                window.alert(error);
+            }
+        });
+
+    });
+
 })(jQuery);
