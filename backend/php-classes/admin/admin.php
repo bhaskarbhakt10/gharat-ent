@@ -103,6 +103,7 @@ class Admin
 
     function get_roles_json(){
         $json_file = file_get_contents('http://localhost/Hospital-management/admin/json/roles.json');
+        // $json_file = file_get_contents('https://nuitsolutions.co.in/hospital-management/admin/json/roles.json');
         $json_obj = json_decode($json_file);
         return $json_obj;
     }
