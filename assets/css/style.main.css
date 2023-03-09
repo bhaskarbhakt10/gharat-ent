@@ -480,3 +480,7 @@ ul {
 .table {
   vertical-align: middle;
 }
+
+#treatment-container-medicine >*:not(:last-child){
+  border-bottom: 1px solid #ccc;
+}

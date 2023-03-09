@@ -936,3 +936,5 @@ Stack trace:
 #4 D:\php-local\htdocs\Hospital-Management\admin\index.php(7): require_once('D:\\php-local\\ht...')
 #5 {main}
   thrown in D:\php-local\htdocs\Hospital-Management\backend\database\config.database.php on line 23
+[09-Mar-2023 23:55:30 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 235
+[09-Mar-2023 23:56:46 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 235

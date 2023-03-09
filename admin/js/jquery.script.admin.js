@@ -212,27 +212,28 @@ jQuery.noConflict();
     $("body").on('click', '.remove-duplicate-row', function (e) {
         e.preventDefault();
         $(this).closest('.apended-row').remove();
+        $(this).closest('.appended-row-medicine').remove();
     });
 
     let treatment_container = $('#treatment-container').detach();
     let surgery_container = $('#surgery-container').detach();
-    $('body').on('change','.medical-history-check', function(){
+    $('body').on('change', '.medical-history-check', function () {
         let value = $(this).val();
-        console.log("#"+value);
-        if($(this).is(':checked')){
-            if(value === 'treatment-container'){
+        console.log("#" + value);
+        if ($(this).is(':checked')) {
+            if (value === 'treatment-container') {
                 jQuery('.filedset-1').children().last().children().append(treatment_container);
             }
-            else if(value === 'surgery-container'){
+            else if (value === 'surgery-container') {
                 jQuery('.filedset-1').children().last().children().append(surgery_container);
 
             }
-        }   
-        else{
-            if(value === 'treatment-container'){
-            $(treatment_container).remove();
+        }
+        else {
+            if (value === 'treatment-container') {
+                $(treatment_container).remove();
             }
-            else{
+            else {
                 $(surgery_container).remove();
             }
         }
@@ -251,31 +252,31 @@ jQuery.noConflict();
         for (let k = 0; k < form_data_.length; k++) {
             let name = form_data_[k]['name'];
             let value = form_data_[k]['value'];
-            console.log($('[name='+name+']'));
-            if($('[name='+name+']').is(':required') && value === ''){
-                if($('[name='+name+']').parent().children('.validation-message').length===0){
-                    $('[name='+name+']').parent().append('<p class="validation-message">mandatory</p>');
+            console.log($('[name=' + name + ']'));
+            if ($('[name=' + name + ']').is(':required') && value === '') {
+                if ($('[name=' + name + ']').parent().children('.validation-message').length === 0) {
+                    $('[name=' + name + ']').parent().append('<p class="validation-message">mandatory</p>');
                     setTimeout(() => {
-                        $('[name='+name+']').next('.validation-message').remove()
+                        $('[name=' + name + ']').next('.validation-message').remove()
                     }, 5000);
 
                 }
             }
             else {
                 form_data.push({ [name]: value });
-                
+
             }
         }
         console.log(form_data);
         let data = {
             'form_data': form_data
-        }
+        };
         $.ajax({
             url: '../backend/actions/patients/update-daily-checkup.php',
             type: 'POST',
             data: data,
             success: function (data) {
-                if(data === 'success'){
+                if (data === 'success') {
                     window.location.reload()
                 }
             },
@@ -283,6 +284,86 @@ jQuery.noConflict();
                 window.alert(error);
             }
         });
+
+    });
+
+    // form treatment 
+    $('body').on('click', '.add-medicine', function (event) {
+        event.preventDefault();
+        let parent_container = $(this).parentsUntil('#treatment-container-medicine').toArray();
+        let to_append = parent_container.pop();
+        console.log(to_append)
+        $('#treatment-container-medicine').append('<div class="d-flex flex-wrap gap-10 py-3 appended-row-medicine">' + to_append.innerHTML + '</div>');
+        $('.appended-row-medicine button.btn-primary').replaceWith("<button class='btn btn-danger w-60 remove-duplicate-row'>Remove</button>");
+    });
+
+    //remove code works from line number 215
+
+
+    //save-and-pdf
+    $('body').on('click', '.save-and-pdf', function (event) {
+        event.preventDefault();
+        let patient_id = $('#patient-id').val();
+        let this_form = $(this).closest('form');
+        let count_children_inside_container = $(this_form).find('.treatment-container').children();
+        for (let index = 0; index < count_children_inside_container.length; index++) {
+            $(count_children_inside_container[index]).attr('data-obj', 'data_obj_' + [index]);
+
+        }
+        let values__ = new Array();
+        let names__ = new Array();
+        let all_inputs = $(this_form).find('.form-field');
+        for (let index = 0; index < all_inputs.length; index++) {
+            let obj = $(all_inputs[index]).closest('[data-obj^=data_obj_]').attr('data-obj');
+            let required = $(all_inputs[index]).is(':required');
+            let value = $(all_inputs[index]).val();
+            let name = $(all_inputs[index]).attr('name');
+            names__.push(name);
+            if (required === true) {
+                if (value === '') {
+                    if ($(all_inputs[index]).next('.validation-message').length === 0) {
+                        $(all_inputs[index]).parent().append('<div class="validation-message">Mandatory</div>');
+                        setTimeout(() => {
+                            $(all_inputs[index]).next('.validation-message').remove()
+                        }, 5000);
+                    }
+                }
+                else {
+                    console.log(name, value);
+                    values__.push({ "name":name, "value": value });
+                }
+            }
+            else{
+                values__.push({ "name":name, "value": value });
+
+            }
+
+        }
+        // console.log(values__);
+        const map = new Map(values__.map(({ name, value }) => [name, { name, value: [] }]));
+        for (let { name, value } of values__) map.get(name).value.push(...[value].flat());
+        const merged_array =[...map.values()];
+        console.log(merged_array);
+        console.log(patient_id);
+        const unique_names = [... new Set(names__)];
+        let data={
+            'merged_array' : merged_array,
+            'unique_names' :unique_names,
+            'patient_id':patient_id
+
+        };
+        $.ajax({
+            url: '../backend/actions/patients/medicine.php',
+            type: 'POST',
+            data: data,
+            success: function (data) {
+               console.log(data);
+            },
+            error: function (error) {
+                window.alert(error);
+            }
+        });
+
 
     });
 

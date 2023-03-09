@@ -493,3 +493,58 @@ Stack trace:
 [09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
 [09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
 [09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[09-Mar-2023 19:55:45 Europe/Berlin] PHP Warning:  Undefined array key "merged-array" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 4
+[09-Mar-2023 19:56:59 Europe/Berlin] PHP Warning:  Undefined array key "merged-array" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 4
+[09-Mar-2023 20:09:52 Europe/Berlin] PHP Warning:  Undefined array key "merged-array" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 4
+[09-Mar-2023 20:09:52 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 7
+[09-Mar-2023 20:10:43 Europe/Berlin] PHP Warning:  Undefined array key "merged-array" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 4
+[09-Mar-2023 20:10:43 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 7
+[09-Mar-2023 20:11:36 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 8
+[09-Mar-2023 20:11:36 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 8
+[09-Mar-2023 20:17:42 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
+[09-Mar-2023 20:17:42 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
+[09-Mar-2023 20:19:10 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
+[09-Mar-2023 20:19:10 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
+[09-Mar-2023 20:19:30 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
+[09-Mar-2023 20:19:30 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
+[09-Mar-2023 20:20:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php:9
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
+[09-Mar-2023 20:21:52 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 10
+[09-Mar-2023 20:21:52 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 10
+[09-Mar-2023 20:34:16 Europe/Berlin] PHP Warning:  Undefined array key "medicine_name" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 20:34:16 Europe/Berlin] PHP Warning:  Undefined array key "medicine_qty" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 20:34:16 Europe/Berlin] PHP Warning:  Undefined array key "medicine_volume" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 20:34:16 Europe/Berlin] PHP Warning:  Undefined array key "medicine_notes" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 20:47:17 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 20:47:31 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 20:47:31 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 21:02:07 Europe/Berlin] PHP Warning:  Undefined array key "medicine_name" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 20
+[09-Mar-2023 21:02:07 Europe/Berlin] PHP Warning:  Undefined array key "medicine_qty" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 20
+[09-Mar-2023 21:02:07 Europe/Berlin] PHP Warning:  Undefined array key "medicine_volume" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 20
+[09-Mar-2023 21:02:07 Europe/Berlin] PHP Warning:  Undefined array key "medicine_pattern" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 20
+[09-Mar-2023 21:02:07 Europe/Berlin] PHP Warning:  Undefined array key "medicine_notes" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 20
+[09-Mar-2023 21:04:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Illegal offset type in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php:17
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 17
+[09-Mar-2023 21:06:51 Europe/Berlin] PHP Warning:  Undefined array key "medicine_name" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 21:06:51 Europe/Berlin] PHP Warning:  Undefined array key "medicine_qty" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 21:06:51 Europe/Berlin] PHP Warning:  Undefined array key "medicine_volume" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 21:06:51 Europe/Berlin] PHP Warning:  Undefined array key "medicine_pattern" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 21:06:51 Europe/Berlin] PHP Warning:  Undefined array key "medicine_notes" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
+[09-Mar-2023 21:09:02 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 16
+[09-Mar-2023 21:09:02 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 16
+[09-Mar-2023 21:10:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php:17
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 17
+[09-Mar-2023 21:17:42 Europe/Berlin] PHP Warning:  Undefined variable $value in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 18
+[09-Mar-2023 21:18:28 Europe/Berlin] PHP Warning:  Undefined variable $value in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 18
+[09-Mar-2023 21:19:18 Europe/Berlin] PHP Warning:  Undefined variable $value in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 18
+[09-Mar-2023 21:19:33 Europe/Berlin] PHP Warning:  Undefined variable $value in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 18
+[09-Mar-2023 21:41:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "TIMEZONE_IN" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php:32
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 32
