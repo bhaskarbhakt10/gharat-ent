@@ -5,3 +5,15 @@
 [23-Feb-2023 10:55:16 Asia/Calcutta] PHP Warning:  ltrim(): Invalid '..'-range, no character to the left of '..' in C:\xampp\htdocs\Hospital-Management\backend\actions\users\create-users.php on line 40
 [23-Feb-2023 10:55:16 Asia/Calcutta] PHP Warning:  ltrim(): Invalid '..'-range in C:\xampp\htdocs\Hospital-Management\backend\actions\users\create-users.php on line 40
 [23-Feb-2023 11:02:43 Asia/Calcutta] PHP Warning:  ltrim(): Invalid '..'-range, no character to the left of '..' in C:\xampp\htdocs\Hospital-Management\backend\actions\users\create-users.php on line 40
+[13-Mar-2023 21:20:52 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '789456123' for key 'hospital_UserPhone' in D:\php-local\htdocs\hospital-management\backend\php-classes\users\class.users.php:72
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\users\class.users.php(72): mysqli->query('INSERT INTO hos...')
+#1 D:\php-local\htdocs\hospital-management\backend\actions\users\create-users.php(77): Users->send_to_db()
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\users\class.users.php on line 72
+[13-Mar-2023 21:43:25 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'docter@gmail.com' for key 'hospital_UserEmail' in D:\php-local\htdocs\hospital-management\backend\php-classes\users\class.users.php:72
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\users\class.users.php(72): mysqli->query('INSERT INTO hos...')
+#1 D:\php-local\htdocs\hospital-management\backend\actions\users\create-users.php(77): Users->send_to_db()
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\users\class.users.php on line 72

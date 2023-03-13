@@ -57,16 +57,7 @@ require_once 'admin-functions.php';
                 <ul>
                     <li><a href="index.php?q=admin-add-patients">Add Patients</a></li>
                     <li><a href="index.php?q=admin-list-patients">List Patients</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <span><i class="fa-duotone fa-door-open"></i></span>
-                    Room
-                </a>
-                <ul>
-                    <li><a href="index.php?q=admin-add-room"> Add Room</a></li>
-                    <li><a href="index.php?q=admin-list-room"> List rooms</a></li>
+                    <li><a href="index.php?q=admin-list-prescriptions">View Prescriptions</a></li>
                 </ul>
             </li>
             <li>

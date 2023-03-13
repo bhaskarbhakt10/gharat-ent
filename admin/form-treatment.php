@@ -55,6 +55,42 @@
                     </div>
                 </div>
             </div>
+            <div class="treatment-checkbox d-flex flex-wrap gap-20 mb-3">
+                <div class="d-flex">
+                    <input type="checkbox" name="medicine-test" value="cbc" id="cbc" class="form-check-input form-field">
+                    <label for="cbc">CBC</label>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="medicine-test" value="gastric-fluid-analysis" id="gastric-fluid-analysis" class="form-check-input form-field">
+                    <label for="gastric-fluid-analysis">Gastric fluid analysis</label>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="medicine-test" value="kidney-function-test" id="kidney-function-test" class="form-check-input form-field">
+                    <label for="kidney-function-test">Kidney function test</label>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="medicine-test" value="liver-function-test" id="liver-function-test" class="form-check-input form-field">
+                    <label for="liver-function-test">Liver function test</label>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="medicine-test" value="lumbar-puncture" id="lumbar-puncture" class="form-check-input form-field">
+                    <label for="lumbar-puncture">Lumbar puncture</label>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="medicine-test" value="pap-smear" id="pap-smear" class="form-check-input form-field">
+                    <label for="pap-smear">Pap smear</label>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="medicine-test" value="sonography" id="sonography" class="form-check-input form-field">
+                    <label for="sonography">Sonography</label>
+                </div>
+            </div>
+            <div class="follow-up d-flex">
+                <div class="mb-3 w-100">
+                    <label for="follow-up-date">Follow up Date</label>
+                    <input type="date" name="follow_up_date" id="previous-dates" class="form-control form-field">
+                </div>
+            </div>
         </div>
         <div class="d-flex gap-10 ">
             <button class="btn btn-blue w-20 d-flex justify-content-center save-and-pdf">Save and pdf</button>

@@ -38,7 +38,7 @@ jQuery.noConflict();
                         })
                     }, 5000);
                     window.setTimeout(function(){
-                        window.location.assign( "../../admin");
+                        window.location.assign( "../../admin/index.php?q=admin-dashboard");
                     }, 5000);
                     
                     }

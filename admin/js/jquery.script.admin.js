@@ -179,6 +179,18 @@ jQuery.noConflict();
     var maxDate = year + '-' + month + '-' + day;
     $('#DOB').attr('max', maxDate);
 
+    //disable previous days
+    var dtToday_ = new Date();
+    var month_ = dtToday_.getMonth() + 1;
+    var day_ = dtToday_.getDate() + 1;
+    var year_ = dtToday_.getFullYear();
+    if (month_ < 10)
+        month_ = '0' + month_.toString();
+    if (day_ < 10)
+        day_ = '0' + day_.toString();
+    var minDate = year_ + '-' + month_ + '-' + day_;
+    $('#previous-dates').attr('min', minDate);
+
     $('body').on('click', '#add-patient', function (event) {
 
     });
@@ -301,7 +313,7 @@ jQuery.noConflict();
 
 
     //save-and-pdf
-    $('body').on('click', '.save-and-pdf', function (event) {
+    $('body').on('click', '.save-and-pdf, .symptom-btn', function (event) {
         event.preventDefault();
         let patient_id = $('#patient-id').val();
         let this_form = $(this).closest('form');
@@ -318,8 +330,10 @@ jQuery.noConflict();
             let required = $(all_inputs[index]).is(':required');
             let value = $(all_inputs[index]).val();
             let name = $(all_inputs[index]).attr('name');
+            let type = $(all_inputs[index]).attr('type');
+            console.log(type);
             names__.push(name);
-            if (required === true) {
+            if (required === true && type !== 'checkbox') {
                 if (value === '') {
                     if ($(all_inputs[index]).next('.validation-message').length === 0) {
                         $(all_inputs[index]).parent().append('<div class="validation-message">Mandatory</div>');
@@ -330,11 +344,16 @@ jQuery.noConflict();
                 }
                 else {
                     console.log(name, value);
-                    values__.push({ "name":name, "value": value });
+                    values__.push({ "name": name, "value": value });
                 }
             }
-            else{
-                values__.push({ "name":name, "value": value });
+            else if (required === false && type === 'checkbox') {
+                if ($(all_inputs[index]).is(':checked')) {
+                    values__.push({ "name": name, "value": value });
+                }
+            }
+            else {
+                values__.push({ "name": name, "value": value });
 
             }
 
@@ -342,29 +361,53 @@ jQuery.noConflict();
         // console.log(values__);
         const map = new Map(values__.map(({ name, value }) => [name, { name, value: [] }]));
         for (let { name, value } of values__) map.get(name).value.push(...[value].flat());
-        const merged_array =[...map.values()];
+        const merged_array = [...map.values()];
         console.log(merged_array);
         console.log(patient_id);
         const unique_names = [... new Set(names__)];
-        let data={
-            'merged_array' : merged_array,
-            'unique_names' :unique_names,
-            'patient_id':patient_id
+        let data = {
+            'merged_array': merged_array,
+            'unique_names': unique_names,
+            'patient_id': patient_id
 
         };
-        $.ajax({
-            url: '../backend/actions/patients/medicine.php',
-            type: 'POST',
-            data: data,
-            success: function (data) {
-               console.log(data);
-            },
-            error: function (error) {
-                window.alert(error);
-            }
-        });
-
-
+        if ($(this).hasClass('save-and-pdf')) {
+            $.ajax({
+                url: '../backend/actions/patients/medicine.php',
+                type: 'POST',
+                data: data,
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function (error) {
+                    window.alert(error);
+                }
+            });
+        }
+        else if ($(this).hasClass('symptom-btn')) {
+            console.log($(this));
+            $.ajax({
+                url: '../backend/actions/patients/symptom.php',
+                type: 'POST',
+                data: data,
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function (error) {
+                    window.alert(error);
+                }
+            });
+        }
     });
 
+    $('body').on('click', '.print_pdf', function (e) {
+        window.print();
+    })
+
+
+
+
+ 
+
 })(jQuery);
+

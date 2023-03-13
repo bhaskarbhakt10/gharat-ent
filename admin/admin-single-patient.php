@@ -21,6 +21,7 @@ if (array_key_exists('p_id', $_GET)) {
         if ($all_cols->num_rows > 0) {
             while ($row = $all_cols->fetch_assoc()) {
                 $hospital_pMeds = $row['hospital_pMeds'];
+                $hospital_pSym = $row['hospital_pSym'];
             }
         }
     }
@@ -224,55 +225,122 @@ if (array_key_exists('p_id', $_GET)) {
             <table class="table align-middle mb-3 table-striped table-bordered">
                 <thead class="bg-light">
                     <tr>
-                        <th>Medicine Name</th>
-                        <th>Dosage</th>
-                        <th>Pattern</th>
-                        <th>Notes</th>
+                        <th class="th-width-16">Medicine Name</th>
+                        <th class="th-width-16">Dosage</th>
+                        <th class="th-width-16">Pattern</th>
+                        <th class="th-width-16">Notes</th>
+                        <th class="th-width-16">Test</th>
+                        <th class="th-width-16">Follow up</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    if(!empty($hospital_pMeds)){
-                    $meds = json_decode($hospital_pMeds, true);
-                    foreach ($meds as $key => $value) {
-                        ?>
-                        <tr>
-                            <td>
-                                <?php
+                    if (!empty($hospital_pMeds)) {
+                        $meds = json_decode($hospital_pMeds, true);
+                        foreach ($meds as $key => $value) {
+                    ?>
+                            <tr>
+                                <td>
+                                    <?php
                                     echo $value['medicine_name'];
-                                ?>
-                            </td>
-                            <td>
-                                <?php
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
                                     echo $value['medicine_qty'];
                                     echo $value['medicine_volume'];
-                                ?>
-                            </td>
-                            <td>
-                                <?php
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
                                     echo $value['medicine_pattern'];
-                                ?>
-                            </td>
-                            <td>
-                                <?php
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
                                     echo $value['medicine_notes'];
-                                ?>
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
+                                    if (!empty($value['medicine-test'])) {
+                                        echo preg_replace('/-/', ' ', $value['medicine-test']);
+                                    } else {
+                                        echo '-';
+                                    }
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php echo $value['follow_up_date']; ?>
+                                </td>
+                            </tr>
+                        <?php
+                        }
+                    } else {
+                        ?>
+                        <tr>
+                            <td colspan="5">
+                                <h3 class="text-center">
+                                    No Medicine History Found
+                                </h3>
                             </td>
                         </tr>
                     <?php
                     }
-                }
-                else{
                     ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</fieldset>
+<fieldset class="mt-3">
+    <h2>Hospital Symptom History</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table align-middle mb-3 table-striped table-bordered">
+                <thead class="bg-light">
                     <tr>
-                        <td colspan="4">
-                        <h3 class="text-center">
-                                    No Medicine History Found
-                                </h3>
-                        </td>
+                        <th class="th-width-20">Symptoms</th>
+                        <th class="th-width-20">Status</th>
+                        <th class="th-width-20">No of Days</th>
                     </tr>
+                </thead>
+                <tbody>
                     <?php
-                }
+                    if (!empty($hospital_pSym)) {
+                        $syms = json_decode($hospital_pSym, true);
+                        foreach ($syms as $key => $value) {
+                    ?>
+                            <tr>
+                                <td>
+                                    <?php
+                                    echo $value['symptom_name'];
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
+                                    echo $value['symptom_type'];
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
+                                    echo $value['symptom_days'];
+                                    ?>
+                                </td>
+                            </tr>
+                        <?php
+                        }
+                    } else {
+                        ?>
+                        <tr>
+                            <td colspan="3">
+                                <h3 class="text-center">
+                                    No Symptom History Found
+                                </h3>
+                            </td>
+                        </tr>
+                    <?php
+                    }
                     ?>
                 </tbody>
             </table>

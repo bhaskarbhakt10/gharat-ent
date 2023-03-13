@@ -120,19 +120,22 @@ ul {
 .brand-bg-blue {
   color: #150d3f;
 }
-.th-width-20{
+.th-width-16 {
+  width: 16%;
+}
+.th-width-20 {
   width: 20%;
 }
-.th-width-25{
+.th-width-25 {
   width: 25%;
 }
-.th-width-33{
+.th-width-33 {
   width: 33%;
 }
-.th-width-50{
+.th-width-50 {
   width: 50%;
 }
-.th-width-75{
+.th-width-75 {
   width: 75%;
 }
 
@@ -481,6 +484,9 @@ ul {
   vertical-align: middle;
 }
 
-#treatment-container-medicine >*:not(:last-child){
+#treatment-container-medicine > *:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
+
+
+

@@ -15,25 +15,55 @@
                         <?php
                         $dir = "../admin";
                         $all_dir = scandir($dir);
-                        if(array_key_exists('q', $_GET)){
-                            $load_file = $_GET['q'];
-                            foreach($all_dir as $d){
-                                if($d === $load_file.".php")
-                                {
-                                    require_once './'.$load_file.'.php';
+                        $user_rank = $_SESSION['user']['rank'];
+                        switch ($user_rank) {
+                            case '0':
+                                $admin_allowed_arr = array();
+                                unset($all_dir[0]);
+                                unset($all_dir[1]);
+                                foreach ($all_dir as $all_access) {
+                                    array_push($admin_allowed_arr, preg_replace('/.php/', '', $all_access));
                                 }
-    
+                                break;
+                            case '1':
+                                $admin_allowed_arr = array('admin-dashboard', 'admin-create-users', 'admin-list-users', 'admin-list-table-users');
+                                break;
+                            case '2':
+                                $admin_allowed_arr = array('admin-dashboard', 'admin-add-patients', 'admin-list-patients', 'admin-single-patient', 'admin-update-daily-check-up', 'admin-list-prescriptions', 'admin-single-prescription', 'template-prescription');
+                                break;
+                            case '3':
+                                $admin_allowed_arr = array('admin-dashboard', 'admin-add-patients', 'admin-list-patients', 'admin-single-patient', 'admin-update-daily-check-up', 'admin-list-prescriptions', 'admin-single-prescription', 'template-prescription');
+                                break;
+                            case '4':
+                                $admin_allowed_arr = array('admin-dashboard', "admin-add-patients", "admin-list-prescriptions", "admin-single-prescription", 'template-prescription');
+                                break;
+                            case '5':
+                            default:
+                                # code...
+                                break;
+                        }
+                        // var_dump($admin_allowed_arr);
+                        if (array_key_exists('q', $_GET)) {
+                            $load_file = $_GET['q'];
+                            if (!empty($admin_allowed_arr) && in_array($load_file, $admin_allowed_arr)) {
+                                foreach ($all_dir as $d) {
+                                    if ($d === $load_file . ".php") {
+                                        require_once './' . $load_file . '.php';
+                                    }
+                                }
+                            } else {
+                                require_once './inc/admin-access-denied.php';
                             }
                         }
-                        
-                        
+
+
                         ?>
 
                     </div>
-                        
+
                 </div>
                 <div class="footer-wrap">
-                    <?php require_once '../admin/inc/admin-nav-bottom.php';?>
+                    <?php require_once '../admin/inc/admin-nav-bottom.php'; ?>
                 </div>
             </div>
         </div>

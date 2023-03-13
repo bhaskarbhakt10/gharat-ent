@@ -37,12 +37,12 @@ if (isset($_POST)) {
 
     if(!empty($medicine_name) && !empty($medicine_qty) && !empty($medicine_volume) && !empty($medicine_pattern) ){
         $medicine = new PatientsTreatmentSymptom();
-        $medicine->get_Details($medicine_array);
+        $medicine->get_Details($medicine_array,$patient_id);
         if($medicine->send_meds_to_DB($patient_id) === true){
-            echo "Sucess";
+            echo "success";
         }
         else{
-            echo "Failure";
+            echo "failure";
         }
     }
 

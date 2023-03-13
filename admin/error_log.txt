@@ -938,3 +938,182 @@ Stack trace:
   thrown in D:\php-local\htdocs\Hospital-Management\backend\database\config.database.php on line 23
 [09-Mar-2023 23:55:30 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 235
 [09-Mar-2023 23:56:46 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 235
+[10-Mar-2023 09:37:38 Europe/Berlin] PHP Warning:  Undefined variable $user_id in D:\php-local\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[10-Mar-2023 09:37:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[10-Mar-2023 09:37:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[10-Mar-2023 09:37:40 Europe/Berlin] PHP Warning:  Undefined variable $default_image in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[10-Mar-2023 09:37:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[10-Mar-2023 09:37:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[10-Mar-2023 09:37:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[10-Mar-2023 09:37:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[10-Mar-2023 10:32:24 Europe/Berlin] PHP Warning:  Undefined array key "medicine-test" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 265
+[10-Mar-2023 10:32:24 Europe/Berlin] PHP Warning:  Undefined array key "medicine-test" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 265
+[10-Mar-2023 10:33:53 Europe/Berlin] PHP Warning:  preg_replace(): No ending delimiter '-' found in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 266
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined variable $sym in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 310
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined array key "medicine_name" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 316
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined array key "medicine_qty" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 321
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined array key "medicine_volume" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 322
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined array key "medicine_pattern" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 327
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined array key "medicine_notes" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 332
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined array key "medicine_name" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 316
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined array key "medicine_qty" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 321
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined array key "medicine_volume" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 322
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined array key "medicine_pattern" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 327
+[10-Mar-2023 12:02:46 Europe/Berlin] PHP Warning:  Undefined array key "medicine_notes" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 332
+[10-Mar-2023 12:02:54 Europe/Berlin] PHP Warning:  Undefined array key "medicine_name" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 316
+[10-Mar-2023 12:02:54 Europe/Berlin] PHP Warning:  Undefined array key "medicine_qty" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 321
+[10-Mar-2023 12:02:54 Europe/Berlin] PHP Warning:  Undefined array key "medicine_volume" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 322
+[10-Mar-2023 12:02:54 Europe/Berlin] PHP Warning:  Undefined array key "medicine_pattern" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 327
+[10-Mar-2023 12:02:54 Europe/Berlin] PHP Warning:  Undefined array key "medicine_notes" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 332
+[10-Mar-2023 12:02:54 Europe/Berlin] PHP Warning:  Undefined array key "medicine_name" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 316
+[10-Mar-2023 12:02:54 Europe/Berlin] PHP Warning:  Undefined array key "medicine_qty" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 321
+[10-Mar-2023 12:02:54 Europe/Berlin] PHP Warning:  Undefined array key "medicine_volume" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 322
+[10-Mar-2023 12:02:54 Europe/Berlin] PHP Warning:  Undefined array key "medicine_pattern" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 327
+[10-Mar-2023 12:02:54 Europe/Berlin] PHP Warning:  Undefined array key "medicine_notes" in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 332
+[10-Mar-2023 14:10:23 Europe/Berlin] PHP Warning:  Undefined variable $patient_id in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 5
+[10-Mar-2023 14:11:28 Europe/Berlin] PHP Warning:  Undefined variable $patient_id in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 5
+[10-Mar-2023 14:12:53 Europe/Berlin] PHP Warning:  Undefined variable $patient_id in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 7
+[10-Mar-2023 14:13:26 Europe/Berlin] PHP Warning:  Undefined variable $patient_id in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 7
+[10-Mar-2023 14:14:34 Europe/Berlin] PHP Warning:  Undefined variable $patient_id in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 8
+[10-Mar-2023 14:14:59 Europe/Berlin] PHP Warning:  Undefined variable $patient_id in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 8
+[10-Mar-2023 14:19:25 Europe/Berlin] PHP Warning:  Undefined array key 0 in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 29
+[10-Mar-2023 14:19:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 29
+[10-Mar-2023 14:52:15 Europe/Berlin] PHP Warning:  Undefined variable $medicine_notes in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 28
+[10-Mar-2023 14:52:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 28
+[10-Mar-2023 14:52:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 28
+[10-Mar-2023 14:52:15 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 87
+[10-Mar-2023 15:27:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientsTreatmentSymptom" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:7
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 7
+[10-Mar-2023 15:28:52 Europe/Berlin] PHP Warning:  require_once(admin-functions.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:28:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'admin-functions.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:2
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:29:12 Europe/Berlin] PHP Warning:  require_once(../admin-functions.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:29:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../admin-functions.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:2
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:29:16 Europe/Berlin] PHP Warning:  require_once(../../admin-functions.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:29:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../admin-functions.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:2
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:29:26 Europe/Berlin] PHP Warning:  require_once(./admin-functions.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:29:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required './admin-functions.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:2
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:29:38 Europe/Berlin] PHP Warning:  require_once(../inc/admin-functions.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:29:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../inc/admin-functions.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:2
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:29:48 Europe/Berlin] PHP Warning:  require_once(../../inc/admin-functions.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 15:29:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../inc/admin-functions.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:2
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 2
+[10-Mar-2023 20:33:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientsTreatmentSymptom" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:8
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 8
+[10-Mar-2023 20:34:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientsTreatmentSymptom" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:8
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 8
+[11-Mar-2023 10:11:43 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:12:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected variable "$pdf" in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 48
+[11-Mar-2023 10:13:51 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:14:18 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:28:08 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:28:11 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:28:11 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:28:18 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:30:35 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:31:57 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:31:59 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:31:59 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:31:59 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:32:00 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:32:17 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:32:26 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:32:41 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:32:52 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:33:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "TCPDF" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:50
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 50
+[11-Mar-2023 10:33:21 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:33:42 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:35:47 Europe/Berlin] PHP Warning:  Undefined variable $pdf in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 11
+[11-Mar-2023 10:35:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function Output() on null in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:11
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\index.php(23): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 11
+[11-Mar-2023 10:37:10 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:38:03 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:38:07 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\php-local\htdocs\hospital-management\admin\index.php:8) in D:\php-local\htdocs\hospital-management\assets\tcpdf\tcpdf.php on line 7712
+[11-Mar-2023 10:39:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientsTreatmentSymptom" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:84
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 84
+[11-Mar-2023 10:42:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientsTreatmentSymptom" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:66
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 66
+[11-Mar-2023 10:44:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientsTreatmentSymptom" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:66
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 66
+[11-Mar-2023 10:49:07 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "," in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 107
+[11-Mar-2023 10:56:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientsTreatmentSymptom" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:11
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 11
+[11-Mar-2023 10:58:23 Europe/Berlin] PHP Warning:  Undefined variable $Med1,Med2 in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 107
+[11-Mar-2023 10:58:23 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\pdf\pdf.php on line 35
+[11-Mar-2023 11:05:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientsTreatmentSymptom" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:8
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 8
+[11-Mar-2023 11:09:00 Europe/Berlin] PHP Warning:  require_once(D:/php-local/htdocs/hospital-management/backend/php-classes/pdf/pdf.php): Failed to open stream: No such file or directory in D:\php-local\htdocs\hospital-management\admin\inc\admin-functions.php on line 15
+[11-Mar-2023 11:09:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'D:/php-local/htdocs/hospital-management/backend/php-classes/pdf/pdf.php' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\hospital-management\admin\inc\admin-functions.php:15
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\inc\admin-nav-side.php(2): require_once()
+#1 D:\php-local\htdocs\hospital-management\admin\index.php(7): require_once('D:\\php-local\\ht...')
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\inc\admin-functions.php on line 15
+[11-Mar-2023 14:38:55 Europe/Berlin] PHP Warning:  Undefined variable $user_id in D:\php-local\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[11-Mar-2023 14:38:55 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[11-Mar-2023 14:38:56 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[11-Mar-2023 14:38:56 Europe/Berlin] PHP Warning:  Undefined variable $default_image in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[11-Mar-2023 14:38:56 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[11-Mar-2023 14:38:56 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[11-Mar-2023 14:38:56 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[11-Mar-2023 14:38:56 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[11-Mar-2023 14:43:48 Europe/Berlin] PHP Warning:  Undefined variable $user_id in D:\php-local\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[11-Mar-2023 14:43:48 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[11-Mar-2023 14:43:49 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[11-Mar-2023 14:43:49 Europe/Berlin] PHP Warning:  Undefined variable $default_image in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[11-Mar-2023 14:43:49 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[11-Mar-2023 14:43:49 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[11-Mar-2023 14:43:49 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[11-Mar-2023 14:43:49 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[11-Mar-2023 14:59:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientsTreatmentSymptom" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:8
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 8
+[11-Mar-2023 15:01:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientsTreatmentSymptom" not found in D:\php-local\htdocs\hospital-management\admin\template-prescription.php:8
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\template-prescription.php on line 8
+[13-Mar-2023 17:04:03 Europe/Berlin] PHP Warning:  Undefined variable $admin_allowed_arr in D:\php-local\htdocs\hospital-management\admin\index.php on line 16
+[13-Mar-2023 17:04:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Value of type null is not callable in D:\php-local\htdocs\hospital-management\admin\index.php:16
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\index.php on line 16

@@ -7,8 +7,7 @@
         <div class="col-md-12">
             <div class="mb-3">
                 <label for="symptom-name">Symptom name</label>
-                <textarea name="symptom_name" id="symptom-name" class="form-field form-control" placeholder="Coughing, Fever" required></textarea>
-                <span><i>Use comma(,) to seprate multiple Symptoms</i></span>
+                <textarea name="symptom_name" id="symptom-name" class="form-field form-control" placeholder="Use comma(,) to seprate multiple Symptoms" required></textarea>
             </div>
         </div>
         <div class="col-md-6">
@@ -32,7 +31,7 @@
             </div>
         </div>
         <div class="d-flex my-3">
-            <button class="btn btn-blue w-20 mx-auto">Button</button>
+            <button class="btn btn-blue w-20 mx-auto symptom-btn">Button</button>
         </div>
     </div>
 </fieldset>
