@@ -40,7 +40,8 @@ if (!empty($hospital_pMeds)) {
     // print_r($medicine_notes);
 }
 ?>
-<button class="btn btn-primary save-pdf" onclick="generatePdf()">Download</button>
+<!-- <button class="btn btn-primary save-pdf" onclick="generatePdf()">Download</button> -->
+<a class="btn btn-primary save-pdf" href="pdf.php?ID=<?php echo $prescription_id;?>" target="_blank">Download</a>
 <button class="btn print print_pdf">Print Pdf</button>
 <table class="table" id="download-prescription">
     <tbody>
