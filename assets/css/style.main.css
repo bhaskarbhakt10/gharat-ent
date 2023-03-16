@@ -494,4 +494,13 @@ ul {
 }
 .select2-container--default.select2-container--focus .select2-selection--multiple,.select2-container--default .select2-selection--multiple {
   border: 0;
+  border: 0;
+  padding: 0;
+  top: -3px;
+  }
+
+.select2-container--default .select2-selection--multiple {
+  border: 0;
+  padding: 0;
+  top: -3px;
 }

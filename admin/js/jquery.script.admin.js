@@ -22,6 +22,7 @@ jQuery.noConflict();
     let required_field = $('.required').toArray();
     $('body').on('click', '#add-patient', function (event) {
         event.preventDefault();
+        $('.select-two').trigger('change');
         let this_btn = $(this);
         let form = $(this).closest('form');
         let form_data = $(form).serializeArray();
@@ -72,11 +73,12 @@ jQuery.noConflict();
             }
             else {
                 if ($(required_field[i]).parent().children('.validation-message').length === 0) {
-                    $("<div class='validation-message'></div>").insertAfter(required_field[i]);
+                    // $("<div class='validation-message'></div>").insertAfter(required_field[i]);
+                    $(required_field[i]).parent().append("<div class='validation-message'></div>");
                     $(required_field[i]).parent().children('.validation-message').hide().fadeIn(3000);
-                    $(required_field[i]).next('.validation-message').append("<p>mandatory</p>");
+                    $(required_field[i]).parent().children('.validation-message').append("<p>mandatory</p>");
                     setTimeout(() => {
-                        $(required_field[i]).next('.validation-message').remove()
+                        $(required_field[i]).parent().children('.validation-message').remove()
                     }, 5000);
                 }
 
@@ -106,12 +108,12 @@ jQuery.noConflict();
                 // console.log('send to ajax');
             }
         }
-        // console.log($ajax_Arr);
+        console.log($ajax_Arr);
         if ($post_length === $ajax_Arr.length) {
             const value0 = $ajax_Arr.reduce((a, b) => a + b, 0);
             // console.log(value0);
             if (value0 === 0) {
-                // ajax_call($post, this_btn);
+                ajax_call($post, this_btn);
                 alert('calling ajax');
             }
         }
@@ -121,11 +123,11 @@ jQuery.noConflict();
     function isRequired(key) {
         let required = $('[name=' + key + ']').attr('required');
         if (typeof required !== 'undefined' && required !== false) {
-            // console.warn($('[name=' + key + ']'));
+            console.warn($('[name=' + key + ']'));
             isRequired_flag = true;
         }
         else {
-            // console.error($('[name=' + key + ']'));
+            console.error($('[name=' + key + ']'));
             isRequired_flag = false;
         }
         return isRequired_flag;
@@ -358,7 +360,7 @@ jQuery.noConflict();
             }
 
         }
-        // console.log(values__);
+        console.log(values__);
         const map = new Map(values__.map(({ name, value }) => [name, { name, value: [] }]));
         for (let { name, value } of values__) map.get(name).value.push(...[value].flat());
         const merged_array = [...map.values()];
@@ -405,22 +407,37 @@ jQuery.noConflict();
     })
 
     // select 2 for addictions and habbits
-    $(".select2").select2();
+    
+    $(".select-two").select2();
     $('.select2.select2-container').addClass('form-control form-field form-select-multiple');
 
     let count = 0;
-    let select2_value_arr = '';
-    $('body').on('change', '.select2', function () {
+    $('.select-two').parent().append('<input type="hidden" class="hidden_select_two patient_field">');
+    $('body').on('change', '.select-two', function () {
         count = count + 1;
         let select2_value = $(this).select2('data');
         let selectname = $(this).attr('name');
+        let selectclasses = $(this).attr('class');
+        $(this).parent().children().last().attr('name', selectname);
+        // $(this).next('.hidden_select_two').addClass(selectclasses);
         $(this).removeAttr('name');
         console.log(count);
+        let select2_value_arr = [];
         select2_value.forEach(value => {
-            select2_value_arr += value.text;
+            if( select2_value_arr.includes(value.text)){
+
+            }
+            else{
+                select2_value_arr.push(value.text)
+            }
         });
         console.log(select2_value_arr);
-        $('<input type="hidden" name="' + selectname + '" value="' + select2_value_arr + '">').insertAfter(this);
+        $(this).parent().children().last().attr('value', select2_value_arr.toString());
+        
+        if($(this).prop('required') === true){
+            $(this).parent().children().last().attr('required', 'required');
+            $(this).parent().children().last().addClass('required');
+        }
     })
 
 

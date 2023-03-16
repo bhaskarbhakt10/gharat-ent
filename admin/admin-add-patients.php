@@ -92,25 +92,25 @@
                     <div class="d-flex flex-wrap gap-20 flex-100">
                         <div class="mb-3 flex-48">
                             <label for="addiction">Addictions/Habits</label>
-                            <select name="patient_addiction" id="addictions" class="form-select form-field select2" multiple>
-                                <option value="">Select a Condition</option>
+                            <select name="patient_addiction" id="addictions" class="form-select form-field select-two" multiple required>
+                                <!-- <option value="">Select a Condition</option> -->
+                                <option value="None" selected="selected">None</option>
                                 <option value="Smoking">Smoking</option>
                                 <option value="Alcohol">Alcohol</option>
-                                <option value="None">None</option>
                             </select>
                         </div>
                         <div class="flex-48 mb-3 ">
                             <div class="mb-3 w-100">
                                 <label for="health-conditions">Chronic Ailments/Health Condition </label>
-                                <select name="patient_health_condition" id="health-conditions" class="form-select form-field">
-                                    <option value="">Health Condition</option>
+                                <select name="patient_health_condition" id="health-conditions" class="form-select form-field select-two" multiple required>
+                                    <option value="None" selected="selected" >None</option>
+                                    <!-- <option value="">Health Condition</option> -->
                                     <option value="Sinusitis">Sinusitis</option>
                                     <option value="Back Pain">Back Pain</option>
                                     <option value="IBS">IBS</option>
                                     <option value="Allergies">Allergies</option>
                                     <option value="Diabetes">Diabetes</option>
                                     <option value="Cancer">Cancer </option>
-                                    <option value="Cancer">None</option>
                                 </select>
                             </div>
                         </div>
