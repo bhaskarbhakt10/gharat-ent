@@ -111,7 +111,7 @@ jQuery.noConflict();
             const value0 = $ajax_Arr.reduce((a, b) => a + b, 0);
             // console.log(value0);
             if (value0 === 0) {
-                ajax_call($post, this_btn);
+                // ajax_call($post, this_btn);
                 alert('calling ajax');
             }
         }
@@ -404,10 +404,25 @@ jQuery.noConflict();
         window.print();
     })
 
+    // select 2 for addictions and habbits
+    $(".select2").select2();
+    $('.select2.select2-container').addClass('form-control form-field form-select-multiple');
 
+    let count = 0;
+    let select2_value_arr = '';
+    $('body').on('change', '.select2', function () {
+        count = count + 1;
+        let select2_value = $(this).select2('data');
+        let selectname = $(this).attr('name');
+        $(this).removeAttr('name');
+        console.log(count);
+        select2_value.forEach(value => {
+            select2_value_arr += value.text;
+        });
+        console.log(select2_value_arr);
+        $('<input type="hidden" name="' + selectname + '" value="' + select2_value_arr + '">').insertAfter(this);
+    })
 
-
- 
 
 })(jQuery);
 

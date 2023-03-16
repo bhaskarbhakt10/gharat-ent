@@ -92,7 +92,7 @@
                     <div class="d-flex flex-wrap gap-20 flex-100">
                         <div class="mb-3 flex-48">
                             <label for="addiction">Addictions/Habits</label>
-                            <select name="patient_addiction" id="addictions" class="form-select form-field">
+                            <select name="patient_addiction" id="addictions" class="form-select form-field select2" multiple>
                                 <option value="">Select a Condition</option>
                                 <option value="Smoking">Smoking</option>
                                 <option value="Alcohol">Alcohol</option>

@@ -488,5 +488,10 @@ ul {
   border-bottom: 1px solid #ccc;
 }
 
-
-
+.form-select-multiple {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple,.select2-container--default .select2-selection--multiple {
+  border: 0;
+}
