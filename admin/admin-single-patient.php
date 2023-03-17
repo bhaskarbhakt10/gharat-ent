@@ -22,6 +22,7 @@ if (array_key_exists('p_id', $_GET)) {
             while ($row = $all_cols->fetch_assoc()) {
                 $hospital_pMeds = $row['hospital_pMeds'];
                 $hospital_pSym = $row['hospital_pSym'];
+                $hospital_phistory = $row['hospital_phistory'];
             }
         }
     }
@@ -218,18 +219,73 @@ if (array_key_exists('p_id', $_GET)) {
         </div>
     </div>
 </fieldset>
+<fieldset>
+    <div class="mt-3" id="">
+        <h2>Regular checkup</h2>
+        <table class="table table-bordered table-responsive table-striped" id="RegularCheckup">
+            <thead class="bg-light">
+                <tr>
+                    <th class="th-width-20">Date</th>
+                    <th class="th-width-20">Height</th>
+                    <th class="th-width-20">Weight</th>
+                    <th class="th-width-20">Bp</th>
+                    <th class="th-width-20">Diabetes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                if (!empty($hospital_phistory)) {
+                    $hospital_phistory_arr = json_decode($hospital_phistory, true);
+                    foreach ($hospital_phistory_arr as $key => $value) {
+                ?>
+                        <tr>
+                            <td>
+                                <?php
+                                $datetime = explode('_', $key);
+                                unset($datetime[5]);
+                                unset($datetime[4]);
+                                unset($datetime[3]);
+                                $date_ = '';
+                                foreach ($datetime as $date) {
+                                    $date_ .= $date . "-";
+                                }
+                                echo rtrim($date_, '-');
+                                ?>
+                            </td>
+                            <?php
+                            foreach ($value as $k => $v) {
+                                echo  "<td>" . $v . "</td>";
+                            }
+                            ?>
+                        </tr>
+                    <?php
+                    }
+                } else {
+                    ?>
+                    <tr>
+                        <td>
+                            <h3>
+                                No Data availabale
+                            </h3>
+                        </td>
+                    </tr>
+                <?php
+                }
+
+                ?>
+            </tbody>
+        </table>
+    </div>
+</fieldset>
 <fieldset class="mt-3">
     <h2>Hospital TreatMent History</h2>
     <div class="row">
         <div class="col-md-12">
-            <table class="table align-middle mb-3 table-striped table-bordered">
+            <table class="table align-middle mb-3 table-striped table-bordered" id="symptom-table">
                 <thead class="bg-light">
                     <tr>
-                        <th class="th-width-16">Medicine Name</th>
-                        <th class="th-width-16">Dosage</th>
-                        <th class="th-width-16">Pattern</th>
-                        <th class="th-width-16">Notes</th>
-                        <th class="th-width-16">Test</th>
+                        <th class="th-width-16">Date</th>
+                        <th class="text-center" colspan="5"><b>Meds Data</b></th>
                         <th class="th-width-16">Follow up</th>
                     </tr>
                 </thead>
@@ -241,34 +297,74 @@ if (array_key_exists('p_id', $_GET)) {
                     ?>
                             <tr>
                                 <td>
-                                    <?php
-                                    echo $value['medicine_name'];
-                                    ?>
+                                    <?php echo $value['date']; ?>
                                 </td>
-                                <td>
-                                    <?php
-                                    echo $value['medicine_qty'];
-                                    echo $value['medicine_volume'];
-                                    ?>
-                                </td>
-                                <td>
-                                    <?php
-                                    echo $value['medicine_pattern'];
-                                    ?>
-                                </td>
-                                <td>
-                                    <?php
-                                    echo $value['medicine_notes'];
-                                    ?>
-                                </td>
-                                <td>
-                                    <?php
-                                    if (!empty($value['medicine-test'])) {
-                                        echo preg_replace('/-/', ' ', $value['medicine-test']);
-                                    } else {
-                                        echo '-';
-                                    }
-                                    ?>
+                                <td colspan="5">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="th-width-16">Medicine Name</th>
+                                                <th class="th-width-16">Dosage</th>
+                                                <th class="th-width-16">Pattern</th>
+                                                <th class="th-width-16">Notes</th>
+                                                <th class="th-width-16">Tests</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                <?php
+                                                    $medicine_name = explode(",", $value['medicine_name']);
+                                                    for ($i=0; $i < count($medicine_name) ; $i++) { 
+                                                        ?>
+                                                        <li class="list-style-none"><?php echo $medicine_name[$i];?></li>
+                                                        <?php
+                                                    }
+                                                ?>
+                                                </td>
+                                                <td>
+                                                <?php
+                                                    $meds_qty = explode(",", $value['medicine_qty']);
+                                                    $meds_vol = explode(",", $value['medicine_volume']);
+                                                    for ($i=0; $i < count($meds_qty) ; $i++) { 
+                                                        ?>
+                                                        <li class="list-style-none"><?php echo $meds_qty[$i] . $meds_vol[$i];?></li>
+                                                        <?php
+                                                    }
+                                                ?>
+                                                </td>
+                                                <td>
+                                                <?php
+                                                    $pattern_arr =  explode(',',$value['medicine_pattern']);
+                                                    for ($i=0; $i < count($pattern_arr) ; $i++) { 
+                                                        ?>
+                                                        <li class="list-style-none"><?php echo $pattern_arr[$i];?></li>
+                                                        <?php
+                                                    }
+                                                ?>
+                                                </td>
+                                                <td>
+                                                <?php
+                                                    $notes = explode(',',$value['medicine_notes']);
+                                                    for ($i=0; $i < count($notes) ; $i++) { 
+                                                        ?>
+                                                        <li class="list-style-none"><?php echo $notes[$i];?></li>
+                                                        <?php
+                                                    }
+                                                ?>
+                                                </td>
+                                                <td>
+                                                    <?php
+                                                    if (!empty($value['medicine-test'])) {
+                                                        echo preg_replace('/-/', ' ', $value['medicine-test']);
+                                                    } else {
+                                                        echo '-';
+                                                    }
+                                                    ?>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                                 <td>
                                     <?php echo $value['follow_up_date']; ?>

@@ -1,4 +1,5 @@
-<form action="" method="post">
+<form action="" method="post" data-formid="<?php echo $_SESSION['user']['id'];?>">
+
 <fieldset class="mt-3">
     <div class="row">
         <div class="col-md-12">
@@ -30,7 +31,7 @@
                 <input type="number" name="symptom_days" id="symptom-days" class="form-control form-field" placeholder="How long the symptoms have been occuring" required>
             </div>
         </div>
-        <div class="d-flex my-3">
+        <div class="text-center my-3">
             <button class="btn btn-blue w-20 mx-auto symptom-btn">Button</button>
         </div>
     </div>

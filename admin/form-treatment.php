@@ -1,4 +1,4 @@
-<form action="" id="treatment-container-medicine-form">
+<form action="" id="treatment-container-medicine-form" method="post" data-formid="<?php echo $_SESSION['user']['id'];?>">
 <fieldset class="mt-3">
     <div class="row">
         <div class="col-md-12">
@@ -51,6 +51,7 @@
                     <div class="d-flex flex-25 align-items-center">
                         <div class="w-100 text-center">
                             <button class="btn btn-primary add-medicine w-60" role="button">Add Medicine</button>
+                            <button class="btn btn-danger remove-duplicate-row w-60" role="button">Remove Medicine</button>
                         </div>
                     </div>
                 </div>

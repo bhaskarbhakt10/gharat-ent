@@ -76,7 +76,7 @@ jQuery.noConflict();
                     // $("<div class='validation-message'></div>").insertAfter(required_field[i]);
                     $(required_field[i]).parent().append("<div class='validation-message'></div>");
                     $(required_field[i]).parent().children('.validation-message').hide().fadeIn(3000);
-                    $(required_field[i]).parent().children('.validation-message').append("<p>mandatory</p>");
+                    $(required_field[i]).parent().children('.validation-message').append("<p class='mandatory-message'>mandatory</p>");
                     setTimeout(() => {
                         $(required_field[i]).parent().children('.validation-message').remove()
                     }, 5000);
@@ -146,7 +146,7 @@ jQuery.noConflict();
             success: function (data) {
                 console.log(data);
                 let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
-                success_html += '<strong>Patient added Sucessfully!</strong><a href="#">View patients</a>  ';
+                success_html += '<strong>Patient added Sucessfully!</strong>  ';
                 success_html += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> '
                 success_html += '</div>'
                 if (data === "success") {
@@ -269,7 +269,7 @@ jQuery.noConflict();
             console.log($('[name=' + name + ']'));
             if ($('[name=' + name + ']').is(':required') && value === '') {
                 if ($('[name=' + name + ']').parent().children('.validation-message').length === 0) {
-                    $('[name=' + name + ']').parent().append('<p class="validation-message">mandatory</p>');
+                    $('[name=' + name + ']').parent().append('<p class="validation-message mandatory-message">mandatory</p>');
                     setTimeout(() => {
                         $('[name=' + name + ']').next('.validation-message').remove()
                     }, 5000);
@@ -302,13 +302,16 @@ jQuery.noConflict();
     });
 
     // form treatment 
+    jQuery(' #treatment-container-medicine .remove-duplicate-row:not(.appended-row-medicine .remove-duplicate-row) ').hide();
     $('body').on('click', '.add-medicine', function (event) {
         event.preventDefault();
         let parent_container = $(this).parentsUntil('#treatment-container-medicine').toArray();
         let to_append = parent_container.pop();
         console.log(to_append)
         $('#treatment-container-medicine').append('<div class="d-flex flex-wrap gap-10 py-3 appended-row-medicine">' + to_append.innerHTML + '</div>');
-        $('.appended-row-medicine button.btn-primary').replaceWith("<button class='btn btn-danger w-60 remove-duplicate-row'>Remove</button>");
+        jQuery(' #treatment-container-medicine .appended-row-medicine .remove-duplicate-row ').show();
+        // jQuery(' #treatment-container-medicine .remove-duplicate-row ').show();
+        // $('.appended-row-medicine button.btn-primary').replaceWith("<button class='btn btn-danger w-60 remove-duplicate-row'>Remove</button>");
     });
 
     //remove code works from line number 215
@@ -317,8 +320,10 @@ jQuery.noConflict();
     //save-and-pdf
     $('body').on('click', '.save-and-pdf, .symptom-btn', function (event) {
         event.preventDefault();
+        let thisbtn = $(this);
         let patient_id = $('#patient-id').val();
         let this_form = $(this).closest('form');
+        let formid = $(this).closest('form').attr('data-formid');
         let count_children_inside_container = $(this_form).find('.treatment-container').children();
         for (let index = 0; index < count_children_inside_container.length; index++) {
             $(count_children_inside_container[index]).attr('data-obj', 'data_obj_' + [index]);
@@ -338,7 +343,7 @@ jQuery.noConflict();
             if (required === true && type !== 'checkbox') {
                 if (value === '') {
                     if ($(all_inputs[index]).next('.validation-message').length === 0) {
-                        $(all_inputs[index]).parent().append('<div class="validation-message">Mandatory</div>');
+                        $(all_inputs[index]).parent().append('<div class="validation-message"><p class="mandatory-message">Mandatory</div>');
                         setTimeout(() => {
                             $(all_inputs[index]).next('.validation-message').remove()
                         }, 5000);
@@ -366,11 +371,13 @@ jQuery.noConflict();
         const merged_array = [...map.values()];
         console.log(merged_array);
         console.log(patient_id);
+        console.log(formid);
         const unique_names = [... new Set(names__)];
         let data = {
             'merged_array': merged_array,
             'unique_names': unique_names,
-            'patient_id': patient_id
+            'patient_id': patient_id,
+            'formid' : formid
 
         };
         if ($(this).hasClass('save-and-pdf')) {
@@ -393,7 +400,18 @@ jQuery.noConflict();
                 type: 'POST',
                 data: data,
                 success: function (data) {
-                    console.log(data);
+                let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
+                success_html += '<strong>Symptom added Sucessfully!</strong>  ';
+                success_html += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> '
+                success_html += '</div>'
+                    if(data === "success"){
+                        $(success_html).insertAfter(thisbtn);
+                        setInterval(() => {
+                            $('#symptom-table').load(window.location.href + " #symptom-table" );
+                            $(this_form).find('.alert').remove();
+                            $(this_form)[0].reset();
+                        }, 2000);
+                    }
                 },
                 error: function (error) {
                     window.alert(error);
@@ -407,7 +425,7 @@ jQuery.noConflict();
     })
 
     // select 2 for addictions and habbits
-    
+
     $(".select-two").select2();
     $('.select2.select2-container').addClass('form-control form-field form-select-multiple');
 
@@ -424,20 +442,76 @@ jQuery.noConflict();
         console.log(count);
         let select2_value_arr = [];
         select2_value.forEach(value => {
-            if( select2_value_arr.includes(value.text)){
+            if (select2_value_arr.includes(value.text)) {
 
             }
-            else{
+            else {
                 select2_value_arr.push(value.text)
             }
         });
         console.log(select2_value_arr);
         $(this).parent().children().last().attr('value', select2_value_arr.toString());
-        
-        if($(this).prop('required') === true){
+
+        if ($(this).prop('required') === true) {
             $(this).parent().children().last().attr('required', 'required');
             $(this).parent().children().last().addClass('required');
         }
+    })
+
+
+
+    //mandatory mark for add patients
+    function mark_required() {
+        let all_input = $('.form-field.required');
+        for (let index = 0; index < all_input.length; index++) {
+            let type = $(all_input[index]).attr('type');
+            switch (type) {
+                case 'radio':
+                    if ($(all_input[index]).prop('required')) {
+                        $(all_input[index]).parent().parent().parent().find('label:first-child').addClass('mandatory-mark');
+                    }
+                    break;
+
+                default:
+                    if ($(all_input[index]).prop('required')) {
+                        $(all_input[index]).parent().find('label').addClass('mandatory-mark');
+                    }
+                    break;
+            }
+        }
+    }
+
+    //for single patients 
+    function mark_required__(){
+        let all_input = $('.form-field');
+        for (let index = 0; index < all_input.length; index++) {
+            if($(all_input[index]).prop("required")){
+                let type = $(all_input[index]).attr('type');
+                switch (type) {
+                    case 'checkbox':
+                        if ($(all_input[index]).prop('required')) {
+                            $(all_input[index]).parent().parent().parent().find('label:first-child').addClass('mandatory-mark');
+                        }
+                        break;
+                
+                    default:
+                        if ($(all_input[index]).prop('required')) {
+                            $(all_input[index]).parent().find('label').addClass('mandatory-mark');
+                        }
+                        break;
+                }
+            }
+            
+        }
+    }
+
+
+
+    mark_required();
+    mark_required__();
+    $("body").on('change', function(){
+        mark_required();
+       
     })
 
 
