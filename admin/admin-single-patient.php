@@ -34,7 +34,16 @@ if (array_key_exists('p_id', $_GET)) {
 
 <input type="hidden" value="<?php echo $patient_id; ?>" id="patient-id">
 <fieldset>
-    <h2>Primary Information</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Primary Information</h2>
+        </div>
+        <div class="col-md-6">
+            <div class="text-end">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" data-edit="primary-information"><i class="fa fa-pencil"></i></button>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-12">
             <div class="mb-3">
@@ -83,7 +92,16 @@ if (array_key_exists('p_id', $_GET)) {
     </div>
 </fieldset>
 <fieldset class="mt-3">
-    <h2>Medical History</h2>
+<div class="row">
+        <div class="col-md-6">
+            <h2>Medical History</h2>
+        </div>
+        <div class="col-md-6">
+            <div class="text-end">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" data-edit="medical-history"><i class="fa fa-pencil"></i></button>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <?php
         //converting the json to array
@@ -446,3 +464,24 @@ if (array_key_exists('p_id', $_GET)) {
 
 <?php require_once './form-symptoms.php'; ?>
 <?php require_once './form-treatment.php'; ?>
+
+
+
+
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

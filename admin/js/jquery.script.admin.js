@@ -24,6 +24,8 @@ jQuery.noConflict();
         event.preventDefault();
         $('.select-two').trigger('change');
         let this_btn = $(this);
+        let data_attr = $(this).attr('data-attr');
+        console.log(data_attr);
         let form = $(this).closest('form');
         let form_data = $(form).serializeArray();
 
@@ -113,7 +115,7 @@ jQuery.noConflict();
             const value0 = $ajax_Arr.reduce((a, b) => a + b, 0);
             // console.log(value0);
             if (value0 === 0) {
-                ajax_call($post, this_btn);
+                ajax_call($post, this_btn , data_attr);
                 alert('calling ajax');
             }
         }
@@ -133,12 +135,13 @@ jQuery.noConflict();
         return isRequired_flag;
     }
 
-    function ajax_call($post, this_btn) {
+    function ajax_call($post, this_btn, data_attr) {
 
         // console.log(this_btn);
         let data = {
             'post': $post
         }
+        if(data_attr === 'add'){
         $.ajax({
             url: '../backend/actions/patients/add-patient.php',
             type: 'POST',
@@ -166,6 +169,10 @@ jQuery.noConflict();
                 window.alert(error);
             }
         });
+        }
+        else if(data_attr === 'edit'){
+            console.warn("Edit form")
+        }
     }
 
 
@@ -233,13 +240,14 @@ jQuery.noConflict();
     let surgery_container = $('#surgery-container').detach();
     $('body').on('change', '.medical-history-check', function () {
         let value = $(this).val();
+        console.warn();
         console.log("#" + value);
         if ($(this).is(':checked')) {
             if (value === 'treatment-container') {
-                jQuery('.filedset-1').children().last().children().append(treatment_container);
+                $(this).closest('fieldset').children().last().children().append(treatment_container);
             }
             else if (value === 'surgery-container') {
-                jQuery('.filedset-1').children().last().children().append(surgery_container);
+                $(this).closest('fieldset').children().last().children().append(surgery_container);
 
             }
         }
@@ -302,15 +310,15 @@ jQuery.noConflict();
     });
 
     // form treatment 
-    jQuery(' #treatment-container-medicine .remove-duplicate-row:not(.appended-row-medicine .remove-duplicate-row) ').hide();
+    $(' #treatment-container-medicine .remove-duplicate-row:not(.appended-row-medicine .remove-duplicate-row) ').hide();
     $('body').on('click', '.add-medicine', function (event) {
         event.preventDefault();
         let parent_container = $(this).parentsUntil('#treatment-container-medicine').toArray();
         let to_append = parent_container.pop();
         console.log(to_append)
         $('#treatment-container-medicine').append('<div class="d-flex flex-wrap gap-10 py-3 appended-row-medicine">' + to_append.innerHTML + '</div>');
-        jQuery(' #treatment-container-medicine .appended-row-medicine .remove-duplicate-row ').show();
-        // jQuery(' #treatment-container-medicine .remove-duplicate-row ').show();
+        $(' #treatment-container-medicine .appended-row-medicine .remove-duplicate-row ').show();
+        // $(' #treatment-container-medicine .remove-duplicate-row ').show();
         // $('.appended-row-medicine button.btn-primary').replaceWith("<button class='btn btn-danger w-60 remove-duplicate-row'>Remove</button>");
     });
 
@@ -511,8 +519,9 @@ jQuery.noConflict();
     mark_required__();
     $("body").on('change', function(){
         mark_required();
-       
     })
+
+
 
 
 })(jQuery);

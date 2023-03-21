@@ -578,3 +578,97 @@ Stack trace:
 [17-Mar-2023 14:30:07 Europe/Berlin] PHP Warning:  Undefined array key "formid" in C:\xampp\htdocs\hospital-management\backend\actions\patients\medicine.php on line 8
 [17-Mar-2023 15:22:49 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
 [17-Mar-2023 15:22:49 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 16
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_suffix" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_first_name" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_middle_name" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_last_name" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_gender" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_dob" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_contact_number" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_email" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_address" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 30
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 32
+[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 33
+[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
+[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 30
+[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 32
+[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 33
+[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_addiction" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 36
+[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_health_condition" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 37
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 6
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
+[21-Mar-2023 13:45:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 26
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 6
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
+[21-Mar-2023 13:45:27 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 26
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 6
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
+[21-Mar-2023 13:45:35 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 26
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 6
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
+[21-Mar-2023 13:46:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 26
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 6
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
+[21-Mar-2023 13:47:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 26

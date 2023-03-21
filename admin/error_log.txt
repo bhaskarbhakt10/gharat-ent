@@ -1699,3 +1699,13 @@ Stack trace:
 [17-Mar-2023 13:57:35 Europe/Berlin] PHP Warning:  Undefined variable $DESC in C:\xampp\htdocs\hospital-management\admin\admin-list-patients.php on line 4
 [17-Mar-2023 13:57:35 Europe/Berlin] PHP Warning:  Undefined variable $DESC in C:\xampp\htdocs\hospital-management\admin\admin-list-patients.php on line 4
 [17-Mar-2023 13:58:03 Europe/Berlin] PHP Warning:  Undefined variable $DESC in C:\xampp\htdocs\hospital-management\admin\admin-list-patients.php on line 4
+[21-Mar-2023 14:21:18 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
+[21-Mar-2023 14:22:04 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
+[21-Mar-2023 14:22:13 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
+[21-Mar-2023 14:22:26 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
+[21-Mar-2023 14:23:23 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
+[21-Mar-2023 14:24:11 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
+[21-Mar-2023 14:25:49 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
+[21-Mar-2023 14:25:49 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
+[21-Mar-2023 14:25:51 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
+[21-Mar-2023 14:25:51 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
