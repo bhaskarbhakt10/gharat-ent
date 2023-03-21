@@ -14,7 +14,7 @@ if(isset($_POST)){
     $patient_last_name = $arr_post['patient_last_name'];
     $patient_gender = $arr_post['patient_gender'];
     if(!empty($arr_post['patient_other_gender']) && array_key_exists('patient_other_gender', $arr_post)){
-        $patient_gender .= $arr_post['patient_other_gender'];
+        $patient_gender .= "-".$arr_post['patient_other_gender'];
     }
 
     $patient_dob = $arr_post['patient_dob'];

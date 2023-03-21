@@ -11,7 +11,7 @@ if (array_key_exists('p_id', $_GET)) {
             $last_name = $row['hospital_PatientLastName'];
             $phone_number = $row['hospital_PatientContactNumber'];
             $email = $row['hospital_PatientEmail'];
-            echo $gender = $row['hospital_PatientGender'];
+            $gender = $row['hospital_PatientGender'];
             $date_of_birth = $row['hospital_PatientDOB'];
             $address = $row['hospital_PatientAddress'];
            
@@ -61,21 +61,21 @@ if (array_key_exists('p_id', $_GET)) {
                         <label for="">Select Gender</label>
                         <div class="mb-3 d-flex gap-10 flex-wrap">
                             <div class="d-flex flex-30  align-items-center justify-content-center">
-                                <input type="radio" name="patient_gender" id="Gender-Male" class="form-check-input form-field" value="male" required checked
-                                <?php // echo (!empty($suffix) && $suffix === "male") ? 'checked' : '' ; ?>>
+                                <input type="radio" name="patient_gender" id="Gender-Male" class="form-check-input form-field" value="male" required 
+                                <?php  echo (!empty($gender) && $gender === "male") ? 'checked' : '' ; ?>>
                                 <label for="Gender-Male">Male</label>
                             </div>
                             <div class="d-flex flex-30 align-items-center justify-content-center">
                                 <input type="radio" name="patient_gender" id="Gender-Female" class="form-check-input form-field" value="female" 
-                                <?php // echo (!empty($suffix) && ($suffix === "female")) ? 'checked' : '' ; ?>>
+                                <?php  echo (!empty($gender) && ($gender === "female")) ? 'checked' : '' ; ?>>
                                 <label for="Gender-Female">Female</label>
                             </div>
                             <div class="d-flex flex-30 align-items-center justify-content-center">
                                 <input type="radio" name="patient_gender" id="Gender-Other" class="form-check-input form-field" value="other" 
-                                <?php // echo (!empty($suffix) && $suffix === "other") ? 'checked' : '' ; ?>>
+                                <?php  echo ((!empty($gender)) && ($gender !== "male" && $gender !== "female") ) ? 'checked' : '' ; ?>>
                                 <label for="Gender-Other">Other</label>
                             </div>
-                            <input type="text" name="patient_other_gender" id="Gender-Other-value" class="form-control form-field" placeholder="Please Specify" required>
+                            <input type="text" name="patient_other_gender" id="Gender-Other-value" class="form-control form-field" placeholder="Please Specify" required value="<?php echo  ((!empty($gender)) && ($gender !== "male" && $gender !== "female") ) ? $gender : '' ; ?>">
                         </div>
                     </div>
                     <div class="col-md-3">
