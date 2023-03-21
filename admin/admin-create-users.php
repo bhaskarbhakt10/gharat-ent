@@ -11,37 +11,37 @@ $json_obj = json_decode($json_file);
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="First-name"> First Name</label>
-                                    <input type="text" name="first_name" id="First-name" class="form-control form-field" placeholder="First Name">
+                                    <input type="text" name="first_name" id="First-name" class="form-control form-field" placeholder="First Name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="Last-name">Last Name</label>
-                                    <input type="text" name="last_name" id="Last-Name" class="form-control form-field" placeholder="Last Name">
+                                    <input type="text" name="last_name" id="Last-Name" class="form-control form-field" placeholder="Last Name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="Phone-Number"> Phone Number</label>
-                                    <input type="tel" name="phone_number" id="Phone-number" class="form-control form-field" placeholder="Phone Number">
+                                    <input type="tel" name="phone_number" id="Phone-number" class="form-control form-field" placeholder="Phone Number" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="Email"> Email </label>
-                                    <input type="email" name="email" id="Email" class="form-control form-field" placeholder="Email">
+                                    <input type="email" name="email" id="Email" class="form-control form-field" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="UserName">User Name</label>
-                                    <input type="text" name="username" id="UserName" class="form-control form-field" placeholder="User name">
+                                    <input type="text" name="username" id="UserName" class="form-control form-field" placeholder="User name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="UserPassword"> Password</label>
-                                    <input type="password" name="password" id="UserPassword" class="form-control form-field" placeholder="Create Password">
+                                    <input type="password" name="password" id="UserPassword" class="form-control form-field" placeholder="Create Password" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -56,8 +56,8 @@ $json_obj = json_decode($json_file);
                             <div class=" col-md-6">
                                 <div class="mb-3">
 
-                                <label for="Select-rank"></label>
-                                <select name="rank" id="Select-rank" class="form-select form-field">
+                                <label for="Select-rank"> Select a Role</label>
+                                <select name="rank" id="Select-rank" class="form-select form-field" required>
                                     <option value="" hidden disabled selected>Select a Role</option>
                                     <?php
                                     foreach($json_obj as $arr){

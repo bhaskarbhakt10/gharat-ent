@@ -10,16 +10,18 @@ class PatientsTreatmentSymptom
     private $db;
     private $details;
     private $pID;
+    private $formid;
 
     function __construct()
     {
         $this->db = new Database();
     }
 
-    function get_Details($medicine_array,$patient_id)
+    function get_Details($medicine_array,$patient_id,$formid)
     {
         $this->details = $medicine_array;
         $this->pID=$patient_id;
+        $this->formid=$formid;
     }
 
     function gen_json()
@@ -31,6 +33,7 @@ class PatientsTreatmentSymptom
         $this->details['date'] = $date_now;
         $this->details['time'] = $time_now;
         $this->details['ID'] = uniqid($this->pID."_");
+        $this->details['prescribedID'] = $this->formid;
         $t = time();
         $final[$t] = $this->details;
         return  json_encode($final);

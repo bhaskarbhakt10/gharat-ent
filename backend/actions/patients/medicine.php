@@ -5,6 +5,7 @@ if (isset($_POST)) {
     $all_data = $_POST['merged_array'];
     $unique_names = $_POST['unique_names'];
     $patient_id = $_POST['patient_id'];
+    $formid = $_POST['formid'];
 
     $medicine_array = array();
     foreach ($unique_names as $unique_name) {
@@ -29,6 +30,7 @@ if (isset($_POST)) {
     }
     
     $medicine_name = $medicine_array['medicine_name'];
+    $medicine_name = $medicine_array['medicine_name'];
     $medicine_qty = $medicine_array['medicine_qty'];
     $medicine_volume = $medicine_array['medicine_volume'];
     $medicine_pattern = $medicine_array['medicine_pattern'];
@@ -37,7 +39,7 @@ if (isset($_POST)) {
 
     if(!empty($medicine_name) && !empty($medicine_qty) && !empty($medicine_volume) && !empty($medicine_pattern) ){
         $medicine = new PatientsTreatmentSymptom();
-        $medicine->get_Details($medicine_array,$patient_id);
+        $medicine->get_Details($medicine_array,$patient_id,$formid);
         if($medicine->send_meds_to_DB($patient_id) === true){
             echo "success";
         }

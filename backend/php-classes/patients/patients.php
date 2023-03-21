@@ -86,7 +86,7 @@ class Patients
 
     function get_list_patients()
     {
-        $sql = "SELECT * FROM " . PATIENTS;
+        $sql = "SELECT * FROM " . PATIENTS . " ORDER BY hospital_PatientId DESC";
         $res = $this->db->connect()->query($sql);
         if ($res->num_rows > 0) {
             return $res;
