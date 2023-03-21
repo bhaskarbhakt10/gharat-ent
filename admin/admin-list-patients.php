@@ -35,6 +35,7 @@ $all_details = $patients->get_list_patients();
                     <td>
                         <a class="btn btn-primary" href="index.php?q=admin-single-patient&p_id=<?php echo $row['hospital_PatientId']; ?>">View Detail</a>
                         <a class="btn btn-secondary" href="index.php?q=admin-update-daily-check-up&p_id=<?php echo $row['hospital_PatientId']; ?>">View Detail</a>
+                        <a class="btn btn-secondary" href="index.php?q=admin-edit-patients&p_id=<?php echo $row['hospital_PatientId']; ?>">View Detail</a>
                     </td>
                 </tr>
         <?php
