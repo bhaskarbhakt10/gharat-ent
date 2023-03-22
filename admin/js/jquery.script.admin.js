@@ -8,6 +8,9 @@ jQuery.noConflict();
         other_gender_val.detach();
     }
     $('body').on('change', '[name=patient_gender]', function () {
+        $('[name=patient_gender]').removeAttr('checked');
+        $(this).attr('checked','checked');
+        other_gender_val.val('');
         if ($('#Gender-Other').is(':checked')) {
             $(this).parent().parent().append(other_gender_val);
         }
