@@ -1,6 +1,6 @@
 <div class="row">
         <div class="col-md-12">
-            <fieldset>
+            <fieldset class="bg_form_blue">
                 <div class="patient-history-wrap">
                     <h2 class="my-3">
                         Regular chekup

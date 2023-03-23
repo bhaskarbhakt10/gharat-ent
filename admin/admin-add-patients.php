@@ -1,5 +1,5 @@
 
-<form action="" method="POST">
+<form action="" method="POST" class="add-patients">
 
     <?php
     require_once 'admin-patient-primary-details.php';

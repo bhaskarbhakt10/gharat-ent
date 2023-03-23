@@ -1,7 +1,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        <fieldset>
+        <fieldset class="bg_form_grey">
             <h2>Medical history</h2>
             <div class="d-flex ">
                 <div class="d-flex flex-wrap gap-20 flex-100">

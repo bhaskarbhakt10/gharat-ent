@@ -1735,3 +1735,15 @@ Stack trace:
 [22-Mar-2023 17:43:13 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\admin\admin-edit-patients.php on line 7
 [22-Mar-2023 17:43:25 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\admin\admin-edit-patients.php on line 7
 [22-Mar-2023 18:48:54 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in D:\php-local\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 6
+[23-Mar-2023 17:23:52 Europe/Berlin] PHP Warning:  Undefined variable $user_id in D:\php-local\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[23-Mar-2023 17:23:53 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[23-Mar-2023 17:23:53 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[23-Mar-2023 17:23:53 Europe/Berlin] PHP Warning:  Undefined variable $default_image in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[23-Mar-2023 17:23:53 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[23-Mar-2023 17:23:53 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[23-Mar-2023 17:23:53 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[23-Mar-2023 17:23:53 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[23-Mar-2023 17:23:54 Europe/Berlin] PHP Warning:  Undefined array key "user" in D:\php-local\htdocs\hospital-management\admin\index.php on line 18
+[23-Mar-2023 17:23:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\index.php on line 18
+[23-Mar-2023 17:23:54 Europe/Berlin] PHP Warning:  Undefined array key "user" in D:\php-local\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[23-Mar-2023 17:23:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
