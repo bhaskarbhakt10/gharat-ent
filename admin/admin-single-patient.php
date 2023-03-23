@@ -172,8 +172,8 @@ if (array_key_exists('p_id', $_GET)) {
                     } else {
                         ?>
                         <tr>
-                            <td>
-                                <h3>
+                            <td colspan="3">
+                                <h3 class="text-center">
                                     No TreatMent Found
                                 </h3>
 
@@ -393,7 +393,7 @@ if (array_key_exists('p_id', $_GET)) {
                     } else {
                         ?>
                         <tr>
-                            <td colspan="5">
+                            <td colspan="7">
                                 <h3 class="text-center">
                                     No Medicine History Found
                                 </h3>

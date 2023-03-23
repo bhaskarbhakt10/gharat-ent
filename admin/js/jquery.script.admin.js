@@ -3,8 +3,14 @@ jQuery.noConflict();
 
     // add patients
     let other_gender_val = $('#Gender-Other-value');
-    other_gender_val.detach();
+    console.log(other_gender_val.val());
+    if((other_gender_val.val() === "")){
+        other_gender_val.detach();
+    }
     $('body').on('change', '[name=patient_gender]', function () {
+        $('[name=patient_gender]').removeAttr('checked');
+        $(this).attr('checked','checked');
+        other_gender_val.val('');
         if ($('#Gender-Other').is(':checked')) {
             $(this).parent().parent().append(other_gender_val);
         }
@@ -171,7 +177,33 @@ jQuery.noConflict();
         });
         }
         else if(data_attr === 'edit'){
-            console.warn("Edit form")
+            $.ajax({
+                url: '../backend/actions/patients/update-patient-primary-details.php',
+                type: 'POST',
+                data: data,
+                success: function (data) {
+                    console.log(data);
+                    let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
+                    success_html += '<strong>Patient Updated Sucessfully!</strong>  ';
+                    success_html += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> '
+                    success_html += '</div>'
+                    if (data === "success") {
+                        $(this_btn).parent().append(success_html);
+                        setTimeout(() => {
+                            $(this_btn).closest('form')[0].reset();
+                            $(other_gender_val).detach();
+                            $('[data-row^=row]').detach()
+                            console.log($(this_btn).parent().find('.alert').remove());
+                        }, 2000);
+                    }
+                    else {
+    
+                    }
+                },
+                error: function (error) {
+                    window.alert(error);
+                }
+            });
         }
     }
 
@@ -476,6 +508,7 @@ jQuery.noConflict();
             switch (type) {
                 case 'radio':
                     if ($(all_input[index]).prop('required')) {
+                        console.log($(all_input[index]).parent().parent().parent().find('label:first-child'));
                         $(all_input[index]).parent().parent().parent().find('label:first-child').addClass('mandatory-mark');
                     }
                     break;
@@ -484,6 +517,7 @@ jQuery.noConflict();
                     if ($(all_input[index]).prop('required')) {
                         $(all_input[index]).parent().find('label').addClass('mandatory-mark');
                     }
+                    $('input[type="radio"]').next('label').removeClass('mandatory-mark');
                     break;
             }
         }
@@ -506,13 +540,13 @@ jQuery.noConflict();
                         if ($(all_input[index]).prop('required')) {
                             $(all_input[index]).parent().find('label').addClass('mandatory-mark');
                         }
+                        $('input[type="radio"]').next('label').removeClass('mandatory-mark');
                         break;
                 }
             }
             
         }
     }
-
 
 
     mark_required();

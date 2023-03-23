@@ -1709,3 +1709,29 @@ Stack trace:
 [21-Mar-2023 14:25:49 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
 [21-Mar-2023 14:25:51 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
 [21-Mar-2023 14:25:51 Europe/Berlin] PHP Warning:  Undefined variable $first_name in C:\xampp\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 45
+[22-Mar-2023 17:22:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:102
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\admin-patient-primary-details.php(5): Patients->get_genral_detials('AVHSP_2023P_7')
+#1 D:\php-local\htdocs\hospital-management\admin\admin-edit-patients.php(4): require_once('D:\\php-local\\ht...')
+#2 D:\php-local\htdocs\hospital-management\admin\index.php(51): require_once('D:\\php-local\\ht...')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 102
+[22-Mar-2023 17:31:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:102
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\admin-patient-primary-details.php(5): Patients->get_genral_detials('AVHSP_2023P_7')
+#1 D:\php-local\htdocs\hospital-management\admin\admin-edit-patients.php(4): require_once('D:\\php-local\\ht...')
+#2 D:\php-local\htdocs\hospital-management\admin\index.php(51): require_once('D:\\php-local\\ht...')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 102
+[22-Mar-2023 17:41:52 Europe/Berlin] PHP Warning:  require_once(D:/php-local/htdocs/hospital-management/backend/constants/constants-static.php'): Failed to open stream: No such file or directory in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 3
+[22-Mar-2023 17:41:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'D:/php-local/htdocs/hospital-management/backend/constants/constants-static.php'' (include_path='D:\php-local\php\PEAR') in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:3
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\inc\admin-functions.php(13): require_once()
+#1 D:\php-local\htdocs\hospital-management\admin\inc\admin-nav-side.php(2): require_once('D:\\php-local\\ht...')
+#2 D:\php-local\htdocs\hospital-management\admin\index.php(7): require_once('D:\\php-local\\ht...')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 3
+[22-Mar-2023 17:43:12 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\admin\admin-edit-patients.php on line 7
+[22-Mar-2023 17:43:13 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\admin\admin-edit-patients.php on line 7
+[22-Mar-2023 17:43:25 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\admin\admin-edit-patients.php on line 7
+[22-Mar-2023 18:48:54 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in D:\php-local\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 6

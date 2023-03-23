@@ -1,674 +1,83 @@
-[23-Feb-2023 20:17:27 Europe/Berlin] PHP Warning:  Array to string conversion in D:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 4
-[24-Feb-2023 09:46:07 Europe/Berlin] PHP Warning:  require_once(../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
-[24-Feb-2023 09:46:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:2
+[22-Mar-2023 17:21:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
 Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
 #1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
-[24-Feb-2023 10:00:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:23
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Undefined array key "post" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 7
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 12
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 13
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 14
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 15
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 16
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 21
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 22
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 23
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 24
+[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 25
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Undefined array key "post" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 7
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 12
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 13
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 14
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 15
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 16
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 21
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 22
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 23
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 24
+[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 25
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Undefined array key "post" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 7
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 12
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 13
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 14
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 15
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 16
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 21
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 22
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 23
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 24
+[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 25
+[22-Mar-2023 17:26:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
 Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(21): Patients->__construct()
+#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
 #1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 23
-[24-Feb-2023 10:01:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "PATIENTS" in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:41
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
+[22-Mar-2023 17:27:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
 Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(23): Patients->gen_patientID()
+#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
 #1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 41
-[24-Feb-2023 10:01:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "PATIENTS" in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:41
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
+[22-Mar-2023 17:28:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
 Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(23): Patients->gen_patientID()
+#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
 #1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 41
-[24-Feb-2023 10:02:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "PATIENTS" in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:41
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
+[22-Mar-2023 17:30:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
 Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(23): Patients->gen_patientID()
+#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
 #1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 41
-[24-Feb-2023 10:04:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "PATIENTS" in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:41
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
+[22-Mar-2023 17:30:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
 Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(23): Patients->gen_patientID()
+#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
 #1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 41
-[24-Feb-2023 10:18:37 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'hospital-management.hospital_access' doesn't exist in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:42
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
+[22-Mar-2023 17:31:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
 Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(42): mysqli->query('SELECT * FROM h...')
-#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(23): Patients->gen_patientID()
-#2 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 42
-[24-Feb-2023 14:57:28 Asia/Calcutta] PHP Warning:  Undefined variable $patientId in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
-[24-Feb-2023 11:59:17 Europe/Berlin] PHP Warning:  Undefined array key "patient_other_gender" in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 12
-[24-Feb-2023 11:59:28 Europe/Berlin] PHP Warning:  Undefined array key "patient_other_gender" in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 12
-[24-Feb-2023 12:00:58 Europe/Berlin] PHP Warning:  Undefined array key "patient_other_gender" in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 12
-[24-Feb-2023 12:05:39 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 18
-[24-Feb-2023 12:06:38 Europe/Berlin] PHP Warning:  Undefined array key "patient_other_gender" in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 12
-[24-Feb-2023 13:57:59 Europe/Berlin] PHP Warning:  require_once(./patientsHistory.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 5
-[24-Feb-2023 13:57:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required './patientsHistory.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:5
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
 #1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 5
-[24-Feb-2023 13:59:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PatientHistory" not found in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php:31
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
+[22-Mar-2023 17:32:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
 Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 31
-[24-Feb-2023 14:00:41 Europe/Berlin] PHP Warning:  require_once(./patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
-[24-Feb-2023 14:00:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required './patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:5
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
 #1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
-[24-Feb-2023 14:02:20 Europe/Berlin] PHP Warning:  require_once(../patients/patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
-[24-Feb-2023 14:02:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../patients/patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:5
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
+[22-Mar-2023 17:35:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
 Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
 #1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
-[24-Feb-2023 14:03:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Patients" not found in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:7
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
+[22-Mar-2023 17:36:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
 Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
+#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
 #1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 7
-[24-Feb-2023 14:04:11 Europe/Berlin] PHP Warning:  require_once(/patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
-[24-Feb-2023 14:04:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:5
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
-#1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
-[24-Feb-2023 14:06:02 Europe/Berlin] PHP Warning:  require_once(./patients.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
-[24-Feb-2023 14:06:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required './patients.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:5
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
-#1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 5
-[24-Feb-2023 14:13:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:34
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(60): PatientHistory->check_if_patientId_exist_in_history()
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(39): PatientHistory->send_to_DB()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(32): Patients->get_details('Mr', 'Bhaskar', 'Test', 'male', '2023-02-09', '09096471732', '', 'bhaskar@nuitsol...', 'a-301 test')
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 34
-[24-Feb-2023 14:15:56 Europe/Berlin] PHP Fatal error:  Access level to PatientHistory::$db must be public (as in class Patients) in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 7
-[24-Feb-2023 14:24:39 Europe/Berlin] PHP Fatal error:  Access level to PatientHistory::$db must be public (as in class Patients) in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 7
-[24-Feb-2023 14:40:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:45
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(67): Patients->gen_patientID()
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(39): Patients->send_to_db()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(32): Patients->get_details('Mr', 'Bhaskar', 'Test', 'male', '2023-02-22', '09096471732', '', 'bhaskar@nuitsol...', 'a-301 test')
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 45
-[24-Feb-2023 14:56:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:34
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(61): PatientHistory->check_if_patientId_exist_in_history()
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(39): PatientHistory->send_to_DB()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(32): Patients->get_details('Mr', 'Bhaskar', 'Test', 'male', '2023-02-08', '09096471732', '', 'bhaskar@nuitsol...', 'a-301 test')
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 34
-[27-Feb-2023 10:26:49 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(45): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(36): PatientHistory->Insert_His()
-#2 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
-[27-Feb-2023 10:32:53 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'hospital_pID' in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(45): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(36): PatientHistory->Insert_His()
-#2 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
-[27-Feb-2023 10:40:57 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(28): Patients->gen_patientID()
-#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(35): PatientHistory->get_patient_history('w', 'h', 'd', 'b')
-#2 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
-[27-Feb-2023 10:45:09 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'hospital_pID' in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(45): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(36): PatientHistory->Insert_His()
-#2 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
-[27-Feb-2023 10:47:49 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'hospital_pID' in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(45): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(36): PatientHistory->Insert_His()
-#2 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
-[27-Feb-2023 10:49:18 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(28): Patients->test()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(35): PatientHistory->get_patient_history('w', 'h', 'D', 'b')
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
-[27-Feb-2023 10:56:39 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(28): Patients->test()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(35): PatientHistory->get_patient_history('h', 'b', 'hhh', 'hhhh')
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
-[27-Feb-2023 10:57:36 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(28): Patients->test()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(35): PatientHistory->get_patient_history('hhhhhhhhh', 'hhhhhh', 'hhhhh', 'hhhhhhh')
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
-[27-Feb-2023 11:02:07 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(28): Patients->test()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(35): PatientHistory->get_patient_history('hww', 'h', 'd', 'b')
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
-[27-Feb-2023 11:54:35 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
-#1 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(36): Patients->send_PID()
-#2 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
-[27-Feb-2023 12:06:29 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:49
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php(59): Patients->gen_patientID()
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(38): Patients->send_PID()
-#2 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(42): PatientHistory->patientID()
-#3 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(71): PatientHistory->check_if_patientId_exist_in_history()
-#4 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(33): PatientHistory->send_to_DB()
-#5 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(37): PatientHistory->get_patient_history('w', 'h', 'D', 'b')
-#6 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 49
-[27-Feb-2023 12:10:11 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(72): PatientHistory->check_if_patientId_exist_in_history()
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(34): PatientHistory->send_to_DB()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(37): PatientHistory->get_patient_history('w', 'h', 'D', 'b')
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
-[27-Feb-2023 12:11:16 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:45
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(72): PatientHistory->check_if_patientId_exist_in_history()
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(34): PatientHistory->send_to_DB()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(37): PatientHistory->get_patient_history('W', 'H', 'D', 'B')
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 45
-[27-Feb-2023 12:15:34 Asia/Calcutta] PHP Warning:  Undefined variable $pid in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 37
-[27-Feb-2023 12:16:22 Asia/Calcutta] PHP Warning:  Undefined variable $pid in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 38
-[27-Feb-2023 12:19:37 Asia/Calcutta] PHP Warning:  Undefined variable $pid in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 38
-[27-Feb-2023 13:43:42 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1'","weight":"58kg","bp":"pata nahi","diabetes":"no"}}')' at line 1 in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:65
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(65): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(81): PatientHistory->Insert_His()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(38): PatientHistory->send_to_DB()
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 65
-[27-Feb-2023 13:50:04 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1'","weight":"58kg","bp":"normal","diabetes":"no"}}')' at line 1 in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:65
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(65): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(77): PatientHistory->Insert_His()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(38): PatientHistory->send_to_DB()
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 65
-[27-Feb-2023 13:59:24 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1","weight":"150kg","bp":"120-123","diabetes":"NO "}}')' at line 1 in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:65
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(65): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(77): PatientHistory->Insert_His()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(38): PatientHistory->send_to_DB()
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 65
-[27-Feb-2023 14:41:15 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '2'","weight":"85kg","bp":"130-140","diabetes":"no"}}')' at line 1 in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php:65
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(65): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php(77): PatientHistory->Insert_His()
-#2 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(38): PatientHistory->send_to_DB()
-#3 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patientsHistory.php on line 65
-[27-Feb-2023 10:37:38 Europe/Berlin] PHP Warning:  require_once(../backend/database/config.database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
-[27-Feb-2023 10:37:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../backend/database/config.database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php:2
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(2): require_once()
-#1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 2
-[28-Feb-2023 07:51:01 Europe/Berlin] PHP Warning:  Undefined variable $myArray in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 35
-[28-Feb-2023 07:51:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php:37
-Stack trace:
-#0 C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php(37): array_filter(NULL, Object(Closure), 2)
-#1 {main}
-  thrown in C:\xampp\htdocs\Hospital-Management\backend\actions\patients\add-patient.php on line 37
-[08-Mar-2023 15:32:03 Asia/Calcutta] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 76
-[08-Mar-2023 15:32:03 Asia/Calcutta] PHP Warning:  Array to string conversion in D:\php-local\htdocs\Hospital-Management\backend\php-classes\patients\patients.php on line 76
-[09-Mar-2023 09:27:46 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 8
-[09-Mar-2023 09:27:46 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 12
-[09-Mar-2023 09:27:46 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 14
-[09-Mar-2023 09:27:46 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 15
-[09-Mar-2023 09:27:46 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 18
-[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 9
-[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
-[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 15
-[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 18
-[09-Mar-2023 09:29:30 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 9
-[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
-[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 15
-[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 18
-[09-Mar-2023 09:35:26 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 09:38:10 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 15
-[09-Mar-2023 09:38:10 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 19
-[09-Mar-2023 09:38:10 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 09:38:10 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 22
-[09-Mar-2023 09:38:10 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 16
-[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 20
-[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 22
-[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 09:42:07 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
-[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
-[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
-[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
-[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
-[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 11
-[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 18
-[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 22
-[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 09:45:18 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 28
-[09-Mar-2023 09:46:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 09:46:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 09:46:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 09:46:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 09:46:12 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
-[09-Mar-2023 09:46:40 Europe/Berlin] PHP Warning:  Undefined variable $pid in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
-[09-Mar-2023 14:14:07 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:44:07 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:44:07 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
-[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:15:35 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:45:35 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:45:35 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
-[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:15:52 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:45:52 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:45:52 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
-[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:16:22 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:46:22 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:46:22 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
-[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:16:49 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:46:49 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:46:49 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
-[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:20:13 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:50:13 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:50:13 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
-[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:24:42 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:54:42 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:54:42 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
-[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:24:45 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:54:45 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:54:45 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
-[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:26:33 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:56:33 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:56:33 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:27:30 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:57:30 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:57:30 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:27:56 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 18:57:56 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 18:57:56 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
-[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:30:13 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 19:00:13 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 19:00:13 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "form_data" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 6
-[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 10
-[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:30:20 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 19:00:20 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 19:00:20 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:33:33 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 19:03:33 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 19:03:33 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:33:43 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 19:03:43 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 19:03:43 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:34:30 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 19:04:30 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 19:04:30 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:34:37 Europe/Berlin] PHP Warning:  Undefined array key "p_id" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
-[09-Mar-2023 19:04:37 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 80
-[09-Mar-2023 19:04:37 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php:81
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php(81): array_merge(Array, NULL)
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php(29): PatientHistory->Update_His(NULL)
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsHistory.php on line 81
-[09-Mar-2023 14:39:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:39:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:39:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:39:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:40:09 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:40:09 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:40:09 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:40:09 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[09-Mar-2023 14:44:12 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[09-Mar-2023 19:55:45 Europe/Berlin] PHP Warning:  Undefined array key "merged-array" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 4
-[09-Mar-2023 19:56:59 Europe/Berlin] PHP Warning:  Undefined array key "merged-array" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 4
-[09-Mar-2023 20:09:52 Europe/Berlin] PHP Warning:  Undefined array key "merged-array" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 4
-[09-Mar-2023 20:09:52 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 7
-[09-Mar-2023 20:10:43 Europe/Berlin] PHP Warning:  Undefined array key "merged-array" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 4
-[09-Mar-2023 20:10:43 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 7
-[09-Mar-2023 20:11:36 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 8
-[09-Mar-2023 20:11:36 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 8
-[09-Mar-2023 20:17:42 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
-[09-Mar-2023 20:17:42 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
-[09-Mar-2023 20:19:10 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
-[09-Mar-2023 20:19:10 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
-[09-Mar-2023 20:19:30 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
-[09-Mar-2023 20:19:30 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
-[09-Mar-2023 20:20:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php:9
-Stack trace:
-#0 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 9
-[09-Mar-2023 20:21:52 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 10
-[09-Mar-2023 20:21:52 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 10
-[09-Mar-2023 20:34:16 Europe/Berlin] PHP Warning:  Undefined array key "medicine_name" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 20:34:16 Europe/Berlin] PHP Warning:  Undefined array key "medicine_qty" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 20:34:16 Europe/Berlin] PHP Warning:  Undefined array key "medicine_volume" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 20:34:16 Europe/Berlin] PHP Warning:  Undefined array key "medicine_notes" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 20:47:17 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 20:47:31 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 20:47:31 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 21:02:07 Europe/Berlin] PHP Warning:  Undefined array key "medicine_name" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 20
-[09-Mar-2023 21:02:07 Europe/Berlin] PHP Warning:  Undefined array key "medicine_qty" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 20
-[09-Mar-2023 21:02:07 Europe/Berlin] PHP Warning:  Undefined array key "medicine_volume" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 20
-[09-Mar-2023 21:02:07 Europe/Berlin] PHP Warning:  Undefined array key "medicine_pattern" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 20
-[09-Mar-2023 21:02:07 Europe/Berlin] PHP Warning:  Undefined array key "medicine_notes" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 20
-[09-Mar-2023 21:04:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Illegal offset type in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php:17
-Stack trace:
-#0 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 17
-[09-Mar-2023 21:06:51 Europe/Berlin] PHP Warning:  Undefined array key "medicine_name" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 21:06:51 Europe/Berlin] PHP Warning:  Undefined array key "medicine_qty" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 21:06:51 Europe/Berlin] PHP Warning:  Undefined array key "medicine_volume" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 21:06:51 Europe/Berlin] PHP Warning:  Undefined array key "medicine_pattern" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 21:06:51 Europe/Berlin] PHP Warning:  Undefined array key "medicine_notes" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 11
-[09-Mar-2023 21:09:02 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 16
-[09-Mar-2023 21:09:02 Europe/Berlin] PHP Warning:  Array to string conversion in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 16
-[09-Mar-2023 21:10:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php:17
-Stack trace:
-#0 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 17
-[09-Mar-2023 21:17:42 Europe/Berlin] PHP Warning:  Undefined variable $value in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 18
-[09-Mar-2023 21:18:28 Europe/Berlin] PHP Warning:  Undefined variable $value in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 18
-[09-Mar-2023 21:19:18 Europe/Berlin] PHP Warning:  Undefined variable $value in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 18
-[09-Mar-2023 21:19:33 Europe/Berlin] PHP Warning:  Undefined variable $value in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 18
-[09-Mar-2023 21:41:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "TIMEZONE_IN" in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php:32
-Stack trace:
-#0 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\medicine.php on line 32
-[10-Mar-2023 11:28:13 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
-[10-Mar-2023 11:28:13 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php on line 15
-[16-Mar-2023 19:33:45 Europe/Berlin] PHP Warning:  Undefined array key "patient_health_condition" in D:\php-local\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 37
-[17-Mar-2023 13:04:20 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
-[17-Mar-2023 13:04:20 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 15
-[17-Mar-2023 13:18:06 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[17-Mar-2023 13:18:06 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[17-Mar-2023 13:18:06 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[17-Mar-2023 13:18:06 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[17-Mar-2023 13:18:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[17-Mar-2023 13:18:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[17-Mar-2023 13:18:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[17-Mar-2023 13:18:13 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[17-Mar-2023 13:18:24 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[17-Mar-2023 13:18:24 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[17-Mar-2023 13:18:24 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[17-Mar-2023 13:18:24 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[17-Mar-2023 13:18:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[17-Mar-2023 13:18:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[17-Mar-2023 13:18:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[17-Mar-2023 13:18:33 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[17-Mar-2023 13:18:58 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[17-Mar-2023 13:18:58 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[17-Mar-2023 13:18:58 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[17-Mar-2023 13:18:58 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[17-Mar-2023 14:21:18 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
-[17-Mar-2023 14:21:18 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 15
-[17-Mar-2023 14:30:07 Europe/Berlin] PHP Warning:  Undefined array key "formid" in C:\xampp\htdocs\hospital-management\backend\actions\patients\medicine.php on line 8
-[17-Mar-2023 15:22:49 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
-[17-Mar-2023 15:22:49 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 16
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_suffix" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_first_name" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_middle_name" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_last_name" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_gender" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_dob" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_contact_number" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_email" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_address" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 30
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 32
-[21-Mar-2023 13:11:39 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 33
-[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
-[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 30
-[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 32
-[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 33
-[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_addiction" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 36
-[21-Mar-2023 13:28:15 Europe/Berlin] PHP Warning:  Undefined array key "patient_health_condition" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 37
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 6
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
-[21-Mar-2023 13:45:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php:26
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 26
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 6
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
-[21-Mar-2023 13:45:27 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php:26
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 26
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 6
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
-[21-Mar-2023 13:45:35 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php:26
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 26
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 6
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
-[21-Mar-2023 13:46:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php:26
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 26
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 6
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 11
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 12
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 13
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 14
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 15
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 20
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 21
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 22
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 23
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 25
-[21-Mar-2023 13:47:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php:26
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 26
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24

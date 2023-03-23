@@ -1,6 +1,7 @@
 <?php
-$_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/database/config.database.php";
-$_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/constants/constants-static.php'";
+require_once $_SERVER['DOCUMENT_ROOT']. '/hospital-management/backend/database/config.database.php';
+require_once $_SERVER['DOCUMENT_ROOT']. '/hospital-management/backend/constants/constants-static.php';
+
 
 
 class Patients
@@ -104,5 +105,24 @@ class Patients
         } else {
             return false;
         }
+    }
+
+    function update_details($patient_update_id, $patient_suffix,$patient_first_name,$patient_middle_name,$patient_last_name,$patient_gender,$patient_dob,$patient_contact_number,$patient_email,$patient_address){
+        $sql = "SELECT * FROM " . PATIENTS . " WHERE hospital_PatientId='$patient_update_id'";
+        $res = $this->db->connect()->query($sql);
+        if ($res->num_rows > 0) {
+            $update_sql = "UPDATE " . PATIENTS . " SET hospital_PatientSuffix= '".$patient_suffix."', hospital_PatientFirstName='".$patient_first_name."', hospital_PatientMiddleName='".$patient_middle_name."', hospital_PatientLastName='".$patient_last_name."', hospital_PatientGender='".$patient_gender."', hospital_PatientDOB='".$patient_dob."', hospital_PatientContactNumber='".$patient_contact_number."', hospital_PatientEmail='".$patient_email."', hospital_PatientAddress='".$patient_address."' WHERE hospital_PatientId='".$patient_update_id."'";
+            // echo $update_sql;
+            $update_res = $this->db->connect()->query($update_sql);
+            if($update_res){
+                return true;
+            }
+            else{
+                return false;
+            }
+        } else {
+            return false;
+        }
+        
     }
 }
