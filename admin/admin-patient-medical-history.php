@@ -16,7 +16,7 @@
                     </div>
                     <div class="flex-48 mb-3 ">
                         <div class="mb-3 w-100">
-                            <label for="health-conditions">Chronic Ailments/Health Condition </label>
+                            <label for="health-conditions">Chronic Ailments/Health Conditions </label>
                             <select name="patient_health_condition" id="health-conditions" class="form-select form-field select-two" multiple required>
                                 <option value="None" selected="selected">None</option>
                                 <!-- <option value="">Health Condition</option> -->
@@ -26,6 +26,9 @@
                                 <option value="Allergies">Allergies</option>
                                 <option value="Diabetes">Diabetes</option>
                                 <option value="Cancer">Cancer </option>
+                                <option value="Blood Pressure">Blood Pressure </option>
+                                <option value="PCOS">PCOS</option>
+                                <option value="Irregular Periods">Irregular Periods</option>
                             </select>
                         </div>
                     </div>

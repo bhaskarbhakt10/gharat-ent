@@ -7,8 +7,8 @@
                     </h2>
                     <div class="d-flex flex-wrap gap-20 justify-content-center ">
                         <div class="d-flex flex-48">
-                            <div class="mb-3 d-flex w-100">
-                                <div class="w-100 flex-50 ">
+                            <div class="mb-3 d-flex gap-20 w-100">
+                                <div class="w-100 flex-48 ">
                                     <label for="patient_height_foot"> Patient Height(in foot)</label>
                                     <select name="patient_height_foot" id="patient_height_foot" class="form-select form-field" required>
                                         <option value="">Select foot</option>
@@ -20,7 +20,7 @@
                                         <option value="9">9</option>
                                     </select>
                                 </div>
-                                <div class="w-100 flex-50 ">
+                                <div class="w-100 flex-48 ">
                                     <label for="patient_height_inch">Patient Height(in inches)</label>
                                     <select name="patient_height_inch" id="patient_height_inch" class="form-field form-select">
                                         <option value="">Select inches</option>
@@ -49,7 +49,7 @@
                         </div>
                         <div class="d-flex flex-48">
                             <div class="mb-3 w-100">
-                                <label for="Patient-bp">Patient Bp</label>
+                                <label for="Patient-bp">Patient Blood Pressure</label>
                                 <input type="text" name="patient_bp" id="Patient-bp" class="form-control form-field" required>
                             </div>
                         </div>

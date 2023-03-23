@@ -42,7 +42,7 @@ if (array_key_exists('p_id', $_GET)) {
                     <div class="col-md-3">
                         <div class="mb-3">
                             <label for="First-Name">First Name</label>
-                            <input type="text" name="patient_first_name" id="First-Name" class="form-control form-field " placeholder="Jhon" required  value="<?php echo !empty($first_name) ? $first_name : '' ; ?>">
+                            <input type="text" name="patient_first_name" id="First-Name" class="form-control form-field " placeholder="John" required  value="<?php echo !empty($first_name) ? $first_name : '' ; ?>">
                         </div>
                     </div>
                     <div class="col-md-3">

@@ -296,7 +296,7 @@ if (array_key_exists('p_id', $_GET)) {
     </div>
 </fieldset>
 <fieldset class="mt-3">
-    <h2>Hospital TreatMent History</h2>
+    <h2>Hospital Treatment History</h2>
     <div class="row">
         <div class="col-md-12">
             <table class="table align-middle mb-3 table-striped table-bordered" id="symptom-table">
