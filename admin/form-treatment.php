@@ -1,9 +1,6 @@
 <form action="" id="treatment-container-medicine-form" method="post" data-formid="<?php echo $_SESSION['user']['id'];?>">
-<fieldset class="mt-3">
+<fieldset class="mt-3 bg_form_grey">
     <div class="row">
-        <div class="col-md-12">
-            <h2 class="mb-2">Treatment</h2>
-        </div>
         <div class="col-md-12">
             <div class="treatment-container" id="treatment-container-medicine">
                 <div class="d-flex flex-wrap gap-10 py-3">
@@ -87,15 +84,15 @@
                 </div>
             </div>
             <div class="follow-up d-flex">
-                <div class="mb-3 w-100">
+                <div class="mb-4 w-100">
                     <label for="follow-up-date">Follow up Date</label>
                     <input type="date" name="follow_up_date" id="previous-dates" class="form-control form-field">
                 </div>
             </div>
         </div>
         <div class="d-flex gap-10 ">
-            <button class="btn btn-blue w-20 d-flex justify-content-center save-and-pdf">Save and pdf</button>
-            <button class="btn btn-blue w-20 d-flex justify-content-center preview">Preview</button>
+            <button class="btn btn-blue btn-bg-blue-theme  w-20 d-flex justify-content-center save-and-pdf">Save and pdf</button>
+            <button class="btn btn-blue btn-bg-blue-theme w-20 d-flex justify-content-center preview">Preview</button>
         </div>
     </div>
 </fieldset>

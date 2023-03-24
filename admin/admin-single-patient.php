@@ -33,15 +33,17 @@ if (array_key_exists('p_id', $_GET)) {
 ?>
 
 <input type="hidden" value="<?php echo $patient_id; ?>" id="patient-id">
-<fieldset>
-    <div class="row">
-        <div class="col-md-6">
-            <h2>Primary Information</h2>
-        </div>
-        <div class="col-md-6">
-            <div class="text-end">
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" data-edit="primary-information"><i class="fa fa-pencil"></i></button>
-            </div>
+<div class="pb-2 mb-2">
+    <h2 class="page-heading">
+        Prescription
+    </h2>
+</div>
+<div class="pb-4">
+    <h3 class="form-heading">Primary Information</h3>
+<fieldset class="bg_form_blue ">
+    <div class="edit-btn-block">
+        <div class="text-end">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" data-edit="primary-information"><i class="fa fa-pencil"></i></button>
         </div>
     </div>
     <div class="row">
@@ -91,15 +93,13 @@ if (array_key_exists('p_id', $_GET)) {
         </div>
     </div>
 </fieldset>
-<fieldset class="mt-3">
-<div class="row">
-        <div class="col-md-6">
-            <h2>Medical History</h2>
-        </div>
-        <div class="col-md-6">
-            <div class="text-end">
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" data-edit="medical-history"><i class="fa fa-pencil"></i></button>
-            </div>
+</div>
+<div class="pb-4">
+    <h3 class="form-heading">Medical History</h3>
+<fieldset class="bg_form_grey">
+    <div class="edit-btn-block">
+        <div class="text-end">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" data-edit="medical-history"><i class="fa fa-pencil"></i></button>
         </div>
     </div>
     <div class="row">
@@ -129,7 +129,6 @@ if (array_key_exists('p_id', $_GET)) {
         }
         // print_r($past_treatment_arr);
         // print_r($past_surgery_arr);
-
         ?>
         <div class="col-md-6">
             <div class="mb-3">
@@ -146,8 +145,8 @@ if (array_key_exists('p_id', $_GET)) {
             </div>
         </div>
         <div class="col-md-12">
-            <table class="table align-middle mb-3 table-striped table-bordered">
-                <thead class="bg-light">
+            <table class="table align-middle mb-3 table-blue">
+                <thead>
                     <tr>
                         <th class="th-width-33">Past Treatment</th>
                         <th class="th-width-33">Past Treatment Start</th>
@@ -189,9 +188,8 @@ if (array_key_exists('p_id', $_GET)) {
 
         </div>
         <div class="col-md-12">
-
-            <table class="table align-middle mb-3 table-striped table-bordered">
-                <thead class="bg-light">
+            <table class="table align-middle mb-3 table-blue">
+                <thead>
                     <tr>
                         <th class="th-width-33">Past Surgery</th>
                         <th class="th-width-33">Past Surgery Start</th>
@@ -237,11 +235,13 @@ if (array_key_exists('p_id', $_GET)) {
         </div>
     </div>
 </fieldset>
-<fieldset>
+</div>
+<div class="pb-4">
+    <h3 class="form-heading">Regular checkup</h3>
+<fieldset class="bg_form_grey">
     <div class="mt-3" id="">
-        <h2>Regular checkup</h2>
-        <table class="table table-bordered table-responsive table-striped" id="RegularCheckup">
-            <thead class="bg-light">
+        <table class="table align-middle mb-3 table-blue" id="RegularCheckup">
+            <thead>
                 <tr>
                     <th class="th-width-20">Date</th>
                     <th class="th-width-20">Height</th>
@@ -295,12 +295,14 @@ if (array_key_exists('p_id', $_GET)) {
         </table>
     </div>
 </fieldset>
-<fieldset class="mt-3">
-    <h2>Hospital Treatment History</h2>
+</div>
+<div class="pb-4">
+    <h3 class="form-heading">Hospital Treatment History</h3>
+<fieldset class="bg_form_grey">
     <div class="row">
         <div class="col-md-12">
-            <table class="table align-middle mb-3 table-striped table-bordered" id="symptom-table">
-                <thead class="bg-light">
+            <table class="table align-middle mb-3 table-blue" id="symptom-table">
+                <thead>
                     <tr>
                         <th class="th-width-16">Date</th>
                         <th class="text-center" colspan="5"><b>Meds Data</b></th>
@@ -331,45 +333,45 @@ if (array_key_exists('p_id', $_GET)) {
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                <?php
+                                                    <?php
                                                     $medicine_name = explode(",", $value['medicine_name']);
-                                                    for ($i=0; $i < count($medicine_name) ; $i++) { 
-                                                        ?>
-                                                        <li class="list-style-none"><?php echo $medicine_name[$i];?></li>
-                                                        <?php
+                                                    for ($i = 0; $i < count($medicine_name); $i++) {
+                                                    ?>
+                                                        <li class="list-style-none"><?php echo $medicine_name[$i]; ?></li>
+                                                    <?php
                                                     }
-                                                ?>
+                                                    ?>
                                                 </td>
                                                 <td>
-                                                <?php
+                                                    <?php
                                                     $meds_qty = explode(",", $value['medicine_qty']);
                                                     $meds_vol = explode(",", $value['medicine_volume']);
-                                                    for ($i=0; $i < count($meds_qty) ; $i++) { 
-                                                        ?>
-                                                        <li class="list-style-none"><?php echo $meds_qty[$i] . $meds_vol[$i];?></li>
-                                                        <?php
+                                                    for ($i = 0; $i < count($meds_qty); $i++) {
+                                                    ?>
+                                                        <li class="list-style-none"><?php echo $meds_qty[$i] . $meds_vol[$i]; ?></li>
+                                                    <?php
                                                     }
-                                                ?>
+                                                    ?>
                                                 </td>
                                                 <td>
-                                                <?php
-                                                    $pattern_arr =  explode(',',$value['medicine_pattern']);
-                                                    for ($i=0; $i < count($pattern_arr) ; $i++) { 
-                                                        ?>
-                                                        <li class="list-style-none"><?php echo $pattern_arr[$i];?></li>
-                                                        <?php
+                                                    <?php
+                                                    $pattern_arr =  explode(',', $value['medicine_pattern']);
+                                                    for ($i = 0; $i < count($pattern_arr); $i++) {
+                                                    ?>
+                                                        <li class="list-style-none"><?php echo $pattern_arr[$i]; ?></li>
+                                                    <?php
                                                     }
-                                                ?>
+                                                    ?>
                                                 </td>
                                                 <td>
-                                                <?php
-                                                    $notes = explode(',',$value['medicine_notes']);
-                                                    for ($i=0; $i < count($notes) ; $i++) { 
-                                                        ?>
-                                                        <li class="list-style-none"><?php echo $notes[$i];?></li>
-                                                        <?php
+                                                    <?php
+                                                    $notes = explode(',', $value['medicine_notes']);
+                                                    for ($i = 0; $i < count($notes); $i++) {
+                                                    ?>
+                                                        <li class="list-style-none"><?php echo $notes[$i]; ?></li>
+                                                    <?php
                                                     }
-                                                ?>
+                                                    ?>
                                                 </td>
                                                 <td>
                                                     <?php
@@ -407,12 +409,14 @@ if (array_key_exists('p_id', $_GET)) {
         </div>
     </div>
 </fieldset>
-<fieldset class="mt-3">
-    <h2>Hospital Symptom History</h2>
+</div>
+<div class="pb-4">
+    <h3 class="form-heading">Hospital Symptom History</h3>
+<fieldset class="bg_form_grey">
     <div class="row">
         <div class="col-md-12">
-            <table class="table align-middle mb-3 table-striped table-bordered">
-                <thead class="bg-light">
+            <table class="table align-middle mb-3 table-blue">
+                <thead>
                     <tr>
                         <th class="th-width-20">Symptoms</th>
                         <th class="th-width-20">Status</th>
@@ -461,27 +465,33 @@ if (array_key_exists('p_id', $_GET)) {
         </div>
     </div>
 </fieldset>
-
+</div>
+<div class="pb-4">
+    <h3 class="form-heading">Symptoms</h3>
 <?php require_once './form-symptoms.php'; ?>
-<?php require_once './form-treatment.php'; ?>
+</div>
+<div class="pb-4">
+    <h3 class="form-heading">Treatment</h3>
+    <?php require_once './form-treatment.php'; ?>
+</div>
 
 
 
 
 <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="editModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

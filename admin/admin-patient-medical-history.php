@@ -1,8 +1,10 @@
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 pb-4">
+        <h2 class="form-heading">
+               Medical History
+            </h2>
         <fieldset class="bg_form_grey">
-            <h2>Medical history</h2>
             <div class="d-flex ">
                 <div class="d-flex flex-wrap gap-20 flex-100">
                     <div class="mb-3 flex-48">

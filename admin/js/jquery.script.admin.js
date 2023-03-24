@@ -1,6 +1,8 @@
 jQuery.noConflict();
 (function ($) {
-
+    //all labels 
+    $('label').addClass('label');
+    $('input+label').addClass('label-radio-check');
     // add patients
     let other_gender_val = $('#Gender-Other-value');
     console.log(other_gender_val.val());

@@ -19,7 +19,7 @@ else{
 <div class="d-flex flex-wrap gap-10">
     <?php
 if(!empty($hospital_pMeds)){
-$prescription = json_decode($hospital_pMeds, true);
+    $prescription = json_decode($hospital_pMeds, true);
 foreach ($prescription as $key => $value) {
     ?>
     <div class="mb-3 text-center">

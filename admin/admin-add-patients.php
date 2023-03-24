@@ -1,4 +1,6 @@
-
+<div class="">
+    <h2 class="page-heading">Add Patients</h2>
+</div>
 <form action="" method="POST" class="add-patients">
 
     <?php

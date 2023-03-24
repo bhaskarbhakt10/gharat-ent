@@ -1,6 +1,6 @@
-// #### for side bar menu ### //
 jQuery.noConflict();
 (function ($) {
+    // #### for side bar menu ### //
 
     //adding classes to submenu
     $("#aside-menu >li").addClass('aside-main-menu');
@@ -68,8 +68,25 @@ jQuery.noConflict();
 
         }
     });
+
+    // #### for side bar menu ### //
+
+
+    // #### datatables ### //
+
+    $('.datatable').DataTable({
+        "autoWidth": false,
+        order: [[0, 'desc']],
+    });
+
+
+
+
+
+    // #### datatables ### //
+
+
 })(jQuery);
-// #### for side bar menu ### //
 
 
 // ### for image preview ###//

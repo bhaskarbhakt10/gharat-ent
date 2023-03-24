@@ -1,10 +1,10 @@
 <div class="row">
         <div class="col-md-12">
+            <h2 class="form-heading">
+                Regular chekup
+            </h2>
             <fieldset class="bg_form_blue">
                 <div class="patient-history-wrap">
-                    <h2 class="my-3">
-                        Regular chekup
-                    </h2>
                     <div class="d-flex flex-wrap gap-20 justify-content-center ">
                         <div class="d-flex flex-48">
                             <div class="mb-3 d-flex gap-20 w-100">

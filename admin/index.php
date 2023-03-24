@@ -6,7 +6,7 @@
             <div class="flex-20 viewport">
                 <?php require_once '../admin/inc/admin-nav-side.php'; ?>
             </div>
-            <div class="flex-80 viewport bg-light-white bg_theme_blue">
+            <div class="flex-80 viewport bg-light-white bg_theme_blue <?php echo $_GET['q'] ;?>">
                 <div class="header">
                     <?php require_once '../admin/inc/admin-nav-top.php'; ?>
                 </div>

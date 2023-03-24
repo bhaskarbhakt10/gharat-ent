@@ -1,10 +1,7 @@
 <form action="" method="post" data-formid="<?php echo $_SESSION['user']['id'];?>">
 
-<fieldset class="mt-3">
+<fieldset class="mt-3 bg_form_blue">
     <div class="row">
-        <div class="col-md-12">
-            <h2 class="mb-2">Symptoms</h2>
-        </div>
         <div class="col-md-12">
             <div class="mb-3">
                 <label for="symptom-name">Symptom name</label>
@@ -32,7 +29,7 @@
             </div>
         </div>
         <div class="text-center my-3">
-            <button class="btn btn-blue w-20 mx-auto symptom-btn">Button</button>
+            <button class="btn btn-blue btn-bg-blue-theme w-20 mx-auto symptom-btn">Button</button>
         </div>
     </div>
 </fieldset>

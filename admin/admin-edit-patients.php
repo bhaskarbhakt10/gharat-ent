@@ -1,4 +1,4 @@
-<form action="" method="POST">
+<form action="" method="POST" class="update-primary-info">
 
     <?php
     require_once 'admin-patient-primary-details.php';

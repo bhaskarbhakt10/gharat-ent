@@ -11,7 +11,7 @@ if (array_key_exists('p_id', $_GET)) {
             $last_name = $row['hospital_PatientLastName'];
             $phone_number = $row['hospital_PatientContactNumber'];
             $email = $row['hospital_PatientEmail'];
-            echo $gender = $row['hospital_PatientGender'];
+            $gender = $row['hospital_PatientGender'];
             $date_of_birth = $row['hospital_PatientDOB'];
             $address = $row['hospital_PatientAddress'];
         }
@@ -22,7 +22,10 @@ if (array_key_exists('p_id', $_GET)) {
 
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 pb-4">
+    <h2 class="form-heading">
+                Primary Data
+            </h2>
         <fieldset class="bg_form_blue">
             <div class="row">
                 <div class="col-md-3">
@@ -73,7 +76,7 @@ if (array_key_exists('p_id', $_GET)) {
                     <div class="d-flex gap-20  ">
                         <div class="d-flex flex-48 flex-col">
                             <label for="">Select Gender</label>
-                            <div class="mb-3 d-flex gap-10 flex-wrap">
+                            <div class=" d-flex gap-10 flex-wrap">
                                 <div class="d-flex flex-30  align-items-center justify-content-center">
                                     <input type="radio" name="patient_gender" id="Gender-Male" class="form-check-input form-field" value="male" required <?php echo (!empty($gender) && $gender === "male") ? 'checked' : 'checked'; ?>>
                                     <label for="Gender-Male">Male</label>

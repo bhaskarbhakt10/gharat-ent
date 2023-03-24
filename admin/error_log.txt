@@ -1747,3 +1747,11 @@ Stack trace:
 [23-Mar-2023 17:23:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\index.php on line 18
 [23-Mar-2023 17:23:54 Europe/Berlin] PHP Warning:  Undefined array key "user" in D:\php-local\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
 [23-Mar-2023 17:23:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[24-Mar-2023 11:20:46 Europe/Berlin] PHP Warning:  Undefined array key "SELF" in C:\xampp\htdocs\hospital-management\admin\admin-create-users.php on line 9
+[24-Mar-2023 11:20:47 Europe/Berlin] PHP Warning:  Undefined array key "SELF" in C:\xampp\htdocs\hospital-management\admin\admin-create-users.php on line 9
+[24-Mar-2023 11:20:58 Europe/Berlin] PHP Warning:  Undefined array key "SELF" in C:\xampp\htdocs\hospital-management\admin\admin-create-users.php on line 9
+[24-Mar-2023 13:30:14 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\xampp\htdocs\hospital-management\admin\admin-single-prescription.php:22
+Stack trace:
+#0 C:\xampp\htdocs\hospital-management\admin\index.php(51): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\hospital-management\admin\admin-single-prescription.php on line 22
