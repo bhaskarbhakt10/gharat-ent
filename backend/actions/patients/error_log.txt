@@ -83,3 +83,17 @@ Stack trace:
   thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
 [24-Mar-2023 09:43:35 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
 [24-Mar-2023 09:43:35 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 16
+[24-Mar-2023 14:17:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[24-Mar-2023 14:17:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[24-Mar-2023 14:17:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[24-Mar-2023 14:17:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[24-Mar-2023 14:17:56 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[24-Mar-2023 14:17:56 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[24-Mar-2023 14:17:56 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[24-Mar-2023 14:17:56 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[24-Mar-2023 14:18:27 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[24-Mar-2023 14:18:27 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[24-Mar-2023 14:18:27 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[24-Mar-2023 14:18:27 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[24-Mar-2023 14:36:03 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
+[24-Mar-2023 14:36:03 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 16

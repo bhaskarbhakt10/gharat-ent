@@ -671,10 +671,11 @@ table.datatable.table-blue , table.table-blue{
   background:#0072BC;
   border-radius: 20px;
 }
-table.table-blue ,table.table-grey{
+table.table-blue ,table.table-grey ,td th{
   background:#0072BC;
   font-family: 'Lato';
 }
+
 .table-grey{
   background: #ccc;
 }
@@ -708,7 +709,10 @@ table.table-blue tbody{
 table.table-blue td{
   border: 1px solid #fafafa;
 }
-
+table.table-blue td th{
+ font-size: 14px; 
+ padding: 10px;
+}
 
 
 table.dataTable.no-footer , .table.datatable.table-blue>:not(caption)>*>*{

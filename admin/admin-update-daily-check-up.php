@@ -8,16 +8,16 @@ $regular_checkup_arr = json_decode($regular_checkup_obj);
 
 <form action="" method="post">
     <div class="row">
+        <h2 class="page-heading">
+            Update Regular chekup
+        </h2>
         <div class="col-md-12">
-            <fieldset>
+            <fieldset class="bg_form_blue">
                 <div class="patient-history-wrap">
-                    <h2 class="my-3">
-                        Update Regular chekup
-                    </h2>
                     <div class="d-flex flex-wrap gap-20 justify-content-center ">
                         <div class="d-flex flex-48">
-                            <div class="mb-3 d-flex w-100">
-                                <div class="w-100 flex-50 ">
+                            <div class="mb-3 gap-10 d-flex w-100">
+                                <div class="w-100 flex-48 ">
                                     <label for="patient_height_foot"> Patient Height(in foot)</label>
                                     <select name="patient_height_foot_up" id="patient_height_foot" class="form-select form-field patient_field required" required="">
                                         <option value="">Select foot</option>
@@ -29,7 +29,7 @@ $regular_checkup_arr = json_decode($regular_checkup_obj);
                                         <option value="9">9</option>
                                     </select>
                                 </div>
-                                <div class="w-100 flex-50 ">
+                                <div class="w-100 flex-48 ">
                                     <label for="patient_height_inch">Patient Height(in inches)</label>
                                     <select name="patient_height_inch_up" id="patient_height_inch" class="form-field form-select patient_field">
                                         <option value="">Select inches</option>
@@ -78,8 +78,8 @@ $regular_checkup_arr = json_decode($regular_checkup_obj);
     <input type="hidden" name="p_id" value="<?php echo $pid; ?>">
 </form>
 <div class="mt-3" id="">
-    <table class="table table-bordered table-responsive table-striped" id="RegularCheckup">
-        <thead class="bg-light">
+    <table class="table align-middle mb-3 table-blue" id="RegularCheckup">
+        <thead>
             <tr>
                 <th colspan="5">
                     <h3 class="text-center">
