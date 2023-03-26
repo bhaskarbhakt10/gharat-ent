@@ -125,4 +125,19 @@ class Patients
         }
         
     }
+
+    function getDetailsByNumber($number, $first_name, $last_name){
+        $sql = "SELECT * FROM " . PATIENTS . " WHERE hospital_PatientContactNumber='".$number."'" ;
+        // $sql = "SELECT * FROM " . PATIENTS . " WHERE hospital_PatientContactNumber='".$number."' AND hospital_PatientFirstName='".$first_name."' AND hospital_PatientLastName='".$last_name."'" ;
+        $res = $this->db->connect()->query($sql);
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                return $row;
+            }
+        }
+        else{
+            return false;
+        }
+    }
+
 }

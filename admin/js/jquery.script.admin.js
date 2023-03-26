@@ -6,12 +6,12 @@ jQuery.noConflict();
     // add patients
     let other_gender_val = $('#Gender-Other-value');
     console.log(other_gender_val.val());
-    if((other_gender_val.val() === "")){
+    if ((other_gender_val.val() === "")) {
         other_gender_val.detach();
     }
     $('body').on('change', '[name=patient_gender]', function () {
         $('[name=patient_gender]').removeAttr('checked');
-        $(this).attr('checked','checked');
+        $(this).attr('checked', 'checked');
         other_gender_val.val('');
         if ($('#Gender-Other').is(':checked')) {
             $(this).parent().parent().append(other_gender_val);
@@ -123,7 +123,7 @@ jQuery.noConflict();
             const value0 = $ajax_Arr.reduce((a, b) => a + b, 0);
             // console.log(value0);
             if (value0 === 0) {
-                ajax_call($post, this_btn , data_attr);
+                ajax_call($post, this_btn, data_attr);
                 alert('calling ajax');
             }
         }
@@ -149,36 +149,36 @@ jQuery.noConflict();
         let data = {
             'post': $post
         }
-        if(data_attr === 'add'){
-        $.ajax({
-            url: '../backend/actions/patients/add-patient.php',
-            type: 'POST',
-            data: data,
-            success: function (data) {
-                console.log(data);
-                let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
-                success_html += '<strong>Patient added Sucessfully!</strong>  ';
-                success_html += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> '
-                success_html += '</div>'
-                if (data === "success") {
-                    $(this_btn).parent().append(success_html);
-                    setTimeout(() => {
-                        $(this_btn).closest('form')[0].reset();
-                        $(other_gender_val).detach();
-                        $('[data-row^=row]').detach()
-                        console.log($(this_btn).parent().find('.alert').remove());
-                    }, 2000);
-                }
-                else {
+        if (data_attr === 'add') {
+            $.ajax({
+                url: '../backend/actions/patients/add-patient.php',
+                type: 'POST',
+                data: data,
+                success: function (data) {
+                    console.log(data);
+                    let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
+                    success_html += '<strong>Patient added Sucessfully!</strong>  ';
+                    success_html += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> '
+                    success_html += '</div>'
+                    if (data === "success") {
+                        $(this_btn).parent().append(success_html);
+                        setTimeout(() => {
+                            $(this_btn).closest('form')[0].reset();
+                            $(other_gender_val).detach();
+                            $('[data-row^=row]').detach()
+                            console.log($(this_btn).parent().find('.alert').remove());
+                        }, 2000);
+                    }
+                    else {
 
+                    }
+                },
+                error: function (error) {
+                    window.alert(error);
                 }
-            },
-            error: function (error) {
-                window.alert(error);
-            }
-        });
+            });
         }
-        else if(data_attr === 'edit'){
+        else if (data_attr === 'edit') {
             $.ajax({
                 url: '../backend/actions/patients/update-patient-primary-details.php',
                 type: 'POST',
@@ -199,7 +199,7 @@ jQuery.noConflict();
                         }, 2000);
                     }
                     else {
-    
+
                     }
                 },
                 error: function (error) {
@@ -419,7 +419,7 @@ jQuery.noConflict();
             'merged_array': merged_array,
             'unique_names': unique_names,
             'patient_id': patient_id,
-            'formid' : formid
+            'formid': formid
 
         };
         if ($(this).hasClass('save-and-pdf')) {
@@ -442,14 +442,14 @@ jQuery.noConflict();
                 type: 'POST',
                 data: data,
                 success: function (data) {
-                let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
-                success_html += '<strong>Symptom added Sucessfully!</strong>  ';
-                success_html += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> '
-                success_html += '</div>'
-                    if(data === "success"){
+                    let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
+                    success_html += '<strong>Symptom added Sucessfully!</strong>  ';
+                    success_html += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> '
+                    success_html += '</div>'
+                    if (data === "success") {
                         $(success_html).insertAfter(thisbtn);
                         setInterval(() => {
-                            $('#symptom-table').load(window.location.href + " #symptom-table" );
+                            $('#symptom-table').load(window.location.href + " #symptom-table");
                             $(this_form).find('.alert').remove();
                             $(this_form)[0].reset();
                         }, 2000);
@@ -526,10 +526,10 @@ jQuery.noConflict();
     }
 
     //for single patients 
-    function mark_required__(){
+    function mark_required__() {
         let all_input = $('.form-field');
         for (let index = 0; index < all_input.length; index++) {
-            if($(all_input[index]).prop("required")){
+            if ($(all_input[index]).prop("required")) {
                 let type = $(all_input[index]).attr('type');
                 switch (type) {
                     case 'checkbox':
@@ -537,7 +537,7 @@ jQuery.noConflict();
                             $(all_input[index]).parent().parent().parent().find('label:first-child').addClass('mandatory-mark');
                         }
                         break;
-                
+
                     default:
                         if ($(all_input[index]).prop('required')) {
                             $(all_input[index]).parent().find('label').addClass('mandatory-mark');
@@ -546,17 +546,70 @@ jQuery.noConflict();
                         break;
                 }
             }
-            
+
         }
     }
 
 
     mark_required();
     mark_required__();
-    $("body").on('change', function(){
+    $("body").on('change', function () {
         mark_required();
     })
 
+    //check if name exists with the same patient name
+    $('body').on('change', '[name="patient_contact_number"]', function () {
+        let number = $(this).val();
+        if (number.length === 10) {
+            alert(number);
+            $(this).removeClass('border-red');
+            $(this).css('border', '0');
+            let patient_first_name = $('[name="patient_first_name"]').val();
+            let patient_last_name = $('[name="patient_last_name"]').val();
+            CheckNumberExists(number , patient_first_name , patient_last_name);
+        }
+        else {
+            $(this).addClass('border-red');
+            $(this).css('border', '1px solid red');
+        }
+    });
+
+    function CheckNumberExists(number, patient_first_name, patient_last_name){
+        let data ={
+            number : number,
+            first_name : patient_first_name,
+            last_name : patient_last_name
+        };
+        $.ajax({
+            url: '../backend/actions/patients/check-number-data.php',
+            type: 'POST',
+            data: data,
+            success: function (data) {
+                console.log(data);
+                /*
+                let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
+                success_html += '<strong>Patient added Sucessfully!</strong>  ';
+                success_html += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> '
+                success_html += '</div>'
+                if (data === "success") {
+                    $(this_btn).parent().append(success_html);
+                    setTimeout(() => {
+                        $(this_btn).closest('form')[0].reset();
+                        $(other_gender_val).detach();
+                        $('[data-row^=row]').detach()
+                        console.log($(this_btn).parent().find('.alert').remove());
+                    }, 2000);
+                }
+                else {
+
+                }
+                */
+            },
+            error: function (error) {
+                window.alert(error);
+            }
+        });
+    }
 
 
 

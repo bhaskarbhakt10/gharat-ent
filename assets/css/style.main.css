@@ -777,6 +777,11 @@ table.datatable.table-blue th{
 #dashboard-follow-up-table th{
   font-size: 14px;
 }
+.border-red{
+  border: 1px solid red;
+}
+
+
 #dashboard-follow-up-table_wrapper #dashboard-follow-up-table_length, #dashboard-follow-up-table_wrapper #dashboard-follow-up-table_filter{
   display: none;
 }

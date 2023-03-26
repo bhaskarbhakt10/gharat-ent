@@ -28,55 +28,57 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <script>
-        var ctx = document.getElementById("myChart").getContext('2d');
+        if (document.getElementById("myChart") !== null) {
+            let ctx = document.getElementById("myChart").getContext('2d');
 
-let myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels : ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [{
-                label: 'New Patients', 
-                // Name the series
-                data: [10,20,30,100], 
-                // Specify the data values array
-                fill: false,
-                borderColor: '#C1E4FA', 
-                // Add custom color border (Line)
-                backgroundColor: '#C1E4FA', 
-                // Add custom color background (Points and Fill)
-                borderWidth: 4 
-                // Specify bar border width
-            },
-            {
-                label: 'Old Patients', 
-                // Name the series
-                data: [60,70,90,120], 
-                // Specify the data values array
-                fill: false,
-                borderColor: '#0072BC', 
-                // Add custom color border (Line)
-                backgroundColor: '#0072BC', 
-                // Add custom color background (Points and Fill)
-                borderWidth: 4 
-                // Specify bar border width
-            }
-        ]
-    },
-    options: {
-        responsive: true, 
-        // Instruct chart js to respond nicely.
-        maintainAspectRatio: false, 
-        // Add to prevent default behaviour of full-width/height 
-        legend: {
-            position: 'top',
-        },
-        elements:{
-            point:{
-                radius:2
-            }
+            let myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    datasets: [{
+                            label: 'New Patients',
+                            // Name the series
+                            data: [10, 20, 30, 100],
+                            // Specify the data values array
+                            fill: false,
+                            borderColor: '#C1E4FA',
+                            // Add custom color border (Line)
+                            backgroundColor: '#C1E4FA',
+                            // Add custom color background (Points and Fill)
+                            borderWidth: 4
+                            // Specify bar border width
+                        },
+                        {
+                            label: 'Old Patients',
+                            // Name the series
+                            data: [60, 70, 90, 120],
+                            // Specify the data values array
+                            fill: false,
+                            borderColor: '#0072BC',
+                            // Add custom color border (Line)
+                            backgroundColor: '#0072BC',
+                            // Add custom color background (Points and Fill)
+                            borderWidth: 4
+                            // Specify bar border width
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    // Instruct chart js to respond nicely.
+                    maintainAspectRatio: false,
+                    // Add to prevent default behaviour of full-width/height 
+                    legend: {
+                        position: 'top',
+                    },
+                    elements: {
+                        point: {
+                            radius: 2
+                        }
+                    }
+                }
+            });
         }
-    }
-});
     </script>
 </footer>
 </body>
