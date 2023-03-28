@@ -129,11 +129,15 @@ class Patients
     function getDetailsByNumber($number, $first_name, $last_name){
         $sql = "SELECT * FROM " . PATIENTS . " WHERE hospital_PatientContactNumber='".$number."'" ;
         // $sql = "SELECT * FROM " . PATIENTS . " WHERE hospital_PatientContactNumber='".$number."' AND hospital_PatientFirstName='".$first_name."' AND hospital_PatientLastName='".$last_name."'" ;
+        // echo $sql;
         $res = $this->db->connect()->query($sql);
         if($res->num_rows > 0){
+            $empty_arr = array();
             while($row = $res->fetch_assoc()){
-                return $row;
+                array_push($empty_arr,$row);
             }
+
+            return $empty_arr;
         }
         else{
             return false;

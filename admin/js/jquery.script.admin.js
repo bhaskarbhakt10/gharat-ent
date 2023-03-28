@@ -1,14 +1,14 @@
 jQuery.noConflict();
 (function ($) {
     //all labels 
-    function all_labels(){
+    function all_labels() {
         $('label').addClass('label');
         $('input+label').addClass('label-radio-check');
     }
     all_labels();
     // add patients
     let other_gender_val = $('#Gender-Other-value');
-    function function_other_gender_val(){
+    function function_other_gender_val() {
         let other_gender_val = $('#Gender-Other-value');
         console.log(other_gender_val.val());
         if ((other_gender_val.val() === "")) {
@@ -204,7 +204,7 @@ jQuery.noConflict();
                             $('[data-row^=row]').detach()
                             $(this_btn).parent().find('.alert').remove();
                             // document.location.reload();
-                            $($(this_btn).closest("form")).load(document.URL + " form" , function(){
+                            $($(this_btn).closest("form")).load(document.URL + " form", function () {
                                 all_labels();
                                 // mark_required();
                                 mark_required__();
@@ -587,36 +587,70 @@ jQuery.noConflict();
             let patient_first_name = $('[name="patient_first_name"]').val();
             let patient_last_name = $('[name="patient_last_name"]').val();
             $(this).closest('form').find('button.submit').removeAttr('disabled');
-            
+
             const params = new Proxy(new URLSearchParams(window.location.search), {
                 get: (searchParams, prop) => searchParams.get(prop),
-              });
+            });
 
-              console.log(params.q);
-              if(params.q === 'admin-add-patients'){
-                  CheckNumberExists(number , patient_first_name , patient_last_name);
-              }
+
+            if (params.q === 'admin-add-patients') {
+                CheckNumberExists(number, patient_first_name, patient_last_name);
+            }
         }
         else {
             alert("Length of Phone can not be less and more than. Avoid Using prefix or Country Codes");
             $(this).addClass('border-red');
             $(this).css('border', '1px solid red');
-            $(this).closest('form').find('button.submit').attr('disabled','disabled');
+            $(this).closest('form').find('button.submit').attr('disabled', 'disabled');
         }
     });
 
-    function CheckNumberExists(number, patient_first_name, patient_last_name){
-        let data ={
-            number : number,
-            first_name : patient_first_name,
-            last_name : patient_last_name
+    function CheckNumberExists(number, patient_first_name, patient_last_name) {
+        let data = {
+            number: number,
+            first_name: patient_first_name,
+            last_name: patient_last_name
         };
         $.ajax({
             url: '../backend/actions/patients/check-number-data.php',
             type: 'POST',
             data: data,
             success: function (data) {
-                console.log(data);
+                let success_modal = '<div class="modal fade" id="PatientsExistModal" tabindex="-1" aria-labelledby="PatientsExistModalLabel" aria-hidden="true">';
+                success_modal += '<div class="modal-dialog modal-xl">';
+                success_modal += '<div class="modal-content">';
+                success_modal += '<div class="modal-header">';
+                success_modal += '<h5 class="modal-title" id="PatientsExistModalLabel">Modal title</h5>';
+                success_modal += '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>';
+                success_modal += ' </div>';
+                success_modal += '<div class="modal-body bg_form_grey">'
+                success_modal += '<table class="table align-middle mb-3 table-blue" id="table_patients"><thead><tr><th>PatientID</th><th>First Name</th><th>Last Name</th></tr></thead><tbody></tbody></table>'
+                success_modal += '</div>'
+                success_modal += '<div class="modal-footer">'
+                success_modal += '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>'
+                success_modal += '<button type="button" class="btn btn-primary">Save changes</button>'
+                success_modal += '</div>'
+                success_modal += '</div>'
+                success_modal += '</div>'
+                success_modal += '</div>';
+                if (data !== '') {
+                    $('body').append(success_modal);
+                    $('#PatientsExistModal').modal('show');
+                    let json_obj = JSON.parse(data);
+                    console.log(json_obj);
+                    let row = '';
+                    for (const key in json_obj) {
+                        row +="<tr>";
+                        row +="<td>"+json_obj[key]['hospital_PatientId'];
+                        row +="</td>";
+                        row +="<td>"+json_obj[key]['hospital_PatientFirstName'];
+                        row +="</td>";
+                        row +="<td>"+json_obj[key]['hospital_PatientLastName'];
+                        row +="</td>";
+                        row +="</tr>";
+                    }
+                        $('#PatientsExistModal table>tbody').html(row);
+                }
                 /*
                 let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
                 success_html += '<strong>Patient added Sucessfully!</strong>  ';

@@ -5,5 +5,11 @@ if(isset($_POST)){
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $patients  = new Patients();
-    print_r($patients->getDetailsByNumber($number, $first_name, $last_name));
+    $patient_data = $patients->getDetailsByNumber($number, $first_name, $last_name);
+    if($patient_data !== false){
+        echo json_encode($patient_data);
+    }
+    else{
+        echo '';
+    }
 }
