@@ -11,6 +11,6 @@
 
 
     <div class="">
-        <button class="btn btn-blue d-block w-20 mx-auto d-fieldset" name="add-patient" id="add-patient" type="submit" data-attr="add">Add Patient</button>
+        <button class="btn btn-blue d-block w-20 mx-auto d-fieldset submit" name="add-patient" id="add-patient" type="submit" data-attr="add">Add Patient</button>
     </div>
 </form>

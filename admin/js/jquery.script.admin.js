@@ -1,14 +1,21 @@
 jQuery.noConflict();
 (function ($) {
     //all labels 
-    $('label').addClass('label');
-    $('input+label').addClass('label-radio-check');
+    function all_labels(){
+        $('label').addClass('label');
+        $('input+label').addClass('label-radio-check');
+    }
+    all_labels();
     // add patients
     let other_gender_val = $('#Gender-Other-value');
-    console.log(other_gender_val.val());
-    if ((other_gender_val.val() === "")) {
-        other_gender_val.detach();
+    function function_other_gender_val(){
+        let other_gender_val = $('#Gender-Other-value');
+        console.log(other_gender_val.val());
+        if ((other_gender_val.val() === "")) {
+            other_gender_val.detach();
+        }
     }
+    function_other_gender_val();
     $('body').on('change', '[name=patient_gender]', function () {
         $('[name=patient_gender]').removeAttr('checked');
         $(this).attr('checked', 'checked');
@@ -195,7 +202,15 @@ jQuery.noConflict();
                             $(this_btn).closest('form')[0].reset();
                             $(other_gender_val).detach();
                             $('[data-row^=row]').detach()
-                            console.log($(this_btn).parent().find('.alert').remove());
+                            $(this_btn).parent().find('.alert').remove();
+                            // document.location.reload();
+                            $($(this_btn).closest("form")).load(document.URL + " form" , function(){
+                                all_labels();
+                                // mark_required();
+                                mark_required__();
+                                function_other_gender_val();
+
+                            });
                         }, 2000);
                     }
                     else {
@@ -537,7 +552,12 @@ jQuery.noConflict();
                             $(all_input[index]).parent().parent().parent().find('label:first-child').addClass('mandatory-mark');
                         }
                         break;
-
+                    case 'radio':
+                        if ($(all_input[index]).prop('required')) {
+                            console.log($(all_input[index]).parent().parent().parent().find('label:first-child'));
+                            $(all_input[index]).parent().parent().parent().find('label:first-child').addClass('mandatory-mark');
+                        }
+                        break;
                     default:
                         if ($(all_input[index]).prop('required')) {
                             $(all_input[index]).parent().find('label').addClass('mandatory-mark');
@@ -554,23 +574,34 @@ jQuery.noConflict();
     mark_required();
     mark_required__();
     $("body").on('change', function () {
+        mark_required__();
         mark_required();
     })
 
-    //check if name exists with the same patient name
+    //check if name exists with the same patient name also validates the number id number length is 10 or not
     $('body').on('change', '[name="patient_contact_number"]', function () {
         let number = $(this).val();
         if (number.length === 10) {
-            alert(number);
             $(this).removeClass('border-red');
             $(this).css('border', '0');
             let patient_first_name = $('[name="patient_first_name"]').val();
             let patient_last_name = $('[name="patient_last_name"]').val();
-            CheckNumberExists(number , patient_first_name , patient_last_name);
+            $(this).closest('form').find('button.submit').removeAttr('disabled');
+            
+            const params = new Proxy(new URLSearchParams(window.location.search), {
+                get: (searchParams, prop) => searchParams.get(prop),
+              });
+
+              console.log(params.q);
+              if(params.q === 'admin-add-patients'){
+                  CheckNumberExists(number , patient_first_name , patient_last_name);
+              }
         }
         else {
+            alert("Length of Phone can not be less and more than. Avoid Using prefix or Country Codes");
             $(this).addClass('border-red');
             $(this).css('border', '1px solid red');
+            $(this).closest('form').find('button.submit').attr('disabled','disabled');
         }
     });
 
