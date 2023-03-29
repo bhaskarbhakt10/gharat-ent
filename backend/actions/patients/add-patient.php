@@ -6,7 +6,6 @@ if(isset($_POST)){
     $arr_post = $_POST['post'];
     // print_r($arr_post);
 
-    
     //get data from array
     $patient_suffix = $arr_post['patient_suffix'];
     $patient_first_name = $arr_post['patient_first_name'];
@@ -62,14 +61,19 @@ if(isset($_POST)){
     $medical_history_obj = json_encode($medical_history);
     // print_r($medical_history_obj);
     
-     
+    if(array_key_exists('parent_data', $arr_post) && !empty($arr_post['parent_data'])){
+        $parent_data = $arr_post['parent_data'];
+    }
+    else{
+        $parent_data = "N/A";
+    }
 
 
     //check if not empty
 
     if(!empty($patient_suffix) && !empty($patient_first_name) && !empty($patient_last_name) && !empty($patient_gender) && !empty($patient_dob) && !empty($patient_contact_number)){
         $add_patient = new Patients();
-        $added_sucess = $add_patient->get_details($patient_suffix,$patient_first_name,$patient_last_name,$patient_gender,$patient_dob,$patient_contact_number, $patient_middle_name, $patient_email,$patient_address ,$medical_history_obj);
+        $added_sucess = $add_patient->get_details($patient_suffix,$patient_first_name,$patient_last_name,$patient_gender,$patient_dob,$patient_contact_number, $patient_middle_name, $patient_email,$patient_address ,$medical_history_obj,$parent_data);
         $send_to_DB = $add_patient->send_to_db();
         if( $send_to_DB !== false){
             $pid = $send_to_DB;

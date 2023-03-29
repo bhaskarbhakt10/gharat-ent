@@ -781,6 +781,12 @@ table.datatable.table-blue th{
   border: 1px solid red;
 }
 
+.border-solid{
+  border: 2px solid #ccc !important;
+}
+
+
+
 
 #dashboard-follow-up-table_wrapper #dashboard-follow-up-table_length, #dashboard-follow-up-table_wrapper #dashboard-follow-up-table_filter{
   display: none;

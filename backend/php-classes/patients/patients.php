@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT']. '/hospital-management/backend/database/config.database.php';
-require_once $_SERVER['DOCUMENT_ROOT']. '/hospital-management/backend/constants/constants-static.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/database/config.database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/constants/constants-static.php';
 
 
 
@@ -19,6 +19,7 @@ class Patients
     private $patient_email;
     private $patient_address;
     private $medical_history;
+    private $parent_data;
 
     function __construct()
     {
@@ -26,7 +27,7 @@ class Patients
     }
 
 
-    function get_details($patient_suffix, $patient_first_name, $patient_last_name, $patient_gender, $patient_dob, $patient_contact_number, $patient_middle_name, $patient_email, $patient_address, $medical_history)
+    function get_details($patient_suffix, $patient_first_name, $patient_last_name, $patient_gender, $patient_dob, $patient_contact_number, $patient_middle_name, $patient_email, $patient_address, $medical_history, $parent_data)
     {
         $this->patient_suffix = $patient_suffix;
         $this->patient_first_name = $patient_first_name;
@@ -38,6 +39,7 @@ class Patients
         $this->patient_email = $patient_email;
         $this->patient_address = $patient_address;
         $this->medical_history = $medical_history;
+        $this->parent_data = $parent_data;
     }
 
     function gen_patientID()
@@ -74,7 +76,8 @@ class Patients
         $this->patientId = $patient_ID;
         $check_pat_id = $this->check_PatientId_exist($patient_ID);
 
-        $sql = "INSERT INTO " . PATIENTS . " (hospital_PatientId, hospital_PatientSuffix, hospital_PatientFirstName, hospital_PatientMiddleName, hospital_PatientLastName, hospital_PatientGender, hospital_PatientDOB, hospital_PatientContactNumber, hospital_PatientEmail, hospital_PatientAddress, hospital_PatientMedicalHistory) VALUES ('" . $patient_ID . "','" . $this->patient_suffix . "','" . $this->patient_first_name . "','" . $this->patient_middle_name . "','" . $this->patient_last_name . "','" . $this->patient_gender . "','" . $this->patient_dob . "','" . $this->patient_contact_number . "','" . $this->patient_email . "','" . $this->patient_address . "','" . $this->medical_history . "')";
+        $sql = "INSERT INTO " . PATIENTS . " (hospital_PatientId, hospital_PatientSuffix, hospital_PatientFirstName, hospital_PatientMiddleName, hospital_PatientLastName, hospital_PatientGender, hospital_PatientDOB, hospital_PatientContactNumber, hospital_PatientParent, hospital_PatientEmail, hospital_PatientAddress, hospital_PatientMedicalHistory) VALUES ('" . $patient_ID . "','" . $this->patient_suffix . "','" . $this->patient_first_name . "','" . $this->patient_middle_name . "','" . $this->patient_last_name . "','" . $this->patient_gender . "','" . $this->patient_dob . "','" . $this->patient_contact_number . "','" . $this->parent_data . "','" . $this->patient_email . "','" . $this->patient_address . "','" . $this->medical_history . "')";
+        // echo $sql;
         if ($check_pat_id === false) {
             $res = $this->db->connect()->query($sql);
             if ($res) {
@@ -107,39 +110,38 @@ class Patients
         }
     }
 
-    function update_details($patient_update_id, $patient_suffix,$patient_first_name,$patient_middle_name,$patient_last_name,$patient_gender,$patient_dob,$patient_contact_number,$patient_email,$patient_address){
+    function update_details($patient_update_id, $patient_suffix, $patient_first_name, $patient_middle_name, $patient_last_name, $patient_gender, $patient_dob, $patient_contact_number, $patient_email, $patient_address)
+    {
         $sql = "SELECT * FROM " . PATIENTS . " WHERE hospital_PatientId='$patient_update_id'";
         $res = $this->db->connect()->query($sql);
         if ($res->num_rows > 0) {
-            $update_sql = "UPDATE " . PATIENTS . " SET hospital_PatientSuffix= '".$patient_suffix."', hospital_PatientFirstName='".$patient_first_name."', hospital_PatientMiddleName='".$patient_middle_name."', hospital_PatientLastName='".$patient_last_name."', hospital_PatientGender='".$patient_gender."', hospital_PatientDOB='".$patient_dob."', hospital_PatientContactNumber='".$patient_contact_number."', hospital_PatientEmail='".$patient_email."', hospital_PatientAddress='".$patient_address."' WHERE hospital_PatientId='".$patient_update_id."'";
+            $update_sql = "UPDATE " . PATIENTS . " SET hospital_PatientSuffix= '" . $patient_suffix . "', hospital_PatientFirstName='" . $patient_first_name . "', hospital_PatientMiddleName='" . $patient_middle_name . "', hospital_PatientLastName='" . $patient_last_name . "', hospital_PatientGender='" . $patient_gender . "', hospital_PatientDOB='" . $patient_dob . "', hospital_PatientContactNumber='" . $patient_contact_number . "', hospital_PatientEmail='" . $patient_email . "', hospital_PatientAddress='" . $patient_address . "' WHERE hospital_PatientId='" . $patient_update_id . "'";
             // echo $update_sql;
             $update_res = $this->db->connect()->query($update_sql);
-            if($update_res){
+            if ($update_res) {
                 return true;
-            }
-            else{
+            } else {
                 return false;
             }
         } else {
             return false;
         }
-        
     }
 
-    function getDetailsByNumber($number, $first_name, $last_name){
-        $sql = "SELECT * FROM " . PATIENTS . " WHERE hospital_PatientContactNumber='".$number."'" ;
+    function getDetailsByNumber($number, $first_name, $last_name)
+    {
+        $sql = "SELECT * FROM " . PATIENTS . " WHERE hospital_PatientContactNumber='" . $number . "'";
         // $sql = "SELECT * FROM " . PATIENTS . " WHERE hospital_PatientContactNumber='".$number."' AND hospital_PatientFirstName='".$first_name."' AND hospital_PatientLastName='".$last_name."'" ;
         // echo $sql;
         $res = $this->db->connect()->query($sql);
-        if($res->num_rows > 0){
+        if ($res->num_rows > 0) {
             $empty_arr = array();
-            while($row = $res->fetch_assoc()){
-                array_push($empty_arr,$row);
+            while ($row = $res->fetch_assoc()) {
+                array_push($empty_arr, $row);
             }
 
             return $empty_arr;
-        }
-        else{
+        } else {
             return false;
         }
     }

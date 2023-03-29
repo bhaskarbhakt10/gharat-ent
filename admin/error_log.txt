@@ -1755,3 +1755,128 @@ Stack trace:
 #0 C:\xampp\htdocs\hospital-management\admin\index.php(51): require_once()
 #1 {main}
   thrown in C:\xampp\htdocs\hospital-management\admin\admin-single-prescription.php on line 22
+[29-Mar-2023 10:12:47 Europe/Berlin] PHP Warning:  Undefined array key "q" in C:\xampp\htdocs\hospital-management\admin\index.php on line 9
+[29-Mar-2023 10:13:08 Europe/Berlin] PHP Warning:  Undefined array key "q" in C:\xampp\htdocs\hospital-management\admin\index.php on line 9
+[29-Mar-2023 10:19:47 Europe/Berlin] PHP Warning:  Undefined array key "q" in C:\xampp\htdocs\hospital-management\admin\index.php on line 9
+[29-Mar-2023 10:19:51 Europe/Berlin] PHP Warning:  Undefined array key "q" in C:\xampp\htdocs\hospital-management\admin\index.php on line 9
+[29-Mar-2023 10:22:41 Europe/Berlin] PHP Warning:  Undefined array key "q" in C:\xampp\htdocs\hospital-management\admin\index.php on line 9
+[29-Mar-2023 10:23:37 Europe/Berlin] PHP Warning:  Undefined array key "q" in C:\xampp\htdocs\hospital-management\admin\index.php on line 9
+[29-Mar-2023 10:24:12 Europe/Berlin] PHP Warning:  Undefined array key "q" in C:\xampp\htdocs\hospital-management\admin\index.php on line 9
+[29-Mar-2023 15:50:55 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 6
+[29-Mar-2023 15:51:11 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 6
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Undefined variable $user_id in C:\xampp\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:51:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Undefined variable $user_id in C:\xampp\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:51:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:51:50 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 6
+[29-Mar-2023 15:53:38 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 6
+[29-Mar-2023 15:53:47 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 6
+[29-Mar-2023 15:54:02 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 6
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Undefined variable $user_id in C:\xampp\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:57:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Undefined variable $user_id in C:\xampp\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:57:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:57:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php:7
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 7
+[29-Mar-2023 15:58:23 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 7
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Undefined variable $user_id in C:\xampp\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:58:40 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Undefined variable $user_id in C:\xampp\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:58:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 15:59:05 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 7
+[29-Mar-2023 16:02:53 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 8
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Undefined variable $user_id in C:\xampp\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 16:03:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Undefined variable $user_id in C:\xampp\htdocs\hospital-management\admin\inc\admin-functions.php on line 18
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 85
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 95
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 119
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 45
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 55
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 75
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on string in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 125
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\index.php on line 18
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 16:03:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[29-Mar-2023 16:03:29 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 8
+[29-Mar-2023 16:03:42 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 8
+[29-Mar-2023 16:03:43 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 8
+[29-Mar-2023 16:03:44 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 8
+[29-Mar-2023 16:03:45 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 8
+[29-Mar-2023 16:03:47 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 8
+[29-Mar-2023 16:03:48 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 8
+[29-Mar-2023 16:04:08 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hospital-management\admin\inc\admin-nav-top.php:6) in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 8
+[29-Mar-2023 16:06:18 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\xampp\htdocs\hospital-management\admin\admin-log-out.php on line 7

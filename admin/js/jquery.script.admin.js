@@ -152,7 +152,7 @@ jQuery.noConflict();
 
     function ajax_call($post, this_btn, data_attr) {
 
-        // console.log(this_btn);
+        
         let data = {
             'post': $post
         }
@@ -506,7 +506,7 @@ jQuery.noConflict();
                 select2_value_arr.push(value.text)
             }
         });
-        console.log(select2_value_arr);
+        // console.log(select2_value_arr);
         $(this).parent().children().last().attr('value', select2_value_arr.toString());
 
         if ($(this).prop('required') === true) {
@@ -581,12 +581,14 @@ jQuery.noConflict();
     //check if name exists with the same patient name also validates the number id number length is 10 or not
     $('body').on('change', '[name="patient_contact_number"]', function () {
         let number = $(this).val();
+        let this_btn = $(this).closest('form').find('button.submit');
+        console.log()
         if (number.length === 10) {
             $(this).removeClass('border-red');
             $(this).css('border', '0');
             let patient_first_name = $('[name="patient_first_name"]').val();
             let patient_last_name = $('[name="patient_last_name"]').val();
-            $(this).closest('form').find('button.submit').removeAttr('disabled');
+            $(this_btn).removeAttr('disabled');
 
             const params = new Proxy(new URLSearchParams(window.location.search), {
                 get: (searchParams, prop) => searchParams.get(prop),
@@ -594,18 +596,18 @@ jQuery.noConflict();
 
 
             if (params.q === 'admin-add-patients') {
-                CheckNumberExists(number, patient_first_name, patient_last_name);
+                CheckNumberExists(number, patient_first_name, patient_last_name, this_btn);
             }
         }
         else {
             alert("Length of Phone can not be less and more than. Avoid Using prefix or Country Codes");
             $(this).addClass('border-red');
             $(this).css('border', '1px solid red');
-            $(this).closest('form').find('button.submit').attr('disabled', 'disabled');
+            $(this_btn).attr('disabled', 'disabled');
         }
     });
 
-    function CheckNumberExists(number, patient_first_name, patient_last_name) {
+    function CheckNumberExists(number, patient_first_name, patient_last_name, this_btn) {
         let data = {
             number: number,
             first_name: patient_first_name,
@@ -619,37 +621,32 @@ jQuery.noConflict();
                 let success_modal = '<div class="modal fade" id="PatientsExistModal" tabindex="-1" aria-labelledby="PatientsExistModalLabel" aria-hidden="true">';
                 success_modal += '<div class="modal-dialog modal-xl">';
                 success_modal += '<div class="modal-content">';
-                success_modal += '<div class="modal-header">';
-                success_modal += '<h5 class="modal-title" id="PatientsExistModalLabel">Modal title</h5>';
-                success_modal += '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>';
-                success_modal += ' </div>';
-                success_modal += '<div class="modal-body bg_form_grey">'
-                success_modal += '<table class="table align-middle mb-3 table-blue" id="table_patients"><thead><tr><th>PatientID</th><th>First Name</th><th>Last Name</th></tr></thead><tbody></tbody></table>'
-                success_modal += '</div>'
-                success_modal += '<div class="modal-footer">'
-                success_modal += '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>'
-                success_modal += '<button type="button" class="btn btn-primary">Save changes</button>'
-                success_modal += '</div>'
-                success_modal += '</div>'
+                success_modal += '<div class="modal-body">';
+                success_modal += '<div class=""><table class="table align-middle mb-3 table-blue" id="table_patients"><thead><tr><th>PatientID</th><th>First Name</th><th>Last Name</th></tr></thead><tbody></tbody></table></div>';
+                success_modal += '<div><form id="extra-field-form" action method="POST"><div class="d-flex gap-10"><div class=""><input type="radio" name="add_patient_same_number" value="true" id="same-contact-diffrent-patient" class="form-check-input form-field"><label class="label p-0" for="same-contact-diffrent-patient">Add patient with same Contact Number </label></div><div class=""><input type="radio" name="add_patient_same_number" value="false" id="diffrent-contact-diffrent-patient" class="form-check-input form-field"><label class="label p-0" for="diffrent-contact-diffrent-patient"> Use a Diffrent Number</label></div></form></div>';
+                success_modal += '</div>';
                 success_modal += '</div>'
                 success_modal += '</div>';
                 if (data !== '') {
-                    $('body').append(success_modal);
+                    if ($('#PatientsExistModal').length === 0) {
+                        $(success_modal).insertAfter('body main');
+                    }
+                    $('#PatientsExistModal').modal({keyboard: false});
                     $('#PatientsExistModal').modal('show');
                     let json_obj = JSON.parse(data);
                     console.log(json_obj);
                     let row = '';
                     for (const key in json_obj) {
-                        row +="<tr>";
-                        row +="<td>"+json_obj[key]['hospital_PatientId'];
-                        row +="</td>";
-                        row +="<td>"+json_obj[key]['hospital_PatientFirstName'];
-                        row +="</td>";
-                        row +="<td>"+json_obj[key]['hospital_PatientLastName'];
-                        row +="</td>";
-                        row +="</tr>";
+                        row += "<tr>";
+                        row += "<td>" + json_obj[key]['hospital_PatientId'];
+                        row += "</td>";
+                        row += "<td>" + json_obj[key]['hospital_PatientFirstName'];
+                        row += "</td>";
+                        row += "<td>" + json_obj[key]['hospital_PatientLastName'];
+                        row += "</td>";
+                        row += "</tr>";
                     }
-                        $('#PatientsExistModal table>tbody').html(row);
+                    $('#PatientsExistModal table>tbody').html(row);
                 }
                 /*
                 let success_html = '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert"> ';
@@ -677,6 +674,72 @@ jQuery.noConflict();
     }
 
 
+    //same number diffrent patients js 
+    $('body').on('change', 'input[name="add_patient_same_number"]', function () {
+        let decision_value = $(this).val();
+        let current_val = $('#Contact-number').val();
+        if (decision_value === "true") {
+            let more_fields = '<div class="d-flex gap-20 mb-3 flex-wrap" id="extra-field">';
+            more_fields += '<div class="d-flex flex-48">';
+            more_fields += '<input type="text" name="parent" readonly class="form-control form-field border-solid" value="' + current_val + '">';
+            more_fields += '</div>';
+            more_fields += '<div class="d-flex flex-48">';
+            more_fields += '<select class="form-select form-field border-solid" id="relationship" name="replationship">'
+            more_fields += '<option selected disabled hidden>Select a relationship</option>'
+            more_fields += '<option value="father">Father</option>'
+            more_fields += '<option value="mother">Mother</option>'
+            more_fields += '<option value="daughter">Daughter</option>'
+            more_fields += '<option value="other">Other</option>'
+            more_fields += '</select>';
+            more_fields += '</div>';
+            more_fields += '<div class="d-flex d-none flex-100">';
+            more_fields += '<input type="text" name="other_relationship" id="display_other" class="form-control form-field border-solid " required placeholder="Other relationship" value="N/A">';
+            more_fields += '</div>';
+            more_fields += '<div class="d-flex flex-100">';
+            more_fields += '<button class="btn btn-primary" id="extra-field-submit">Submit</button>';
+            more_fields += '</div>';
+            more_fields += '</div>';
+            if ($(this).closest('form').children().length === 1) {
+                $(more_fields).insertAfter($(this).closest('form').children().last());
+            }
+        }
+        else {
+            // console.log($(this).closest('form'));
+            $(this).closest('form')[0].reset();
+            $('#PatientsExistModal').modal('hide');
+            $('#Contact-number').val('');
+            if ($('#extra-field').length > 0) {
+                $('#extra-field').remove();
+            }
+        }
+    });
 
+
+    $('body').on('change', '#relationship', function (e) {
+        console.log($(this).val());
+        if ($(this).val() === 'other') {
+            $('#display_other').attr('required', 'required');
+            $('#display_other').val('');
+            $('#display_other').parent().removeClass('d-none');
+        }
+        else {
+            $('#display_other').val('N/A');
+            $('#display_other').removeAttr('required');
+            $('#display_other').parent().addClass('d-none');
+        }
+    });
+
+    let extra_field_obj = new Object();
+    $(document).on('submit', '#extra-field-form', function(e) {
+        e.preventDefault();
+        let form_data = $(this).serializeArray();
+        for (const key in form_data) {
+            let element = form_data[key];
+            Object.assign(extra_field_obj , { [element.name] : element['value']});
+        }
+        console.log(extra_field_obj);
+        $('body main form').append("<input type='hidden' value='"+JSON.stringify(extra_field_obj)+"' name='parent_data'>");
+        $('#PatientsExistModal').modal('hide')
+    });
 })(jQuery);
 

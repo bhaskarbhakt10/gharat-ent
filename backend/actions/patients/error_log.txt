@@ -97,3 +97,27 @@ Stack trace:
 [24-Mar-2023 14:18:27 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
 [24-Mar-2023 14:36:03 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
 [24-Mar-2023 14:36:03 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 16
+[29-Mar-2023 11:23:55 Europe/Berlin] PHP Warning:  Undefined array key "extra-field" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 5
+[29-Mar-2023 11:28:42 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 9
+[29-Mar-2023 11:28:42 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 9
+[29-Mar-2023 11:28:42 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 9
+[29-Mar-2023 11:28:42 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 9
+[29-Mar-2023 11:36:31 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 10
+[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  Undefined array key "extra_field" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 73
+[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 74
+[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  Undefined array key "add_patient_same_number" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 80
+[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  Undefined array key "parent" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 81
+[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  Undefined array key "replationship" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 82
+[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  Undefined array key "other_relationship" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 83
+[29-Mar-2023 18:48:03 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php:81
+Stack trace:
+#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php(81): mysqli->query('INSERT INTO hos...')
+#1 C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php(77): Patients->send_to_db()
+#2 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 81
+[29-Mar-2023 18:51:17 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php:82
+Stack trace:
+#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php(82): mysqli->query('INSERT INTO hos...')
+#1 C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php(77): Patients->send_to_db()
+#2 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 82

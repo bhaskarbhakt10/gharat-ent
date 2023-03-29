@@ -25,7 +25,7 @@ require_once 'admin-functions.php';
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="index.php?q=admin-log-out">
                                 <i class="fa-duotone fa-right-from-bracket"></i>
                                 Logout
                                 </a>
