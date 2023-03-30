@@ -8,3 +8,5 @@ if(!empty($_SESSION)){
         echo "test";
     }
 }
+ob_flush();
+ob_end_clean();

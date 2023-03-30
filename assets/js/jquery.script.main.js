@@ -75,8 +75,9 @@ jQuery.noConflict();
     // #### datatables ### //
 
     $('.datatable').DataTable({
-        "autoWidth": false,
-        order: [[0, 'desc']],
+        autoWidth: false,
+        // order: [[0, 'desc']],
+        responsive: true
     });
 
 

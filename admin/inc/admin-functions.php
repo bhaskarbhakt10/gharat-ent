@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 session_start();
 if (isset($_SESSION['user']) && $_SESSION['user']['loggedin'] === true && array_key_exists('user', $_SESSION)) {
     $user_id = $_SESSION['user']['id'];

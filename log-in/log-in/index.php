@@ -17,10 +17,10 @@
                             </h1>
                         </div>
                         <div class="mb-4">
-                            <input type="text" name="username" id="username" class="form-control form-field" placeholder="example@login.com" required autocomplete="off">
+                            <input type="text" name="username" id="username" class="form-control form-field border-solid" placeholder="example@login.com" required autocomplete="off">
                         </div>
                         <div class="mb-3">
-                            <input type="password" name="password" id="password" class="form-control form-field" placeholder="***********" required autocomplete="off">
+                            <input type="password" name="password" id="password" class="form-control form-field border-solid" placeholder="***********" required autocomplete="off">
                         </div>
                         <div class="mb-4">
                             <div class="forgot-remember">

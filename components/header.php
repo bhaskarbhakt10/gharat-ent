@@ -15,11 +15,15 @@
     
     <!-- dependicies -->
     <link rel="stylesheet" href="<?php echo BASE_URL ;?>assets/css/style.datatables.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ;?>assets/css/style.datatables.responsive.css">
+
+    
     <link rel="stylesheet" href="<?php echo BASE_URL ;?>assets/css/style.select2.min.css">
     <!-- dependicies -->
     
 
     <link rel="stylesheet" href="<?php echo BASE_URL ;?>assets/css/style.main.css?ver=<?php echo time(); ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL ;?>assets/css/style.responsive.main.css?ver=<?php echo time(); ?>">
     <?php 
     $file_name_css = "./css/style.".enqueue_script_css().".css";
     if(file_exists($file_name_css)){

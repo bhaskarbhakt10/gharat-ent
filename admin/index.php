@@ -3,10 +3,10 @@
 <main class="main-class viewport">
     <div class="">
         <div class="d-flex flex-wrap">
-            <div class="flex-20 viewport">
+            <div class="flex-20 w-20 viewport">
                 <?php require_once '../admin/inc/admin-nav-side.php'; ?>
             </div>
-            <div class="flex-80 viewport bg-light-white bg_theme_blue <?php echo $_GET['q'] ;?>">
+            <div class="flex-80 w-80 viewport bg-light-white bg_theme_blue <?php echo $_GET['q'] ;?>">
                 <div class="header">
                     <?php require_once '../admin/inc/admin-nav-top.php'; ?>
                 </div>
@@ -26,16 +26,16 @@
                                 }
                                 break;
                             case '1':
-                                $admin_allowed_arr = array('admin-dashboard', 'admin-create-users', 'admin-list-users', 'admin-list-table-users');
+                                $admin_allowed_arr = array('admin-dashboard', 'admin-create-users', 'admin-list-users', 'admin-list-table-users','admin-user-profile', 'admin-log-out');
                                 break;
                             case '2':
-                                $admin_allowed_arr = array('admin-dashboard', 'admin-add-patients', 'admin-list-patients', 'admin-single-patient', 'admin-update-daily-check-up', 'admin-list-prescriptions', 'admin-single-prescription', 'template-prescription');
+                                $admin_allowed_arr = array('admin-dashboard', 'admin-add-patients', 'admin-list-patients', 'admin-single-patient', 'admin-update-daily-check-up', 'admin-list-prescriptions', 'admin-single-prescription', 'template-prescription','admin-user-profile', 'admin-log-out');
                                 break;
                             case '3':
-                                $admin_allowed_arr = array('admin-dashboard', 'admin-add-patients', 'admin-list-patients', 'admin-single-patient', 'admin-update-daily-check-up', 'admin-list-prescriptions', 'admin-single-prescription', 'template-prescription');
+                                $admin_allowed_arr = array('admin-dashboard', 'admin-add-patients', 'admin-list-patients', 'admin-single-patient', 'admin-update-daily-check-up', 'admin-list-prescriptions', 'admin-single-prescription', 'template-prescription','admin-user-profile', 'admin-log-out');
                                 break;
                             case '4':
-                                $admin_allowed_arr = array('admin-dashboard', "admin-add-patients", "admin-list-prescriptions", "admin-single-prescription", 'template-prescription');
+                                $admin_allowed_arr = array('admin-dashboard', "admin-add-patients", "admin-list-prescriptions", "admin-single-prescription", 'template-prescription','admin-user-profile', 'admin-log-out');
                                 break;
                             case '5':
                             default:

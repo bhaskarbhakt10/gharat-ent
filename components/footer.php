@@ -6,7 +6,8 @@
     <script src="<?php echo BASE_URL; ?>assets/js/script.material-bootstrap.js" type="text/javascript"></script>
     <script src="<?php echo BASE_URL; ?>assets/js/script.select2.min.js" type="text/javascript"></script>
     <script src="<?php echo BASE_URL; ?>assets/js/script.datatables.js" type="text/javascript"></script>
-
+    <script src="<?php echo BASE_URL; ?>assets/js/script.datatables.responsive.js" type="text/javascript"></script>
+    <!-- <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script> -->
 
 
     <script src="<?php echo BASE_URL; ?>assets/js/jquery.script.main.js?ver=<?php echo time(); ?>" type="text/javascript"></script>
