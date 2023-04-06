@@ -152,7 +152,7 @@ jQuery.noConflict();
 
     function ajax_call($post, this_btn, data_attr) {
 
-        
+
         let data = {
             'post': $post
         }
@@ -631,7 +631,7 @@ jQuery.noConflict();
                     if ($('#PatientsExistModal').length === 0) {
                         $(success_modal).insertAfter('body main');
                     }
-                    $('#PatientsExistModal').modal({keyboard: false});
+                    $('#PatientsExistModal').modal({ keyboard: false });
                     $('#PatientsExistModal').modal('show');
                     let json_obj = JSON.parse(data);
                     console.log(json_obj);
@@ -730,16 +730,80 @@ jQuery.noConflict();
     });
 
     let extra_field_obj = new Object();
-    $(document).on('submit', '#extra-field-form', function(e) {
+    $(document).on('submit', '#extra-field-form', function (e) {
         e.preventDefault();
         let form_data = $(this).serializeArray();
         for (const key in form_data) {
             let element = form_data[key];
-            Object.assign(extra_field_obj , { [element.name] : element['value']});
+            Object.assign(extra_field_obj, { [element.name]: element['value'] });
         }
         console.log(extra_field_obj);
-        $('body main form').append("<input type='hidden' value='"+JSON.stringify(extra_field_obj)+"' name='parent_data'>");
+        $('body main form').append("<input type='hidden' value='" + JSON.stringify(extra_field_obj) + "' name='parent_data'>");
         $('#PatientsExistModal').modal('hide')
     });
+
+
+
+    //hide more data and display for all the tables of admin-single-patient
+    let all_tables = $('.admin-single-patient table:not( td > table)').toArray();
+    let all_outside_row = new Array();
+    for (let index = 0; index < all_tables.length; index++) {
+        let outside_row = $(all_tables[index]).find('tbody>tr:not(td>table tr)');
+        all_outside_row.push(outside_row);
+    }
+
+    //hide all rows except first two rows
+    for (let index = 0; index < all_outside_row.length; index++) {
+        let current_table_row = all_outside_row[index];
+        // console.log(current_table_row);
+        for (let index = 0; index < current_table_row.length; index++) {
+            // console.log(current_table_row);
+            if (index > 1) {
+                console.warn($(current_table_row[index]).addClass('hide_table_row'));
+            }
+        }
+    }
+
+    //append button to toggle state
+    for (let index = 0; index < all_tables.length; index++) {
+        let row_length = $(all_tables[index]).find('tbody>tr:not(td>table tr)').length;
+        if(row_length >= 2){
+        let colspan = $(all_tables[index]).find('thead>tr>th:not(td>table th)').length
+        $(all_tables[index]).append("<tfoot><tr><td colspan="+ parseInt(colspan) + 10 +"><button class='display_row btn btn-secondary'>Show</button></td></tr></tfoot>")
+        }
+    }
+
+    //button functionality
+    $('body').on('click','.display_row', function(e){
+        e.preventDefault();
+        let hidden_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
+        // console.log(hidden_row);
+        for (let index = 0; index < hidden_row.length; index++) {
+            if($(hidden_row[index]).hasClass('hide_table_row')){
+                $(hidden_row[index]).addClass('show_table_row');
+                $(hidden_row[index]).removeClass('hide_table_row');
+            }
+            
+        }
+        $(this).text('Hide');
+        $(this).removeClass('display_row')
+        $(this).addClass('hide_row')
+    });
+
+    $('body').on('click','.hide_row', function(e){
+        let shown_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
+        // console.log(shown_row);
+        for (let index = 0; index < shown_row.length; index++) {
+            if($(shown_row[index]).hasClass('show_table_row')){
+                $(shown_row[index]).removeClass('show_table_row');
+                $(shown_row[index]).addClass('hide_table_row');
+            }
+            
+        }
+        $(this).text('Show');
+        $(this).addClass('display_row')
+        $(this).removeClass('hide_row')
+    });
+
 })(jQuery);
 

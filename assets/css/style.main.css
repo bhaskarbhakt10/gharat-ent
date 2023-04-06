@@ -784,7 +784,15 @@ table.datatable.table-blue th{
 .border-solid{
   border: 2px solid #ccc !important;
 }
-
+.hide_table_row{
+  display: none;
+}
+.show_table_row{
+  display: table-row;
+}
+table.table tfoot td{
+  border: 0;
+}
 
 
 

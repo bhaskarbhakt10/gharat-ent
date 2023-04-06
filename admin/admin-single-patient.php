@@ -301,7 +301,7 @@ if (array_key_exists('p_id', $_GET)) {
 <fieldset class="bg_form_grey">
     <div class="row">
         <div class="col-md-12">
-            <table class="table align-middle mb-3 table-blue" id="symptom-table">
+            <table class="table align-middle mb-3 table-blue" id="treatment-history">
                 <thead>
                     <tr>
                         <th class="th-width-16">Date</th>
@@ -415,7 +415,7 @@ if (array_key_exists('p_id', $_GET)) {
 <fieldset class="bg_form_grey">
     <div class="row">
         <div class="col-md-12">
-            <table class="table align-middle mb-3 table-blue">
+            <table class="table align-middle mb-3 table-blue" id="symptom-table">
                 <thead>
                     <tr>
                         <th class="th-width-20">Symptoms</th>
