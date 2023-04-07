@@ -1,3 +1,40 @@
+<?php
+    if(!empty($hospital_pMeds)){
+
+        $meds_arr = json_decode($hospital_pMeds, true);
+        // print_r($meds_arr);
+    }
+?>
+<?php
+if(!empty($meds_arr)){
+?>
+<fieldset class="bg_form_grey">
+    <div class="d-flex gap-20 flex-wrap">
+        <div>
+            <input type="checkbox" name="meds-repeat" value="no" id="prescribe-meds" class="form-check-input" checked>
+            <label for="prescribe-meds">Prescribed meds ?</label>
+        </div>
+        <div class="">
+            <input type="checkbox" name="meds-repeat" value="yes" id="repeat-previous-meds" class="form-check-input">
+            <label for="repeat-previous-meds">Repeat Previous prescribed meds ?</label>
+        </div>
+        <div class="flex-100" id="repeat-precribe-meds">
+            <div class="mb-3">
+                <select name="" id="repeat-precribe-field" class="form-select form-field">
+                    <option value="">Select a Date</option>
+                    <?php 
+                    foreach($meds_arr as $key=>$value) {
+                        ?>
+                        <option value="<?php echo $value['ID']?>"><?php echo $value['date'] ." " .$value['time'];?></option>
+                        <?php
+                    }
+                    ?>
+                </select>
+            </div>
+        </div>
+    </div>
+</fieldset>
+<?php } ?>
 <form action="" id="treatment-container-medicine-form" method="post" data-formid="<?php echo $_SESSION['user']['id'];?>">
 <fieldset class="mt-3 bg_form_grey">
     <div class="row">

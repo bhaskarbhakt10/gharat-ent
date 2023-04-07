@@ -121,3 +121,8 @@ Stack trace:
 #1 C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php(77): Patients->send_to_db()
 #2 {main}
   thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 82
+[07-Apr-2023 09:44:39 Europe/Berlin] PHP Warning:  Undefined variable $print_r in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php on line 19
+[07-Apr-2023 09:44:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Value of type null is not callable in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php on line 19

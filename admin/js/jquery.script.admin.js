@@ -767,42 +767,155 @@ jQuery.noConflict();
     //append button to toggle state
     for (let index = 0; index < all_tables.length; index++) {
         let row_length = $(all_tables[index]).find('tbody>tr:not(td>table tr)').length;
-        if(row_length >= 2){
-        let colspan = $(all_tables[index]).find('thead>tr>th:not(td>table th)').length
-        $(all_tables[index]).append("<tfoot><tr><td colspan="+ parseInt(colspan) + 10 +"><button class='display_row btn btn-secondary'>Show</button></td></tr></tfoot>")
+        if (row_length >= 2) {
+            let colspan = $(all_tables[index]).find('thead>tr>th:not(td>table th)').length
+            $(all_tables[index]).append("<tfoot><tr><td colspan=" + parseInt(colspan) + 10 + "><button class='display_row btn btn-secondary'>Show</button></td></tr></tfoot>")
         }
     }
 
     //button functionality
-    $('body').on('click','.display_row', function(e){
+    $('body').on('click', '.display_row', function (e) {
         e.preventDefault();
         let hidden_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
         // console.log(hidden_row);
         for (let index = 0; index < hidden_row.length; index++) {
-            if($(hidden_row[index]).hasClass('hide_table_row')){
+            if ($(hidden_row[index]).hasClass('hide_table_row')) {
                 $(hidden_row[index]).addClass('show_table_row');
                 $(hidden_row[index]).removeClass('hide_table_row');
             }
-            
+
         }
         $(this).text('Hide');
         $(this).removeClass('display_row')
         $(this).addClass('hide_row')
     });
 
-    $('body').on('click','.hide_row', function(e){
+    $('body').on('click', '.hide_row', function (e) {
         let shown_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
         // console.log(shown_row);
         for (let index = 0; index < shown_row.length; index++) {
-            if($(shown_row[index]).hasClass('show_table_row')){
+            if ($(shown_row[index]).hasClass('show_table_row')) {
                 $(shown_row[index]).removeClass('show_table_row');
                 $(shown_row[index]).addClass('hide_table_row');
             }
-            
+
         }
         $(this).text('Show');
         $(this).addClass('display_row')
         $(this).removeClass('hide_row')
+    });
+
+
+
+    // repeat meds or not 
+    let select_date = $('#repeat-precribe-meds').detach();
+    let meds_container = $('#treatment-container-medicine');
+    let meds_container_parent = $(meds_container).parent();
+    $('body').on('change', 'input[name="meds-repeat"]', function () {
+        $('input[name="meds-repeat"]').prop("checked", false);
+        $(this).prop("checked", true);
+        if ($(this).val() === 'yes') {
+            $(select_date).insertAfter($(this).parent())
+            $(meds_container).detach();
+        }
+        else {
+            $('#treatment-container-medicine .appended-row-medicine').remove()
+            $(meds_container_parent).prepend(meds_container);
+            select_date.detach();
+            $('#treatment-container-medicine .form-field').val('')
+        }
+    });
+
+    $('body').on('change', '#repeat-precribe-field', function () {
+        let this_value = $(this).val();
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+
+        let patient_id = params.p_id;
+
+        let data = {
+            'select_value': this_value,
+            'patient_id': patient_id
+        };
+        $.ajax({
+            url: '../backend/actions/patients/previous_meds.php',
+            method: "POST",
+            data: data,
+            success: function (data) {
+                console.log(data);
+                if (data !== "") {
+                    let json_obj = JSON.parse(data);
+                    console.log(json_obj);
+                    let meds_name = json_obj.medicine_name.split(',');
+                    console.log(meds_name);
+                    let meds_qty = json_obj.medicine_qty.split(',');
+                    console.log(meds_qty);
+                    let meds_vol = json_obj.medicine_volume.split(',');
+                    console.log(meds_vol);
+                    let meds_pattern = json_obj.medicine_pattern.split(',');
+                    console.log(meds_pattern);
+                    let additional_notes = json_obj.medicine_notes.split(',');
+                    console.log(additional_notes);
+                    $(meds_container_parent).prepend(meds_container);
+                    // $(treatment_container).find('.remove-duplicate-row').trigger('click')
+                    console.log($('#treatment-container-medicine .appended-row-medicine').remove());
+
+                    for (let index = 0; index < meds_name.length - 1; index++) {
+                        $('#treatment-container-medicine .add-medicine').trigger('click');
+                    }
+
+                    let inputs_treatment = $('#treatment-container-medicine .form-field')
+                    for (let index = 0; index < inputs_treatment.length; index++) {
+                        // console.log(inputs_treatment[index]);
+                        // get attr name 
+
+                        let med_field = $('[name="medicine_name"]')[index];
+                        $(med_field).val(meds_name[index]);
+
+                        let qty_field = $('[name="medicine_qty"]')[index];
+                        $(qty_field).val(meds_qty[index]);
+
+                        let additional_field = $('[name="medicine_notes"]')[index];
+                        $(additional_field).val(additional_notes[index]);
+
+                        let vol_field = $('[name="medicine_volume"]')[index];
+                        let options_arr = $(vol_field).find('option').toArray();
+                        for (let opts_index = 0; opts_index < options_arr.length; opts_index++) {
+                            if ($(options_arr[opts_index]).text() === meds_vol[index]) {
+                                $(options_arr[opts_index]).prop('selected', true);
+                            }
+                            else {
+                                $(options_arr[opts_index]).prop('selected', false);
+
+                            }
+
+                        }
+
+                        let dosage_field = $('[name="medicine_pattern"]')[index];
+                        let dosage_arr = $(dosage_field).find('option').toArray();
+                        for (let opts_index = 0; opts_index < dosage_arr.length; opts_index++) {
+                            if ($(dosage_arr[opts_index]).text() === meds_pattern[index]) {
+                                $(dosage_arr[opts_index]).prop('selected', true);
+                            }
+                            else {
+                                $(dosage_arr[opts_index]).prop('selected', false);
+
+                            }
+
+                        }
+
+
+
+                    }
+
+                }
+            },
+            error: function (error) {
+                window.alert(error);
+            }
+
+        })
     });
 
 })(jQuery);

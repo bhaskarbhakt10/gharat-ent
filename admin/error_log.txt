@@ -1917,3 +1917,8 @@ Stack trace:
 [30-Mar-2023 18:30:44 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\index.php on line 18
 [30-Mar-2023 18:30:44 Europe/Berlin] PHP Warning:  Undefined array key "user" in D:\php-local\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
 [30-Mar-2023 18:30:44 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\inc\admin-access-denied.php on line 6
+[07-Apr-2023 08:26:46 Europe/Berlin] PHP Parse error:  syntax error, unexpected variable "$value", expecting "," or ";" in D:\php-local\htdocs\hospital-management\admin\form-treatment.php on line 22
+[07-Apr-2023 13:45:53 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\admin\form-treatment.php on line 2
+[07-Apr-2023 13:45:53 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\admin\form-treatment.php on line 20
+[07-Apr-2023 13:47:32 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\admin\form-treatment.php on line 2
+[07-Apr-2023 14:02:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in D:\php-local\htdocs\hospital-management\admin\admin-patient-primary-details.php on line 92
