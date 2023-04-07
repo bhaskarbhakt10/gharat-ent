@@ -767,7 +767,7 @@ jQuery.noConflict();
     //append button to toggle state
     for (let index = 0; index < all_tables.length; index++) {
         let row_length = $(all_tables[index]).find('tbody>tr:not(td>table tr)').length;
-        if (row_length >= 2) {
+        if (row_length < 2) {
             let colspan = $(all_tables[index]).find('thead>tr>th:not(td>table th)').length
             $(all_tables[index]).append("<tfoot><tr><td colspan=" + parseInt(colspan) + 10 + "><button class='display_row btn btn-secondary'>Show</button></td></tr></tfoot>")
         }
@@ -848,15 +848,15 @@ jQuery.noConflict();
                     let json_obj = JSON.parse(data);
                     console.log(json_obj);
                     let meds_name = json_obj.medicine_name.split(',');
-                    console.log(meds_name);
+                    // console.log(meds_name);
                     let meds_qty = json_obj.medicine_qty.split(',');
-                    console.log(meds_qty);
+                    // console.log(meds_qty);
                     let meds_vol = json_obj.medicine_volume.split(',');
-                    console.log(meds_vol);
+                    // console.log(meds_vol);
                     let meds_pattern = json_obj.medicine_pattern.split(',');
-                    console.log(meds_pattern);
+                    // console.log(meds_pattern);
                     let additional_notes = json_obj.medicine_notes.split(',');
-                    console.log(additional_notes);
+                    // console.log(additional_notes);
                     $(meds_container_parent).prepend(meds_container);
                     // $(treatment_container).find('.remove-duplicate-row').trigger('click')
                     console.log($('#treatment-container-medicine .appended-row-medicine').remove());
@@ -917,6 +917,31 @@ jQuery.noConflict();
 
         })
     });
+
+
+    $('body').on('click', '.modal-btn', function(){
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+
+        const para = new URLSearchParams(location.search);
+        if($(this).attr('data-edit') === 'primary-information'){
+            para.set('q', 'admin-edit-patients');
+        }
+        else{
+            para.set('q', 'admin-update-daily-check-up');
+        }
+        para.set('p_id', params.p_id);
+        let new_url = window.location.origin + window.location.pathname +"?"+ para.toString();
+       
+        // $("#editModal .modal-body").load(new_url + " form")
+        window.open(new_url)
+        
+        
+
+
+    });
+
 
 })(jQuery);
 

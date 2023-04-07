@@ -43,7 +43,7 @@ if (array_key_exists('p_id', $_GET)) {
 <fieldset class="bg_form_blue ">
     <div class="edit-btn-block">
         <div class="text-end">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" data-edit="primary-information"><i class="fa fa-pencil"></i></button>
+            <button class="btn btn-primary modal-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-edit="primary-information"><i class="fa fa-pencil"></i></button>
         </div>
     </div>
     <div class="row">
@@ -99,7 +99,7 @@ if (array_key_exists('p_id', $_GET)) {
 <fieldset class="bg_form_grey">
     <div class="edit-btn-block">
         <div class="text-end">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" data-edit="medical-history"><i class="fa fa-pencil"></i></button>
+            <button class="btn btn-primary modal-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-edit="medical-history"><i class="fa fa-pencil"></i></button>
         </div>
     </div>
     <div class="row">
@@ -477,7 +477,7 @@ if (array_key_exists('p_id', $_GET)) {
 
 
 
-
+<?php /* ?>
 <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
@@ -495,3 +495,4 @@ if (array_key_exists('p_id', $_GET)) {
         </div>
     </div>
 </div>
+<?php */ ?>

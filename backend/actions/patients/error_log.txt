@@ -126,3 +126,11 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php on line 19
+[07-Apr-2023 18:58:11 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'hospital_PatientParent' in 'field list' in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:82
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php(82): mysqli->query('INSERT INTO hos...')
+#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\add-patient.php(77): Patients->send_to_db()
+#2 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 82
+[07-Apr-2023 17:08:52 Europe/Berlin] PHP Warning:  Undefined variable $selected_arr in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php on line 26
+[07-Apr-2023 17:28:20 Europe/Berlin] PHP Warning:  Undefined variable $selected_arr in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php on line 26
