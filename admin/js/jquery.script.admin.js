@@ -767,7 +767,7 @@ jQuery.noConflict();
     //append button to toggle state
     for (let index = 0; index < all_tables.length; index++) {
         let row_length = $(all_tables[index]).find('tbody>tr:not(td>table tr)').length;
-        if (row_length < 2) {
+        if (row_length > 2) {
             let colspan = $(all_tables[index]).find('thead>tr>th:not(td>table th)').length
             $(all_tables[index]).append("<tfoot><tr><td colspan=" + parseInt(colspan) + 10 + "><button class='display_row btn btn-secondary'>Show</button></td></tr></tfoot>")
         }
