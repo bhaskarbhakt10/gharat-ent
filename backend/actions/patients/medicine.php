@@ -29,7 +29,7 @@ if (isset($_POST)) {
         }
     }
     
-    $medicine_name = $medicine_array['medicine_name'];
+    // $medicine_name = $medicine_array['medicine_name'];
     $medicine_name = $medicine_array['medicine_name'];
     $medicine_qty = $medicine_array['medicine_qty'];
     $medicine_volume = $medicine_array['medicine_volume'];

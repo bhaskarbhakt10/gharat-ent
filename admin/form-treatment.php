@@ -90,7 +90,7 @@ if(!empty($meds_arr)){
                     </div>
                 </div>
             </div>
-            <div class="treatment-checkbox d-flex flex-wrap gap-20 mb-3">
+            <div class="treatment-checkbox d-flex flex-wrap gap-20 mb-3 align-items-center">
                 <div class="d-flex">
                     <input type="checkbox" name="medicine-test" value="cbc" id="cbc" class="form-check-input form-field">
                     <label for="cbc">CBC</label>
@@ -118,6 +118,16 @@ if(!empty($meds_arr)){
                 <div class="d-flex">
                     <input type="checkbox" name="medicine-test" value="sonography" id="sonography" class="form-check-input form-field">
                     <label for="sonography">Sonography</label>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="medicine-test" value="other" id="other" class="form-check-input form-field">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="d-flex flex-fill mb-3" id="other-medicine-test">
+                <div class="d-flex flex-column flex-fill">
+                    <label for="other_medicine_test">Other Test name</label>
+                    <input type="text" name="other_medicine_test" id="other_medicine_test" class="form-control form-field" required>
                 </div>
             </div>
             <div class="follow-up d-flex">

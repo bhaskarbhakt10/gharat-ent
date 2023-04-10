@@ -477,6 +477,20 @@ jQuery.noConflict();
         }
     });
 
+
+    //other-medicine-test
+    let other_meds = $('#other-medicine-test');
+    $(other_meds).detach();
+    $('body').on('change','[name="medicine-test"]', function(){
+        if($(this).val() === "other" && $(this).is(':checked')){
+            $(other_meds).insertAfter($('.treatment-checkbox'));
+        }
+        else{
+            $(other_meds).detach();
+        }
+    });
+
+
     $('body').on('click', '.print_pdf', function (e) {
         window.print();
     })
@@ -631,7 +645,7 @@ jQuery.noConflict();
                     if ($('#PatientsExistModal').length === 0) {
                         $(success_modal).insertAfter('body main');
                     }
-                    $('#PatientsExistModal').modal({ keyboard: false });
+                    $('#PatientsExistModal').modal({backdrop: 'static', keyboard: false });
                     $('#PatientsExistModal').modal('show');
                     let json_obj = JSON.parse(data);
                     console.log(json_obj);
