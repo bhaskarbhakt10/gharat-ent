@@ -127,7 +127,7 @@ if(!empty($meds_arr)){
             <div class="d-flex flex-fill mb-3" id="other-medicine-test">
                 <div class="d-flex flex-column flex-fill">
                     <label for="other_medicine_test">Other Test name</label>
-                    <input type="text" name="other_medicine_test" id="other_medicine_test" class="form-control form-field" required>
+                    <input type="text" name="other_medicine_test" id="other_medicine_test" class="form-control form-field" required placeholder="Use comma(,) to seprate multiple test">
                 </div>
             </div>
             <div class="follow-up d-flex">

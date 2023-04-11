@@ -163,14 +163,15 @@ class MYPDF extends TCPDF
     </tbody>
 </table>
         ';
-        $this->writeHTML($footer_table, false, false, false, false, 'L');
+        // $this->writeHTML($footer_table, false, false, false, false, 'L');
+        $this->writeHTML('', false, false, false, false, 'L');
     }
-    public function Output($name = 'doc.pdf', $dest = 'D')
-    {
-        $this->tcpdflink = false;
-        // $this->tcpdflink = false;
-        return parent::Output($name, $dest);
-    }
+    // public function Output($name = 'doc.pdf', $dest = 'D')
+    // {
+    //     $this->tcpdflink = false;
+    //     // $this->tcpdflink = false;
+    //     return parent::Output($name, $dest);
+    // }
 }
 
 // create new PDF document
@@ -183,6 +184,7 @@ $pdf->SetTitle($prescription_id);
 // $pdf->SetSubject('TCPDF Tutorial');
 // $pdf->SetKeywords('TCPDF, PDF, example, test, guide');
 
+/*
 $header_strip_image = $_SERVER['DOCUMENT_ROOT'] . "hospital-management/assets/images/pdf/header-strip.png";
 
 $header_table = '
@@ -196,8 +198,30 @@ $header_table = '
 </table>
 
 ';
+*/
+
+$header_table = "
+<table style='width:100%;'>
+    <tbody>
+        <tr>
+            <td style='background-color:red;width: 33.33%; text-align: center;'>
+                <div style='text-align: center;'>
+                    <h1>
+                        Dr hemant Wagh
+                    </h1>
+                </div>
+            </td>
+            <td style='background-color:yellow;width:33.33%; text-align: center;'>column blank</td>
+            <td style='background-color:blue;width:33.33%; text-align: center;'>
+                column 2
+            </td>
+        </tr>
+    </tbody>
+</table>
+";
+
 // set default header data
-$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, $header_table);
+$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, '');
 
 
 // set header and footer fonts
@@ -208,7 +232,7 @@ $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, $h
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
 // set margins
-$pdf->SetMargins(0, 20, 0);
+$pdf->SetMargins(0, 0,0);
 $pdf->SetHeaderMargin(0);
 $pdf->SetFooterMargin(0);
 
@@ -264,8 +288,33 @@ td{
 .w-20{
     width:20%;
 }
+.w-33{
+    width:33%;
+}
+.w-50{
+width:50%;
+}
+.red{
+background-color:red;
+}
+.blue{
+    background-color:blue;
+}
 .text-left{
     text-align:left;
+}
+.dr-name{
+margin:0;
+line-height:28px;
+font-size:25px;
+padding:0;
+}
+.dr-info{
+    font-size:16px;
+    line-height:18px;
+}
+.verticle-middle{
+    vertical-align: middle;
 }
 </style>
 
@@ -276,23 +325,34 @@ td{
 <table>
 <tbody>
 <tr>
-<td width="10%"></td>
-<td width="80%">
+<td width="5%"></td>
+<td width="90%">
 
-<table style="width:250px; background-color:#fff;">
+<table class="w-100 verticle-middle">
 <tbody>
-<tr >
-<td style="width:100px; line-height:15px;"  valign="middle">
-<div>
-<img src="' . $image_icon . '" style="width:250px;"/>
-</div>
-</td>
-<td style="width:150px; line-height:15px;" valign="middle">
-<div>
-<h1 style="line-height:25px; font-size:22px;"> DR. KEVIN HARTNET</h1>
-</div>
-</td>
-</tr>
+    <tr>
+    <td class="text-left w-33 red " >
+        <table>
+            <tr>
+            <td><h1 class="dr-name">Dr Hemant Wagh</h1>
+            </td>
+            </tr>
+            <tr>
+            <td><b class="dr-info">MBBS, DNB, FICM, DGM</b></td>
+            </tr>
+            <tr>
+            <td><b class="dr-info">Diabetoligist & Physician</b></td>
+            </tr>
+            <tr>
+            <td><b class="dr-info">Reg. No. 2004/08/2861</b></td>
+            </tr>
+        </table>
+    </td>
+    
+    <td class="text-right w-50 blue">
+    <b>Date:</b>' . $date . '
+    </td>
+    </tr>
 </tbody>
 </table>
 
@@ -348,7 +408,7 @@ td{
 
 
 </td>
-<td width="10%"></td>
+<td width="5%"></td>
 </tr>
 </tbody>
 </table>
@@ -363,4 +423,4 @@ $pdf->writeHTML($table_html, true, false, true, false, '');
 // $pdf->IncludeJS($js);
 
 //Close and output PDF document
-$pdf->Output('example_003.pdf', 'D');
+$pdf->Output('example_003.pdf', 'I');
