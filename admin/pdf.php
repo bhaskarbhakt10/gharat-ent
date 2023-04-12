@@ -232,7 +232,7 @@ $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, ''
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
 // set margins
-$pdf->SetMargins(0, 0,0);
+$pdf->SetMargins(0, 0, 0);
 $pdf->SetHeaderMargin(0);
 $pdf->SetFooterMargin(0);
 
@@ -250,12 +250,23 @@ $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 
 // ---------------------------------------------------------
 
+// convert TTF font to TCPDF format and store it on the fonts folder
+$mundo = TCPDF_FONTS::addTTFfont($_SERVER['DOCUMENT_ROOT'] . "hospital-management/assets/fonts/Mundo-Sans/Mundo-Sans-Std-Medium-Italic.ttf", 'TrueTypeUnicode', '', 96);
+$mundo_light = TCPDF_FONTS::addTTFfont($_SERVER['DOCUMENT_ROOT'] . "hospital-management/assets/fonts/Mundo-Sans/Mundo-Sans-Std-Light.ttf", 'TrueTypeUnicode', '', 96);
+
+// use the font
+// $pdf->setFontSubsetting(true);
+$pdf->SetFont($mundo, '', 14, '', false);
+$light = $pdf->AddFont($mundo_light,'','dejavusansb.php'); 
+// $pdf->SetFont($mundo_light, '', 14, '', false);
+// print_r($light);
 // set font
-$pdf->SetFont('times', '', 12);
 
 // add a page
 $pdf->AddPage();
 
+
+// $mundo = $_SERVER['DOCUMENT_ROOT'] . "hospital-management/assets/fonts/Mundo-Sans/Mundo-Sans-Std-Medium-Italic.ttf";
 $image_icon = $_SERVER['DOCUMENT_ROOT'] . "hospital-management/assets/images/pdf/icon.png";
 
 
@@ -288,8 +299,11 @@ td{
 .w-20{
     width:20%;
 }
+.width-cust{
+    width:40%;
+}
 .w-33{
-    width:33%;
+    width:33.33%;
 }
 .w-50{
 width:50%;
@@ -303,18 +317,71 @@ background-color:red;
 .text-left{
     text-align:left;
 }
+.text-right{
+    text-align:right;
+}
 .dr-name{
 margin:0;
-line-height:28px;
-font-size:25px;
+line-height:35px;
+font-size:30px;
 padding:0;
 }
 .dr-info{
-    font-size:16px;
+    font-size:15px;
     line-height:18px;
 }
 .verticle-middle{
     vertical-align: middle;
+}
+.header-table>*{
+    
+}
+.font-16{
+    font-size:16px;
+    line-height:20px;
+}
+.font-14{
+    font-size:12px;
+    line-height:14px;
+}
+fontweight-400{
+    font-weight:100;
+}
+.pdf-blue{
+    color:#0072BC
+}
+.text-left{
+    text-align:left;
+}
+.header-table-address td{
+    text-align:left;
+}
+.para{
+    margin:0;
+    padding:0;
+
+}
+.header-first-col{
+    width:33.33%;
+}
+.header-second-col{
+    width:25%;
+}
+.header-third-col{
+    width:auto;
+}
+.dark{
+    color:#000;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+.line-height-td{
+    
+}
+#header-table{
+    border:2px solid red;
 }
 </style>
 
@@ -325,35 +392,63 @@ padding:0;
 <table>
 <tbody>
 <tr>
-<td width="5%"></td>
-<td width="90%">
+<td width="2%"></td>
 
-<table class="w-100 verticle-middle">
+<td width="96%">
+
+<table class="w-100 " id="header-table" >
 <tbody>
+    <tr><td style="height:10px;"></td></tr>
     <tr>
-    <td class="text-left w-33 red " >
-        <table>
+    <td class="text-left header-first-col">
+        <table class="header-table-name ">
             <tr>
-            <td><h1 class="dr-name">Dr Hemant Wagh</h1>
+            <td><h1 class="dr-name pdf-blue">Dr Hemant Wagh</h1></td>
+            </tr>
+            <tr>
+            <td><p class="dr-info"><span>MBBS, DNB, FICM, DGM</span><br><span>Diabetoligist & Physician</span><br><span>Reg. No. 2004/08/2861</span></p>
             </td>
-            </tr>
-            <tr>
-            <td><b class="dr-info">MBBS, DNB, FICM, DGM</b></td>
-            </tr>
-            <tr>
-            <td><b class="dr-info">Diabetoligist & Physician</b></td>
-            </tr>
-            <tr>
-            <td><b class="dr-info">Reg. No. 2004/08/2861</b></td>
             </tr>
         </table>
     </td>
-    
-    <td class="text-right w-50 blue">
-    <b>Date:</b>' . $date . '
+    <td class="text-right header-second-col">
+       <table>
+
+       </table>
+    </td>
+    <td class="text-left header-third-col">
+        <table class="header-table-address ">
+            <tr>
+            <td class="text-left line-height-td"><h1 class="font-16 pdf-blue">Avannah Hospital</h1></td>
+            </tr>
+            <tr>
+            <td class="text-left line-height-td" style="font-family:mundosansstdlight;"><p class="font-14 fontweight-400 para">Ground Floor, Friendship Corner,<br>Lane Near Madhuram Hotel, Dindayal Nagar, Vasai (W) </p>
+            </td>
+            </tr>
+            <tr>
+            <td class="text-left line-height-td"><p class="font-14 fontweight-400 para">Tel:. <a href="tel:+919420292710">9420292710</a></p></td>
+            </tr>
+            <tr>
+            <td class="text-left line-height-td"><p class="font-14 fontweight-400 para pdf-blue">For Appointment:. <a href="tel:+918484077565">8484077565</a></p></td>
+            </tr>
+            <tr>
+            <td class="text-left line-height-td"><p class="font-14 fontweight-400 para pdf-blue">Consulting Timings : <span class="dark">Mon To Sat - 11.00 am to 3.00 pm </span></p></td>
+            </tr>
+            <tr>
+            <td style="width:180px;"></td>
+            <td class="text-right line-height-td" colspan="5"><p class="font-14 fontweight-400 para pdf-blue"><span class="dark">7.00 pm to 9.00 pm </span></p></td>
+            </tr>
+        </table>
     </td>
     </tr>
 </tbody>
+<tfoot>
+<tr>
+<td style="border-top:1px solid #333;" colspan=""></td>
+<td style="border-top:1px solid #333;" colspan=""></td>
+<td style="border-top:1px solid #333;" colspan=""></td>
+</tr>
+</tfoot>
 </table>
 
 <table>
@@ -362,7 +457,7 @@ padding:0;
     <td class="text-left w-80">
     <b>Patient name:</b>
     </td>
-    <td class="w-20 text-left">
+    <td class="text-left w-20">
     <b>Date:</b>' . $date . '
     </td>
     </tr>
@@ -408,7 +503,7 @@ padding:0;
 
 
 </td>
-<td width="5%"></td>
+<td width="2%"></td>
 </tr>
 </tbody>
 </table>

@@ -1938,3 +1938,100 @@ Stack trace:
 [10-Apr-2023 08:55:46 Europe/Berlin] PHP Warning:  Undefined variable $test_name in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 384
 [10-Apr-2023 08:55:46 Europe/Berlin] PHP Warning:  Undefined variable $test_name in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 384
 [10-Apr-2023 08:56:46 Europe/Berlin] PHP Parse error:  Unmatched '}' in D:\php-local\htdocs\hospital-management\admin\admin-single-patient.php on line 402
+[12-Apr-2023 07:51:59 Europe/Berlin] PHP Warning:  Undefined variable $times in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 257
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 16616
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined array key "thead" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 16648
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined array key "thead" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 16648
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18276
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined variable $table_columns_width in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18331
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18369
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18424
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18278
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined variable $table_columns_width in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18331
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18369
+[12-Apr-2023 07:56:45 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18424
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18276
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Undefined variable $table_columns_width in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18331
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18369
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18424
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18278
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Undefined variable $table_columns_width in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18331
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18369
+[12-Apr-2023 09:31:21 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18424
+[12-Apr-2023 10:07:44 Europe/Berlin] PHP Warning:  Undefined variable $mundo in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 259
+[12-Apr-2023 10:13:01 Europe/Berlin] PHP Warning:  Undefined variable $headerData in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 244
+[12-Apr-2023 10:13:01 Europe/Berlin] PHP Deprecated:  preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 16390
+[12-Apr-2023 10:13:01 Europe/Berlin] PHP Deprecated:  preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 16398
+[12-Apr-2023 10:13:01 Europe/Berlin] PHP Deprecated:  preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 16421
+[12-Apr-2023 10:13:01 Europe/Berlin] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 16436
+[12-Apr-2023 10:20:29 Europe/Berlin] PHP Warning:  Undefined array key 24 in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18813
+[12-Apr-2023 10:20:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18813
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18276
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Undefined variable $table_columns_width in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18331
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18369
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18424
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18278
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Undefined variable $table_columns_width in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18331
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18369
+[12-Apr-2023 10:51:24 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18424
+[12-Apr-2023 13:33:50 Europe/Berlin] PHP Warning:  Undefined array key "startcolumn" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19670
+[12-Apr-2023 13:33:50 Europe/Berlin] PHP Warning:  Undefined array key "startx" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19671
+[12-Apr-2023 13:33:50 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19674
+[12-Apr-2023 13:33:50 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:33:50 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:33:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:33:50 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19710
+[12-Apr-2023 13:33:50 Europe/Berlin] PHP Warning:  Undefined array key "startx" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19930
+[12-Apr-2023 13:38:27 Europe/Berlin] PHP Warning:  Undefined array key "startcolumn" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19670
+[12-Apr-2023 13:38:27 Europe/Berlin] PHP Warning:  Undefined array key "startx" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19671
+[12-Apr-2023 13:38:27 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19674
+[12-Apr-2023 13:38:27 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:38:27 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:38:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:38:27 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19710
+[12-Apr-2023 13:38:27 Europe/Berlin] PHP Warning:  Undefined array key "startx" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19930
+[12-Apr-2023 13:39:06 Europe/Berlin] PHP Warning:  Undefined array key "startcolumn" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19670
+[12-Apr-2023 13:39:06 Europe/Berlin] PHP Warning:  Undefined array key "startx" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19671
+[12-Apr-2023 13:39:06 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19674
+[12-Apr-2023 13:39:06 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:39:06 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:39:06 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:39:06 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19710
+[12-Apr-2023 13:39:06 Europe/Berlin] PHP Warning:  Undefined array key "startx" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19930
+[12-Apr-2023 13:39:18 Europe/Berlin] PHP Warning:  Undefined array key "startcolumn" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19670
+[12-Apr-2023 13:39:18 Europe/Berlin] PHP Warning:  Undefined array key "startx" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19671
+[12-Apr-2023 13:39:18 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19674
+[12-Apr-2023 13:39:18 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:39:18 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:39:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19677
+[12-Apr-2023 13:39:18 Europe/Berlin] PHP Warning:  Undefined array key "startpage" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19710
+[12-Apr-2023 13:39:18 Europe/Berlin] PHP Warning:  Undefined array key "startx" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 19930
+[12-Apr-2023 16:10:34 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 260
+[12-Apr-2023 16:10:34 Europe/Berlin] PHP Warning:  Undefined variable $mu in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 425
+[12-Apr-2023 16:10:49 Europe/Berlin] PHP Warning:  Undefined variable $mu in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 425
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18276
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Undefined variable $table_columns_width in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18331
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18369
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18424
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18278
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Undefined variable $table_columns_width in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18331
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18343
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Undefined variable $cellspacing in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18369
+[12-Apr-2023 16:25:16 Europe/Berlin] PHP Warning:  Undefined variable $cellspacingx in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18424
+[12-Apr-2023 16:29:21 Europe/Berlin] PHP Warning:  Undefined array key "helveticab" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 4412
