@@ -159,6 +159,19 @@ class Admin
         } 
     }
 
+    function user_by_id($userid){
+        $sql = "SELECT * FROM ". USERS . " WHERE hospital_UserId = '".$userid. "'";
+        $res = $this->db->connect()->query($sql);
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                return $row['hospital_UserFirstName']." ". $row['hospital_UserLastName'];
+            }
+        }
+        else{
+            return false;
+        } 
+    }
+
 
     function get_users_role_to_access($userId){
         $sql = "SELECT * FROM ". USERS ." WHERE hospital_UserId='".$userId."'";
