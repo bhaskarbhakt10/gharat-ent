@@ -476,11 +476,11 @@ if (array_key_exists('p_id', $_GET)) {
         </div>
     </fieldset>
 </div>
-<div class="pb-4">
+<div class="pb-4" id="symptom-form-block">
     <h3 class="form-heading">Symptoms</h3>
     <?php require_once './form-symptoms.php'; ?>
 </div>
-<div class="pb-4">
+<div class="pb-4" id="treatment-form-block">
     <h3 class="form-heading">Treatment</h3>
     <?php require_once './form-treatment.php'; ?>
 </div>

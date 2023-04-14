@@ -24,6 +24,22 @@ class PatientsTreatmentSymptom
         $this->formid=$formid;
     }
 
+    function generate_association_id($patient_id){
+        
+        $sql = "SELECT * FROM " . PATIENTS_HIS . " WHERE hospital_pID='" . $patient_id . "'";
+        
+        $res = $this->db->connect()->query($sql);
+        
+        if ($res->num_rows > 0) {
+            while($row = $res->fetch_assoc()){
+                
+                $sym_col = $row['hospital_pSym'];
+                $meds_col = $row['hospital_pMeds'];
+            }
+            return $patient_id ."_". count(json_decode($sym_col, true));
+        }
+    }
+
     function gen_json()
     {
         date_default_timezone_set(TIMEZONE_IN);
@@ -34,6 +50,7 @@ class PatientsTreatmentSymptom
         $this->details['time'] = $time_now;
         $this->details['ID'] = uniqid($this->pID."_");
         $this->details['prescribedID'] = $this->formid;
+        $this->details['associatedID'] = $this->generate_association_id($this->pID);
         $t = time();
         $final[$t] = $this->details;
         return  json_encode($final);

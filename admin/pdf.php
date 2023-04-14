@@ -18,16 +18,32 @@ if (array_key_exists('ID', $_GET)) {
         if ($all_cols->num_rows > 0) {
             while ($row = $all_cols->fetch_assoc()) {
                 $hospital_pMeds = $row['hospital_pMeds'];
+                $hospital_pSym = $row['hospital_pSym'];
             }
         }
     }
 } else {
     exit();
 }
+    
+
+    if(!empty($hospital_pSym)){
+        $symptoms = json_decode($hospital_pSym);
+        print_r($symptoms);
+        foreach($symptoms as $key=>$value){
+            echo $value;
+        }
+    }
+
 
 if (!empty($hospital_pMeds)) {
+    // print_r($hospital_pMeds);
     $prescription = json_decode($hospital_pMeds, true);
+    // echo "<pre>";
+    // print_r($prescription);
+    // echo "</pre>";
     foreach ($prescription as $key => $value) {
+        // echo $value['ID'];
         if ($value['ID'] === $prescription_id) {
             // print_r($prescription[$key]);
             $medicine_name = $prescription[$key]['medicine_name'];
@@ -37,17 +53,22 @@ if (!empty($hospital_pMeds)) {
             $medicine_notes = $prescription[$key]['medicine_notes'];
             $medicine_test = $prescription[$key]['medicine-test'];
             $follow_up_date = $prescription[$key]['follow_up_date'];
-            $other_medicine_test = $prescription[$key]['other_medicine_test'];
+            // $other_medicine_test = $prescription[$key]['other_medicine_test'];
             $date = $prescription[$key]['date'];
             $patient_id = $prescription[$key]['ID'];
             $prescribedID = $prescription[$key]['prescribedID'];
         }
     }
+}
     // print_r($medicine_name);
     // print_r($medicine_qty);
     // print_r($medicine_volume);
     // print_r($medicine_pattern);
     // print_r($medicine_notes);
+
+
+
+
 
     $admin = new Admin();
     //docter name
@@ -59,6 +80,8 @@ if (!empty($hospital_pMeds)) {
     $patinetID__ = implode('_', $patient_id_array);
     $patient = new Patients();
     $res = $patient->get_genral_detials($patinetID__);
+    
+    $patient_name = '';
     if ($res->num_rows > 0) {
         while ($row = $res->fetch_assoc()) {
             $patient_name = $row['hospital_PatientFirstName'] . " " . $row['hospital_PatientMiddleName'] . " " . $row['hospital_PatientLastName'];
@@ -66,11 +89,13 @@ if (!empty($hospital_pMeds)) {
     }
 
     //test suggested
+    $test_suggested= '';
     if(!empty($other_medicine_test)){
         $test_suggested = '<tr><td class="text-left">Test To be Done:. ' . $other_medicine_test . '</td></tr>';
     }
 
     //Follow up date
+    $follow_up = '';
     if(!empty($follow_up_date)){
         $follow_up =  '<tr><td class="text-left">Next Followup date:. ' . $follow_up_date . '</td></tr>';
         
@@ -152,7 +177,7 @@ if (!empty($hospital_pMeds)) {
         }
         return $meds_notess;
     }
-}
+
 
 
 // Extend the TCPDF class to create custom Header and Footer
@@ -554,12 +579,21 @@ a{
 </table>
 
 
-<table>
+<table class="w-100">
 <thead>
-<tr><b>Symptoms</b></tr>
-<tr><b></b></tr>
-<tr><b></b></tr>
+<tr>
+<th class="w-33"><b>Symptoms</b></th>
+<th class="w-33"><b>Symptoms status</b></th>
+<th class="w-33"><b>No of days</b></th>
+</tr>
 </thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
 </table>
 
 <h2 class=>Medicine Table</h2>

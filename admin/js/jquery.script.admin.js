@@ -374,7 +374,77 @@ jQuery.noConflict();
     //remove code works from line number 215
 
 
+
+
+        //hide more data and display for all the tables of admin-single-patient
+        let all_tables = $('.admin-single-patient table:not( td > table)').toArray();
+        let all_outside_row = new Array();
+        for (let index = 0; index < all_tables.length; index++) {
+            let outside_row = $(all_tables[index]).find('tbody>tr:not(td>table tr)');
+            all_outside_row.push(outside_row);
+        }
+    
+        //hide all rows except first two rows
+        for (let index = 0; index < all_outside_row.length; index++) {
+            let current_table_row = all_outside_row[index];
+            // console.log(current_table_row);
+            for (let index = 0; index < current_table_row.length; index++) {
+                // console.log(current_table_row);
+                if (index > 1) {
+                    console.warn($(current_table_row[index]).addClass('hide_table_row'));
+                }
+            }
+        }
+    
+    
+    
+        //button functionality
+        $('body').on('click', '.display_row', function (e) {
+            e.preventDefault();
+            let hidden_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
+            // console.log(hidden_row);
+            for (let index = 0; index < hidden_row.length; index++) {
+                if ($(hidden_row[index]).hasClass('hide_table_row')) {
+                    $(hidden_row[index]).addClass('show_table_row');
+                    $(hidden_row[index]).removeClass('hide_table_row');
+                }
+    
+            }
+            $(this).text('Hide');
+            $(this).removeClass('display_row')
+            $(this).addClass('hide_row')
+        });
+    
+        $('body').on('click', '.hide_row', function (e) {
+            let shown_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
+            console.log(shown_row);
+            for (let index = 0; index < shown_row.length; index++) {
+                if ($(shown_row[index]).hasClass('show_table_row')) {
+                    $(shown_row[index]).removeClass('show_table_row');
+                    $(shown_row[index]).addClass('hide_table_row');
+                }
+    
+            }
+            $(this).text('Show');
+            $(this).addClass('display_row')
+            $(this).removeClass('hide_row')
+        });
+
+    //append button to toggle state
+    function addtablefoot() {
+        for (let index = 0; index < all_tables.length; index++) {
+            let row_length = $(all_tables[index]).find('tbody>tr:not(td>table tr)').length;
+            if (row_length > 2) {
+                let colspan = $(all_tables[index]).find('thead>tr>th:not(td>table th)').length
+                $(all_tables[index]).append("<tfoot><tr><td colspan=" + parseInt(colspan) + 10 + "><button class='display_row btn btn-secondary'>Show</button></td></tr></tfoot>")
+            }
+        }
+    }
+    addtablefoot();
+
     //save-and-pdf
+    let treatment = $('#treatment-form-block');
+    $(treatment).detach();
     $('body').on('click', '.save-and-pdf, .symptom-btn', function (event) {
         event.preventDefault();
         let thisbtn = $(this);
@@ -463,9 +533,14 @@ jQuery.noConflict();
                     success_html += '</div>'
                     if (data === "success") {
                         $(success_html).insertAfter(thisbtn);
+                        $('#symptom-table').load(document.URL + " #symptom-table", function(){
+                            addtablefoot();
+                        });
+                        $(treatment).insertAfter($('#symptom-form-block'));
+                        
                         setInterval(() => {
-                            $('#symptom-table').load(window.location.href + " #symptom-table");
                             $(this_form).find('.alert').remove();
+                            $('#symptom-form-block').detach();
                             $(this_form)[0].reset();
                         }, 2000);
                     }
@@ -481,11 +556,11 @@ jQuery.noConflict();
     //other-medicine-test
     let other_meds = $('#other-medicine-test');
     $(other_meds).detach();
-    $('body').on('change','[name="medicine-test"]', function(){
-        if($(this).val() === "other" && $(this).is(':checked')){
+    $('body').on('change', '[name="medicine-test"]', function () {
+        if ($(this).val() === "other" && $(this).is(':checked')) {
             $(other_meds).insertAfter($('.treatment-checkbox'));
         }
-        else{
+        else {
             $(other_meds).detach();
         }
     });
@@ -645,7 +720,7 @@ jQuery.noConflict();
                     if ($('#PatientsExistModal').length === 0) {
                         $(success_modal).insertAfter('body main');
                     }
-                    $('#PatientsExistModal').modal({backdrop: 'static', keyboard: false });
+                    $('#PatientsExistModal').modal({ backdrop: 'static', keyboard: false });
                     $('#PatientsExistModal').modal('show');
                     let json_obj = JSON.parse(data);
                     console.log(json_obj);
@@ -758,66 +833,7 @@ jQuery.noConflict();
 
 
 
-    //hide more data and display for all the tables of admin-single-patient
-    let all_tables = $('.admin-single-patient table:not( td > table)').toArray();
-    let all_outside_row = new Array();
-    for (let index = 0; index < all_tables.length; index++) {
-        let outside_row = $(all_tables[index]).find('tbody>tr:not(td>table tr)');
-        all_outside_row.push(outside_row);
-    }
 
-    //hide all rows except first two rows
-    for (let index = 0; index < all_outside_row.length; index++) {
-        let current_table_row = all_outside_row[index];
-        // console.log(current_table_row);
-        for (let index = 0; index < current_table_row.length; index++) {
-            // console.log(current_table_row);
-            if (index > 1) {
-                console.warn($(current_table_row[index]).addClass('hide_table_row'));
-            }
-        }
-    }
-
-    //append button to toggle state
-    for (let index = 0; index < all_tables.length; index++) {
-        let row_length = $(all_tables[index]).find('tbody>tr:not(td>table tr)').length;
-        if (row_length > 2) {
-            let colspan = $(all_tables[index]).find('thead>tr>th:not(td>table th)').length
-            $(all_tables[index]).append("<tfoot><tr><td colspan=" + parseInt(colspan) + 10 + "><button class='display_row btn btn-secondary'>Show</button></td></tr></tfoot>")
-        }
-    }
-
-    //button functionality
-    $('body').on('click', '.display_row', function (e) {
-        e.preventDefault();
-        let hidden_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
-        // console.log(hidden_row);
-        for (let index = 0; index < hidden_row.length; index++) {
-            if ($(hidden_row[index]).hasClass('hide_table_row')) {
-                $(hidden_row[index]).addClass('show_table_row');
-                $(hidden_row[index]).removeClass('hide_table_row');
-            }
-
-        }
-        $(this).text('Hide');
-        $(this).removeClass('display_row')
-        $(this).addClass('hide_row')
-    });
-
-    $('body').on('click', '.hide_row', function (e) {
-        let shown_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
-        // console.log(shown_row);
-        for (let index = 0; index < shown_row.length; index++) {
-            if ($(shown_row[index]).hasClass('show_table_row')) {
-                $(shown_row[index]).removeClass('show_table_row');
-                $(shown_row[index]).addClass('hide_table_row');
-            }
-
-        }
-        $(this).text('Show');
-        $(this).addClass('display_row')
-        $(this).removeClass('hide_row')
-    });
 
 
 
@@ -933,25 +949,25 @@ jQuery.noConflict();
     });
 
 
-    $('body').on('click', '.modal-btn', function(){
+    $('body').on('click', '.modal-btn', function () {
         const params = new Proxy(new URLSearchParams(window.location.search), {
             get: (searchParams, prop) => searchParams.get(prop),
         });
 
         const para = new URLSearchParams(location.search);
-        if($(this).attr('data-edit') === 'primary-information'){
+        if ($(this).attr('data-edit') === 'primary-information') {
             para.set('q', 'admin-edit-patients');
         }
-        else{
+        else {
             para.set('q', 'admin-update-daily-check-up');
         }
         para.set('p_id', params.p_id);
-        let new_url = window.location.origin + window.location.pathname +"?"+ para.toString();
-       
+        let new_url = window.location.origin + window.location.pathname + "?" + para.toString();
+
         // $("#editModal .modal-body").load(new_url + " form")
         window.open(new_url)
-        
-        
+
+
 
 
     });
