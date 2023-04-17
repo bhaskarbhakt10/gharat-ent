@@ -232,3 +232,90 @@ Stack trace:
   thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
 [14-Apr-2023 13:49:09 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
 [14-Apr-2023 13:49:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 16
+[15-Apr-2023 17:48:28 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 17:48:28 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(53): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(121): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 17:48:43 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 17:48:43 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(53): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(121): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 17:50:58 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 17:50:58 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(58): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 17:53:27 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 17:53:27 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(58): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_11')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_11')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 17:55:38 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 17:55:38 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(58): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_11')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_11')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 17:59:42 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, stdClass given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(58): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_11')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(137): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_11')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 18:04:20 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 18:04:20 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(58): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 18:08:11 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 18:08:11 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(53): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(121): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 18:18:28 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 18:18:28 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(53): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 18:18:32 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 18:18:32 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(53): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 18:19:53 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[15-Apr-2023 18:19:53 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
+#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(129): PatientsTreatmentSymptom->gen_json()
+#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
+#3 {main}
+  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39

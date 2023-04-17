@@ -484,6 +484,7 @@ if (array_key_exists('p_id', $_GET)) {
     <h3 class="form-heading">Treatment</h3>
     <?php require_once './form-treatment.php'; ?>
 </div>
+<input type="hidden" name="associated-id" id="associated-id" value="<?php echo time().uniqid();?>">
 
 
 

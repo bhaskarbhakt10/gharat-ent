@@ -11,17 +11,19 @@ class PatientsTreatmentSymptom
     private $details;
     private $pID;
     private $formid;
+    private $associatedId;
 
     function __construct()
     {
         $this->db = new Database();
     }
 
-    function get_Details($medicine_array,$patient_id,$formid)
+    function get_Details($medicine_array,$patient_id,$formid,$associatedId)
     {
         $this->details = $medicine_array;
         $this->pID=$patient_id;
         $this->formid=$formid;
+        $this->associatedId = $associatedId;
     }
 
     function generate_association_id($patient_id){
@@ -36,7 +38,17 @@ class PatientsTreatmentSymptom
                 $sym_col = $row['hospital_pSym'];
                 $meds_col = $row['hospital_pMeds'];
             }
-            return $patient_id ."_". count(json_decode($sym_col, true));
+            if($sym_col === null){
+                return $patient_id ."_0";
+
+            }
+            else{
+                return $patient_id ."_". count(json_decode($sym_col, true));
+
+            }
+        }
+        else{
+            return false;
         }
     }
 
@@ -50,7 +62,8 @@ class PatientsTreatmentSymptom
         $this->details['time'] = $time_now;
         $this->details['ID'] = uniqid($this->pID."_");
         $this->details['prescribedID'] = $this->formid;
-        $this->details['associatedID'] = $this->generate_association_id($this->pID);
+        // $this->details['associatedID'] = $this->generate_association_id($this->pID);
+        $this->details['associatedID'] = $this->associatedId;
         $t = time();
         $final[$t] = $this->details;
         return  json_encode($final);

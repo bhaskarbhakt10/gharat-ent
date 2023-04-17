@@ -444,7 +444,7 @@ jQuery.noConflict();
 
     //save-and-pdf
     let treatment = $('#treatment-form-block');
-    $(treatment).detach();
+    $(treatment).hide();
     $('body').on('click', '.save-and-pdf, .symptom-btn', function (event) {
         event.preventDefault();
         let thisbtn = $(this);
@@ -499,12 +499,14 @@ jQuery.noConflict();
         console.log(merged_array);
         console.log(patient_id);
         console.log(formid);
+        let associatedId = $('#associated-id').val();
         const unique_names = [... new Set(names__)];
         let data = {
             'merged_array': merged_array,
             'unique_names': unique_names,
             'patient_id': patient_id,
-            'formid': formid
+            'formid': formid,
+            'associatedId':associatedId
 
         };
         if ($(this).hasClass('save-and-pdf')) {
@@ -513,7 +515,9 @@ jQuery.noConflict();
                 type: 'POST',
                 data: data,
                 success: function (data) {
-                    console.log(data);
+                    if (data === "success") {
+                        window.location.reload();
+                    }
                 },
                 error: function (error) {
                     window.alert(error);
@@ -536,7 +540,7 @@ jQuery.noConflict();
                         $('#symptom-table').load(document.URL + " #symptom-table", function(){
                             addtablefoot();
                         });
-                        $(treatment).insertAfter($('#symptom-form-block'));
+                        $(treatment).show();
                         
                         setInterval(() => {
                             $(this_form).find('.alert').remove();

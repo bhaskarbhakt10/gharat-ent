@@ -6,6 +6,7 @@ if (isset($_POST)) {
     $unique_names = $_POST['unique_names'];
     $patient_id = $_POST['patient_id'];
     $formid = $_POST['formid'];
+    $associatedId = $_POST['associatedId'];
 
     $medicine_array = array();
     foreach ($unique_names as $unique_name) {
@@ -39,7 +40,7 @@ if (isset($_POST)) {
 
     if(!empty($medicine_name) && !empty($medicine_qty) && !empty($medicine_volume) && !empty($medicine_pattern) ){
         $medicine = new PatientsTreatmentSymptom();
-        $medicine->get_Details($medicine_array,$patient_id,$formid);
+        $medicine->get_Details($medicine_array,$patient_id,$formid,$associatedId);
         if($medicine->send_meds_to_DB($patient_id) === true){
             echo "success";
         }

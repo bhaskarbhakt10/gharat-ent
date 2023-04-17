@@ -24,16 +24,11 @@ if (array_key_exists('ID', $_GET)) {
     }
 } else {
     exit();
-}
-    
+}   
+    // echo $patient_id;
+    // echo $patientTreatSym->generate_association_id($patient_id);
 
-    if(!empty($hospital_pSym)){
-        $symptoms = json_decode($hospital_pSym);
-        print_r($symptoms);
-        foreach($symptoms as $key=>$value){
-            echo $value;
-        }
-    }
+    
 
 
 if (!empty($hospital_pMeds)) {
@@ -57,14 +52,32 @@ if (!empty($hospital_pMeds)) {
             $date = $prescription[$key]['date'];
             $patient_id = $prescription[$key]['ID'];
             $prescribedID = $prescription[$key]['prescribedID'];
+            $associatedID = $prescription[$key]['associatedID'];
         }
     }
-}
+
     // print_r($medicine_name);
     // print_r($medicine_qty);
     // print_r($medicine_volume);
     // print_r($medicine_pattern);
     // print_r($medicine_notes);
+
+    if(!empty($hospital_pSym)){
+        $symptoms = json_decode($hospital_pSym, true);
+        // echo "<pre>";
+        // print_r($symptoms);
+        // echo "</pre>";
+        foreach($symptoms as $key=>$value){
+            if($value['associatedID'] === $associatedID){
+                // print_r($value);
+                $symptom_name = $symptoms[$key]['symptom_name'];
+                $symptom_type = $symptoms[$key]['symptom_type'];
+                $symptom_days = $symptoms[$key]['symptom_days'];
+            }
+        }
+    }
+
+}
 
 
 
@@ -177,6 +190,7 @@ if (!empty($hospital_pMeds)) {
         }
         return $meds_notess;
     }
+
 
 
 
@@ -578,25 +592,26 @@ a{
 </tbody>
 </table>
 
-
-<table class="w-100">
-<thead>
-<tr>
-<th class="w-33"><b>Symptoms</b></th>
-<th class="w-33"><b>Symptoms status</b></th>
-<th class="w-33"><b>No of days</b></th>
-</tr>
-</thead>
+<table width="100%" id="symptom-table" border="0">
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<th><b>Symptoms</b></th>
+<td class="text-left"> '.$symptom_name.'</td>
+</tr>
+<tr>
+
+<th><b>Symptoms status</b></th>
+<td class="text-left"> '.$symptom_type.'</td>
+</tr>
+<tr>
+
+<th><b>No of days</b></th>
+<td class="text-left"> '.$symptom_days.'</td>
 </tr>
 </tbody>
 </table>
 
-<h2 class=>Medicine Table</h2>
+<h2 class=text-left>Medicine Table</h2>
 
 
 <table class="table-border" id="medicine-prescription-table" cellpadding="5">
