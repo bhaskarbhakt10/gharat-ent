@@ -376,59 +376,59 @@ jQuery.noConflict();
 
 
 
-        //hide more data and display for all the tables of admin-single-patient
-        let all_tables = $('.admin-single-patient table:not( td > table)').toArray();
-        let all_outside_row = new Array();
-        for (let index = 0; index < all_tables.length; index++) {
-            let outside_row = $(all_tables[index]).find('tbody>tr:not(td>table tr)');
-            all_outside_row.push(outside_row);
-        }
-    
-        //hide all rows except first two rows
-        for (let index = 0; index < all_outside_row.length; index++) {
-            let current_table_row = all_outside_row[index];
+    //hide more data and display for all the tables of admin-single-patient
+    let all_tables = $('.admin-single-patient table:not( td > table)').toArray();
+    let all_outside_row = new Array();
+    for (let index = 0; index < all_tables.length; index++) {
+        let outside_row = $(all_tables[index]).find('tbody>tr:not(td>table tr)');
+        all_outside_row.push(outside_row);
+    }
+
+    //hide all rows except first two rows
+    for (let index = 0; index < all_outside_row.length; index++) {
+        let current_table_row = all_outside_row[index];
+        // console.log(current_table_row);
+        for (let index = 0; index < current_table_row.length; index++) {
             // console.log(current_table_row);
-            for (let index = 0; index < current_table_row.length; index++) {
-                // console.log(current_table_row);
-                if (index > 1) {
-                    console.warn($(current_table_row[index]).addClass('hide_table_row'));
-                }
+            if (index > 1) {
+                console.warn($(current_table_row[index]).addClass('hide_table_row'));
             }
         }
-    
-    
-    
-        //button functionality
-        $('body').on('click', '.display_row', function (e) {
-            e.preventDefault();
-            let hidden_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
-            // console.log(hidden_row);
-            for (let index = 0; index < hidden_row.length; index++) {
-                if ($(hidden_row[index]).hasClass('hide_table_row')) {
-                    $(hidden_row[index]).addClass('show_table_row');
-                    $(hidden_row[index]).removeClass('hide_table_row');
-                }
-    
+    }
+
+
+
+    //button functionality
+    $('body').on('click', '.display_row', function (e) {
+        e.preventDefault();
+        let hidden_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
+        // console.log(hidden_row);
+        for (let index = 0; index < hidden_row.length; index++) {
+            if ($(hidden_row[index]).hasClass('hide_table_row')) {
+                $(hidden_row[index]).addClass('show_table_row');
+                $(hidden_row[index]).removeClass('hide_table_row');
             }
-            $(this).text('Hide');
-            $(this).removeClass('display_row')
-            $(this).addClass('hide_row')
-        });
-    
-        $('body').on('click', '.hide_row', function (e) {
-            let shown_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
-            console.log(shown_row);
-            for (let index = 0; index < shown_row.length; index++) {
-                if ($(shown_row[index]).hasClass('show_table_row')) {
-                    $(shown_row[index]).removeClass('show_table_row');
-                    $(shown_row[index]).addClass('hide_table_row');
-                }
-    
+
+        }
+        $(this).text('Hide');
+        $(this).removeClass('display_row')
+        $(this).addClass('hide_row')
+    });
+
+    $('body').on('click', '.hide_row', function (e) {
+        let shown_row = $(this).closest('table').find('tbody>tr:not(td>table tr)');
+        console.log(shown_row);
+        for (let index = 0; index < shown_row.length; index++) {
+            if ($(shown_row[index]).hasClass('show_table_row')) {
+                $(shown_row[index]).removeClass('show_table_row');
+                $(shown_row[index]).addClass('hide_table_row');
             }
-            $(this).text('Show');
-            $(this).addClass('display_row')
-            $(this).removeClass('hide_row')
-        });
+
+        }
+        $(this).text('Show');
+        $(this).addClass('display_row')
+        $(this).removeClass('hide_row')
+    });
 
     //append button to toggle state
     function addtablefoot() {
@@ -506,7 +506,7 @@ jQuery.noConflict();
             'unique_names': unique_names,
             'patient_id': patient_id,
             'formid': formid,
-            'associatedId':associatedId
+            'associatedId': associatedId
 
         };
         if ($(this).hasClass('save-and-pdf')) {
@@ -537,11 +537,11 @@ jQuery.noConflict();
                     success_html += '</div>'
                     if (data === "success") {
                         $(success_html).insertAfter(thisbtn);
-                        $('#symptom-table').load(document.URL + " #symptom-table", function(){
+                        $('#symptom-table').load(document.URL + " #symptom-table", function () {
                             addtablefoot();
                         });
                         $(treatment).show();
-                        
+
                         setInterval(() => {
                             $(this_form).find('.alert').remove();
                             $('#symptom-form-block').detach();
@@ -973,6 +973,43 @@ jQuery.noConflict();
 
 
 
+
+    });
+
+
+    //Update access
+    $('body').on('click', '.update-access', function (e) {
+        e.preventDefault();
+        let update_form = $(this).closest('form');
+        let all_checkbox = $(update_form).find('input[type=checkbox]');
+        console.log(update_form);
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+        let id_to_update = params.id;
+        let form_data = new Array();
+        for (let index = 0; index < all_checkbox.length; index++) {
+            if ($(all_checkbox[index]).is(':checked') && $(all_checkbox[index]).val() !== "") {
+                let checkbox_name = $(all_checkbox[index]).attr('name');
+                let checkbox_value = $(all_checkbox[index]).val()
+                form_data.push({ [checkbox_name]: checkbox_value });
+            }
+        }
+        let data = {
+            'form_data': form_data,
+            'id_to_update': id_to_update
+        };
+        $.ajax({
+            url: '../backend/actions/access-control/access_control.php',
+            type: 'POST',
+            data: data,
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (error) {
+                window.alert(error);
+            }
+        });
 
     });
 

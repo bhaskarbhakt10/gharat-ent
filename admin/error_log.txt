@@ -167,3 +167,5 @@ Stack trace:
 #3 D:\php-local\htdocs\hospital-management\admin\pdf.php(668): TCPDF->writeHTML('\r\n<style>\r\n.tab...', true, false, true, false, '')
 #4 {main}
   thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18350
+[17-Apr-2023 10:15:46 Europe/Berlin] PHP Warning:  Undefined array key "q" in C:\xampp\htdocs\hospital-management\admin\index.php on line 9
+[17-Apr-2023 10:22:15 Europe/Berlin] PHP Warning:  Undefined array key "q" in C:\xampp\htdocs\hospital-management\admin\index.php on line 9
