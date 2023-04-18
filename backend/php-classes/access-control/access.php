@@ -6,8 +6,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/constants
 class Access
 {
     private $db;
+
+    private $id;
+    private $special_access_obj ;
+
     function __construct()
     {
         $this->db = new Database();
+    }
+
+    function getUpdateDetails($id, $special_access_obj){
+        $this->id = $id;
+        $this->special_access_obj = $special_access_obj;
     }
 }

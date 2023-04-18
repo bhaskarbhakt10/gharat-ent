@@ -1,5 +1,6 @@
 <?php
 require_once '../../php-classes/users/class.users.php';
+echo 'test';
 function upload_image(){
 if (!empty($_FILES['profile_picture']['name'])) {
     $target_dir = '../../../uploads';

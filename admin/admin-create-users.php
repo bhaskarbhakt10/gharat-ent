@@ -10,7 +10,7 @@ $json_obj = json_decode($json_file);
 </div>
 <fieldset class="fieldset bg_form_blue">
     <div class="w-100">
-        <form action=" <?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+        <form action="<?php $uri = explode('/',$_SERVER['REQUEST_URI']); echo '/'.$uri[1]."/backend/actions/users/create-users.php";?>" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">

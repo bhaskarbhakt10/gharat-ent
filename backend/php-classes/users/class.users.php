@@ -71,6 +71,8 @@ class Users{
             // echo $create_user;
             $res = $this->db->connect()->query($create_user);
             if($res === true){
+                $insert_user_id = "INSERT INTO " .ACCESS." (hospital_AccessUserId) VALUES ('".$userId."')";
+                $this->db->connect()->query($insert_user_id);
                 return true;
             }
             else{
