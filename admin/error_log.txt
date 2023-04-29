@@ -1,0 +1,59 @@
+[29-Apr-2023 07:26:48 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php on line 84
+[29-Apr-2023 07:27:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php on line 84
+[29-Apr-2023 07:30:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php:86
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\index.php(51): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php on line 86
+[29-Apr-2023 07:40:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php:89
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\index.php(51): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php on line 89
+[29-Apr-2023 07:40:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php:89
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\index.php(51): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php on line 89
+[29-Apr-2023 07:41:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php:97
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\index.php(51): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php on line 97
+[29-Apr-2023 07:42:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php:96
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\index.php(51): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php on line 96
+[29-Apr-2023 07:42:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php:96
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\index.php(51): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\admin-create-users.php on line 96
+[29-Apr-2023 12:43:07 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in D:\php-local\htdocs\hospital-management\admin\pdf.php:80
+Stack trace:
+#0 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\pdf.php on line 80
+[29-Apr-2023 13:11:11 Europe/Berlin] PHP Warning:  file_get_contents(http://localhost/invoiceV2/hospital-management/admin/json/roles.json): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 110
+[29-Apr-2023 13:11:11 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 129
+[29-Apr-2023 13:11:11 Europe/Berlin] PHP Warning:  Undefined variable $default_image in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 134
+[29-Apr-2023 13:11:11 Europe/Berlin] PHP Warning:  file_get_contents(http://localhost/invoiceV2/hospital-management/admin/json/roles.json): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 110
+[29-Apr-2023 13:11:11 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 144
+[29-Apr-2023 13:17:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Admin::get_user_last_name() in D:\php-local\htdocs\hospital-management\admin\admin-user-profile.php:35
+Stack trace:
+#0 D:\php-local\htdocs\hospital-management\admin\index.php(51): require_once()
+#1 {main}
+  thrown in D:\php-local\htdocs\hospital-management\admin\admin-user-profile.php on line 35
+[29-Apr-2023 13:53:53 Europe/Berlin] PHP Warning:  Undefined array key "" in D:\php-local\htdocs\hospital-management\admin\admin-user-profile.php on line 76
+[29-Apr-2023 14:38:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\admin-user-profile.php on line 54
+[29-Apr-2023 14:38:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\admin-user-profile.php on line 60
+[29-Apr-2023 14:38:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\admin-user-profile.php on line 66
+[29-Apr-2023 14:40:16 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\admin-user-profile.php on line 60
+[29-Apr-2023 14:40:16 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\admin-user-profile.php on line 66
+[29-Apr-2023 14:41:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\admin\admin-user-profile.php on line 66
+[29-Apr-2023 14:43:15 Europe/Berlin] PHP Parse error:  Unmatched '}' in D:\php-local\htdocs\hospital-management\admin\admin-user-profile.php on line 70
+[29-Apr-2023 14:51:43 Europe/Berlin] PHP Warning:  Undefined variable $who_degree in D:\php-local\htdocs\hospital-management\admin\pdf.php on line 371
+[29-Apr-2023 14:51:43 Europe/Berlin] PHP Warning:  Undefined variable $who_speciality in D:\php-local\htdocs\hospital-management\admin\pdf.php on line 371
+[29-Apr-2023 14:51:43 Europe/Berlin] PHP Warning:  Undefined variable $who_regno in D:\php-local\htdocs\hospital-management\admin\pdf.php on line 371

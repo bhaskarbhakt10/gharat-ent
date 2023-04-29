@@ -1,6 +1,9 @@
 <?php
-require_once '../../php-classes/patients/patients.php';
-require_once '../../php-classes/patients/patientsHistory.php';
+// require_once '../../php-classes/patients/patients.php';
+// require_once '../../php-classes/patients/patientsHistory.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/php-classes/patients/patients.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/php-classes/patients/patientsHistory.php';
+
 if(isset($_POST)){
     //get data via akax in an array
     $arr_post = $_POST['post'];

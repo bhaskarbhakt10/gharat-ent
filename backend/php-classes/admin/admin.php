@@ -70,12 +70,32 @@ class Admin
         }
     }
 
+    function get_user_last_name(){
+        $res = $this->get_user_details();
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $last_name = $row['hospital_UserLastName'];
+                return $last_name;
+            }
+        }
+    }
+
     function get_user_email(){
         $res = $this->get_user_details();
         if($res->num_rows > 0){
             while($row = $res->fetch_assoc()){
                 $email = $row['hospital_UserEmail'];
                 return $email;
+            }
+        }
+    }
+
+    function get_user_phone(){
+        $res = $this->get_user_details();
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $phone = $row['hospital_UserPhone'];
+                return $phone;
             }
         }
     }
@@ -100,13 +120,38 @@ class Admin
         }
     }
 
+    function get_user_otherInfo(){
+        $res = $this->get_user_details();
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $info = $row['hospital_UserOtherInfo'];
+                return $info;
+            }
+        }
+    }
+
 
     function get_roles_json(){
-        $json_file = file_get_contents('http://localhost/Hospital-management/admin/json/roles.json');
-        // $json_file = file_get_contents('https://nuitsolutions.co.in/hospital-management/admin/json/roles.json');
+        if(!defined("ROOT_URL")){
+            $root_url = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+            define("ROOT_URL", $root_url);
+        }
+        // $json_file = file_get_contents('http://localhost/Hospital-management/admin/json/roles.json');
+        $json_file = file_get_contents(ROOT_URL.'/hospital-management/admin/json/roles.json');
         $json_obj = json_decode($json_file);
         return $json_obj;
     }
+
+    // function getSpecialization(){
+    //     $json__ = $this->get_roles_json();
+    //     $user_rank = $this->get_user_rank_number();
+    //     foreach($json__ as $arr){
+    //         if((int)$user_rank === $arr->rank){
+    //             $all_specialization = $arr->specialization;
+    //         }
+    //     }
+    //     return $all_specialization;
+    // }
 
     function get_default_user_image(){
         $json__ = $this->get_roles_json();
@@ -165,6 +210,19 @@ class Admin
         if($res->num_rows > 0){
             while($row = $res->fetch_assoc()){
                 return $row['hospital_UserFirstName']." ". $row['hospital_UserLastName'];
+            }
+        }
+        else{
+            return false;
+        } 
+    }
+
+    function otherinfouser_by_id($userid){
+        $sql = "SELECT * FROM ". USERS . " WHERE hospital_UserId = '".$userid. "'";
+        $res = $this->db->connect()->query($sql);
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                return $row['hospital_UserOtherInfo'];
             }
         }
         else{

@@ -120,6 +120,10 @@ if(!empty($meds_arr)){
                     <label for="sonography">Sonography</label>
                 </div>
                 <div class="d-flex">
+                    <input type="checkbox" name="medicine-test" value="USG" id="USG" class="form-check-input form-field">
+                    <label for="USG">USG</label>
+                </div>
+                <div class="d-flex">
                     <input type="checkbox" name="medicine-test" value="other" id="other" class="form-check-input form-field">
                     <label for="other">Other</label>
                 </div>

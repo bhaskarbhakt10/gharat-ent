@@ -1,5 +1,6 @@
 <?php
-require_once '../../php-classes/log-in/log-in.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/php-classes/log-in/log-in.php';
+// require_once '../../php-classes/log-in/log-in.php';
 session_start();
 
 
@@ -24,6 +25,7 @@ if(isset($_POST)){
                 $_SESSION['user']['email'] = $row['hospital_UserEmail'];
                 $_SESSION['user']['phone'] = $row['hospital_UserPhone'];
                 $_SESSION['user']['rank'] = $row['hospital_rank'];
+                $_SESSION['user']['specialization'] = $row['hospital_specialization'];
                 $_SESSION['user']['loggedin'] = true;
             }
         }

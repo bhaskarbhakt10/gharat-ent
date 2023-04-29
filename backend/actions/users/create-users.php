@@ -1,6 +1,8 @@
 <?php
-require_once '../../php-classes/users/class.users.php';
-echo 'test';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/php-classes/users/class.users.php';
+// require_once '../../php-classes/users/class.users.php';
+
+
 function upload_image(){
 if (!empty($_FILES['profile_picture']['name'])) {
     $target_dir = '../../../uploads';
@@ -72,11 +74,17 @@ if (isset($_POST['create-user'])) {
         $password = $_POST['password'];
         $rank = $_POST['rank'];
         $image = upload_image();
+        if(array_key_exists('specialization', $_POST) && !empty($_POST['specialization'])){
+            $specialization = $_POST['specialization'];
+        }
+        else{
+            $specialization = "N/A";
+        }
 
         $create_user = new Users();
-        $create_user->get_details($first_name, $last_name, $phone_number, $email, $username, $password , $rank,$image);
+        $create_user->get_details($first_name, $last_name, $phone_number, $email, $username, $password , $rank,$image,$specialization);
         if($create_user->send_to_db()){
-            echo "User created sucessfully";
+            header("Location: ".$ref_url);
         }
         else{
             echo "Phone Number and Email already exists";

@@ -793,8 +793,15 @@ table.datatable.table-blue th{
 table.table tfoot td{
   border: 0;
 }
-
-
+form{
+  position: relative;
+}
+.edit-row{
+  position: absolute;
+  right:0;
+  top:0;
+  width: 30%;
+}
 
 #dashboard-follow-up-table_wrapper #dashboard-follow-up-table_length, #dashboard-follow-up-table_wrapper #dashboard-follow-up-table_filter{
   display: none;

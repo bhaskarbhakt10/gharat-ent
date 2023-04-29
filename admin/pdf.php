@@ -73,6 +73,13 @@ if (!empty($hospital_pMeds)) {
                 $symptom_name = $symptoms[$key]['symptom_name'];
                 $symptom_type = $symptoms[$key]['symptom_type'];
                 $symptom_days = $symptoms[$key]['symptom_days'];
+                if(array_key_exists('expected-delivery-date', $symptoms[$key])){
+                $expected_delivery_date ='
+                <tr>
+                <th width="20%" class="text-justify"><b>&nbsp;&nbsp;Expected Delivery Date:</b></th>
+                <td width="80%" class="text-left"> '.$symptoms[$key]['expected-delivery-date'].'</td>
+                </tr>';
+                }
             }
         }
     }
@@ -86,6 +93,29 @@ if (!empty($hospital_pMeds)) {
     $admin = new Admin();
     //docter name
     $who_prescribed = $admin->user_by_id($prescribedID);
+    $otherInfo_json = $admin->otherinfouser_by_id($prescribedID);
+    $otherInfo_arr = json_decode($otherInfo_json, true);
+    // print_r($otherInfo_arr);
+    if(!empty($otherInfo_arr['profile-degree'])){
+        $who_degree = $otherInfo_arr['profile-degree'];
+    }
+    else{
+        $who_degree = '';
+    }
+    if(!empty($otherInfo_arr['profile-regno'])){
+        $who_regno = $otherInfo_arr['profile-regno'];
+    }
+    else{
+        $who_regno = '';
+    }
+    if(!empty($otherInfo_arr['profile-specialization'])){
+        $who_speciality = $otherInfo_arr['profile-specialization'];
+    }
+    else{
+        $who_speciality = '';
+    }
+   
+    
 
     // patinet name 
     $patient_id_array = explode('_', $patient_id);
@@ -97,20 +127,20 @@ if (!empty($hospital_pMeds)) {
     $patient_name = '';
     if ($res->num_rows > 0) {
         while ($row = $res->fetch_assoc()) {
-            $patient_name = $row['hospital_PatientFirstName'] . " " . $row['hospital_PatientMiddleName'] . " " . $row['hospital_PatientLastName'];
+            $patient_name .= $row['hospital_PatientFirstName'] . " " . $row['hospital_PatientMiddleName'] . " " . $row['hospital_PatientLastName'];
         }
     }
 
     //test suggested
-    $test_suggested= '';
+    $test_suggested = '';
     if(!empty($other_medicine_test)){
-        $test_suggested = '<tr><td class="text-left">Test To be Done:. ' . $other_medicine_test . '</td></tr>';
+        $test_suggested .= '<tr><td class="text-left">Test To be Done:. ' . $other_medicine_test . '</td></tr>';
     }
 
     //Follow up date
     $follow_up = '';
     if(!empty($follow_up_date)){
-        $follow_up =  '<tr><td class="text-left">Next Followup date:. ' . $follow_up_date . '</td></tr>';
+        $follow_up .=  '<tr><td class="text-left">Next Followup date:. ' . $follow_up_date . '</td></tr>';
         
     }
 
@@ -358,7 +388,7 @@ a{
             <td><h1 class="dr-name pdf-blue">Dr.' . $who_prescribed . '</h1></td>
             </tr>
             <tr>
-            <td><p class="dr-info"><span>MBBS, DNB, FICM, DGM</span><br><span>Diabetoligist & Physician</span><br><span>Reg. No. 2004/08/2861</span></p>
+            <td><p class="dr-info"><span>'.$who_degree.'</span><br><span>'.$who_speciality.'</span><br><span>Reg. No. '.$who_regno.'</span></p>
             </td>
             </tr>
         </table>
@@ -461,13 +491,13 @@ $table_html = '
     border:1px solid #eee;
     
 }
-th{
+th.meds-table{
     width:25%;
     text-align:center;
     background-color:#fafafa;
-    border-bottom:1px solid #ccc;
-    
+    border-bottom:1px solid #ccc; 
 }
+
 tr{
     border-bottom:1px solid #ccc;
 }
@@ -538,6 +568,9 @@ fontweight-400{
 .text-left{
     text-align:left;
 }
+.text-justify{
+    text-align:justify
+}
 .header-table-address td{
     text-align:left;
 }
@@ -565,6 +598,20 @@ a{
 .line-height-td{
     
 }
+.symptom-table{
+    background-color:#fafafa;
+    border:1px solid #ccc;
+}
+
+.symptom-table th, .symptom-table td{
+    border-bottom:1px solid #eee;
+}
+.symptom-table th b{
+    border-left:1px solid #eee;
+}
+.symptom-table td{
+    border-right:1px solid #eee;
+}
 #header-table{
     border:2px solid red;
 }
@@ -589,25 +636,31 @@ a{
     <b>Date:</b>' . $date . '
     </td>
     </tr>
+    <tr><td></td></tr>
 </tbody>
 </table>
 
-<table width="100%" id="symptom-table" border="0">
+<table width="100%" id="symptom-table" class="symptom-table">
 <tbody>
 <tr>
-<th><b>Symptoms</b></th>
-<td class="text-left"> '.$symptom_name.'</td>
+<th width="20%" class="text-justify"><b>&nbsp;&nbsp;Symptoms:</b></th>
+<td width="80%" class="text-left"> '.$symptom_name.'</td>
 </tr>
 <tr>
 
-<th><b>Symptoms status</b></th>
-<td class="text-left"> '.$symptom_type.'</td>
+<th width="20%" class="text-justify"><b>&nbsp;&nbsp;Symptoms status:</b></th>
+<td width="80%" class="text-left"> '.$symptom_type.'</td>
 </tr>
 <tr>
 
-<th><b>No of days</b></th>
-<td class="text-left"> '.$symptom_days.'</td>
+<th width="20%" class="text-justify"><b>&nbsp;&nbsp;No of days:</b></th>
+<td width="80%" class="text-left"> '.$symptom_days.'</td>
 </tr>
+'
+.
+$expected_delivery_date
+.
+'
 </tbody>
 </table>
 
@@ -617,16 +670,16 @@ a{
 <table class="table-border" id="medicine-prescription-table" cellpadding="5">
 <thead>
 <tr>
-<th>
+<th class="meds-table">
 <b>Medicine Name</b>
 </th>
-<th>
+<th  class="meds-table">
 <b>Dosage</b>
 </th>
-<th>
+<th  class="meds-table">
 <b>Dosage Pattern</b>
 </th>
-<th>
+<th  class="meds-table">
 <b>Notes</b>
 </th>
 </tr>

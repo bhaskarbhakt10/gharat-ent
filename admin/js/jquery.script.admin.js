@@ -236,6 +236,7 @@ jQuery.noConflict();
         day = '0' + day.toString();
     var maxDate = year + '-' + month + '-' + day;
     $('#DOB').attr('max', maxDate);
+    $('#last-menstrual-period').attr('max', maxDate);
 
     //disable previous days
     var dtToday_ = new Date();
@@ -1014,5 +1015,52 @@ jQuery.noConflict();
     });
 
 
+    let specialization = $('#specialization > *');
+    specialization.detach();
+    $(document.body).on('change', '#Select-rank', function () {
+        let this_input = $(this).val();
+        let doctor = 2;
+        if (parseInt(this_input) === doctor) {
+            $('#specialization').append(specialization);
+        }
+        else {
+            specialization.detach();
+        }
+    });
+
+    //add forty weeks
+    let add_weeks__ = 40;
+    $(document.body).on('blur', '#last-menstrual-period', function () {
+        let this_value = $(this).val();
+        let this_date_value = new Date(this_value)
+        let day = this_date_value.getDate();
+        // console.log(day);
+
+        let month = this_date_value.getMonth();
+        // console.log(month);
+
+        let year = this_date_value.getFullYear();
+        // console.log(year);
+
+        dt = new Date(year, month, day);
+        $('#expected-delivery-date').val((add_weeks(dt, add_weeks__).toDateString()));
+    })
+    function add_weeks(dt, n) {
+        return new Date(dt.setDate(dt.getDate() + (n * 7)));
+    }
+
+
+
+    //profile
+    $(document.body).on('click', '.edit-profile', function (e) {
+        e.preventDefault();
+        $('#edit-mssg').removeClass('d-none');
+        let this_form = $(this).closest('form');
+        let form_field = $(this_form).find('.form-field');
+        let form_button = $(this_form).find('.btn').removeClass('d-none');
+        $(form_field).removeAttr('readonly');
+        $(this).hide();
+
+    })
 })(jQuery);
 
