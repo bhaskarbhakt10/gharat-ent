@@ -1,6 +1,11 @@
 <?php
-if (!defined('BASE_URL')) define('BASE_URL', 'http://localhost/hospital-management/');
+//if (!defined('BASE_URL')) define('BASE_URL', 'http://localhost/hospital-management/');
 // if (!defined('BASE_URL')) define('BASE_URL', 'https://nuitsolutions.co.in/hospital-management/');
+
+if (!defined("BASE_URL")) {
+    $root_url = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/hospital-management/';
+    define("BASE_URL", $root_url);
+}
 
 // function returns the title 
 // that is the directory which makes the request

@@ -3,7 +3,7 @@ ob_start();
 session_start();
 if (isset($_SESSION['user']) && $_SESSION['user']['loggedin'] === true && array_key_exists('user', $_SESSION)) {
     $user_id = $_SESSION['user']['id'];
-    print_r( $_SESSION['user']);
+    // print_r( $_SESSION['user']);
     // print_r(session_id());
 } else {
     header('Location: ../404');
