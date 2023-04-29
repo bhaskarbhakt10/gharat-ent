@@ -38,7 +38,7 @@ jQuery.noConflict();
                         })
                     }, 5000);
                     window.setTimeout(function(){
-                        window.location.assign( "../../admin/index.php?q=admin-dashboard");
+                        window.location.assign( "../../admin/index.php?q=admin-list-patients");
                     }, 5000);
                     
                     }
