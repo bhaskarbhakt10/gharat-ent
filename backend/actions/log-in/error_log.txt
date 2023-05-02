@@ -1,0 +1,10 @@
+[02-May-2023 11:53:56 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
+[02-May-2023 11:54:05 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
+[02-May-2023 11:55:18 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
+[02-May-2023 11:55:33 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
+[02-May-2023 11:55:49 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
+[02-May-2023 11:55:49 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
+[02-May-2023 11:55:49 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
+[02-May-2023 11:56:02 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
+[02-May-2023 11:56:02 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
+[02-May-2023 11:56:02 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28

@@ -82,6 +82,12 @@ p {
 .flex-30 {
   flex: 0 0 30%;
 }
+.flex-30 {
+  flex: 0 0 30%;
+}
+.flex-33 {
+  flex: 0 0 31.333%;
+}
 
 .flex-40 {
   flex: 0 0 40%;
@@ -139,6 +145,9 @@ ul {
   color: #150d3f;
 }
 
+.th-width-12{
+  width: 12.5%;
+}
 .th-width-16 {
   width: 16%;
 }
@@ -793,8 +802,15 @@ table.datatable.table-blue th{
 table.table tfoot td{
   border: 0;
 }
-
-
+form{
+  position: relative;
+}
+.edit-row{
+  position: absolute;
+  right:0;
+  top:0;
+  width: 30%;
+}
 
 #dashboard-follow-up-table_wrapper #dashboard-follow-up-table_length, #dashboard-follow-up-table_wrapper #dashboard-follow-up-table_filter{
   display: none;

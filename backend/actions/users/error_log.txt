@@ -1,6 +1,0 @@
-[18-Apr-2023 19:22:02 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'bhaskarbhakt10@gmail.com' for key 'hospital_UserEmail' in C:\xampp\htdocs\hospital-management\backend\php-classes\users\class.users.php:72
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\users\class.users.php(72): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\hospital-management\backend\actions\users\create-users.php(78): Users->send_to_db()
-#2 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\users\class.users.php on line 72

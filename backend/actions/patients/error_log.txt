@@ -1,321 +1,42 @@
-[22-Mar-2023 17:21:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
-#1 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Undefined array key "post" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 7
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 12
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 13
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 14
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 15
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 16
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 21
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 22
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 23
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 24
-[22-Mar-2023 17:23:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 25
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Undefined array key "post" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 7
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 12
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 13
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 14
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 15
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 16
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 21
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 22
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 23
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 24
-[22-Mar-2023 17:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 25
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Undefined array key "post" in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 7
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 12
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 13
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 14
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 15
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 16
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 21
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 22
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 23
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 24
-[22-Mar-2023 17:24:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php on line 25
-[22-Mar-2023 17:26:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
-#1 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
-[22-Mar-2023 17:27:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
-#1 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
-[22-Mar-2023 17:28:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
-#1 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
-[22-Mar-2023 17:30:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
-#1 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
-[22-Mar-2023 17:30:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
-#1 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
-[22-Mar-2023 17:31:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
-#1 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
-[22-Mar-2023 17:32:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
-#1 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
-[22-Mar-2023 17:35:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
-#1 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
-[22-Mar-2023 17:36:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database" not found in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:24
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\actions\patients\update-patient-primary-details.php(28): Patients->__construct()
-#1 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 24
-[24-Mar-2023 09:43:35 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
-[24-Mar-2023 09:43:35 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 16
-[24-Mar-2023 14:17:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[24-Mar-2023 14:17:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[24-Mar-2023 14:17:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[24-Mar-2023 14:17:18 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[24-Mar-2023 14:17:56 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[24-Mar-2023 14:17:56 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[24-Mar-2023 14:17:56 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[24-Mar-2023 14:17:56 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[24-Mar-2023 14:18:27 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
-[24-Mar-2023 14:18:27 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
-[24-Mar-2023 14:18:27 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
-[24-Mar-2023 14:18:27 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
-[24-Mar-2023 14:36:03 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
-[24-Mar-2023 14:36:03 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 16
-[29-Mar-2023 11:23:55 Europe/Berlin] PHP Warning:  Undefined array key "extra-field" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 5
-[29-Mar-2023 11:28:42 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 9
-[29-Mar-2023 11:28:42 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 9
-[29-Mar-2023 11:28:42 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 9
-[29-Mar-2023 11:28:42 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 9
-[29-Mar-2023 11:36:31 Europe/Berlin] PHP Warning:  Undefined array key "post" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 10
-[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  Undefined array key "extra_field" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 73
-[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 74
-[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  Undefined array key "add_patient_same_number" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 80
-[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  Undefined array key "parent" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 81
-[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  Undefined array key "replationship" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 82
-[29-Mar-2023 11:37:05 Europe/Berlin] PHP Warning:  Undefined array key "other_relationship" in C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php on line 83
-[29-Mar-2023 18:48:03 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php:81
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php(81): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php(77): Patients->send_to_db()
-#2 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 81
-[29-Mar-2023 18:51:17 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php:82
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php(82): mysqli->query('INSERT INTO hos...')
-#1 C:\xampp\htdocs\hospital-management\backend\actions\patients\add-patient.php(77): Patients->send_to_db()
-#2 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 82
-[07-Apr-2023 09:44:39 Europe/Berlin] PHP Warning:  Undefined variable $print_r in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php on line 19
-[07-Apr-2023 09:44:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Value of type null is not callable in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php:19
-Stack trace:
-#0 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php on line 19
-[07-Apr-2023 18:58:11 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'hospital_PatientParent' in 'field list' in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php:82
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php(82): mysqli->query('INSERT INTO hos...')
-#1 D:\php-local\htdocs\hospital-management\backend\actions\patients\add-patient.php(77): Patients->send_to_db()
-#2 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patients.php on line 82
-[07-Apr-2023 17:08:52 Europe/Berlin] PHP Warning:  Undefined variable $selected_arr in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php on line 26
-[07-Apr-2023 17:28:20 Europe/Berlin] PHP Warning:  Undefined variable $selected_arr in D:\php-local\htdocs\hospital-management\backend\actions\patients\previous_meds.php on line 26
-[14-Apr-2023 16:33:35 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:33:35 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:01 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:01 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:04 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:04 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:55 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:55 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:58 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:58 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:59 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:59 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:59 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:59 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:59 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:34:59 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:35:00 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:35:00 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:35:00 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:35:00 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:35:40 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:35:40 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(124): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:37:36 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 16:37:36 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:40
-Stack trace:
-#0 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(55): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(123): PatientsTreatmentSymptom->gen_json()
-#2 C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 40
-[14-Apr-2023 13:49:09 Europe/Berlin] PHP Warning:  Undefined array key "merged_array" in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 5
-[14-Apr-2023 13:49:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\hospital-management\backend\actions\patients\symptom.php on line 16
-[15-Apr-2023 17:48:28 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 17:48:28 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(53): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(121): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 17:48:43 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 17:48:43 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(53): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(121): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 17:50:58 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 17:50:58 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(58): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 17:53:27 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 17:53:27 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(58): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_11')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_11')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 17:55:38 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 17:55:38 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(58): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_11')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_11')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 17:59:42 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, stdClass given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(58): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_11')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(137): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_11')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 18:04:20 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 18:04:20 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(58): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 18:08:11 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 18:08:11 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(53): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(121): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 18:18:28 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 18:18:28 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(53): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 18:18:32 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 18:18:32 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(53): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(126): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 18:19:53 Asia/Calcutta] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
-[15-Apr-2023 18:19:53 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php:39
-Stack trace:
-#0 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(56): PatientsTreatmentSymptom->generate_association_id('AVHSP_2023P_1')
-#1 D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php(129): PatientsTreatmentSymptom->gen_json()
-#2 D:\php-local\htdocs\hospital-management\backend\actions\patients\symptom.php(39): PatientsTreatmentSymptom->send_sym_to_DB('AVHSP_2023P_1')
-#3 {main}
-  thrown in D:\php-local\htdocs\hospital-management\backend\php-classes\patients\patientsTreatmentSymptom.php on line 39
+[02-May-2023 16:07:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[02-May-2023 16:07:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[02-May-2023 16:07:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[02-May-2023 16:07:30 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[02-May-2023 16:07:30 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[02-May-2023 16:07:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[02-May-2023 16:07:30 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[02-May-2023 16:07:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[02-May-2023 16:07:30 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[02-May-2023 16:07:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[02-May-2023 16:08:35 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[02-May-2023 16:08:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[02-May-2023 16:08:35 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[02-May-2023 16:08:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[02-May-2023 16:08:35 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[02-May-2023 16:08:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[02-May-2023 16:12:31 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[02-May-2023 16:12:31 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[02-May-2023 16:12:31 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[02-May-2023 16:12:31 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[02-May-2023 16:12:31 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[02-May-2023 16:12:31 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[02-May-2023 16:12:31 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[02-May-2023 16:12:31 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[02-May-2023 16:12:31 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[02-May-2023 16:12:31 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[02-May-2023 16:14:58 Europe/Berlin] PHP Warning:  Undefined array key "patient_weight_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 17
+[02-May-2023 16:14:58 Europe/Berlin] PHP Warning:  Undefined array key "patient_height_foot_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 21
+[02-May-2023 16:14:58 Europe/Berlin] PHP Warning:  Undefined array key "patient_diabetes_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 23
+[02-May-2023 16:14:58 Europe/Berlin] PHP Warning:  Undefined array key "patient_bp_up" in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 24
+[02-May-2023 16:14:58 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[02-May-2023 16:14:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[02-May-2023 16:14:58 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[02-May-2023 16:14:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[02-May-2023 16:14:58 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[02-May-2023 16:14:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[02-May-2023 16:17:05 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[02-May-2023 16:17:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 25
+[02-May-2023 16:17:05 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[02-May-2023 16:17:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 26
+[02-May-2023 16:17:05 Europe/Berlin] PHP Warning:  Undefined variable $arr_post in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27
+[02-May-2023 16:17:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\backend\actions\patients\update-daily-checkup.php on line 27

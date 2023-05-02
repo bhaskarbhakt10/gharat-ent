@@ -2,6 +2,13 @@
 $json_file = file_get_contents('./json/roles.json');
 $json_obj = json_decode($json_file);
 
+foreach ($json_obj as $arr) {
+    if ($arr->rank === 2) {
+        foreach ($arr->specialization as $s) {
+            echo $s->specialization_name;
+        }
+    }
+}
 
 
 ?>
@@ -10,7 +17,8 @@ $json_obj = json_decode($json_file);
 </div>
 <fieldset class="fieldset bg_form_blue">
     <div class="w-100">
-        <form action="<?php $uri = explode('/',$_SERVER['REQUEST_URI']); echo '/'.$uri[1]."/backend/actions/users/create-users.php";?>" method="POST" enctype="multipart/form-data">
+        <form action="<?php $uri = explode('/', $_SERVER['REQUEST_URI']);
+                        echo '/' . $uri[1] . "/backend/actions/users/create-users.php"; ?>" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">
@@ -74,6 +82,27 @@ $json_obj = json_decode($json_file);
                         </select>
                     </div>
                 </div>
+                <div class=" col-md-6" id="specialization">
+                    <div class="mb-3"> 
+                        <label for="Select-specialization"> Select Specialization</label>
+                        <select name="specialization" id="Select-specialization" class="form-select form-field">
+                            <option value="" hidden disabled selected>Select a Specialization</option>
+                            <?php
+                            foreach ($json_obj as $arr) {
+                                if ($arr->rank === 2) {
+                                    foreach ($arr->specialization as $s) {
+                                        echo $s->specialization_name;
+                            ?>
+                                        <option value="<?php echo $s->specialization_code; ?>"><?php echo $s->specialization_name; ?></option>
+                            <?php
+                                    }
+                                }
+                            }
+                            ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
                 <div class="col-md-6">
                     <div class="mt-5">
                         <button class="btn btn-blue d-block btn-bg-blue-theme w-50" name="create-user" type="submit">Create User</button>

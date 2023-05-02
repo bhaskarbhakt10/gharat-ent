@@ -28,29 +28,31 @@ if (array_key_exists('p_id', $_GET)) {
             </h2>
         <fieldset class="bg_form_blue">
             <div class="row">
+                <?php /*
                 <div class="col-md-3">
                     <div class="mb-3">
                         <label for="Patient-suffix">Select a Suffix</label>
                         <select name="patient_suffix" id="patient_suffix" class="form-select form-field" required>
-                            <option value="<?php echo !empty($suffix) ? $suffix : ''; ?>"> <?php echo !empty($suffix) ? $suffix : 'select'; ?></option>
+                            <option value="<?php //echo !empty($suffix) ? $suffix : ''; ?>"> <?php // echo !empty($suffix) ? $suffix : 'select'; ?></option>
                             <option value="Mr">Mr</option>
                             <option value="Mr">Mr</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-md-3">
+                */ ?>
+                <div class="col-md-4">
                     <div class="mb-3">
                         <label for="First-Name">First Name</label>
                         <input type="text" name="patient_first_name" id="First-Name" class="form-control form-field " placeholder="John" required value="<?php echo !empty($first_name) ? $first_name : ''; ?>">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="mb-3">
                         <label for="Middle-Name">Middle Name</label>
                         <input type="text" name="patient_middle_name" id="Middle-Name" class="form-control form-field" placeholder="Daniel" value="<?php echo !empty($middle_name) ? $middle_name : ''; ?>">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="mb-3">
                         <label for="Last-Name">Last Name</label>
                         <input type="text" name="patient_last_name" id="Last-Name" class="form-control form-field" placeholder="Doe" required value="<?php echo !empty($last_name) ? $last_name : ''; ?>">

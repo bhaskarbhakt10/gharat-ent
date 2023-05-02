@@ -236,6 +236,7 @@ jQuery.noConflict();
         day = '0' + day.toString();
     var maxDate = year + '-' + month + '-' + day;
     $('#DOB').attr('max', maxDate);
+    $('#last-menstrual-period').attr('max', maxDate);
 
     //disable previous days
     var dtToday_ = new Date();
@@ -338,7 +339,7 @@ jQuery.noConflict();
 
             }
         }
-        console.log(form_data);
+        // console.log(form_data);
         let data = {
             'form_data': form_data
         };
@@ -347,6 +348,7 @@ jQuery.noConflict();
             type: 'POST',
             data: data,
             success: function (data) {
+                console.log(data);
                 if (data === 'success') {
                     window.location.reload()
                 }
@@ -1014,5 +1016,89 @@ jQuery.noConflict();
     });
 
 
+    let specialization = $('#specialization > *');
+    specialization.detach();
+    $(document.body).on('change', '#Select-rank', function () {
+        let this_input = $(this).val();
+        let doctor = 2;
+        if (parseInt(this_input) === doctor) {
+            $('#specialization').append(specialization);
+        }
+        else {
+            specialization.detach();
+        }
+    });
+
+    //add forty weeks
+    let add_weeks__ = 40;
+    $(document.body).on('blur', '#last-menstrual-period', function () {
+        let this_value = $(this).val();
+        let this_date_value = new Date(this_value)
+        let day = this_date_value.getDate();
+        // console.log(day);
+
+        let month = this_date_value.getMonth();
+        // console.log(month);
+
+        let year = this_date_value.getFullYear();
+        // console.log(year);
+
+        dt = new Date(year, month, day);
+        $('#expected-delivery-date').val((add_weeks(dt, add_weeks__).toDateString()));
+        $('#pregnancy-week').val((calcWeeks_on_LMP(this_date_value))+ " weeks pregnant")
+    })
+    function add_weeks(dt, n) {
+        return new Date(dt.setDate(dt.getDate() + (n * 7)));
+    }
+    function calcWeeks_on_LMP(this_date_value){
+        let currentDate = new Date();
+        let days = Math.ceil((currentDate - this_date_value) / (24 * 60 * 60 * 1000));  
+        console.log(days);
+        let weekNumber = Math.ceil(days / 7);
+
+        return weekNumber; 
+    }
+
+
+
+    //profile
+    $(document.body).on('click', '.edit-profile', function (e) {
+        e.preventDefault();
+        $('#edit-mssg').removeClass('d-none');
+        let this_form = $(this).closest('form');
+        let form_field = $(this_form).find('.form-field');
+        let form_button = $(this_form).find('.btn').removeClass('d-none');
+        $(form_field).removeAttr('readonly');
+        $(this).hide();
+
+    })
+
+    //prescribe as
+    let gynac_row = $('#gynac_row>*');
+    gynac_row.detach();
+    let symptom_name = $('#symptom-name');
+    if (gynac_row !== null || gynac_row !== undefined) {
+        $(symptom_name).css('border-width', '2px');
+        $(symptom_name).css('border-color', 'pink');
+        $(symptom_name).css('border-style', 'solid');
+    }
+    $(document.body).on('change', '[name="prescribe-as"]', function (e) {
+        e.preventDefault();
+        $('[name="prescribe-as"]').prop('checked', false);
+        $(this).prop('checked', true);
+        let comp_string = "gynac";
+        if ($(this).val().toLowerCase() === comp_string.toLowerCase()) {
+            $('#gynac_row').append(gynac_row);
+            $(symptom_name).css('border-width', '2px');
+            $(symptom_name).css('border-color', 'green');
+            $(symptom_name).css('border-style', 'solid');
+        }
+        else {
+            gynac_row.detach()
+            $(symptom_name).css('border-width', '2px');
+            $(symptom_name).css('border-color', 'pink');
+            $(symptom_name).css('border-style', 'solid');
+        }
+    })
 })(jQuery);
 

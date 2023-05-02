@@ -1,4 +1,7 @@
-<?php require_once '../../components/header.php'; ?>
+<?php 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/components/header.php';
+// require_once '../../components/header.php'; 
+?>
 
 <main class="viewport center-viewport">
     <div class="container">
@@ -45,4 +48,8 @@
     </div>
 </main>
 
-<?php require_once '../../components/footer.php'; ?>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/components/footer.php'; 
+// require_once '../../components/footer.php'; 
+
+?>

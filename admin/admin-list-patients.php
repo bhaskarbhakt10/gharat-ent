@@ -37,7 +37,7 @@ $all_details = $patients->get_list_patients();
                     <td><?php echo $row['hospital_PatientContactNumber'];  ?></td>
                     <td>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-primary border-radius-50p" href="index.php?q=admin-single-patient&p_id=<?php echo $row['hospital_PatientId']; ?>">Prescrition</a>
+                            <a class="btn btn-primary border-radius-50p" href="index.php?q=admin-single-patient&p_id=<?php echo $row['hospital_PatientId']; ?>">Prescription</a>
                             <a class="btn btn-success border-radius-50p" href="index.php?q=admin-update-daily-check-up&p_id=<?php echo $row['hospital_PatientId']; ?>">Checkup</a>
                             <a class="btn btn-outline-primary border-radius-50p" href="index.php?q=admin-edit-patients&p_id=<?php echo $row['hospital_PatientId']; ?>">Edit Data</a>
                         </div>

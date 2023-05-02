@@ -14,19 +14,23 @@ if (isset($_POST)) {
     }
     // print_r($form_data);
 
-    $patient_weight = $form_data['patient_weight_up'];
-    if (array_key_exists('patient_height_foot_up', $form_data) && array_key_exists('patient_height_inch_up', $form_data) && !empty($form_data['patient_height_inch_up'])) {
-        $patient_height = $form_data['patient_height_foot_up'] . " Foot " . $form_data['patient_height_inch_up'] . " Inches";
+    $patient_weight = $form_data['patient_weight'];
+    if (array_key_exists('patient_height_foot', $form_data) && array_key_exists('patient_height_inch', $form_data) && !empty($form_data['patient_height_inch'])) {
+        $patient_height = $form_data['patient_height_foot'] . " Foot " . $form_data['patient_height_inch'] . " Inches";
     } else {
-        $patient_height = $form_data['patient_height_foot_up'] . " Foot ";
+        $patient_height = $form_data['patient_height_foot'] . " Foot ";
     }
-    $patient_diabetes = $form_data['patient_diabetes_up'];
-    $patient_bp = $form_data['patient_bp_up'];
+    $patient_diabetes = $form_data['patient_diabetes'];
+    $patient_bp = $form_data['patient_bp'];
+    $pulse_rate = $form_data['pulse_rate'];
+    $patient_SPOF = $form_data['patient_SPOF'];
+    $patient_oxygen = $form_data['patient_oxygen'];
+
     $pid = $form_data['p_id'];
 
     $upRegular = new PatientHistory();
     if (!empty($patient_weight) && !empty($patient_height) && !empty($patient_diabetes) && !empty($patient_bp)) {
-        $upRegular->get_patient_history($patient_weight, $patient_height, $patient_diabetes, $patient_bp, $pid);
+        $upRegular->get_patient_history($patient_weight,$patient_height,$patient_diabetes,$patient_bp ,$pulse_rate,$patient_SPOF,$patient_oxygen,$pid);
         if ($upRegular->Update_His($pid) === true) {
             echo "success";
         } else {

@@ -15,6 +15,10 @@ class PatientHistory
     private $patient_weight;
     private $patient_bp;
     private $patient_diabetes;
+    private $pulse_rate;
+    private $patient_SPOF;
+    private $patient_oxygen;
+
     private $pID;
 
     function __construct()
@@ -22,12 +26,15 @@ class PatientHistory
         $this->db = new Database();
     }
 
-    function get_patient_history($patient_weight, $patient_height, $patient_diabetes, $patient_bp, $pid)
+    function get_patient_history($patient_weight,$patient_height,$patient_diabetes,$patient_bp ,$pulse_rate,$patient_SPOF,$patient_oxygen,$pid)
     {
         $this->patient_height = $patient_height;
         $this->patient_weight = $patient_weight;
         $this->patient_bp = $patient_bp;
         $this->patient_diabetes = $patient_diabetes;
+        $this->pulse_rate = $pulse_rate;
+        $this->patient_SPOF = $patient_SPOF;
+        $this->patient_oxygen = $patient_oxygen;
         $this->pID = $pid;
     }
 
@@ -36,12 +43,18 @@ class PatientHistory
         date_default_timezone_set(TIMEZONE_IN);
         $date =  new DateTime();
         $now_date = $date->format("d_m_y_h_m_s");
-        $now_date;
-        $regular_check[$now_date] = array('height' => '', 'weight' => '', 'bp' => '', 'diabetes' => '');
+        $date_today =  $date->format("d_m_Y");
+        $time_now =  $date->format("h_i_s_A");
+        $regular_check[$now_date] = array('height' => '', 'weight' => '', 'bp' => '', 'diabetes' => '', 'pulse_rate'=>'','SPOF'=>'', 'oxygen'=>'');
         $regular_check[$now_date]['height'] = $this->patient_height;
         $regular_check[$now_date]['weight'] = $this->patient_weight;
         $regular_check[$now_date]['bp'] = $this->patient_bp;
         $regular_check[$now_date]['diabetes'] = $this->patient_diabetes;
+        $regular_check[$now_date]['pulse_rate'] = $this->pulse_rate;
+        $regular_check[$now_date]['SPOF'] = $this->patient_SPOF;
+        $regular_check[$now_date]['oxygen'] = $this->patient_oxygen;
+        $regular_check[$now_date]['date'] = $date_today;
+        $regular_check[$now_date]['time'] = $time_now;
         $regular_checkup = json_encode($regular_check);
         return $regular_checkup;
     }
@@ -83,6 +96,7 @@ class PatientHistory
 
         if(!empty($already_db_json)){
             $sql = "UPDATE ". PATIENTS_HIS . " SET hospital_phistory='".$merged_json."' WHERE hospital_pID='".$pid."'";
+            // echo $sql;
             $this->db->connect()->query($sql);
             return true;
         }

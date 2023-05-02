@@ -1,13 +1,19 @@
 <?php
-require_once '../../php-classes/patients/patients.php';
-require_once '../../php-classes/patients/patientsHistory.php';
+// require_once '../../php-classes/patients/patients.php';
+// require_once '../../php-classes/patients/patientsHistory.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/php-classes/patients/patients.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/php-classes/patients/patientsHistory.php';
+
 if(isset($_POST)){
     //get data via akax in an array
     $arr_post = $_POST['post'];
     // print_r($arr_post);
 
     //get data from array
-    $patient_suffix = $arr_post['patient_suffix'];
+    $patient_suffix ='';
+    if(array_key_exists('patient_suffix', $arr_post)){
+        $patient_suffix = $arr_post['patient_suffix'];
+    }
     $patient_first_name = $arr_post['patient_first_name'];
     $patient_middle_name = $arr_post['patient_middle_name'];
     $patient_last_name = $arr_post['patient_last_name'];
@@ -30,6 +36,9 @@ if(isset($_POST)){
     }
     $patient_diabetes = $arr_post['patient_diabetes'];
     $patient_bp = $arr_post['patient_bp'];
+    $pulse_rate = $arr_post['pulse_rate'];
+    $patient_SPOF = $arr_post['patient_SPOF'];
+    $patient_oxygen = $arr_post['patient_oxygen'];
 
     $medical_history = array('patient_addiction'=>'','patient_health_condition'=>'');
     $patient_addiction = $arr_post['patient_addiction'];
@@ -71,14 +80,14 @@ if(isset($_POST)){
 
     //check if not empty
 
-    if(!empty($patient_suffix) && !empty($patient_first_name) && !empty($patient_last_name) && !empty($patient_gender) && !empty($patient_dob) && !empty($patient_contact_number)){
+    if(!empty($patient_first_name) && !empty($patient_last_name) && !empty($patient_gender) && !empty($patient_dob) && !empty($patient_contact_number)){
         $add_patient = new Patients();
         $added_sucess = $add_patient->get_details($patient_suffix,$patient_first_name,$patient_last_name,$patient_gender,$patient_dob,$patient_contact_number, $patient_middle_name, $patient_email,$patient_address ,$medical_history_obj,$parent_data);
         $send_to_DB = $add_patient->send_to_db();
         if( $send_to_DB !== false){
             $pid = $send_to_DB;
             $patientsHis = new PatientHistory();
-            $patientsHis->get_patient_history($patient_weight,$patient_height,$patient_diabetes,$patient_bp,$pid);
+            $patientsHis->get_patient_history($patient_weight,$patient_height,$patient_diabetes,$patient_bp ,$pulse_rate,$patient_SPOF,$patient_oxygen,$pid);
             if($patientsHis->send_to_DB() === true){
                 echo "success";
             }
