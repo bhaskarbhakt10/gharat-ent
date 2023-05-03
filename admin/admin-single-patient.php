@@ -243,11 +243,14 @@ if (array_key_exists('p_id', $_GET)) {
             <table class="table align-middle mb-3 table-blue" id="RegularCheckup">
                 <thead>
                     <tr>
-                        <th class="th-width-20">Date</th>
-                        <th class="th-width-20">Height</th>
-                        <th class="th-width-20">Weight</th>
-                        <th class="th-width-20">Bp</th>
-                        <th class="th-width-20">Diabetes</th>
+                        <th class="th-width-12">Date</th>
+                        <th class="th-width-12">Height</th>
+                        <th class="th-width-12">Weight</th>
+                        <th class="th-width-12">Bp</th>
+                        <th class="th-width-12">Diabetes</th>
+                        <th class="th-width-12">Pulse Rate</th>
+                        <th class="th-width-12">SPOF</th>
+                        <th class="th-width-12">Oxygen</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -272,7 +275,13 @@ if (array_key_exists('p_id', $_GET)) {
                                 </td>
                                 <?php
                                 foreach ($value as $k => $v) {
-                                    echo  "<td>" . $v . "</td>";
+                                    if($k === 'time' || $k === 'date' ){
+            
+                                    }
+                                    else{
+                                        echo  "<td>" . $v . "</td>";
+            
+                                    }
                                 }
                                 ?>
                             </tr>

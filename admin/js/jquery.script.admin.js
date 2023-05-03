@@ -1077,7 +1077,7 @@ jQuery.noConflict();
     let gynac_row = $('#gynac_row>*');
     gynac_row.detach();
     let symptom_name = $('#symptom-name');
-    if (gynac_row !== null || gynac_row !== undefined) {
+    if ($('[name="prescribe-as"]').length !== 0) {
         $(symptom_name).css('border-width', '2px');
         $(symptom_name).css('border-color', 'pink');
         $(symptom_name).css('border-style', 'solid');

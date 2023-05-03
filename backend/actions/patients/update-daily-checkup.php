@@ -16,9 +16,9 @@ if (isset($_POST)) {
 
     $patient_weight = $form_data['patient_weight'];
     if (array_key_exists('patient_height_foot', $form_data) && array_key_exists('patient_height_inch', $form_data) && !empty($form_data['patient_height_inch'])) {
-        $patient_height = $form_data['patient_height_foot'] . " Foot " . $form_data['patient_height_inch'] . " Inches";
+        $patient_height = $form_data['patient_height_foot'] . " ft " . $form_data['patient_height_inch'] . " in";
     } else {
-        $patient_height = $form_data['patient_height_foot'] . " Foot ";
+        $patient_height = $form_data['patient_height_foot'] . " ft ";
     }
     $patient_diabetes = $form_data['patient_diabetes'];
     $patient_bp = $form_data['patient_bp'];

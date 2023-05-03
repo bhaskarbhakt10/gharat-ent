@@ -19,6 +19,7 @@ if (array_key_exists('ID', $_GET)) {
             while ($row = $all_cols->fetch_assoc()) {
                 $hospital_pMeds = $row['hospital_pMeds'];
                 $hospital_pSym = $row['hospital_pSym'];
+                $regular_checkup = $row['hospital_phistory'];
             }
         }
     }
@@ -73,15 +74,46 @@ if (!empty($hospital_pMeds)) {
                 $symptom_name = $symptoms[$key]['symptom_name'];
                 $symptom_type = $symptoms[$key]['symptom_type'];
                 $symptom_days = $symptoms[$key]['symptom_days'];
+                
                 if(array_key_exists('expected-delivery-date', $symptoms[$key])){
-                $expected_delivery_date ='
-                <tr>
-                <th width="20%" class="text-justify"><b>&nbsp;&nbsp;Expected Delivery Date:</b></th>
-                <td width="80%" class="text-left"> '.$symptoms[$key]['expected-delivery-date'].'</td>
-                </tr>';
+                    $symptom_findings ='
+                    <tr>
+                    <th width="20%" class="text-justify"><b>&nbsp;&nbsp;Examination Findings:</b></th>
+                    <td width="80%" class="text-left"> '.$symptoms[$key]['examination-findings'].'</td>
+                    </tr>';
                 }
+                else{
+                    $symptom_findings= '';
+
+                }
+
+                if(array_key_exists('expected-delivery-date', $symptoms[$key])){
+                    $expected_delivery_date ='
+                    <tr>
+                    <th width="20%" class="text-justify"><b>&nbsp;&nbsp;Expected Delivery Date:</b></th>
+                    <td width="80%" class="text-left"> '.$symptoms[$key]['expected-delivery-date'].'</td>
+                    </tr>';
+                }
+                else{
+                    $expected_delivery_date = '';
+
+                }
+                
             }
         }
+    }
+
+    if(!empty($regular_checkup)){
+        $regular_checkup_arr = json_decode($regular_checkup, true);
+        $latest_regular_checkup_rev =array_reverse($regular_checkup_arr);
+        $latest_regular_checkup = array_pop($latest_regular_checkup_rev);
+        $latest_height = $latest_regular_checkup['height'];
+        $latest_weight = $latest_regular_checkup['weight'];
+        $latest_bp = $latest_regular_checkup['bp'];
+        $latest_diabetes = $latest_regular_checkup['diabetes'];
+        $latest_pulse_rate = $latest_regular_checkup['pulse_rate'];
+        $latest_SPOF = $latest_regular_checkup['SPOF'];
+        $latest_oxygen = $latest_regular_checkup['oxygen'];
     }
 
 }
@@ -103,7 +135,7 @@ if (!empty($hospital_pMeds)) {
         $who_degree = '';
     }
     if(!empty($otherInfo_arr['profile-regno'])){
-        $who_regno = $otherInfo_arr['profile-regno'];
+        $who_regno = 'Reg. No. '.$otherInfo_arr['profile-regno'];
     }
     else{
         $who_regno = '';
@@ -134,19 +166,19 @@ if (!empty($hospital_pMeds)) {
     //test suggested
     $test_suggested = '';
     if(!empty($other_medicine_test)){
-        $test_suggested .= '<tr><td class="text-left">Test To be Done:. ' . $other_medicine_test . '</td></tr>';
+        $test_suggested .= '<tr><td class="text-left background-white">Test To be Done:. ' . $other_medicine_test . '</td></tr>';
     }
 
     //Follow up date
     $follow_up = '';
     if(!empty($follow_up_date)){
-        $follow_up .=  '<tr><td class="text-left">Next Followup date:. ' . $follow_up_date . '</td></tr>';
+        $follow_up .=  '<tr><td class="text-left background-white">Next Followup date:. ' . $follow_up_date . '</td></tr>';
         
     }
 
     $test_and_followup ='<tfoot>';
     $test_and_followup .='<tr>';
-    $test_and_followup .='<td colspan="4">';
+    $test_and_followup .='<td colspan="4" class="background-white">';
     $test_and_followup .=' <table class="w-100">';
     $test_and_followup .= $test_suggested;
     $test_and_followup .= $follow_up;
@@ -255,23 +287,8 @@ $pdf->SetTitle($prescription_id);
 $header_table = '
 <style>
 .table-border{
-    border:1px solid #eee;
-    
 }
-th{
-    width:25%;
-    text-align:center;
-    background-color:#fafafa;
-    border-bottom:1px solid #ccc;
-    
-}
-tr{
-    border-bottom:1px solid #ccc;
-}
-td{
-    text-align:center;
-    line-height:30px;
-}
+
 .w-100{
     width:100%;
 }
@@ -311,6 +328,7 @@ padding:0;
 .dr-info{
     font-size:15px;
     line-height:18px;
+    text-align:center;
 }
 .verticle-middle{
     vertical-align: middle;
@@ -362,9 +380,7 @@ a{
 .line-height-td{
     
 }
-#header-table{
-    border:2px solid red;
-}
+
 </style>
 
 
@@ -385,10 +401,10 @@ a{
     <td class="text-left header-first-col">
         <table class="header-table-name ">
             <tr>
-            <td><h1 class="dr-name pdf-blue">Dr.' . $who_prescribed . '</h1></td>
+            <td><h1 class="dr-name pdf-blue">Dr. ' . $who_prescribed . '</h1></td>
             </tr>
             <tr>
-            <td><p class="dr-info"><span>'.$who_degree.'</span><br><span>'.$who_speciality.'</span><br><span>Reg. No. '.$who_regno.'</span></p>
+            <td><p class="dr-info"><span>'.$who_degree.'</span><br><span>'.$who_speciality.'</span><br><span>'.$who_regno.'</span></p>
             </td>
             </tr>
         </table>
@@ -481,26 +497,42 @@ $pdf->SetFont($mundo_regular, '', 11, '', false);
 // print_r($light);
 // set font
 
+
+//body
 // add a page
 $pdf->AddPage();
 
 
 $table_html = '
 <style>
+.table_border{
+    border:1px solid #ccc;
+}
 .table-border{
-    border:1px solid #eee;
+   
     
+}
+td.background-white{
+    background-color:#fff;
 }
 th.meds-table{
     width:25%;
     text-align:center;
     background-color:#fafafa;
-    border-bottom:1px solid #ccc; 
+   
 }
 
-tr{
-    border-bottom:1px solid #ccc;
+table.regular-checkup{
+    
 }
+
+th.regular-checkup-table{
+    text-align:center;
+    background-color:#fafafa;
+    
+}
+
+
 td{
     text-align:center;
     line-height:30px;
@@ -545,6 +577,9 @@ padding:0;
     font-size:15px;
     line-height:18px;
 }
+.dr-info span{
+    text-align:center;
+}
 .verticle-middle{
     vertical-align: middle;
 }
@@ -567,6 +602,9 @@ fontweight-400{
 }
 .text-left{
     text-align:left;
+}
+.text-center{
+    text-align:center;
 }
 .text-justify{
     text-align:justify
@@ -610,10 +648,7 @@ a{
     border-left:1px solid #eee;
 }
 .symptom-table td{
-    border-right:1px solid #eee;
-}
-#header-table{
-    border:2px solid red;
+    
 }
 </style>
 
@@ -640,17 +675,39 @@ a{
 </tbody>
 </table>
 
-<table width="100%" id="symptom-table" class="symptom-table">
+<table width="100%" id="regular-checkup" class="regular-checkup table_border" >
+<thead>
+<tr>
+<th class="regular-checkup-table">Height</th>
+<th class="regular-checkup-table">Weight</th>
+<th class="regular-checkup-table">Blood Pressure</th>
+<th class="regular-checkup-table">Diabetes </th>
+<th class="regular-checkup-table">Pulse rate</th>
+<th class="regular-checkup-table">SPOF</th>
+<th class="regular-checkup-table">Oxygen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="background-white">'.$latest_height.'</td>
+<td class="background-white">'.$latest_weight.'</td>
+<td class="background-white">'.$latest_bp.'</td>
+<td class="background-white">'.$latest_diabetes.'</td>
+<td class="background-white">'.$latest_pulse_rate.'</td>
+<td class="background-white">'.$latest_SPOF.'</td>
+<td class="background-white">'.$latest_oxygen.'</td>
+</tr>
+</tbody>
+</table>
+<div></div>
+
+<table width="100%" id="symptom-table" class="symptom-table ">
 <tbody>
 <tr>
 <th width="20%" class="text-justify"><b>&nbsp;&nbsp;Symptoms:</b></th>
 <td width="80%" class="text-left"> '.$symptom_name.'</td>
 </tr>
-<tr>
 
-<th width="20%" class="text-justify"><b>&nbsp;&nbsp;Symptoms status:</b></th>
-<td width="80%" class="text-left"> '.$symptom_type.'</td>
-</tr>
 <tr>
 
 <th width="20%" class="text-justify"><b>&nbsp;&nbsp;No of days:</b></th>
@@ -660,14 +717,13 @@ a{
 .
 $expected_delivery_date
 .
+$symptom_findings
+.
 '
 </tbody>
 </table>
-
-<h2 class=text-left>Medicine Table</h2>
-
-
-<table class="table-border" id="medicine-prescription-table" cellpadding="5">
+<div></div>
+<table class="table_border" id="medicine-prescription-table" cellpadding="5">
 <thead>
 <tr>
 <th class="meds-table">
@@ -686,18 +742,18 @@ $expected_delivery_date
 </thead>
 <tbody>
 <tr>
-<td>' .
+<td class="background-white">' .
     meds_string($medicine_name)
     . '
 </td>
-<td>'
+<td class="background-white">'
     .
     meds_qty($medicine_qty, $medicine_volume)
     .
     '
 </td>
-<td>' . meds_pattern($medicine_pattern) . '</td>
-<td>' . meds_notes($medicine_notes) . '</td>
+<td class="background-white">' . meds_pattern($medicine_pattern) . '</td>
+<td class="background-white">' . meds_notes($medicine_notes) . '</td>
 </tr>
 </tbody>
 '

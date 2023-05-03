@@ -106,7 +106,7 @@ $regular_checkup_arr = json_decode($regular_checkup_obj);
     <table class="table align-middle mb-3 table-blue" id="RegularCheckup">
         <thead>
             <tr>
-                <th colspan="5">
+                <th colspan="9">
                     <h3 class="text-center">
                         Regular checkup History For Patient Id <?php echo $pid ;?>
                     </h3>

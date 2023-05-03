@@ -158,3 +158,116 @@ Stack trace:
 #0 C:\xampp\htdocs\hospital-management\admin\index.php(51): require_once()
 #1 {main}
   thrown in C:\xampp\htdocs\hospital-management\admin\admin-update-daily-check-up.php on line 145
+[03-May-2023 11:27:31 Europe/Berlin] PHP Warning:  Undefined variable $expected_delivery_date in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 661
+[03-May-2023 11:29:05 Europe/Berlin] PHP Warning:  Undefined variable $expected_delivery_date in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 661
+[03-May-2023 11:30:11 Europe/Berlin] PHP Warning:  Undefined variable $expected_delivery_date in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 655
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $prescribedID in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 99
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $prescribedID in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 100
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 132
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 640
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $symptom_name in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 651
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $symptom_days in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 657
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $expected_delivery_date in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 661
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $medicine_name in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 690
+[03-May-2023 11:57:48 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 166
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $medicine_qty in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 695
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $medicine_volume in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 695
+[03-May-2023 11:57:48 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 181
+[03-May-2023 11:57:48 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 182
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $medicine_pattern in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 699
+[03-May-2023 11:57:48 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 199
+[03-May-2023 11:57:48 Europe/Berlin] PHP Warning:  Undefined variable $medicine_notes in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 700
+[03-May-2023 11:57:48 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 215
+[03-May-2023 11:58:20 Europe/Berlin] PHP Warning:  Undefined variable $associatedID in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 71
+[03-May-2023 11:58:20 Europe/Berlin] PHP Warning:  Undefined variable $prescribedID in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 99
+[03-May-2023 11:58:20 Europe/Berlin] PHP Warning:  Undefined variable $prescribedID in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 100
+[03-May-2023 11:58:20 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 132
+[03-May-2023 11:58:21 Europe/Berlin] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 640
+[03-May-2023 11:58:21 Europe/Berlin] PHP Warning:  Undefined variable $symptom_name in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 651
+[03-May-2023 11:58:21 Europe/Berlin] PHP Warning:  Undefined variable $symptom_days in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 657
+[03-May-2023 11:58:21 Europe/Berlin] PHP Warning:  Undefined variable $expected_delivery_date in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 661
+[03-May-2023 11:58:21 Europe/Berlin] PHP Warning:  Undefined variable $medicine_name in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 690
+[03-May-2023 11:58:21 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 166
+[03-May-2023 11:58:21 Europe/Berlin] PHP Warning:  Undefined variable $medicine_qty in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 695
+[03-May-2023 11:58:21 Europe/Berlin] PHP Warning:  Undefined variable $medicine_volume in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 695
+[03-May-2023 11:58:21 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 181
+[03-May-2023 11:58:21 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 182
+[03-May-2023 11:58:21 Europe/Berlin] PHP Warning:  Undefined variable $medicine_pattern in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 699
+[03-May-2023 11:58:21 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 199
+[03-May-2023 11:58:21 Europe/Berlin] PHP Warning:  Undefined variable $medicine_notes in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 700
+[03-May-2023 11:58:21 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 215
+[03-May-2023 12:01:17 Europe/Berlin] PHP Warning:  Undefined variable $symptom in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 76
+[03-May-2023 12:01:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 76
+[03-May-2023 12:01:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 76
+[03-May-2023 12:01:58 Europe/Berlin] PHP Warning:  Undefined variable $symptom in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 76
+[03-May-2023 12:01:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 76
+[03-May-2023 12:01:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 76
+[03-May-2023 12:15:26 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 110
+[03-May-2023 12:22:10 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[03-May-2023 12:22:10 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[03-May-2023 12:22:10 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php:18350
+Stack trace:
+#0 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(18350): array_push(NULL, Array)
+#1 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(5930): TCPDF->writeHTML('<cssarray>{&quo...', true, false, true, true, 'C')
+#2 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(18372): TCPDF->MultiCell(201.60013866667, 0, '<cssarray>{&quo...', false, 'C', false, 2, 4.2000028888889, 45.0, true, 0, true, true, 0, 'T', false)
+#3 C:\xampp\htdocs\hospital-management\admin\pdf.php(755): TCPDF->writeHTML('\r\n<style>\r\n.tab...', true, false, true, false, '')
+#4 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18350
+[03-May-2023 12:22:33 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[03-May-2023 12:22:33 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[03-May-2023 12:22:33 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php:18350
+Stack trace:
+#0 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(18350): array_push(NULL, Array)
+#1 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(5930): TCPDF->writeHTML('<cssarray>{&quo...', true, false, true, true, 'C')
+#2 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(18372): TCPDF->MultiCell(201.60013866667, 0, '<cssarray>{&quo...', false, 'C', false, 2, 4.2000028888889, 45.0, true, 0, true, true, 0, 'T', false)
+#3 C:\xampp\htdocs\hospital-management\admin\pdf.php(753): TCPDF->writeHTML('\r\n<style>\r\n.tab...', true, false, true, false, '')
+#4 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18350
+[03-May-2023 12:27:54 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[03-May-2023 12:27:54 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[03-May-2023 12:27:54 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php:18350
+Stack trace:
+#0 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(18350): array_push(NULL, Array)
+#1 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(5930): TCPDF->writeHTML('<cssarray>{&quo...', true, false, true, true, 'C')
+#2 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(18372): TCPDF->MultiCell(201.60013866667, 0, '<cssarray>{&quo...', false, 'C', false, 2, 4.2000028888889, 45.0, true, 0, true, true, 0, 'T', false)
+#3 C:\xampp\htdocs\hospital-management\admin\pdf.php(760): TCPDF->writeHTML('\r\n<style>\r\n.tab...', true, false, true, false, '')
+#4 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18350
+[03-May-2023 12:27:57 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[03-May-2023 12:27:57 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[03-May-2023 12:27:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php:18350
+Stack trace:
+#0 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(18350): array_push(NULL, Array)
+#1 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(5930): TCPDF->writeHTML('<cssarray>{&quo...', true, false, true, true, 'C')
+#2 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(18372): TCPDF->MultiCell(201.60013866667, 0, '<cssarray>{&quo...', false, 'C', false, 2, 4.2000028888889, 45.0, true, 0, true, true, 0, 'T', false)
+#3 C:\xampp\htdocs\hospital-management\admin\pdf.php(760): TCPDF->writeHTML('\r\n<style>\r\n.tab...', true, false, true, false, '')
+#4 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18350
+[03-May-2023 12:28:24 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[03-May-2023 12:28:24 Europe/Berlin] PHP Warning:  Undefined array key "cols" in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 17088
+[03-May-2023 12:28:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php:18350
+Stack trace:
+#0 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(18350): array_push(NULL, Array)
+#1 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(5930): TCPDF->writeHTML('<cssarray>{&quo...', true, false, true, true, 'C')
+#2 C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php(18372): TCPDF->MultiCell(201.60013866667, 0, '<cssarray>{&quo...', false, 'C', false, 2, 4.2000028888889, 45.0, true, 0, true, true, 0, 'T', false)
+#3 C:\xampp\htdocs\hospital-management\admin\pdf.php(760): TCPDF->writeHTML('\r\n<style>\r\n.tab...', true, false, true, false, '')
+#4 {main}
+  thrown in C:\xampp\htdocs\hospital-management\backend\php-classes\tcpdf\tcpdf.php on line 18350
+[03-May-2023 12:36:37 Europe/Berlin] PHP Warning:  Undefined variable $jwwjw in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 695
+[03-May-2023 14:06:17 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 108
+[03-May-2023 14:06:27 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 108
+[03-May-2023 14:06:41 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 108
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Undefined variable $latest_regular_checkup in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 110
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 110
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Undefined variable $latest_regular_checkup in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 111
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 111
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Undefined variable $latest_regular_checkup in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 112
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 112
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Undefined variable $latest_regular_checkup in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 113
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 113
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Undefined variable $latest_regular_checkup in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 114
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 114
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Undefined variable $latest_regular_checkup in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 115
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 115
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Undefined variable $latest_regular_checkup in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 116
+[03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 116
