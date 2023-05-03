@@ -1,7 +1,7 @@
 
 jQuery.noConflict();
 (function ($) {
-
+    
     $('body').on('click', '.log-in', function (event) {
         event.preventDefault();
         let form = $(this).closest('form');

@@ -2,13 +2,6 @@
 $json_file = file_get_contents('./json/roles.json');
 $json_obj = json_decode($json_file);
 
-foreach ($json_obj as $arr) {
-    if ($arr->rank === 2) {
-        foreach ($arr->specialization as $s) {
-            echo $s->specialization_name;
-        }
-    }
-}
 
 
 ?>

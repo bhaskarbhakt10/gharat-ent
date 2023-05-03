@@ -271,3 +271,5 @@ Stack trace:
 [03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 115
 [03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Undefined variable $latest_regular_checkup in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 116
 [03-May-2023 14:07:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\hospital-management\admin\pdf.php on line 116
+[03-May-2023 16:52:12 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 164
+[03-May-2023 16:53:00 Europe/Berlin] PHP Warning:  Undefined variable $default_image in C:\xampp\htdocs\hospital-management\backend\php-classes\admin\admin.php on line 164

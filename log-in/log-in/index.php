@@ -1,4 +1,5 @@
 <?php 
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/components/header.php';
 // require_once '../../components/header.php'; 
 ?>
@@ -11,11 +12,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/components/header
                     <div class="log-in-wrapper">
                         <div class="brand-wrapper mb-2">
                             <div class="text-center">
-                                <img src='<?php echo $brand_logo_blue; ?>' class="img-fluid brand-logo w-60" />
+                                <img src='<?php echo BASE_URL .'log-in/log-in/images/avannah-logo.png' ; ?>' class="img-fluid brand-logo w-60" />
                             </div>
                         </div>
                         <div class="form-heading-wrapper ">
-                            <h1 class="text-uppercase text-center form-heading mb-4">
+                            <h1 class="p-0 text-uppercase text-center form-heading mb-4">
                                 Login
                             </h1>
                         </div>
