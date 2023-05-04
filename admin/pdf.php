@@ -23,11 +23,11 @@ if (array_key_exists('ID', $_GET)) {
     }
 } else {
     exit();
-}   
-    // echo $patient_id;
-    // echo $patientTreatSym->generate_association_id($patient_id);
+}
+// echo $patient_id;
+// echo $patientTreatSym->generate_association_id($patient_id);
 
-    
+
 
 
 if (!empty($hospital_pMeds)) {
@@ -61,49 +61,44 @@ if (!empty($hospital_pMeds)) {
     // print_r($medicine_pattern);
     // print_r($medicine_notes);
 
-    if(!empty($hospital_pSym)){
+    if (!empty($hospital_pSym)) {
         $symptoms = json_decode($hospital_pSym, true);
         // echo "<pre>";
         // print_r($symptoms);
         // echo "</pre>";
-        foreach($symptoms as $key=>$value){
-            if($value['associatedID'] === $associatedID){
+        foreach ($symptoms as $key => $value) {
+            if ($value['associatedID'] === $associatedID) {
                 // print_r($value);
                 $symptom_name = $symptoms[$key]['symptom_name'];
                 $symptom_type = $symptoms[$key]['symptom_type'];
                 $symptom_days = $symptoms[$key]['symptom_days'];
-                
-                if(array_key_exists('expected-delivery-date', $symptoms[$key])){
-                    $symptom_findings ='
+
+                if (array_key_exists('expected-delivery-date', $symptoms[$key])) {
+                    $symptom_findings = '
                     <tr>
                     <th width="20%" class="text-justify"><b>&nbsp;&nbsp;Examination Findings:</b></th>
-                    <td width="80%" class="text-left"> '.$symptoms[$key]['examination-findings'].'</td>
+                    <td width="80%" class="text-left"> ' . $symptoms[$key]['examination-findings'] . '</td>
                     </tr>';
-                }
-                else{
-                    $symptom_findings= '';
-
+                } else {
+                    $symptom_findings = '';
                 }
 
-                if(array_key_exists('expected-delivery-date', $symptoms[$key])){
-                    $expected_delivery_date ='
+                if (array_key_exists('expected-delivery-date', $symptoms[$key])) {
+                    $expected_delivery_date = '
                     <tr>
                     <th width="20%" class="text-justify"><b>&nbsp;&nbsp;Expected Delivery Date:</b></th>
-                    <td width="80%" class="text-left"> '.$symptoms[$key]['expected-delivery-date'].'</td>
+                    <td width="80%" class="text-left"> ' . $symptoms[$key]['expected-delivery-date'] . '</td>
                     </tr>';
-                }
-                else{
+                } else {
                     $expected_delivery_date = '';
-
                 }
-                
             }
         }
     }
 
-    if(!empty($regular_checkup)){
+    if (!empty($regular_checkup)) {
         $regular_checkup_arr = json_decode($regular_checkup, true);
-        $latest_regular_checkup_rev =array_reverse($regular_checkup_arr);
+        $latest_regular_checkup_rev = array_reverse($regular_checkup_arr);
         $latest_regular_checkup = array_pop($latest_regular_checkup_rev);
         $latest_height = $latest_regular_checkup['height'];
         $latest_weight = $latest_regular_checkup['weight'];
@@ -113,149 +108,143 @@ if (!empty($hospital_pMeds)) {
         $latest_SPOF = $latest_regular_checkup['SPOF'];
         $latest_oxygen = $latest_regular_checkup['oxygen'];
     }
-
 }
 
 
 
 
 
-    $admin = new Admin();
-    //docter name
-    $who_prescribed = $admin->user_by_id($prescribedID);
-    $otherInfo_json = $admin->otherinfouser_by_id($prescribedID);
-    if(  $otherInfo_json === true){
-        $otherInfo_arr = json_decode($otherInfo_json, true);
-    }
-    else{
-        $otherInfo_arr = '';
-    }
-    // print_r($otherInfo_arr);
-    if(!empty($otherInfo_arr['profile-degree'])){
-        $who_degree = $otherInfo_arr['profile-degree'];
-    }
-    else{
-        $who_degree = '';
-    }
-    if(!empty($otherInfo_arr['profile-regno'])){
-        $who_regno = 'Reg. No. '.$otherInfo_arr['profile-regno'];
-    }
-    else{
-        $who_regno = '';
-    }
-    if(!empty($otherInfo_arr['profile-specialization'])){
-        $who_speciality = $otherInfo_arr['profile-specialization'];
-    }
-    else{
-        $who_speciality = '';
-    }
-   
-    
-
-    // patinet name 
-    $patient_id_array = explode('_', $patient_id);
-    array_pop($patient_id_array);
-    $patinetID__ = implode('_', $patient_id_array);
-    $patient = new Patients();
-    $res = $patient->get_genral_detials($patinetID__);
-    
-    $patient_name = '';
-    if ($res->num_rows > 0) {
-        while ($row = $res->fetch_assoc()) {
-            $patient_name .= $row['hospital_PatientFirstName'] . " " . $row['hospital_PatientMiddleName'] . " " . $row['hospital_PatientLastName'];
-        }
-    }
-
-    //test suggested
-    $other_medicine_test = $medicine_test;
-    $test_suggested = "";
-    if(!empty($other_medicine_test)){
-        $test_suggested .= '<tr><td class="text-left background-white">Test To be Done:. ' . $other_medicine_test . '</td></tr>';
-    }
-
-    //Follow up date
-    $follow_up = '';
-    if(!empty($follow_up_date)){
-        $follow_up .=  '<tr><td class="text-left background-white">Next Followup date:. ' . $follow_up_date . '</td></tr>';
-        
-    }
-
-    $test_and_followup ='<tfoot>';
-    $test_and_followup .='<tr>';
-    $test_and_followup .='<td colspan="4" class="background-white">';
-    $test_and_followup .=' <table class="w-100">';
-    $test_and_followup .= $test_suggested;
-    $test_and_followup .= $follow_up;
-    $test_and_followup .='</table>';
-    $test_and_followup .='</td>';
-    $test_and_followup .='</tr>';
-    $test_and_followup .='</tfoot>';
+$admin = new Admin();
+//docter name
+$who_prescribed = $admin->user_by_id($prescribedID);
+$otherInfo_json = $admin->otherinfouser_by_id($prescribedID);
+if ($otherInfo_json === true) {
+    $otherInfo_arr = json_decode($otherInfo_json, true);
+} else {
+    $otherInfo_arr = '';
+}
+// print_r($otherInfo_arr);
+if (!empty($otherInfo_arr['profile-degree'])) {
+    $who_degree = $otherInfo_arr['profile-degree'];
+} else {
+    $who_degree = '';
+}
+if (!empty($otherInfo_arr['profile-regno'])) {
+    $who_regno = 'Reg. No. ' . $otherInfo_arr['profile-regno'];
+} else {
+    $who_regno = '';
+}
+if (!empty($otherInfo_arr['profile-specialization'])) {
+    $who_speciality = $otherInfo_arr['profile-specialization'];
+} else {
+    $who_speciality = '';
+}
 
 
-    function meds_string($medicine_name)
-    {
-        $meds_string = '';
-        $medicine_name_arr = explode(',', $medicine_name);
-        foreach ($medicine_name_arr as $med_name) {
-            $meds_string .= '<table class="" style="width:100%; ">';
-            $meds_string .= '<tr>';
-            $meds_string .= '<td style="padding:10px 0;">';
-            $meds_string .=    $med_name;
-            $meds_string .= ' </td>';
-            $meds_string .= '</tr>';
-            $meds_string .= '</table>';
-        }
-        return $meds_string;
-    }
-    function meds_qty($medicine_qty, $medicine_volume)
-    {
-        $meds_qty = '';
-        $medicine_qty_arr = explode(',', $medicine_qty);
-        $medicine_volume_arr = explode(',', $medicine_volume);
-        foreach ($medicine_qty_arr as $key => $med_qty) {
 
-            $meds_qty .= '<table class="" style="width:100%; ">';
-            $meds_qty .= '<tr>';
-            $meds_qty .= '<td style="padding:10px 0;">';
-            $meds_qty .=  $med_qty .  $medicine_volume_arr[$key];
-            $meds_qty .= '</td>';
-            $meds_qty .= '</tr>';
-            $meds_qty .= '</table>';
-        }
-        return $meds_qty;
-    }
+// patinet name 
+$patient_id_array = explode('_', $patient_id);
+array_pop($patient_id_array);
+$patinetID__ = implode('_', $patient_id_array);
+$patient = new Patients();
+$res = $patient->get_genral_detials($patinetID__);
 
-    function meds_pattern($medicine_pattern)
-    {
-        $meds_pattern = '';
-        $medicine_pattern_arr = explode(',', $medicine_pattern);
-        foreach ($medicine_pattern_arr as $key => $med_pattern) {
-            $meds_pattern .= '<table class="" style="width:100%; ">';
-            $meds_pattern .= '<tr>';
-            $meds_pattern .= '<td style="padding:10px 0;">';
-            $meds_pattern .=    $med_pattern;
-            $meds_pattern .= '</td>';
-            $meds_pattern .= ' </tr>';
-            $meds_pattern .= '</table>';
-        }
-        return $meds_pattern;
+$patient_name = '';
+if ($res->num_rows > 0) {
+    while ($row = $res->fetch_assoc()) {
+        $patient_name .= $row['hospital_PatientFirstName'] . " " . $row['hospital_PatientMiddleName'] . " " . $row['hospital_PatientLastName'];
     }
+}
 
-    function meds_notes($medicine_notes)
-    {
-        $meds_notess = '';
-        $medicine_notes_arr = explode(',', $medicine_notes);
-        foreach ($medicine_notes_arr as $key => $med_notes) {
-            $meds_notess .= '<table class="" style="width:100%; ">';
-            $meds_notess .= '<tr>';
-            $meds_notess .= '<td style="padding:10px 0;">';
-            $meds_notess .= $med_notes;
-            $meds_notess .= '</td>';
-            $meds_notess .= '</tr>';
-            $meds_notess .= '</table>';
-        }
-        return $meds_notess;
+//test suggested
+$other_medicine_test = $medicine_test;
+$test_suggested = "";
+if (!empty($other_medicine_test)) {
+    $test_suggested .= '<tr><td class="text-left background-white">Test To be Done:. ' . $other_medicine_test . '</td></tr>';
+}
+
+//Follow up date
+$follow_up = '';
+if (!empty($follow_up_date)) {
+    $follow_up .=  '<tr><td class="text-left background-white">Next Followup date:. ' . $follow_up_date . '</td></tr>';
+}
+
+$test_and_followup = '<tfoot>';
+$test_and_followup .= '<tr>';
+$test_and_followup .= '<td colspan="4" class="background-white">';
+$test_and_followup .= ' <table class="w-100">';
+$test_and_followup .= $test_suggested;
+$test_and_followup .= $follow_up;
+$test_and_followup .= '</table>';
+$test_and_followup .= '</td>';
+$test_and_followup .= '</tr>';
+$test_and_followup .= '</tfoot>';
+
+
+function meds_string($medicine_name)
+{
+    $meds_string = '';
+    $medicine_name_arr = explode(',', $medicine_name);
+    foreach ($medicine_name_arr as $med_name) {
+        $meds_string .= '<table class="" style="width:100%; ">';
+        $meds_string .= '<tr>';
+        $meds_string .= '<td style="padding:10px 0;">';
+        $meds_string .=    $med_name;
+        $meds_string .= ' </td>';
+        $meds_string .= '</tr>';
+        $meds_string .= '</table>';
     }
+    return $meds_string;
+}
+function meds_qty($medicine_qty, $medicine_volume)
+{
+    $meds_qty = '';
+    $medicine_qty_arr = explode(',', $medicine_qty);
+    $medicine_volume_arr = explode(',', $medicine_volume);
+    foreach ($medicine_qty_arr as $key => $med_qty) {
+
+        $meds_qty .= '<table class="" style="width:100%; ">';
+        $meds_qty .= '<tr>';
+        $meds_qty .= '<td style="padding:10px 0;">';
+        $meds_qty .=  $med_qty .  $medicine_volume_arr[$key];
+        $meds_qty .= '</td>';
+        $meds_qty .= '</tr>';
+        $meds_qty .= '</table>';
+    }
+    return $meds_qty;
+}
+
+function meds_pattern($medicine_pattern)
+{
+    $meds_pattern = '';
+    $medicine_pattern_arr = explode(',', $medicine_pattern);
+    foreach ($medicine_pattern_arr as $key => $med_pattern) {
+        $meds_pattern .= '<table class="" style="width:100%; ">';
+        $meds_pattern .= '<tr>';
+        $meds_pattern .= '<td style="padding:10px 0;">';
+        $meds_pattern .=    $med_pattern;
+        $meds_pattern .= '</td>';
+        $meds_pattern .= ' </tr>';
+        $meds_pattern .= '</table>';
+    }
+    return $meds_pattern;
+}
+
+function meds_notes($medicine_notes)
+{
+    $meds_notess = '';
+    $medicine_notes_arr = explode(',', $medicine_notes);
+    foreach ($medicine_notes_arr as $key => $med_notes) {
+        $meds_notess .= '<table class="" style="width:100%; ">';
+        $meds_notess .= '<tr>';
+        $meds_notess .= '<td style="padding:10px 0;">';
+        $meds_notess .= $med_notes;
+        $meds_notess .= '</td>';
+        $meds_notess .= '</tr>';
+        $meds_notess .= '</table>';
+    }
+    return $meds_notess;
+}
 
 
 
@@ -396,62 +385,55 @@ a{
 <tr>
 <td width="2%"></td>
 
-<td width="96%">
+<td width="96%" style="border-bottom:1px solid #333">
 
-<table class="w-100 " id="header-table" >
+<table class="w-100 " id="header-table">
 <tbody>
     <tr><td style="height:10px;"></td></tr>
     <tr>
-    <td class="text-left header-first-col">
-        <table class="header-table-name ">
-            <tr>
-            <td><h1 class="dr-name pdf-blue">Dr. ' . $who_prescribed . '</h1></td>
-            </tr>
-            <tr>
-            <td><p class="dr-info"><span>'.$who_degree.'</span><br><span>'.$who_speciality.'</span><br><span>'.$who_regno.'</span></p>
-            </td>
-            </tr>
-        </table>
-    </td>
-    <td class="text-right header-second-col">
-       <table>
+        <td class="text-left header-first-col">
+            <table class="header-table-name ">
+                <tr>
+                <td><h1 class="dr-name pdf-blue">Dr. ' . $who_prescribed . '</h1></td>
+                </tr>
+                <tr>
+                <td><p class="dr-info"><span>' . $who_degree . '</span><br><span>' . $who_speciality . '</span><br><span>' . $who_regno . '</span></p>
+                </td>
+                </tr>
+            </table>
+        </td>
+        <td class="text-right header-second-col">
+        <table>
 
-       </table>
-    </td>
-    <td class="text-left header-third-col">
-        <table class="header-table-address ">
-            <tr>
-            <td class="text-left line-height-td"><h1 class="font-16 pdf-blue">Avannah Hospital</h1></td>
-            </tr>
-            <tr>
-            <td class="text-left line-height-td" style="font-family:mundosansstd; font-weight:bold;
-            font-style:italic"><p class="font-12 fontweight-400 para">Ground Floor, Friendship Corner,<br>Lane Near Madhuram Hotel, Dindayal Nagar, Vasai (W) </p>
-            </td>
-            </tr>
-            <tr>
-            <td class="text-left line-height-td"><p class="font-12 fontweight-400 para">Tel:. <a href="tel:+919420292710">9420292710</a></p></td>
-            </tr>
-            <tr>
-            <td class="text-left line-height-td"><p class="font-12 fontweight-400 para pdf-blue">For Appointment:. <a href="tel:+918484077565">8484077565</a></p></td>
-            </tr>
-            <tr>
-            <td class="text-left line-height-td"><p class="font-12 fontweight-400 para pdf-blue">Consulting Timings : <span class="dark">Mon To Sat - 11.00 am to 3.00 pm </span></p></td>
-            </tr>
-            <tr>
-            <td style="width:180px;"></td>
-            <td class="text-right line-height-td" colspan="5"><p class="font-12 fontweight-400 para pdf-blue"><span class="dark">7.00 pm to 9.00 pm </span></p></td>
-            </tr>
         </table>
-    </td>
+        </td>
+        <td class="text-left header-third-col">
+            <table class="header-table-address ">
+                <tr>
+                <td class="text-left line-height-td"><h1 class="font-16 pdf-blue">Avannah Hospital</h1></td>
+                </tr>
+                <tr>
+                <td class="text-left line-height-td" style="font-family:mundosansstd; font-weight:bold;
+                font-style:italic"><p class="font-12 fontweight-400 para">Ground Floor, Friendship Corner,<br>Lane Near Madhuram Hotel, Dindayal Nagar, Vasai (W) </p>
+                </td>
+                </tr>
+                <tr>
+                <td class="text-left line-height-td"><p class="font-12 fontweight-400 para">Tel:. <a href="tel:+919420292710">9420292710</a></p></td>
+                </tr>
+                <tr>
+                <td class="text-left line-height-td"><p class="font-12 fontweight-400 para pdf-blue">For Appointment:. <a href="tel:+918484077565">8484077565</a></p></td>
+                </tr>
+                <tr>
+                <td class="text-left line-height-td"><p class="font-12 fontweight-400 para pdf-blue">Consulting Timings : <span class="dark">Mon To Sat - 11.00 am to 3.00 pm </span></p></td>
+                </tr>
+                <tr>
+                <td style="width:180px;"></td>
+                <td class="text-right line-height-td" colspan="5"><p class="font-12 fontweight-400 para pdf-blue"><span class="dark">7.00 pm to 9.00 pm </span></p></td>
+                </tr>
+            </table>
+        </td>
     </tr>
 </tbody>
-<tfoot>
-<tr>
-<td style="border-top:1px solid #333;" colspan=""></td>
-<td style="border-top:1px solid #333;" colspan=""></td>
-<td style="border-top:1px solid #333;" colspan=""></td>
-</tr>
-</tfoot>
 </table>
 </td>
 <td width="2%"></td>
@@ -470,7 +452,7 @@ $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, $h
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
 // set margins
-$pdf->SetMargins(0, 45, 0);
+$pdf->SetMargins(0, 35, 0);
 $pdf->SetHeaderMargin(0);
 $pdf->SetFooterMargin(0);
 
@@ -547,17 +529,26 @@ td{
 .w-80{
     width:80%;
 }
-.w-20{
-    width:20%;
+.w-70{
+    width:70%;
 }
-.width-cust{
+.w-60{
+    width:60%;
+}
+.w-50{
+    width:50%;
+}
+.w-40{
     width:40%;
+}
+.w-30{
+width:30%;
 }
 .w-33{
     width:33.33%;
 }
-.w-50{
-width:50%;
+.width-cust{
+    width:40%;
 }
 .red{
 background-color:red;
@@ -654,31 +645,80 @@ a{
 .symptom-table td{
     
 }
+.patient-name-width{
+width:66%;
+}
+
 </style>
-
-
-
-
 
 <table>
 <tbody>
 <tr>
 <td width="2%"></td>
 <td width="96%">
-<table>
+<table width="100%" class="">
 <tbody>
-    <tr>
-    <td class="text-left w-80">
-    <b>Patient name:</b> ' . $patient_name . '
-    </td>
-    <td class="text-left w-20">
-    <b>Date:</b>' . $date . '
-    </td>
-    </tr>
-    <tr><td></td></tr>
+<tr>
+<td>
+<table>
+<tr>
+<td class="text-left w-80">
+
+</td>
+<td class="text-left w-20">
+<b>Date:</b> ' . $date . '
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+
+<table style="border:1px solid #ccc;background-color:#f2f2f2">
+<tr>
+<td class="text-left ">
+<b>Name:</b> ' . $patient_name . '
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table style="border:1px solid #ccc;background-color:#fafafa">
+<tr>
+<td class="text-left">
+<b>Age:</b> ' . 50 . ' years
+</td>
+<td class="text-left">
+<b>Sex:.</b> '."M".'
+</td>
+<td class="text-left">
+<b>Weight:.</b> '."60".' kg
+</td>
+<td class="text-left">
+<b>Phone Number:.</b> '."9096471732".'
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table style="border:1px solid #ccc;background-color:#f2f2f2">
+<tr>
+<td class="text-left">
+<b>Refrence Docter:.</b> '."9096471732".'
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
 </tbody>
 </table>
-
+<div></div>
 <table width="100%" id="regular-checkup" class="regular-checkup table_border" >
 <thead>
 <tr>
@@ -693,13 +733,13 @@ a{
 </thead>
 <tbody>
 <tr>
-<td class="background-white">'.$latest_height.'</td>
-<td class="background-white">'.$latest_weight.'</td>
-<td class="background-white">'.$latest_bp.'</td>
-<td class="background-white">'.$latest_diabetes.'</td>
-<td class="background-white">'.$latest_pulse_rate.'</td>
-<td class="background-white">'.$latest_SPOF.'</td>
-<td class="background-white">'.$latest_oxygen.'</td>
+<td class="background-white">' . $latest_height . '</td>
+<td class="background-white">' . $latest_weight . '</td>
+<td class="background-white">' . $latest_bp . '</td>
+<td class="background-white">' . $latest_diabetes . '</td>
+<td class="background-white">' . $latest_pulse_rate . '</td>
+<td class="background-white">' . $latest_SPOF . '</td>
+<td class="background-white">' . $latest_oxygen . '</td>
 </tr>
 </tbody>
 </table>
@@ -709,21 +749,21 @@ a{
 <tbody>
 <tr>
 <th width="20%" class="text-justify"><b>&nbsp;&nbsp;Symptoms:</b></th>
-<td width="80%" class="text-left"> '.$symptom_name.'</td>
+<td width="80%" class="text-left"> ' . $symptom_name . '</td>
 </tr>
 
 <tr>
 
 <th width="20%" class="text-justify"><b>&nbsp;&nbsp;No of days:</b></th>
-<td width="80%" class="text-left"> '.$symptom_days.'</td>
+<td width="80%" class="text-left"> ' . $symptom_days . '</td>
 </tr>
 '
-.
-$expected_delivery_date
-.
-$symptom_findings
-.
-'
+    .
+    $expected_delivery_date
+    .
+    $symptom_findings
+    .
+    '
 </tbody>
 </table>
 <div></div>
@@ -761,10 +801,10 @@ $symptom_findings
 </tr>
 </tbody>
 '
-.
-$test_and_followup
-.
-'
+    .
+    $test_and_followup
+    .
+    '
 </table>
 
 
