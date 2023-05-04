@@ -53,7 +53,7 @@ class Users{
         // echo $sql;
         $res = $this->db->connect()->query($sql);
         $val = $res->num_rows + 1;
-        $val_prefix = "AVHSP";
+        $val_prefix = "GEC";
         $genrated_value = $val_prefix.$val;
         return $genrated_value; 
     }

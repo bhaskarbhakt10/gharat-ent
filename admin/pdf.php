@@ -1,7 +1,5 @@
 <?php
 
-
-
 require_once $_SERVER['DOCUMENT_ROOT'] . "/gharat-ent/hospital-management/backend/php-classes/tcpdf/tcpdf.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/gharat-ent/hospital-management/backend/php-classes/patients/patientsTreatmentSymptom.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/gharat-ent/hospital-management/backend/php-classes/patients/patients.php";
@@ -169,7 +167,8 @@ if (!empty($hospital_pMeds)) {
     }
 
     //test suggested
-    $test_suggested = '';
+    $other_medicine_test = $medicine_test;
+    $test_suggested = "";
     if(!empty($other_medicine_test)){
         $test_suggested .= '<tr><td class="text-left background-white">Test To be Done:. ' . $other_medicine_test . '</td></tr>';
     }

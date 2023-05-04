@@ -50,7 +50,7 @@ class Patients
         date_default_timezone_set(TIMEZONE_IN);
         $date = new DateTime();
         $year = $date->format('Y');
-        $patientID = "AVHSP_" . $year . "P_" . $no_rows;
+        $patientID = "GEC_" . $year . "P_" . $no_rows;
         return $patientID;
     }
 
