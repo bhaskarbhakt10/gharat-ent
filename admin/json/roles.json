@@ -14,6 +14,10 @@
       "specialization1": {
         "specialization_name": "Gynaecologist",
         "specialization_code": "GY"
+      },
+      "specialization2": {
+        "specialization_name": "ENT",
+        "specialization_code": "ENT"
       }
     }
   },

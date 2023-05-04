@@ -8,3 +8,10 @@
 [02-May-2023 11:56:02 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
 [02-May-2023 11:56:02 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
 [02-May-2023 11:56:02 Europe/Berlin] PHP Warning:  Undefined array key "hospital_specialization" in C:\xampp\htdocs\hospital-management\backend\actions\log-in\log-in.php on line 28
+[04-May-2023 10:41:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'u595440997_chetan'@'localhost' (using password: YES) in C:\xampp\htdocs\gharat-ent\hospital-management\backend\database\config.database.php:36
+Stack trace:
+#0 C:\xampp\htdocs\gharat-ent\hospital-management\backend\database\config.database.php(36): mysqli->__construct('localhost', 'u595440997_chet...', 'iqbCb$V34eu9i-P', 'u595440997_chet...')
+#1 C:\xampp\htdocs\gharat-ent\hospital-management\backend\php-classes\log-in\log-in.php(13): Database->__construct()
+#2 C:\xampp\htdocs\gharat-ent\hospital-management\backend\actions\log-in\log-in.php(18): LogIn->__construct()
+#3 {main}
+  thrown in C:\xampp\htdocs\gharat-ent\hospital-management\backend\database\config.database.php on line 36

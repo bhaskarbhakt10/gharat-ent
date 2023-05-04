@@ -126,7 +126,12 @@ if (!empty($hospital_pMeds)) {
     //docter name
     $who_prescribed = $admin->user_by_id($prescribedID);
     $otherInfo_json = $admin->otherinfouser_by_id($prescribedID);
-    $otherInfo_arr = json_decode($otherInfo_json, true);
+    if(  $otherInfo_json === true){
+        $otherInfo_arr = json_decode($otherInfo_json, true);
+    }
+    else{
+        $otherInfo_arr = '';
+    }
     // print_r($otherInfo_arr);
     if(!empty($otherInfo_arr['profile-degree'])){
         $who_degree = $otherInfo_arr['profile-degree'];
