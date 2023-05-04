@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/php-classes/patients/patientsHistory.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gharat-ent/hospital-management/backend/php-classes/patients/patientsHistory.php';
 $pHis = new PatientHistory();
 $pid = $_GET['p_id'];
 $regular_checkup_obj = $pHis->get_checkupHis($pid);

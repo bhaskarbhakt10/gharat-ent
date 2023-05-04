@@ -2,10 +2,10 @@
 
 
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/php-classes/tcpdf/tcpdf.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/php-classes/patients/patientsTreatmentSymptom.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/php-classes/patients/patients.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/php-classes/admin/admin.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/gharat-ent/hospital-management/backend/php-classes/tcpdf/tcpdf.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/gharat-ent/hospital-management/backend/php-classes/patients/patientsTreatmentSymptom.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/gharat-ent/hospital-management/backend/php-classes/patients/patients.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/gharat-ent/hospital-management/backend/php-classes/admin/admin.php";
 
 if (array_key_exists('ID', $_GET)) {
     $prescription_id = $_GET['ID'];

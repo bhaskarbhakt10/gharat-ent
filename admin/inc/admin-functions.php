@@ -9,9 +9,9 @@ if (isset($_SESSION['user']) && $_SESSION['user']['loggedin'] === true && array_
     header('Location: ../404');
 }
 
-require_once $_SERVER['DOCUMENT_ROOT']. '/hospital-management/backend/php-classes/admin/admin.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/php-classes/patients/patients.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/php-classes/patients/patientsTreatmentSymptom.php";
+require_once $_SERVER['DOCUMENT_ROOT']. '/gharat-ent/hospital-management/backend/php-classes/admin/admin.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . "/gharat-ent/hospital-management/backend/php-classes/patients/patients.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/gharat-ent/hospital-management/backend/php-classes/patients/patientsTreatmentSymptom.php";
 
 
 $admin = new Admin();

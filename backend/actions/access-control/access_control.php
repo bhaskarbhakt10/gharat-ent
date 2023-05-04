@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/hospital-management/backend/php-classes/access-control/access.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/gharat-ent/hospital-management/backend/php-classes/access-control/access.php";
 
 if(isset($_POST)){
    $all_form_data = $_POST['form_data'];

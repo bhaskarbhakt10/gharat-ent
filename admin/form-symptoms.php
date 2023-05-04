@@ -35,7 +35,7 @@
         ?>
                     <div class="row" id="gynac_row">
                         <?php
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/admin/specialization-forms/symptom/form-' . $specialization . '.php';
+                        require_once $_SERVER['DOCUMENT_ROOT'] . '/gharat-ent/hospital-management/admin/specialization-forms/symptom/form-' . $specialization . '.php';
                         ?>
                     </div>
         <?php

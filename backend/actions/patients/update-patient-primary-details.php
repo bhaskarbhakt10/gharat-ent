@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/php-classes/patients/patients.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gharat-ent/hospital-management/backend/php-classes/patients/patients.php';
 
 
 if (isset($_POST)) {

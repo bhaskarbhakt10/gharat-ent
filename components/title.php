@@ -3,7 +3,7 @@
 // if (!defined('BASE_URL')) define('BASE_URL', 'https://nuitsolutions.co.in/hospital-management/');
 
 if (!defined("BASE_URL")) {
-    $root_url = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/hospital-management/';
+    $root_url = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/gharat-ent/hospital-management/';
     define("BASE_URL", $root_url);
 }
 

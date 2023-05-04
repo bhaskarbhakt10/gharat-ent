@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/php-classes/log-in/log-in.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gharat-ent/hospital-management/backend/php-classes/log-in/log-in.php';
 // require_once '../../php-classes/log-in/log-in.php';
 session_start();
 

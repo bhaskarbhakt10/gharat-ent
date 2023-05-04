@@ -1,8 +1,8 @@
 <?php
 // require_once '../../database/config.database.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/database/config.database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gharat-ent/hospital-management/backend/database/config.database.php';
 // require_once '../../constants/constants-static.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/constants/constants-static.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gharat-ent/hospital-management/backend/constants/constants-static.php';
 
 class LogIn
 {

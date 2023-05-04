@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/backend/php-classes/users/class.users.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gharat-ent/hospital-management/backend/php-classes/users/class.users.php';
 
 
 if (isset($_POST['update-profile'])) {
