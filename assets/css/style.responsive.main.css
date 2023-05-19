@@ -1,5 +1,232 @@
-@media only screen and (max-width:1366px){
-    table.dataTable tbody th, table.dataTable tbody td, table.dataTable thead>tr>th.sorting{
-        /* padding: 1rem; */
+.forgot-remember {
+  display: none !important;
+}
+button.btn.print.print_pdf {
+    display: none;
+}
+
+@media only screen and (max-width: 1366px) {
+  table.dataTable tbody th,
+  table.dataTable tbody td,
+  table.dataTable thead > tr > th.sorting {
+    /* padding: 1rem; */
+  }
+}
+@media only screen and (max-width:1024px){
+    .sidebar-menu{
+        padding: 0.5em;
     }
+    .user-name,.user-email{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 991px) {
+  form .log-in-wrapper {
+    width: 80%;
+  }
+  #navbarLeftAlignExample .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  #navbarLeftAlignExample .nav-link i {
+    padding-right: 10px;
+  }
+  body .main-class .flex-20 {
+    display: none;
+  }
+  body .main-class .flex-80 {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  .navbar-nav .dropdown-menu {
+    position: relative !important;
+    transform: unset !important;
+  }
+  .dropdown-menu {
+    background: transparent;
+    padding-left: 30px;
+    box-shadow: unset;
+  }
+  .nav-link.dropdown-item {
+  }
+  .add-patients .fieldset,
+  .update-primary-info .fieldset,
+  fieldset {
+    margin: 0 0 30px;
+  }
+  .form-heading {
+    padding: 0;
+  }
+  .users-wrap {
+    padding: 1em;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  form .log-in-wrapper {
+    width: 100%;
+    padding: 1em 2em;
+  }
+  .main-body {
+    margin: 0.5em;
+  }
+  .main-body-wrapper {
+    padding: 1em;
+  }
+  .m-row {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    gap: 0;
+  }
+  .form-control.form-field,
+  .form-select.form-field {
+    border-radius: 15px;
+  }
+  .label:not(.label-radio-check) {
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  .apended-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 20px;
+  }
+  .add-patients .fieldset,
+  .update-primary-info .fieldset,
+  fieldset {
+    padding: 0.5em;
+  }
+  .flex-m100 {
+    display: flex;
+    flex: 0 0 100%;
+  }
+  .w-m100 {
+    width: 100%;
+  }
+  .w-m90 {
+    width: 90%;
+  }
+  .w-m80 {
+    width: 80%;
+  }
+  .w-m70 {
+    width: 70%;
+  }
+  .w-m60 {
+    width: 60%;
+  }
+  .w-m50 {
+    width: 50%;
+  }
+  .w-m40 {
+    width: 40%;
+  }
+  .w-m30 {
+    width: 30%;
+  }
+  .w-m20 {
+    width: 20%;
+  }
+  .w-m10 {
+    width: 10%;
+  }
+  .flex-mcol {
+    flex-direction: column;
+  }
+  .gap-m0 {
+    gap: 0;
+  }
+  .mb-sm-0 {
+    margin-bottom: 0 !important;
+  }
+  .d-mblock {
+    display: block !important;
+  }
+  .action-buttons {
+    flex-wrap: wrap;
+    justify-content: unset !important;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .action-buttons > a,
+  .action-buttons > button {
+  }
+  .action-buttons > a:first-child,
+  .action-buttons > button:first-child {
+  }
+  table.dataTable > tbody > tr.child ul.dtr-details {
+    width: 100%;
+  }
+
+  .dataTables_wrapper .dataTables_length,
+  .dataTables_wrapper .dataTables_filter {
+    display: block;
+    width: 100%;
+    float: none;
+    text-align: left;
+    padding: 10px 0;
+  }
+  .dataTables_filter > label {
+    text-align: left;
+  }
+  .dataTables_wrapper .dataTables_filter > label > input {
+    width: 100%;
+  }
+  .table > :not(caption) > * > * {
+    padding: 8px 10px;
+  }
+  .table.table-blue th {
+    font-size: 14px;
+  }
+  .form-heading {
+    font-size: 23px;
+  }
+
+  table.table thead > tr > th {
+    width: auto;
+  }
+  .footer-wrap {
+    position: relative;
+  }
+  .users-wrap {
+    aspect-ratio: 16/9;
+    flex: 0 0 47%;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+  .stats-block{
+    margin-bottom: 20px;
+    padding: 1em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .action-buttons {
+    flex-wrap: wrap;
+    justify-content: unset !important;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .action-buttons > a,
+  .action-buttons > button {
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+  .action-buttons > a:first-child,
+  .action-buttons > button:first-child {
+    margin-top: 15px;
+  }
+  .users-wrap {
+    aspect-ratio: 32/4;
+    flex: 0 0 100%;
+    padding: 1em;
+    justify-content: flex-start;
+    align-items: center;
+}
 }

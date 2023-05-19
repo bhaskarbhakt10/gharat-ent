@@ -145,8 +145,9 @@ if (array_key_exists('p_id', $_GET)) {
                 </div>
             </div>
             <div class="col-md-12">
-                <table class="table align-middle mb-3 table-blue">
-                    <thead>
+                <div class="table-responsive">
+                    <table class="table align-middle mb-3 table-blue">
+                        <thead>
                         <tr>
                             <th class="th-width-33">Past Treatment</th>
                             <th class="th-width-33">Past Treatment Start</th>
@@ -184,10 +185,13 @@ if (array_key_exists('p_id', $_GET)) {
 
                     </tbody>
                 </table>
+                </div>
+
 
 
             </div>
             <div class="col-md-12">
+            <div class="table-responsive">
                 <table class="table align-middle mb-3 table-blue">
                     <thead>
                         <tr>
@@ -229,7 +233,7 @@ if (array_key_exists('p_id', $_GET)) {
 
                     </tbody>
                 </table>
-
+            </div>
 
 
             </div>
@@ -240,6 +244,7 @@ if (array_key_exists('p_id', $_GET)) {
     <h3 class="form-heading">Regular checkup</h3>
     <fieldset class="bg_form_grey">
         <div class="mt-3" id="">
+        <div class="table-responsive">
             <table class="table align-middle mb-3 table-blue" id="RegularCheckup">
                 <thead>
                     <tr>
@@ -303,6 +308,7 @@ if (array_key_exists('p_id', $_GET)) {
                 </tbody>
             </table>
         </div>
+        </div>
     </fieldset>
 </div>
 <div class="pb-4">
@@ -310,6 +316,7 @@ if (array_key_exists('p_id', $_GET)) {
     <fieldset class="bg_form_grey">
         <div class="row">
             <div class="col-md-12">
+            <div class="table-responsive">
                 <table class="table align-middle mb-3 table-blue" id="treatment-history">
                     <thead>
                         <tr>
@@ -426,6 +433,7 @@ if (array_key_exists('p_id', $_GET)) {
                     </tbody>
                 </table>
             </div>
+            </div>
         </div>
     </fieldset>
 </div>
@@ -434,6 +442,7 @@ if (array_key_exists('p_id', $_GET)) {
     <fieldset class="bg_form_grey">
         <div class="row">
             <div class="col-md-12">
+            <div class="table-responsive">
                 <table class="table align-middle mb-3 table-blue" id="symptom-table">
                     <thead>
                         <tr>
@@ -481,6 +490,7 @@ if (array_key_exists('p_id', $_GET)) {
                         ?>
                     </tbody>
                 </table>
+            </div>
             </div>
         </div>
     </fieldset>

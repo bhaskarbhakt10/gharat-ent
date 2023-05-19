@@ -34,7 +34,9 @@ jQuery.noConflict();
     for (let index = 0; index < sub_menus__.length; index++) {
         let $expand_close_sub_menu = '<div class="open_close"><i class="fa-duotone fa-angle-up"></i></div>';
         console.log($(sub_menus__[index]).parent().append($expand_close_sub_menu));
-        $(sub_menus__[index]).detach();
+        if($(window).width() >= 992){
+            $(sub_menus__[index]).detach();
+        }
     }
     $('body').on('click', '.aside-main-menu-link', function (e) {
         
@@ -104,3 +106,59 @@ jQuery.noConflict();
 })(jQuery);
 // ### for image preview ###//
 
+
+// ## responsive
+(function($){
+    let width = $(window).width();
+    //side menu parent element
+    let side_menu = $('#aside-menu');
+
+    //top menu
+    let top_menu = $('#navbarLeftAlignExample >ul');
+    $(window).on('resize', function(){
+        window.location.reload();
+        chnageSideMenuToTopMenu(width)
+    })
+    $(window).on('load', function(){
+        chnageSideMenuToTopMenu(width)
+    })
+
+    function chnageSideMenuToTopMenu(width){
+        if(width <= 991){
+            // console.log("chnage menu")
+            const new_items = addclasstoli();
+            // console.log(new_items);
+            top_menu.prepend(new_items);
+        }
+    }
+    
+    function addclasstoli(){
+        let new_to_menu_items = '';
+        for (let index = 0; index < side_menu.length; index++) {
+            $(side_menu[index]).removeClass();
+            $(side_menu[index]).find('a').removeClass();
+            $(side_menu[index]).find('.open_close').remove();
+            $(side_menu[index]).find('li').removeClass()
+            $(side_menu[index]).find('li').addClass('nav-item dropdown')
+            $(side_menu[index]).find('li ul li').removeClass()
+            $(side_menu[index]).find('li ul li>a').removeClass()
+            $(side_menu[index]).find('li>a:not(a.dropdown-item)').addClass('nav-link ')
+            $(side_menu[index]).find('li ul li>a').removeClass('dropdown-toggle')
+            $(side_menu[index]).find('li ul li>a').addClass('dropdown-item')
+            if($(side_menu[index]).find('li>a').next('ul').length !== 0){
+                $(side_menu[index]).find('li>a:not(a.dropdown-item)').addClass('dropdown-toggle');
+                $(side_menu[index]).find('li>a:not(a.dropdown-item)').attr('data-mdb-toggle' ,'dropdown');
+            }
+            $(side_menu[index]).find('.dropdown ul').addClass('dropdown-menu')
+           
+        }
+        // new_to_menu_items += '<li class="nav-item dropdown">';
+        new_to_menu_items += $(side_menu).html();
+        $(side_menu).parent().parent().parent().detach();
+        // new_to_menu_items += '</li>';
+        return new_to_menu_items ;
+    }
+    
+    
+})(jQuery)
+// ## responsive

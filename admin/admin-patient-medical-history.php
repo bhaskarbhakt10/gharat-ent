@@ -6,8 +6,8 @@
             </h2>
         <fieldset class="bg_form_grey">
             <div class="d-flex ">
-                <div class="d-flex flex-wrap gap-20 flex-100">
-                    <div class="mb-3 flex-48">
+                <div class="d-flex flex-wrap gap-20 gap-m0 flex-100">
+                    <div class="mb-3 flex-48 flex-m100 flex-mcol">
                         <label for="addiction">Addictions/Habits</label>
                         <select name="patient_addiction" id="addictions" class="form-select form-field select-two" multiple required>
                             <!-- <option value="">Select a Condition</option> -->
@@ -16,7 +16,7 @@
                             <option value="Alcohol">Alcohol</option>
                         </select>
                     </div>
-                    <div class="flex-48 mb-3 ">
+                    <div class="flex-48 mb-3 mb-sm-0 flex-mcol flex-m100">
                         <div class="mb-3 w-100">
                             <label for="health-conditions">Chronic Ailments/Health Conditions </label>
                             <select name="patient_health_condition" id="health-conditions" class="form-select form-field select-two" multiple required>
@@ -45,26 +45,26 @@
                         </div>
                     </div>
                     <div class="d-flex flex-100 flex-wrap flex-container" id="treatment-container">
-                        <div class="d-flex flex-100 gap-20 align-items-center">
-                            <div class="d-flex flex-30 flex-column">
+                        <div class="d-flex flex-100 gap-20 align-items-center gap-m0 align-items-center flex-wrap">
+                            <div class="d-flex flex-30 flex-m100 flex-column">
                                 <div class="mb-3">
                                     <label for="">Past treatmets</label>
                                     <input type="text" class="form-control form-field" name='past_treatment' required>
                                 </div>
                             </div>
-                            <div class="d-flex flex-25 flex-column">
+                            <div class="d-flex flex-25 flex-m100 flex-column">
                                 <div class="mb-3">
                                     <label for="">Past treatment start date</label>
                                     <input type="date" class="form-control form-field" name='past_treatment_start_date' required>
                                 </div>
                             </div>
-                            <div class="d-flex flex-25 flex-column">
+                            <div class="d-flex flex-25 flex-m100 flex-column">
                                 <div class="mb-3">
                                     <label for="">Past treatment End date</label>
                                     <input type="date" class="form-control form-field" name='past_treatment_end_date' required>
                                 </div>
                             </div>
-                            <div class="d-flex col flex-column">
+                            <div class="d-flex flex-m100 col flex-column">
 
                                 <button class="btn btn-primary duplicate-row">Add treatments</button>
 
@@ -72,26 +72,26 @@
                         </div>
                     </div>
                     <div class="d-flex flex-100 flex-wrap flex-container" id="surgery-container">
-                        <div class="d-flex flex-100 gap-20 align-items-center">
-                            <div class="d-flex flex-30 flex-column">
+                        <div class="d-flex flex-100 gap-20 gap-m0 align-items-center flex-wrap">
+                            <div class="d-flex flex-30 flex-m100 flex-column">
                                 <div class="mb-3">
                                     <label for="past_surgeries">Past Surgeries</label>
                                     <input type="text" name="past_surgeries" id="" class="form-control form-field" required>
                                 </div>
                             </div>
-                            <div class="d-flex flex-25 flex-column">
+                            <div class="d-flex flex-25 flex-m100 flex-column">
                                 <div class="mb-3">
                                     <label for="past_surgeries_start_date">Past Surgeries start date</label>
                                     <input type="date" name="past_surgeries_start_date" id="" class="form-control form-field" required>
                                 </div>
                             </div>
-                            <div class="d-flex flex-25 flex-column">
+                            <div class="d-flex flex-25 flex-m100 flex-column">
                                 <div class="mb-3">
                                     <label for="past_surgeries_end_date">Past Surgeries End date</label>
                                     <input type="date" name="past_surgeries_end_date" id="past_surgeries_end_date" class="form-control form-field" required>
                                 </div>
                             </div>
-                            <div class="d-flex col flex-column">
+                            <div class="d-flex col flex-m100 flex-column">
 
                                 <button class="btn btn-primary duplicate-row d-fieldset">Add Past Surgeries</button>
 

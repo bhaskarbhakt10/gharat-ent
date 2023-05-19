@@ -35,7 +35,7 @@
         ?>
                     <div class="row" id="gynac_row">
                         <?php
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/gharat-ent/hospital-management/admin/specialization-forms/symptom/form-' . $specialization . '.php';
+                        require_once $_SERVER['DOCUMENT_ROOT'] . '/hospital-management/admin/specialization-forms/symptom/form-' . $specialization . '.php';
                         ?>
                     </div>
         <?php
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="text-center my-3">
-                <button class="btn btn-blue btn-bg-blue-theme w-20 mx-auto symptom-btn">Button</button>
+                <button class="btn btn-blue btn-bg-blue-theme w-20 w-m80 mx-auto symptom-btn">Button</button>
             </div>
         </div>
     </fieldset>

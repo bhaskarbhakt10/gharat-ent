@@ -40,28 +40,28 @@ if (array_key_exists('p_id', $_GET)) {
                     </div>
                 </div>
                 */ ?>
-                <div class="col-md-4">
+                <div class="col-md-4  col-sm-12">
                     <div class="mb-3">
                         <label for="First-Name">First Name</label>
                         <input type="text" name="patient_first_name" id="First-Name" class="form-control form-field " placeholder="John" required value="<?php echo !empty($first_name) ? $first_name : ''; ?>">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="mb-3">
                         <label for="Middle-Name">Middle Name</label>
                         <input type="text" name="patient_middle_name" id="Middle-Name" class="form-control form-field" placeholder="Daniel" value="<?php echo !empty($middle_name) ? $middle_name : ''; ?>">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="mb-3">
                         <label for="Last-Name">Last Name</label>
                         <input type="text" name="patient_last_name" id="Last-Name" class="form-control form-field" placeholder="Doe" required value="<?php echo !empty($last_name) ? $last_name : ''; ?>">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
 
-                    <div class="d-flex gap-20">
-                        <div class="d-flex flex-48">
+                    <div class="d-flex gap-20 m-row">
+                        <div class="d-flex flex-48 ">
                             <div class="mb-3 w-100">
                                 <label for="Contact-number">Contact Number</label>
                                 <input type="tel" name="patient_contact_number" id="Contact-number" class="form-control form-field" placeholder="1234567890" required value="<?php echo !empty($phone_number) ? $phone_number : ''; ?>">
@@ -75,7 +75,7 @@ if (array_key_exists('p_id', $_GET)) {
                         </div>
 
                     </div>
-                    <div class="d-flex gap-20  ">
+                    <div class="d-flex gap-20 m-row ">
                         <div class="d-flex flex-48 flex-col">
                             <label for="">Select Gender</label>
                             <div class=" d-flex gap-10 flex-wrap">
@@ -104,7 +104,7 @@ if (array_key_exists('p_id', $_GET)) {
 
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="mb-3">
                         <label for="Address">Address</label>
                         <textarea name="patient_address" id="Address" cols="30" rows="5" class="form-control form-field textareah-135"><?php echo !empty($address) ? $address : ''; ?></textarea>

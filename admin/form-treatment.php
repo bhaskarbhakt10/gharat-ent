@@ -142,8 +142,8 @@ if (!empty($meds_arr)) {
                 </div>
             </div>
             <div class="d-flex gap-10 ">
-                <button class="btn btn-blue btn-bg-blue-theme  w-20 d-flex justify-content-center save-and-pdf">Save and pdf</button>
-                <button class="btn btn-blue btn-bg-blue-theme w-20 d-flex justify-content-center preview">Preview</button>
+                <button class="btn btn-blue btn-bg-blue-theme  w-20 w-m80 d-flex justify-content-center save-and-pdf">Save and pdf</button>
+                <button class="btn btn-blue btn-bg-blue-theme w-20 w-m80 d-flex justify-content-center preview">Preview</button>
             </div>
         </div>
     </fieldset>

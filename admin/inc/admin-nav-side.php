@@ -23,8 +23,8 @@ require_once 'admin-functions.php';
         </div>
         <ul class="aside-menu" id="aside-menu">
             <li>
-                <span><i class="fa-duotone fa-gauge"></i></span>
-                <a href="index.php?q=admin-dashboard" class="active">Dashboard</a>
+                
+                <a href="index.php?q=admin-dashboard" class="active"> <span><i class="fa-duotone fa-gauge"></i></span> Dashboard </a>
             </li>
             <li>
                 <a href="#" class="active">
@@ -60,6 +60,8 @@ require_once 'admin-functions.php';
                     <li><a href="index.php?q=admin-list-prescriptions">View Prescriptions</a></li>
                 </ul>
             </li>
+            <?php
+            /*
             <li>
                 <a>
                     <span><i class="fa-duotone fa-door-open"></i></span>
@@ -70,8 +72,7 @@ require_once 'admin-functions.php';
                 </ul>
             </li>
 
-            <?php
-            /*
+           
              example dropdown all classes are coming from js 
             <li>
                 <a href="#">

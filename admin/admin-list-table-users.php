@@ -7,6 +7,7 @@ else{
     exit();
 }
 ?>
+<div class="table-responsive">
 <table class="w-100 table table-borderd">
     <thead>
         <th>
@@ -40,8 +41,8 @@ else{
                     <td><?php echo $row['hospital_UserPhone']; ?></td>
                     <td><?php echo $row['hospital_UserEmail']; ?></td>
                     <td>
-                        <button class="btn btn-primary">edit</button>
-                        <button class="btn btn-warning">Suspend</button>
+                        <button class="btn btn-primary mx-auto my-2">edit</button>
+                        <button class="btn btn-warning mx-auto my-2">Suspend</button>
                     </td>
                 </tr>
                 <?php
@@ -50,3 +51,4 @@ else{
         ?>
     </tbody>
 </table>
+</div>

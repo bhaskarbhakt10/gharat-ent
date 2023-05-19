@@ -5,6 +5,7 @@
 $patients = new Patients();
 $all_details = $patients->get_list_patients();
 ?>
+<div class="table-responsive">
 <table class="w-100 table table-borderd">
     <thead>
         <th>
@@ -45,3 +46,4 @@ $all_details = $patients->get_list_patients();
         ?>
     </tbody>
 </table>
+</div>

@@ -7,15 +7,15 @@ class Database
     
     ##local
     ##avannah##
-    // private $db_name = "hospital-management";
-    // private $db_user = "root";
-    // private $db_pass = "";
+    private $db_name = "hospital-management";
+    private $db_user = "root";
+    private $db_pass = "";
     ##avannah##
 
     ##avannah##
-    private $db_name = "gharat-ent";
-    private $db_user = "root";
-    private $db_pass = "";
+    // private $db_name = "gharat-ent";
+    // private $db_user = "root";
+    // private $db_pass = "";
     ##avannah##
     ##local
     
