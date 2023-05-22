@@ -60,6 +60,15 @@ require_once 'admin-functions.php';
                     <li><a href="index.php?q=admin-list-prescriptions">View Prescriptions</a></li>
                 </ul>
             </li>
+            <li>
+                <a>
+                    <span><i class="fa-duotone fa-door-open"></i></span>
+                        Medicine 
+                </a>
+                <ul>
+                    <li><a href="index.php?q=admin-add-meds">Add Medicine</a></li>
+                </ul>
+            </li>
             <?php
             /*
             <li>
