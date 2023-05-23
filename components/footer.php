@@ -18,11 +18,15 @@
     ?>
         <script src="<?php echo $file_name_script . "?ver=" . time() . ""; ?>" type="text/javascript"></script>
     <?php }
-    if (file_exists($file_name_script_jquery)) {
 
+
+    if (file_exists($file_name_script_jquery)) {
     ?>
         <script src="<?php echo $file_name_script_jquery . "?ver=" . time() . ""; ?>" type="text/javascript"></script>
+        <script src="<?php echo  BASE_URL .'admin/js/jquery.script.same-meds.js'; ?>" type="text/javascript"></script>
     <?php } ?>
+
+
 
     <script src="<?php echo BASE_URL; ?>components/js/jquery.script.component.js" type="text/javascript"></script>
     <script src="<?php echo BASE_URL; ?>components/js/script.component.js" type="text/javascript"></script>

@@ -815,3 +815,12 @@ form{
 #dashboard-follow-up-table_wrapper #dashboard-follow-up-table_length, #dashboard-follow-up-table_wrapper #dashboard-follow-up-table_filter{
   display: none;
 }
+.item-same-meds{
+  flex:0 0 24%;
+}
+.actions{
+  justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 30px;
+}
